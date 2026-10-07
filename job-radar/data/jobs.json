@@ -1,6 +1,242 @@
 [
  {
   "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49752792",
+  "title": "그레이13㈜ 공간 디자이너 채용",
+  "company": "그레이13㈜",
+  "location": "서울 마포구 희우정로20길 17 (망원동)",
+  "employment": "정규직",
+  "summary": "그레이13㈜ 공간 디자이너 채용공고 그레이13㈜는 2023년에 설립된 회사로 자본금 5,000만원, 매출액 21억 128만원, 사원수 10명 규모의 중소기업입니다. 서울 마포구 희우정로 20길 17에 위치하고 있으며, EXHIBITION / EVENT / POP-UP/ JEWERLY사업을 하고 있습니다. 회사 홈페이지, SNS 링크 ㆍ graey13(SNS): https://www.inst…",
+  "tools": [
+   "Midjourney"
+  ],
+  "deadline": "2026-10-09",
+  "salary": "",
+  "avg_salary": 4803,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50037378",
+  "title": "영화 ScreenX 2D 아티스트 채용 Nuke (경력)",
+  "company": "㈜테이트이삼",
+  "location": "서울 강남구 학동로30길 34 (논현동) 4층",
+  "employment": "정규직",
+  "summary": "㈜테이트이삼 영화 ScreenX 2D 아티스트 채용 Nuke (경력) ㈜테이트이삼은 2006년에 설립된 회사로 사원수 22명 규모의 중소기업입니다. 서울 강남구 학동로30길 34 (논현동)에 위치하고 있으며, 크리에이티브 디자인, 그래픽아트, UX컨설팅, 애플리케이션, VR, AR, XR사업을 하고 있습니다. 신사업 부서 Screen X 제작팀을 충원합니다. 포지션 및 자격요건 Screen…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "2026-10-22",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49995644",
+  "title": "[메타크래프트] AI아트 크리에이터 모집 안내",
+  "company": "㈜메타크래프트",
+  "location": "서울 구로구 디지털로26길 38 (구로동, G-Tower) 7층",
+  "employment": "계약직",
+  "summary": "㈜메타크래프트 채용제목을 입력해주세요 AI아트 크리에이터 자격요건 및 고용형태 - 고용형태: 계약직(신입 6개월 / 경력 3개월) ※ 정규직 전환 검토 - 경력: 신입 또는 경력 1~5년 - 직급: 사원~대리급 담당업무 - AI를 활용한 자사 웹서비스 맞춤형 이미지 제작 필요역량 (이런 분들을 찾고 있어요) - 클라우드 또는 로컬 환경을 활용한 AI 이미 ·영상 제작 능력 또는 원화·일러스…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "2026-11-14",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50112680",
+  "title": "[다우키움 계열사] AI 영상 생성 담당 (1년 이상)",
+  "company": "키다리스튜디오",
+  "location": "서울특별시 성동구 연무장11길 8 (성수동2가)",
+  "employment": "계약직",
+  "summary": "키다리스튜디오 [다우키움 계열사] 숏드라마 기획 개발 및 투자 제작 (3년 이상) AI 영상 생성 담당 팀소개 AI콘텐츠제작팀 은 생성형 AI 기술로 자사 IP를 영상 콘텐츠로 만드는 팀입니다. `AI로 무엇을, 어디까지 만들 수 있는가`에 대한 답을 매일 찾아가며, 현재는 다음 영역에 집중하고 있습니다. 자사 웹툰 및 소설 IP를 활용한 AI 영상 제작, 실사로 촬영된 자사 숏폼 드라마의…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "2026-11-05",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49995639",
+  "title": "[메타크래프트] AI아트 스튜디오 PD 모집 안내",
+  "company": "㈜메타크래프트",
+  "location": "서울 구로구 디지털로26길 38 (구로동, G-Tower) 7층",
+  "employment": "계약직",
+  "summary": "㈜메타크래프트 채용제목을 입력해주세요 AI아트 PD 자격요건 및 고용형태 - 고용형태: 계약직(신입 6개월 / 경력 3개월) ※ 정규직 전환 검토 - 경력: 신입 또는 경력 1~5년 - 직급: 사원~대리급 담당업무 - 자사 웹서비스 맞춤형 AI 이미지 제작을 위한 프롬프트 작성 및 맵핑 - 스튜디오 제작 팀원들과의 원활한 커뮤니케이션 및 협업 - 애니메이션풍을 비롯한 반실사 ·실사풍 이미지…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "2026-11-14",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49875393",
+  "title": "(주)픽스피드 AI 기반 3D Space Designer 경력직 채용",
+  "company": "픽스피드㈜",
+  "location": "서울 성동구 성수이로 65 (성수동2가, 협성빌딩) 501호",
+  "employment": "정규직, 계약직",
+  "summary": "픽스피드㈜ AI · 3D Space Designer 경력직 채용 FIXSPEED는 AI · 3D Creative Technology를 기반으로 브랜드 공간, 상업 공간, 팝업스토어, 전시, 건축 Visualization 등 다양한 공간 프로젝트를 기획하고 제작하고 있습니다. 기존의 3D 제작 방식에 머무르지 않고, 3ds Max 기반의 공간 모델링 능력과 생성형 AI를 함께 활용할 수 있는…",
+  "tools": [
+   "ComfyUI",
+   "Midjourney",
+   "Stable Diffusion",
+   "Flux"
+  ],
+  "deadline": "2026-10-27",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50056542",
+  "title": "[보리챗] AI 챗봇 캐릭터 콘텐츠 제작 및 플랫폼 운영 담당자 채용",
+  "company": "㈜미툰앤노벨",
+  "location": "경기 성남시 분당구 대왕판교로 670 (삼평동, 유스페이스2) B동 1008-1호",
+  "employment": "계약직",
+  "summary": "㈜미툰앤노벨 [ 보리챗 ] AI 챗봇 캐릭터 콘텐츠 제작 및 플랫폼 운영 담당자 채용 ㈜미툰앤노벨은 2015년에 설립된 회사로 자본금 4억원, 매출액 40억, 사원수 15명 규모의 벤처기업입니다. 경기 성남시 분당구 성남대로331번길 8 (정자동, 킨스타워)에 위치하고 있으며, 문화콘텐츠 제작, 유통사업을 하고 있습니다. 회사에서 운영 중인 플랫폼, 보리챗에서는 AI 캐릭터 콘텐츠 기획과…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "2026-10-28",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobplanet",
+  "url": "https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1691958",
+  "title": "[글로벌 AI 캐릭터 챗] 생성형 AI Artist (ComfyUI)",
+  "company": "(주)큐피스트",
+  "location": "서울",
+  "employment": "정규직",
+  "summary": "[글로벌 AI 캐릭터 챗] 생성형 AI Artist (ComfyUI) (주)큐피스트 3.3 서울 2026-09-30 2026.10.30 캐릭터디자인 디자인 7% user partners 경력 Irrelevant 학력무관 1 ~ 5년 정규직 ( ~ ) AI 캐릭터 comfyui 이미지 제작 언젠가는 누구나 사랑할 날이 오지 않을까요? 큐피스트는 글로벌 러브테크 브랜드를 비전으로 사람 대 사람…",
+  "tools": [
+   "ComfyUI",
+   "Seedance",
+   "Kling",
+   "Midjourney"
+  ],
+  "deadline": "2026-10-30",
+  "salary": "",
+  "avg_salary": 6792,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobplanet",
+  "url": "https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1708289",
+  "title": "[Vigloo] AI 영상 크리에이터 (1년 계약직/숏드라마 AI Content Creator)",
+  "company": "(주)스푼랩스",
+  "location": "서울",
+  "employment": "계약직",
+  "summary": "[Vigloo] AI 영상 크리에이터 (1년 계약직/숏드라마 AI Content Creator) (주)스푼랩스 3.2 서울 2026-10-06 2027.01.04 방송연출/PD/감독 영화제작/배급 미디어/홍보 7% user partners 경력무관 Irrelevant 학력무관 경력무관 계약직 ( ~ ) AI maya C4D After Effects Premiere Pro Blender kl…",
+  "tools": [
+   "Seedance",
+   "Kling"
+  ],
+  "deadline": "2027-01-04",
+  "salary": "",
+  "avg_salary": 7960,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "mediajob",
+  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326209",
+  "title": "[Cutback] AI 영상편집 템플릿제작 프리랜서 모집(재택전환 가능)",
+  "company": "(주)컷백",
+  "location": "서울 강남구 선릉로93길 50",
+  "employment": "계약직",
+  "summary": "Cutback은 AI 영상편집 프로그램을 제작하는 팀입니다. 트렌디한 생성형 AI 영상·릴스·쇼츠·썸네일 포맷을 Selects 안에서 클릭 몇 번으로 만들 수 있도록, 그 포맷을 '템플릿'으로 만드는 작업을 위한 프리랜서 작업자분들을 모집합니다. 담당하시게 될 업무는 다음과 같습니다. 새로운 영상 포맷을 발견하면 직접 따라 만들어보고, 그 제작 과정을 AI 코딩 도구(바이브코딩)로 템플릿화…",
+  "tools": [
+   "Higgsfield",
+   "Kling"
+  ],
+  "deadline": null,
+  "salary": "연 2,684만원",
+  "avg_salary": 6123,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "mediajob",
+  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326046",
+  "title": "[정규직] AI 콘텐츠 크리에이터 모집",
+  "company": "(주)콘텐츠새로",
+  "location": "서울 중구 청계천로 40",
+  "employment": "기타",
+  "summary": "(주)콘텐츠새로 [정규직] AI 콘텐츠 크리에이터 모집 모집부분 및 지원자격 모집부분 [정규직] AI 콘텐츠 크리에이터 모집 업무내용 - AI 콘텐츠 크리에이터 자격요건 - 학력 : 무관 - 성별 : 무관 - 연령 : 무관 - 경력 : 신입·경력 우대사항 - 우대조건 : 디자인 감각이 있는 일러스트_포토샵 능숙자 - 콘텐츠, 영상, 디자인 등 관련 전공자 - 영상 생성 서비스 실무 경험(H…",
+  "tools": [
+   "Higgsfield",
+   "Seedance",
+   "Kling"
+  ],
+  "deadline": null,
+  "salary": "",
+  "avg_salary": 4196,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "mediajob",
+  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326174",
+  "title": "유튜브·AI 콘텐츠 제작 신입 모집",
+  "company": "주리메지",
+  "location": "서울 강서구 공항대로 209",
+  "employment": "기타",
+  "summary": "유튜브·AI 콘텐츠 제작 신입 모집 '주리메지'는 사람들이 보고 싶어 하는 콘텐츠를 기획하고 만드는 콘텐츠 크리에이티브 기업입니다. 유튜브를 중심으로 예능, 엔터테인먼트, 숏폼 등 다양한 디지털 콘텐츠를 기획·제작하며, 단순히 영상을 만드는 것을 넘어 사람과 콘텐츠가 하나의 브랜드로 성장하는 과정을 함께 만들어가고 있습니다. 빠르게 변하는 트렌드와 밈을 읽되, 유행을 그대로 따라가기보다 우…",
+  "tools": [],
+  "deadline": null,
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T13:28:02+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49935025",
   "title": "브랜드 SNS 콘텐츠 및 AI 콘텐츠 크리에이터",
   "company": "㈜커넥티드코리아",
@@ -12,11 +248,11 @@
   ],
   "deadline": "2026-10-07",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4236,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T12:54:57+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -37,7 +273,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T12:54:57+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -57,7 +293,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T12:37:54+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -72,11 +308,11 @@
   ],
   "deadline": "2026-10-11",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 9882,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T12:37:54+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -131,6 +367,40 @@
  },
  {
   "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49972957",
+  "title": "[KMP] 생성형 AI 영상·콘텐츠 디자이너 채용",
+  "company": "강남중고명품 김캡쳐",
+  "location": "서울 강남구 봉은사로 227 (논현동) 김명품 타워",
+  "employment": "정규직, 계약직",
+  "summary": "강남중고명품 김캡쳐에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 강남구 봉은사로 227 (논현동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-10-11",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50078498",
+  "title": "생성형 AI 이미지·영상 콘텐츠 크리에이터 모집",
+  "company": "하트에이아이㈜",
+  "location": "서울 구로구 디지털로26길 123 (구로동, 지플러스타워) 401호",
+  "employment": "계약직",
+  "summary": "하트에이아이㈜에서 계약직 신입 채용을 진행합니다. 근무지는 서울 구로구 디지털로26길 123 (구로동, 지플러스타워)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-11-29",
+  "salary": "",
+  "avg_salary": 3826,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 38,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49903895",
   "title": "AI 영상 콘텐츠 크리에이터 경력직 채용의 건",
   "company": "㈜자이언트엘",
@@ -150,7 +420,77 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49932745",
+  "title": "감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건(comfyui 사용자)",
+  "company": "㈜자이언트엘",
+  "location": "경기 고양시 덕양구 꽃마을로 44 (향동동) 902호",
+  "employment": "정규직, 계약직",
+  "summary": "㈜자이언트엘 감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건 \"국내 최초 프로젝트\" 타이틀을 앞둔 AI 스타트업, 자이언트엘에서 AI 영상 크리에이터를 찾고 있습니다. 자이언트엘은 ComfyUI 활용 및 감각적인 영상 연출이 가능하거나, AI 영상 제작 경험을 갖춘 크리에이터분들을 찾고 있습니다. 탁월한 미적 감각으로 AI 영상의 매력과 가능성에 푹 빠져 계신 분이라면 언제든 환영합…",
+  "tools": [
+   "ComfyUI"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2608260004038",
+  "title": "[Blue Garage] AI Artist / Concept Artist",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609230003041",
+  "title": "[Blue Garage] AI Artist / AI Content Creator",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609280005465",
+  "title": "[Blue Garage] AI Artist / Music&Voice Production & Planning",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -176,59 +516,6 @@
  },
  {
   "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49932745",
-  "title": "감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건(comfyui 사용자)",
-  "company": "㈜자이언트엘",
-  "location": "경기 고양시 덕양구 꽃마을로 44 (향동동) 902호",
-  "employment": "정규직, 계약직",
-  "summary": "㈜자이언트엘 감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건 \"국내 최초 프로젝트\" 타이틀을 앞둔 AI 스타트업, 자이언트엘에서 AI 영상 크리에이터를 찾고 있습니다. 자이언트엘은 ComfyUI 활용 및 감각적인 영상 연출이 가능하거나, AI 영상 제작 경험을 갖춘 크리에이터분들을 찾고 있습니다. 탁월한 미적 감각으로 AI 영상의 매력과 가능성에 푹 빠져 계신 분이라면 언제든 환영합…",
-  "tools": [
-   "ComfyUI"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49972957",
-  "title": "[KMP] 생성형 AI 영상·콘텐츠 디자이너 채용",
-  "company": "강남중고명품 김캡쳐",
-  "location": "서울 강남구 봉은사로 227 (논현동) 김명품 타워",
-  "employment": "정규직, 계약직",
-  "summary": "강남중고명품 김캡쳐에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 강남구 봉은사로 227 (논현동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-10-11",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50078498",
-  "title": "생성형 AI 이미지·영상 콘텐츠 크리에이터 모집",
-  "company": "하트에이아이㈜",
-  "location": "서울 구로구 디지털로26길 123 (구로동, 지플러스타워) 401호",
-  "employment": "계약직",
-  "summary": "하트에이아이㈜에서 계약직 신입 채용을 진행합니다. 근무지는 서울 구로구 디지털로26길 123 (구로동, 지플러스타워)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-11-29",
-  "salary": "",
-  "avg_salary": 3826,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": 38,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49885356",
   "title": "[GENTLE MONSTER] AI 컨텐츠 제작자",
   "company": "㈜아이아이컴바인드",
@@ -237,57 +524,6 @@
   "summary": "㈜아이아이컴바인드에서 정규직 경력 채용을 진행합니다. 근무지는 서울특별시 성동구 성수동2가이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
   "tools": [],
   "deadline": "2026-10-30",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2608260004038",
-  "title": "[Blue Garage] AI Artist / Concept Artist",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609230003041",
-  "title": "[Blue Garage] AI Artist / AI Content Creator",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609280005465",
-  "title": "[Blue Garage] AI Artist / Music&Voice Production & Planning",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
   "salary": "",
   "avg_salary": null,
   "avg_salary_src": "",
@@ -310,7 +546,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 38,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -332,7 +568,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 8,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -353,7 +589,117 @@
   "avg_salary_src": "",
   "employees": 13,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50104951",
+  "title": "[소다라이브] 생성형 AI 영상 크리에이터 모집",
+  "company": "㈜소다라이브",
+  "location": "서울 강남구 테헤란로108길 8 (대치동, 유민빌딩) 4층",
+  "employment": "정규직",
+  "summary": "㈜소다라이브 생성형 AI 영상 크리에이터 모집 (정규직 / 경력무관) (주)소다라이브는 팬덤기반 보이스 커뮤니티 플랫폼, `소다라이브`를 운영하는 스타트업입니다. 소다라이브는 웹툰, 웹소설의 스토리를 원작으로 한 오리지널 오디오 드라마와 보이스 크리에이터가 제작한 소셜 캐릭터 오디오 드라마를 주요 콘텐츠로 서비스하며, 크리에이터와 팬이 실시간으로 소통할 수 있는 오디오 라이브와 오디오북,…",
+  "tools": [
+   "ComfyUI",
+   "Seedance",
+   "Kling",
+   "Nano Banana"
+  ],
+  "deadline": "2026-11-02",
+  "salary": "",
+  "avg_salary": 4217,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 8,
+  "first_seen": "2026-10-07T11:32:04+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49949112",
+  "title": "AI 영상,아이돌 크리에이터 (이어드림스쿨·K-디지털·폴리텍 수료자 필수)",
+  "company": "㈜카이버스",
+  "location": "서울 강서구 양천로 551-24 (가양동, 한화비즈메트로2차) 1102호",
+  "employment": "정규직, 계약직, 인턴",
+  "summary": "카이버스(KAIVERSE) AIDOL IP 세계관과 작품 제작을 함께 만들 AI 연출가/ 제작자 채용 (인턴/신입/경력) 포지션 및 자격요건 AI 연출가 / 크리에이터 (엔지니어) ( ○명 ) 담당업무 + AI Production Systems Engineer + AI 아티스트 및 엔터테인먼트 IP의 세계관과 비주얼 콘셉트 기획/제작/연출 + 뮤직비디오, 앨범, SNS 콘텐츠, 영화, 드라…",
+  "tools": [
+   "Seedance",
+   "Kling",
+   "Nano Banana",
+   "Midjourney"
+  ],
+  "deadline": "2026-10-15",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": 10,
+  "first_seen": "2026-10-07T11:32:04+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50108054",
+  "title": "[VineVibe Studio] AI 영상 콘텐츠 크리에이터 채용",
+  "company": "바인바이브스튜디오",
+  "location": "경기 고양시 일산서구 산현로17번길 7-8 (탄현동) 102-E257호",
+  "employment": "계약직",
+  "summary": "바인바이브스튜디오 [VineVibe Studio] AI 영상 콘텐츠 크리에이터 채용 포지션 및 자격요건 AI 영상 콘텐츠 크리에이터 ( 1명 ) 담당업무 ㆍComfyUI 또는 Higgsfield 기반 실사 이미지 및 영상 생성 ㆍ스토리보드와 기획안을 기반으로 브랜드필름·기업소개영상용 컷 제작 ㆍ인물, 제품, 공간, 배경의 스타일 및 비주얼 일관성 유지 ㆍ실제 촬영 영상에 가까운 질감과 연출…",
+  "tools": [
+   "Higgsfield",
+   "ComfyUI",
+   "Midjourney",
+   "Runway",
+   "Veo"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": 9,
+  "first_seen": "2026-10-07T11:32:04+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50040843",
+  "title": "[글로벌 AI 캐릭터 챗] AI 콘텐츠 크리에이터",
+  "company": "(주)큐피스트",
+  "location": "서울 강남구 테헤란로 146 (역삼동, 현익빌딩) 11층 큐피스트",
+  "employment": "정규직, 계약직",
+  "summary": "CUPIST AI Companion | 정규직 · 경력 무관 | 재택 가능 AI 콘텐츠 크리에이터 직접 만든 로맨스 세계관과 캐릭터를 AI로 만들고, 유저 반응으로 키워가는 크리에이터 사랑에도 유니콘이 필요합니다. 우리는 기술로 사람 - 사람, 사람 - AI를 연결하는 글로벌 러브테크 기업 큐피스트입니다. 큐피스트는 국내 대표 데이팅 앱 글램으로 아는 분들이 많지만, AI 캐릭터 챗으로 북…",
+  "tools": [
+   "Higgsfield",
+   "ComfyUI",
+   "Kling",
+   "Midjourney",
+   "Stable Diffusion"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 6792,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T11:32:04+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50075731",
+  "title": "AI 콘텐츠, 영상물 제작자/크리에이터 (신입&루키 가능/포트폴리오 필수)",
+  "company": "헬로웍스㈜",
+  "location": "서울 마포구 토정로25길 9 (용강동) 태민빌딩",
+  "employment": "계약직, 인턴",
+  "summary": "헬로웍스㈜ AI 콘텐츠, 영상물 제작자/크리에이터 (신입&루키 가능/포트폴리오 필수) 포지션 및 자격요건 AI를 활용한 프로젝트의 콘텐츠 제작 및 편집 ( ○명 ) 담당업무 ㆍ상세내용을 입력하세요 ㆍ상세내용을 입력하세요 스킬 ㆍChatGPT, Adobe After Effects, Adobe Premiere Pro, Claude, higgsfield, Seedance ai 자격요건 ㆍ학력 :…",
+  "tools": [
+   "Higgsfield",
+   "Seedance"
+  ],
+  "deadline": "2026-10-09",
+  "salary": "",
+  "avg_salary": 3514,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "first_seen": "2026-10-07T11:32:04+09:00",
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -413,26 +759,6 @@
  },
  {
   "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50075731",
-  "title": "AI 콘텐츠, 영상물 제작자/크리에이터 (신입&루키 가능/포트폴리오 필수)",
-  "company": "헬로웍스㈜",
-  "location": "서울 마포구 토정로25길 9 (용강동) 태민빌딩",
-  "employment": "계약직, 인턴",
-  "summary": "헬로웍스㈜ AI 콘텐츠, 영상물 제작자/크리에이터 (신입&루키 가능/포트폴리오 필수) 포지션 및 자격요건 AI를 활용한 프로젝트의 콘텐츠 제작 및 편집 ( ○명 ) 담당업무 ㆍ상세내용을 입력하세요 ㆍ상세내용을 입력하세요 스킬 ㆍChatGPT, Adobe After Effects, Adobe Premiere Pro, Claude, higgsfield, Seedance ai 자격요건 ㆍ학력 :…",
-  "tools": [
-   "Higgsfield",
-   "Seedance"
-  ],
-  "deadline": "2026-10-09",
-  "salary": "",
-  "avg_salary": 3514,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50001277",
   "title": "[와이그램] 감각있는 AI 애니메이션 크리에이터를 모집합니다.",
   "company": "와이그램",
@@ -452,73 +778,6 @@
  },
  {
   "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50108054",
-  "title": "[VineVibe Studio] AI 영상 콘텐츠 크리에이터 채용",
-  "company": "바인바이브스튜디오",
-  "location": "경기 고양시 일산서구 산현로17번길 7-8 (탄현동) 102-E257호",
-  "employment": "계약직",
-  "summary": "바인바이브스튜디오 [VineVibe Studio] AI 영상 콘텐츠 크리에이터 채용 포지션 및 자격요건 AI 영상 콘텐츠 크리에이터 ( 1명 ) 담당업무 ㆍComfyUI 또는 Higgsfield 기반 실사 이미지 및 영상 생성 ㆍ스토리보드와 기획안을 기반으로 브랜드필름·기업소개영상용 컷 제작 ㆍ인물, 제품, 공간, 배경의 스타일 및 비주얼 일관성 유지 ㆍ실제 촬영 영상에 가까운 질감과 연출…",
-  "tools": [
-   "Higgsfield",
-   "ComfyUI",
-   "Midjourney",
-   "Runway",
-   "Veo"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": 9,
-  "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50104951",
-  "title": "[소다라이브] 생성형 AI 영상 크리에이터 모집",
-  "company": "㈜소다라이브",
-  "location": "서울 강남구 테헤란로108길 8 (대치동, 유민빌딩) 4층",
-  "employment": "정규직",
-  "summary": "㈜소다라이브 생성형 AI 영상 크리에이터 모집 (정규직 / 경력무관) (주)소다라이브는 팬덤기반 보이스 커뮤니티 플랫폼, `소다라이브`를 운영하는 스타트업입니다. 소다라이브는 웹툰, 웹소설의 스토리를 원작으로 한 오리지널 오디오 드라마와 보이스 크리에이터가 제작한 소셜 캐릭터 오디오 드라마를 주요 콘텐츠로 서비스하며, 크리에이터와 팬이 실시간으로 소통할 수 있는 오디오 라이브와 오디오북,…",
-  "tools": [
-   "ComfyUI",
-   "Seedance",
-   "Kling",
-   "Nano Banana"
-  ],
-  "deadline": "2026-11-02",
-  "salary": "",
-  "avg_salary": 4217,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": 8,
-  "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49949112",
-  "title": "AI 영상,아이돌 크리에이터 (이어드림스쿨·K-디지털·폴리텍 수료자 필수)",
-  "company": "㈜카이버스",
-  "location": "서울 강서구 양천로 551-24 (가양동, 한화비즈메트로2차) 1102호",
-  "employment": "정규직, 계약직, 인턴",
-  "summary": "카이버스(KAIVERSE) AIDOL IP 세계관과 작품 제작을 함께 만들 AI 연출가/ 제작자 채용 (인턴/신입/경력) 포지션 및 자격요건 AI 연출가 / 크리에이터 (엔지니어) ( ○명 ) 담당업무 + AI Production Systems Engineer + AI 아티스트 및 엔터테인먼트 IP의 세계관과 비주얼 콘셉트 기획/제작/연출 + 뮤직비디오, 앨범, SNS 콘텐츠, 영화, 드라…",
-  "tools": [
-   "Seedance",
-   "Kling",
-   "Nano Banana",
-   "Midjourney"
-  ],
-  "deadline": "2026-10-15",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": 10,
-  "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49978801",
   "title": "[Tikita] AI 콘텐츠·크리에이터 운영 매니저",
   "company": "휴멜로 주식회사",
@@ -530,29 +789,6 @@
   "salary": "",
   "avg_salary": null,
   "avg_salary_src": "",
-  "employees": null,
-  "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50040843",
-  "title": "[글로벌 AI 캐릭터 챗] AI 콘텐츠 크리에이터",
-  "company": "(주)큐피스트",
-  "location": "서울 강남구 테헤란로 146 (역삼동, 현익빌딩) 11층 큐피스트",
-  "employment": "정규직, 계약직",
-  "summary": "CUPIST AI Companion | 정규직 · 경력 무관 | 재택 가능 AI 콘텐츠 크리에이터 직접 만든 로맨스 세계관과 캐릭터를 AI로 만들고, 유저 반응으로 키워가는 크리에이터 사랑에도 유니콘이 필요합니다. 우리는 기술로 사람 - 사람, 사람 - AI를 연결하는 글로벌 러브테크 기업 큐피스트입니다. 큐피스트는 국내 대표 데이팅 앱 글램으로 아는 분들이 많지만, AI 캐릭터 챗으로 북…",
-  "tools": [
-   "Higgsfield",
-   "ComfyUI",
-   "Kling",
-   "Midjourney",
-   "Stable Diffusion"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 6792,
-  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
   "last_seen": "2026-10-07T12:54:57+09:00"
@@ -589,7 +825,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 7,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -612,7 +848,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -635,7 +871,7 @@
   "avg_salary_src": "",
   "employees": 5,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -652,7 +888,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 36,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -669,7 +905,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 30,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -686,7 +922,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -703,7 +939,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "saramin",
@@ -720,7 +956,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -737,7 +973,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 7,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -754,7 +990,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -771,7 +1007,7 @@
   "avg_salary_src": "",
   "employees": 10,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -788,7 +1024,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 18,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -805,7 +1041,7 @@
   "avg_salary_src": "",
   "employees": 59,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -824,7 +1060,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -841,7 +1077,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 25,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -858,7 +1094,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 106,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -875,7 +1111,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 130,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -896,7 +1132,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -916,7 +1152,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -935,7 +1171,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -952,7 +1188,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -973,7 +1209,7 @@
   "avg_salary_src": "",
   "employees": 25,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -990,7 +1226,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": 36,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -1007,7 +1243,7 @@
   "avg_salary_src": "",
   "employees": 38,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "jobkorea",
@@ -1024,7 +1260,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "linkedin",
@@ -1043,7 +1279,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "linkedin",
@@ -1062,7 +1298,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  },
  {
   "source": "linkedin",
@@ -1084,6 +1320,6 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:54:57+09:00"
+  "last_seen": "2026-10-07T13:28:02+09:00"
  }
 ]
