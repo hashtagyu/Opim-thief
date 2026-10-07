@@ -34,8 +34,14 @@ COMPANIES_FILE = DATA / "companies.json"  # 회사별 평균연봉 캐시
 SALARY_REFRESH_DAYS = 30
 
 STALE_DAYS = 7
-MAX_DETAILS_PER_SOURCE = 45
-SITE_BUDGET_SEC = int(os.environ.get("RADAR_SITE_BUDGET", "600"))  # 사이트당 최대 10분
+MAX_DETAILS_PER_SOURCE = 150
+SITE_BUDGET_SEC = int(os.environ.get("RADAR_SITE_BUDGET", "600"))  # 사이트당 기본 10분
+# 검색 결과 전체 페이지를 훑는 큰 사이트는 시간을 더 준다
+SOURCE_BUDGET_SEC = {"saramin": 1500, "jobkorea": 1500, "jobplanet": 1500}
+MAX_PAGES_PER_TERM = 120
+EXCLUDED_FILE = DATA / "excluded.json"  # 상세까지 보고 제외한 공고 (다시 열지 않으려고 기억)
+EXCLUDED_RECHECK_DAYS = 14
+REJECTED = {}  # url -> 제외한 시각 (main에서 채움)
 DELAY = (1.5, 3.0)
 DEBUG = os.environ.get("RADAR_DEBUG") == "1"
 
@@ -75,7 +81,7 @@ class Fetcher:
         self.requests = 0
         self.errors = []
         self.blocked = 0
-        self.deadline = time.time() + SITE_BUDGET_SEC
+        self.deadline = time.time() + SOURCE_BUDGET_SEC.get(name, SITE_BUDGET_SEC)
         self.out_of_time = False
 
     def get(self, url, accept=None, referer=None):
@@ -478,6 +484,24 @@ def _run_terms(f, terms, fn):
     return results
 
 
+def _paged(fetch_page, max_pages=MAX_PAGES_PER_TERM):
+    """검색 결과를 마지막 페이지까지 넘긴다. 새 공고가 안 나오면 멈춘다.
+    시간 예산이 다 되면 그때까지 모은 것만 돌려준다 (다음 검색어 호출에서 OutOfTime으로 멈춤)."""
+    out, seen = [], set()
+    for page in range(1, max_pages + 1):
+        try:
+            items, last = fetch_page(page)
+        except OutOfTime:
+            break
+        new = [c for c in items if c["url"] not in seen]
+        for c in new:
+            seen.add(c["url"])
+        out.extend(new)
+        if not new or last:
+            break
+    return out
+
+
 def _detail_pass(f, cards, known, detail_fn):
     """카드 목록에서 상세를 채운다. 이미 아는 url은 상세 요청을 생략한다."""
     out, fetched = [], 0
@@ -488,6 +512,8 @@ def _detail_pass(f, cards, known, detail_fn):
             c["_known"] = True
             out.append(c)
             continue
+        if c["url"] in REJECTED:
+            continue  # 최근 14일 안에 상세까지 보고 제외한 공고 -> 다시 열지 않는다
         if not rules.title_could_match(c.get("title")) or rules.EXCLUDE_META.search(c.get("company") or ""):
             out.append(c)  # 제목·회사만으로 탈락 -> 상세 요청 생략 (judge에서 제외로 집계)
             continue
@@ -496,7 +522,7 @@ def _detail_pass(f, cards, known, detail_fn):
         fetched += 1
         try:
             d = detail_fn(c)
-            c = {**c, **{k: v for k, v in d.items() if v}}
+            c = {**c, **{k: v for k, v in d.items() if v}, "_fetched": True}
         except OutOfTime:
             f.errors.append("시간 예산 초과: 상세 일부 생략")
             fetched = MAX_DETAILS_PER_SOURCE  # 남은 새 공고는 상세 없이 건너뜀 (기존 공고는 계속 갱신)
@@ -523,10 +549,12 @@ def _dedupe(cards):
 
 # --- 사람인
 def src_saramin(f, known):
-    def search(q):
-        # 검색 결과가 수천 건이라 최신순 40건만 보면 며칠 지난 공고가 밀려난다 -> 최신순 + 관련도순 2쪽
-        term, sort, page = q
-        url = (f"https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&recruitSort={sort}"
+    def search(term):
+        # 검색 결과가 수천 건이라 첫 쪽만 보면 며칠 지난 공고가 밀려난다 -> 마지막 쪽까지 전부 넘긴다
+        return _paged(lambda page: search_page(term, page))
+
+    def search_page(term, page):
+        url = ("https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&recruitSort=reg_dt"
                f"&recruitPageCount=40&recruitPage={page}&searchword={quote(term)}")
         soup = f.html(url)
         cards = []
@@ -551,7 +579,11 @@ def src_saramin(f, known):
             })
         if not cards:
             log("  saramin no cards; head:", soup.get_text(" ")[:300])
-        return cards
+        total = re.search(r"([0-9][0-9,]*)\s*건", clean((soup.select_one(".cnt_result") or soup.new_tag("i")).get_text()))
+        last = len(cards) < 40 or (total and page * 40 >= int(total.group(1).replace(",", "")))
+        if page == 1:
+            log(f"  saramin '{term}': 총 {total.group(1) if total else '?'}건")
+        return cards, last
 
     def detail(c):
         soup = f.html(f"https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx={c['_id']}&rec_seq=0",
@@ -569,9 +601,7 @@ def src_saramin(f, known):
             pass
         return out
 
-    queries = ([(t, "reg_dt", 1) for t in rules.SEARCH_TERMS] + [(t, "relation", 1) for t in rules.SEARCH_TERMS]
-               + [(t, "relation", 2) for t in rules.SEARCH_TERMS])
-    cards = _dedupe(_run_terms(f, queries, search))
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
     return _detail_pass(f, cards, known, detail)
 
 
@@ -658,12 +688,14 @@ def src_wanted(f, known):
 # --- 잡코리아
 def src_jobkorea(f, known):
     def search(term):
-        term, page = term if isinstance(term, tuple) else (term, 1)
+        return _paged(lambda page: search_page(term, page))
+
+    def search_page(term, page):
         soup = f.html(f"https://www.jobkorea.co.kr/Search/?stext={quote(term)}&tabType=recruit&Page_No={page}")
         links = _links(soup, "https://www.jobkorea.co.kr", r"https://www\.jobkorea\.co\.kr/Recruit/GI_Read/\d+")
-        if not links:
+        if not links and page == 1:
             log("  jobkorea no links; head:", soup.get_text(" ")[:300])
-        return [{"url": u, "_id": u.rsplit("/", 1)[1], "title": t} for u, t in links.items()]
+        return [{"url": u, "_id": u.rsplit("/", 1)[1], "title": t} for u, t in links.items()], not links
 
     def detail(c):
         soup = f.html(c["url"])
@@ -686,8 +718,7 @@ def src_jobkorea(f, known):
             pass
         return d
 
-    queries = [(t, 1) for t in rules.SEARCH_TERMS] + [(t, 2) for t in rules.SEARCH_TERMS]
-    cards = _dedupe(_run_terms(f, queries, search))
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
     return _detail_pass(f, cards, known, detail)
 
 
@@ -803,8 +834,13 @@ def src_linkedin(f, known):
 # --- 잡플래닛 (공개 API)
 def src_jobplanet(f, known):
     def search(term):
-        data = f.json(f"https://www.jobplanet.co.kr/api/v3/job/postings?query={quote(term)}&page=1&page_size=30",
+        return [c for c in _paged(lambda page: search_page(term, page)) if not c.get("_skip")]
+
+    def search_page(term, page):
+        data = f.json(f"https://www.jobplanet.co.kr/api/v3/job/postings?query={quote(term)}&page={page}&page_size=30",
                       referer="https://www.jobplanet.co.kr/job/search")
+        raw = (data.get("data") or {}).get("recruits") or []
+        total = (data.get("data") or {}).get("total_count") or 0
         out = []
         for p in ((data.get("data") or {}).get("recruits") or []):
             if not p.get("id") or p.get("jobkorea_posting_id"):
@@ -820,7 +856,10 @@ def src_jobplanet(f, known):
                 "industry": " ".join((p.get("occupation_names") or {}).get("level2") or []),
                 "body": " ".join(p.get("skills") or []) if isinstance(p.get("skills"), list) and all(isinstance(x, str) for x in p.get("skills") or []) else "",
             })
-        return out
+        # 잡코리아에서 옮겨온 공고만 있는 쪽도 있어서, 원본 개수로 마지막 쪽을 판단한다
+        if not out and raw:
+            out = [{"url": f"https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D={p['id']}", "_skip": True} for p in raw if p.get("id")]
+        return out, (not raw or page * 30 >= total)
 
     def detail(c):
         d = f.json(f"https://www.jobplanet.co.kr/api/v1/job/postings/{c['_id']}", referer=c["url"]).get("data") or {}
@@ -1086,6 +1125,10 @@ def main():
     old_status = load_json(STATUS_FILE, {})
     by_url = {j["url"]: j for j in old_jobs if j.get("url")}
     companies = load_json(COMPANIES_FILE, {})
+    excl = load_json(EXCLUDED_FILE, {})
+    recheck = (started - timedelta(days=EXCLUDED_RECHECK_DAYS)).isoformat()
+    if excl.get("version") == rules.RULES_VERSION:  # 규칙이 바뀌면 전부 다시 본다
+        REJECTED.update({u: t for u, t in (excl.get("urls") or {}).items() if t >= recheck})
     salary_hints = {}  # 회사키 -> 사람인 기업정보 링크 (사람인 공고에서 얻은 것)
 
     only = [s.strip() for s in os.environ.get("RADAR_SOURCES", "").split(",") if s.strip()]
@@ -1111,6 +1154,8 @@ def main():
                 if not ok:
                     st["excluded"] += 1
                     dropped.add(c["url"])
+                    if c.get("_fetched"):
+                        REJECTED[c["url"]] = now_iso
                     if DEBUG:
                         lines.append(f"   - skip [{why}] {c.get('title')} / {c.get('company')}")
                     continue
@@ -1198,6 +1243,8 @@ def main():
             j["kind"] = rules.job_kind(j.get("source"), j.get("title"), j.get("employment"), j.get("summary") or "")
         for k in FIELDS:
             j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews") else "")
+    EXCLUDED_FILE.write_text(json.dumps({"version": rules.RULES_VERSION, "urls": dict(sorted(REJECTED.items()))},
+                                        ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
     COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
     jobs = sorted(merged.values(), key=lambda j: (j.get("first_seen") or "", j.get("last_seen") or ""), reverse=True)

@@ -31,7 +31,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,7 +67,7 @@ jobs:
       - name: 바뀐 데이터만 커밋
         if: steps.plan.outputs.collect == 'true'
         run: |
-          git add job-radar/data/jobs.json job-radar/data/status.json job-radar/data/companies.json
+          git add job-radar/data/jobs.json job-radar/data/status.json job-radar/data/companies.json job-radar/data/excluded.json
           if git diff --cached --quiet; then
             echo "데이터 변화 없음 - 커밋하지 않고 종료"
             exit 0

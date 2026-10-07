@@ -1,6 +1,9 @@
 """포함·제외 규칙과 툴 이름 사전. LLM 없이 정규식으로만 판단한다."""
 import re
 
+# 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
+RULES_VERSION = 3
+
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
     "AI 아티스트",
@@ -76,7 +79,7 @@ CREATIVE_TITLE = re.compile(
 # 제목·회사명·업종에 하나라도 있으면 제외
 EXCLUDE_META = re.compile(
     r"광고|대행사|커머스|쇼핑몰|뷰티|화장품|코스메틱|병원|의원|클리닉|성형외과|(?<!생)성형|피부과|치과|한의원|"
-    r"마케팅|마케터|퍼포먼스|상세\s*페이지|쇼핑|"
+    r"마케팅|마케터|퍼포먼스|상세\s*페이지|쇼핑|백화점|department\s*store|"
     r"advertis|ad\s*agency|commerce|beauty|cosmetic|hospital|clinic|medical|marketing|marketer",
     re.I,
 )
@@ -85,7 +88,7 @@ EXCLUDE_BODY_STRONG = re.compile(
     r"광고\s*대행|종합\s*광고|광고\s*에이전시|디지털\s*광고\s*회사|이\s*커머스|커머스\s*(?:기업|회사|플랫폼|브랜드)|"
     r"쇼핑몰\s*운영|뷰티\s*(?:브랜드|기업|회사)|화장품\s*(?:브랜드|기업|회사|제조)|코스메틱|"
     r"(?:성형외과|피부과|치과|한의원|병원)\s*(?:입니다|에서|소속|전문)|마케팅\s*(?:대행|에이전시|전문\s*기업|회사)|"
-    r"퍼포먼스\s*마케팅|"
+    r"퍼포먼스\s*마케팅|백화점|"
     r"advertising\s*agency|marketing\s*agency|e-?commerce\s*(?:company|brand|platform)|beauty\s*brand|"
     r"cosmetics?\s*(?:brand|company)",
     re.I,
