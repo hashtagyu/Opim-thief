@@ -1,0 +1,13 @@
+{
+ "_안내": "이 파일은 손으로 관리하는 인스타그램 스튜디오 목록이에요. studios 배열에 항목을 추가·수정하면 페이지 맨 위 섹션에 표시돼요. handle만 써도 되고, url은 비워두면 handle로 자동 생성돼요.",
+ "_예시": {
+  "name": "스튜디오 이름",
+  "handle": "instagram_id",
+  "url": "",
+  "note": "어떤 작업을 하는지 한 줄 메모",
+  "tags": ["Kling", "Midjourney"],
+  "hiring": false,
+  "added": "2026-10-07"
+ },
+ "studios": []
+}

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 아티스트 잡 레이더</title>
+<meta name="description" content="생성형 AI 툴을 다루는 AI 아티스트·AI 영상 크리에이터 채용 공고 모음">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%A1%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --text:#14161a; --muted:#646b77; --line:#e3e6eb;
+  --accent:#5b5bf0; --accent-soft:#ececfe; --new:#e8590c; --new-soft:#fff0e6;
+  --ok:#2b8a3e; --ok-soft:#e6f6ea; --bad:#d6336c; --bad-soft:#fde8ef; --warn:#b35c00; --warn-soft:#fff4dc;
+  --chip:#f0f2f5; --shadow:0 1px 2px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1115; --panel:#171a21; --text:#e8eaee; --muted:#9aa1ad; --line:#272b35;
+    --accent:#8b8bff; --accent-soft:#23234a; --new:#ff8a4c; --new-soft:#3a2416;
+    --ok:#5fd17a; --ok-soft:#173222; --bad:#ff6b9a; --bad-soft:#3d1724; --warn:#ffb84d; --warn-soft:#3a2a10;
+    --chip:#20242d; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1115; --panel:#171a21; --text:#e8eaee; --muted:#9aa1ad; --line:#272b35;
+  --accent:#8b8bff; --accent-soft:#23234a; --new:#ff8a4c; --new-soft:#3a2416;
+  --ok:#5fd17a; --ok-soft:#173222; --bad:#ff6b9a; --bad-soft:#3d1724; --warn:#ffb84d; --warn-soft:#3a2a10;
+  --chip:#20242d; --shadow:none;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI",Roboto,sans-serif;
+  word-break:keep-all;overflow-wrap:anywhere}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+header.top{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:flex-end;justify-content:space-between;margin-bottom:14px}
+h1{font-size:22px;margin:0;letter-spacing:-.02em}
+h1 small{display:block;font-size:13px;font-weight:500;color:var(--muted);letter-spacing:0;margin-top:2px}
+.refresh{display:flex;flex-direction:column;align-items:flex-end;gap:4px;max-width:100%}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--accent);background:var(--accent);color:#fff;
+  padding:8px 14px;border-radius:10px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+.btn:hover{filter:brightness(1.08)}
+.hint{font-size:12px;color:var(--muted);text-align:right}
+.updated{font-size:13px;color:var(--muted)}
+.updated b{color:var(--text);font-weight:600}
+.updated.stale{color:var(--warn);background:var(--warn-soft);padding:2px 8px;border-radius:6px}
+.updated.stale b{color:var(--warn)}
+section{margin-top:22px}
+h2{font-size:16px;margin:0 0 10px;display:flex;align-items:baseline;gap:8px}
+h2 .n{font-size:13px;color:var(--muted);font-weight:500}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+/* 인스타 */
+.insta{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.studio{padding:12px 14px;text-decoration:none;display:block}
+.studio:hover{border-color:var(--accent)}
+.studio .h{font-weight:650}
+.studio .id{color:var(--accent);font-size:13px}
+.studio .note{color:var(--muted);font-size:13px;margin-top:4px}
+.studio .hire{display:inline-block;font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);padding:1px 6px;border-radius:5px;margin-left:6px;vertical-align:1px}
+.empty{padding:16px;color:var(--muted);font-size:14px}
+/* 컨트롤 */
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 8px;margin-top:14px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.search{flex:1 1 240px;min-width:0;display:flex;align-items:center;gap:8px;padding:0 12px;height:42px}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text);font-size:16px}
+.toggle{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 14px;cursor:pointer;user-select:none;font-weight:600;font-size:14px;white-space:nowrap}
+.toggle input{accent-color:var(--new);width:16px;height:16px;margin:0}
+.toggle.on{border-color:var(--new);color:var(--new);background:var(--new-soft)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:5px 12px;
+  font-size:13px;cursor:pointer;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.chip .c{color:var(--muted);font-variant-numeric:tabular-nums}
+.chip.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.active .c{color:rgba(255,255,255,.85)}
+.chip.fail{border-color:var(--bad);color:var(--bad);background:var(--bad-soft)}
+.chip.fail .c{color:var(--bad)}
+.chip.fail.active{background:var(--bad);color:#fff}
+.chip.fail.active .c{color:#fff}
+.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.chip.fail .dot{background:var(--bad)}
+.chip.active .dot{background:#fff}
+.sitenote{font-size:12px;color:var(--bad);margin-top:4px;min-height:0}
+.result{font-size:13px;color:var(--muted);margin:6px 2px 8px}
+/* 공고 카드 */
+.jobs{display:flex;flex-direction:column;gap:10px}
+.job{padding:14px 16px}
+.job .t{display:flex;gap:8px;align-items:flex-start}
+.job a.title{font-weight:650;font-size:16px;text-decoration:none;line-height:1.4;flex:1;min-width:0}
+.job a.title:hover{color:var(--accent);text-decoration:underline}
+.badge{flex:0 0 auto;font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;margin-top:2px}
+.badge.new{color:var(--new);background:var(--new-soft)}
+.meta{display:flex;flex-wrap:wrap;gap:4px 12px;color:var(--muted);font-size:13px;margin-top:4px}
+.meta .co{color:var(--text);font-weight:600}
+.dl.soon{color:var(--bad);font-weight:600}
+.summary{font-size:14px;color:var(--muted);margin-top:8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.tag{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent);font-weight:600;cursor:pointer;border:0}
+.src{font-size:12px;padding:2px 8px;border-radius:6px;background:var(--chip);color:var(--muted)}
+.foot{margin-top:28px;font-size:12px;color:var(--muted);line-height:1.7}
+.err{padding:14px 16px;color:var(--bad)}
+@media (max-width:560px){
+  .wrap{padding:16px 16px 48px}
+  h1{font-size:20px}
+  .refresh{align-items:flex-start;width:100%}
+  .hint{text-align:left}
+  .btn{width:100%;justify-content:center}
+  .job{padding:12px 14px}
+  .job a.title{font-size:15px}
+  .toggle{flex:1 1 auto;justify-content:center}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>📡 AI 아티스트 잡 레이더
+        <small>Higgsfield · ComfyUI · Seedance · Kling · Nano Banana · Midjourney · Runway · Veo · Sora</small></h1>
+      <div class="updated" id="updated">불러오는 중…</div>
+    </div>
+    <div class="refresh">
+      <a class="btn" id="refreshBtn" href="#" target="_blank" rel="noopener">⟳ 지금 새로고침</a>
+      <div class="hint">깃허브에서 Run workflow를 누르면 2~3분 뒤 갱신됩니다</div>
+    </div>
+  </header>
+
+  <section id="instaSec">
+    <h2>📸 인스타 스튜디오 <span class="n" id="instaN"></span></h2>
+    <div class="insta" id="insta"></div>
+  </section>
+
+  <section style="margin-top:26px">
+    <h2>💼 채용 공고 <span class="n" id="jobsN"></span></h2>
+    <div class="controls">
+      <div class="row">
+        <label class="search panel">🔍<input id="q" type="search" placeholder="제목, 회사, 툴, 지역 검색" autocomplete="off"></label>
+        <label class="toggle panel" id="newWrap"><input type="checkbox" id="onlyNew"> NEW만 보기</label>
+      </div>
+      <div class="chips" id="sites"></div>
+      <div class="sitenote" id="siteNote"></div>
+    </div>
+    <div class="result" id="result"></div>
+    <div class="jobs" id="jobs"></div>
+  </section>
+
+  <div class="foot">
+    매일 오전 9시(한국시간) GitHub Actions가 자동으로 수집해요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
+    광고·광고대행사·커머스·뷰티·화장품·병원·마케팅·교육 관련 공고는 자동으로 제외돼요. 7일 연속 안 보이는 공고는 목록에서 빠져요.
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var FALLBACK_REPO = "hashtagyu/Opim-thief";
+  var WORKFLOW = "refresh.yml";
+  var NEW_HOURS = 48, STALE_HOURS = 48;
+
+  function repoSlug(){
+    var h = location.hostname, p = location.pathname.split("/").filter(Boolean);
+    if (/\.github\.io$/.test(h) && p.length) return h.split(".")[0] + "/" + p[0];
+    return FALLBACK_REPO;
+  }
+  document.getElementById("refreshBtn").href = "https://github.com/" + repoSlug() + "/actions/workflows/" + WORKFLOW;
+
+  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false };
+  try { state.onlyNew = localStorage.getItem("radar.onlyNew") === "1"; } catch (e) {}
+
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+  function safeUrl(u){ return /^https?:\/\//i.test(u || "") ? u : "#"; }
+
+  function fmtKST(iso){
+    var d = new Date(iso); if (isNaN(d)) return iso || "";
+    return new Intl.DateTimeFormat("ko-KR", { timeZone:"Asia/Seoul", year:"numeric", month:"2-digit", day:"2-digit",
+      hour:"2-digit", minute:"2-digit", hour12:false }).format(d) + " (KST)";
+  }
+  function shortDate(iso){
+    var d = new Date(iso); if (isNaN(d)) return "";
+    return new Intl.DateTimeFormat("ko-KR", { timeZone:"Asia/Seoul", month:"numeric", day:"numeric" }).format(d);
+  }
+  function hoursSince(iso){ var d = new Date(iso); return isNaN(d) ? Infinity : (Date.now() - d.getTime()) / 36e5; }
+  function isNew(j){ return hoursSince(j.first_seen) <= NEW_HOURS; }
+
+  function deadlineText(dl){
+    if (!dl) return "";
+    if (dl === "상시") return "상시채용";
+    var d = new Date(dl + "T23:59:59+09:00"); if (isNaN(d)) return dl;
+    var days = Math.ceil((d.getTime() - Date.now()) / 864e5);
+    var label = days < 0 ? "마감됨" : days === 0 ? "오늘 마감" : "D-" + days;
+    return { text: "~" + dl.slice(5).replace("-", "/") + " (" + label + ")", soon: days <= 3 };
+  }
+
+  function getJSON(path){
+    return fetch(path + "?t=" + Date.now(), { cache: "no-store" }).then(function(r){
+      if (!r.ok) throw new Error(path + " " + r.status); return r.json();
+    });
+  }
+
+  function renderUpdated(){
+    var el = $("updated"), s = state.status;
+    if (!s || !s.updated_at){ el.textContent = "아직 수집 기록이 없어요. 새로고침 버튼으로 첫 수집을 돌려주세요."; el.className = "updated stale"; return; }
+    var h = hoursSince(s.updated_at);
+    el.innerHTML = "마지막 갱신 <b>" + esc(fmtKST(s.updated_at)) + "</b>" +
+      (h > STALE_HOURS ? " · ⚠️ " + Math.floor(h) + "시간째 갱신 없음" : "");
+    el.className = "updated" + (h > STALE_HOURS ? " stale" : "");
+  }
+
+  function siteList(){
+    var sites = (state.status && state.status.sites) || {}, seen = {}, out = [];
+    Object.keys(sites).forEach(function(k){ seen[k] = 1; out.push({ key:k, label:sites[k].label || k, st:sites[k] }); });
+    state.jobs.forEach(function(j){ if (!seen[j.source]){ seen[j.source] = 1; out.push({ key:j.source, label:j.source, st:null }); } });
+    return out;
+  }
+
+  function renderSites(){
+    var box = $("sites"), list = siteList(), html = [];
+    var all = state.jobs.length;
+    html.push('<button class="chip' + (state.site === "all" ? " active" : "") + '" data-site="all">전체 <span class="c">' + all + '</span></button>');
+    var fails = [];
+    list.forEach(function(s){
+      var n = state.jobs.filter(function(j){ return j.source === s.key; }).length;
+      var failed = s.st && s.st.ok === false;
+      if (failed) fails.push(s.label + ": " + (s.st.error || "실패") + (n ? " (이전 공고 " + n + "건 유지 중)" : ""));
+      var title = s.st ? (failed ? "수집 실패 · " + (s.st.error || "") : "이번 수집 " + (s.st.count || 0) + "건 · 새 공고 " + (s.st.new || 0) + "건") : "";
+      html.push('<button class="chip' + (failed ? " fail" : "") + (state.site === s.key ? " active" : "") +
+        '" data-site="' + esc(s.key) + '" title="' + esc(title) + '"><span class="dot"></span>' + esc(s.label) +
+        ' <span class="c">' + (failed ? "실패" + (n ? "·" + n : "") : n) + '</span></button>');
+    });
+    box.innerHTML = html.join("");
+    $("siteNote").textContent = fails.length ? "⚠️ " + fails.join(" / ") : "";
+  }
+
+  function matches(j, q){
+    if (!q) return true;
+    var hay = [j.title, j.company, j.location, j.employment, j.summary, (j.tools || []).join(" "), j.source].join(" ").toLowerCase();
+    return q.split(/\s+/).every(function(w){ return hay.indexOf(w) !== -1; });
+  }
+
+  function renderJobs(){
+    var q = state.q.trim().toLowerCase();
+    var labels = {}; siteList().forEach(function(s){ labels[s.key] = s.label; });
+    var list = state.jobs.filter(function(j){
+      return (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) && matches(j, q);
+    });
+    $("jobsN").textContent = state.jobs.length + "건";
+    var newCount = state.jobs.filter(isNew).length;
+    $("result").textContent = list.length + "건 표시 중" + (newCount ? " · NEW " + newCount + "건" : "");
+    if (!list.length){
+      $("jobs").innerHTML = '<div class="panel empty">' + (state.jobs.length ? "조건에 맞는 공고가 없어요." : "아직 수집된 공고가 없어요.") + "</div>";
+      return;
+    }
+    $("jobs").innerHTML = list.map(function(j){
+      var dl = deadlineText(j.deadline);
+      var metaParts = [];
+      if (j.company) metaParts.push('<span class="co">' + esc(j.company) + "</span>");
+      if (j.location) metaParts.push("<span>📍 " + esc(j.location) + "</span>");
+      if (j.employment) metaParts.push("<span>" + esc(j.employment) + "</span>");
+      if (dl) metaParts.push(typeof dl === "string" ? "<span>" + esc(dl) + "</span>" : '<span class="dl' + (dl.soon ? " soon" : "") + '">⏰ ' + esc(dl.text) + "</span>");
+      var tags = (j.tools || []).map(function(t){ return '<button class="tag" data-tool="' + esc(t) + '">' + esc(t) + "</button>"; }).join("");
+      return '<article class="job panel">' +
+        '<div class="t"><a class="title" href="' + esc(safeUrl(j.url)) + '" target="_blank" rel="noopener">' + esc(j.title || "(제목 없음)") + "</a>" +
+        (isNew(j) ? '<span class="badge new">NEW</span>' : "") + "</div>" +
+        '<div class="meta">' + metaParts.join("") + "</div>" +
+        (j.summary ? '<div class="summary">' + esc(j.summary) + "</div>" : "") +
+        '<div class="tags">' + tags + '<span class="src">' + esc(labels[j.source] || j.source) + " · " + esc(shortDate(j.first_seen)) + " 발견</span></div>" +
+        "</article>";
+    }).join("");
+  }
+
+  function renderInsta(data){
+    var list = (data && data.studios) || [];
+    $("instaN").textContent = list.length ? list.length + "곳" : "";
+    if (!list.length){
+      $("insta").innerHTML = '<div class="panel empty" style="grid-column:1/-1">아직 등록된 스튜디오가 없어요. 저장소의 job-radar/data/insta.json에 추가하면 여기에 보여요.</div>';
+      return;
+    }
+    $("insta").innerHTML = list.map(function(s){
+      var handle = String(s.handle || "").replace(/^@/, "");
+      var url = s.url || (handle ? "https://www.instagram.com/" + encodeURIComponent(handle) + "/" : "#");
+      return '<a class="studio panel" href="' + esc(safeUrl(url)) + '" target="_blank" rel="noopener">' +
+        '<div class="h">' + esc(s.name || handle) + (s.hiring ? '<span class="hire">채용중</span>' : "") + "</div>" +
+        (handle ? '<div class="id">@' + esc(handle) + "</div>" : "") +
+        (s.note ? '<div class="note">' + esc(s.note) + "</div>" : "") +
+        ((s.tags || []).length ? '<div class="tags">' + s.tags.map(function(t){ return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") +
+        "</a>";
+    }).join("");
+  }
+
+  function renderAll(){ renderUpdated(); renderSites(); renderJobs(); }
+
+  $("q").addEventListener("input", function(e){ state.q = e.target.value; renderJobs(); });
+  var nb = $("onlyNew");
+  nb.checked = state.onlyNew; $("newWrap").classList.toggle("on", state.onlyNew);
+  nb.addEventListener("change", function(){
+    state.onlyNew = nb.checked; $("newWrap").classList.toggle("on", nb.checked);
+    try { localStorage.setItem("radar.onlyNew", nb.checked ? "1" : "0"); } catch (e) {}
+    renderJobs();
+  });
+  $("sites").addEventListener("click", function(e){
+    var b = e.target.closest("[data-site]"); if (!b) return;
+    state.site = b.getAttribute("data-site"); renderSites(); renderJobs();
+  });
+  $("jobs").addEventListener("click", function(e){
+    var t = e.target.closest("[data-tool]"); if (!t) return;
+    state.q = t.getAttribute("data-tool"); $("q").value = state.q; renderJobs();
+  });
+
+  getJSON("data/insta.json").then(renderInsta).catch(function(){ renderInsta(null); });
+  Promise.all([
+    getJSON("data/jobs.json").catch(function(){ return []; }),
+    getJSON("data/status.json").catch(function(){ return {}; })
+  ]).then(function(r){
+    state.jobs = Array.isArray(r[0]) ? r[0] : (r[0].jobs || []);
+    state.status = r[1] || {};
+    renderAll();
+  }).catch(function(err){
+    $("jobs").innerHTML = '<div class="panel err">데이터를 불러오지 못했어요: ' + esc(err.message) + "</div>";
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,710 @@
+"""AI 아티스트 잡 레이더 수집기 (GitHub Actions용).
+
+순수 Python + requests + BeautifulSoup. LLM 호출·API 키 없음.
+사이트 하나가 막히거나 실패해도 나머지는 계속 돌고, 실패한 사이트의 기존 데이터는 그대로 둔다.
+로그인·캡차 우회, 프록시 돌려쓰기는 하지 않는다. 막히면 막힌 걸로 기록만 한다.
+
+실행: python job-radar/scripts/collect.py
+환경변수: RADAR_SOURCES=saramin,wanted (일부만), RADAR_DEBUG=1 (응답 앞부분 로그)
+"""
+import json
+import os
+import random
+import re
+import sys
+import time
+import traceback
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from urllib.parse import quote, urljoin
+
+import requests
+from bs4 import BeautifulSoup
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import rules  # noqa: E402
+
+KST = timezone(timedelta(hours=9))
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+JOBS_FILE = DATA / "jobs.json"
+STATUS_FILE = DATA / "status.json"
+
+STALE_DAYS = 7
+MAX_DETAILS_PER_SOURCE = 40
+DELAY = (1.5, 3.0)
+DEBUG = os.environ.get("RADAR_DEBUG") == "1"
+
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+)
+
+
+class Blocked(Exception):
+    """403/429, 캡차, 봇 차단 페이지."""
+
+
+def now_kst():
+    return datetime.now(KST).replace(microsecond=0)
+
+
+def log(*a):
+    print(*a, flush=True)
+
+
+# ---------------------------------------------------------------- HTTP
+
+class Fetcher:
+    def __init__(self, name):
+        self.name = name
+        self.s = requests.Session()
+        self.s.headers.update({
+            "User-Agent": UA,
+            "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        })
+        self.requests = 0
+        self.errors = []
+        self.blocked = 0
+
+    def get(self, url, accept=None, referer=None):
+        time.sleep(random.uniform(*DELAY))
+        headers = {}
+        if accept:
+            headers["Accept"] = accept
+        if referer:
+            headers["Referer"] = referer
+        self.requests += 1
+        r = self.s.get(url, headers=headers, timeout=25)
+        body_head = r.text[:3000].lower() if r.text else ""
+        if DEBUG:
+            log(f"  [{self.name}] {r.status_code} {len(r.content)}B {url}")
+        if r.status_code in (401, 403, 429) or (
+            r.status_code == 503 and ("cloudflare" in body_head or "captcha" in body_head)
+        ):
+            self.blocked += 1
+            raise Blocked(f"HTTP {r.status_code}")
+        if any(k in body_head for k in ("cf-challenge", "challenge-platform", "captcha", "are you a robot",
+                                         "access denied", "자동입력 방지", "비정상적인 접근")):
+            # 페이지 안에 captcha 글자가 들어간 정상 페이지도 있어서 짧은 페이지만 차단으로 본다
+            if len(r.content) < 60000:
+                self.blocked += 1
+                raise Blocked("bot challenge page")
+        r.raise_for_status()
+        return r
+
+    def html(self, url, **kw):
+        return BeautifulSoup(self.get(url, **kw).text, "html.parser")
+
+    def json(self, url, **kw):
+        return self.get(url, accept="application/json, text/plain, */*", **kw).json()
+
+
+# ---------------------------------------------------------------- 파싱 도우미
+
+def clean(text, limit=None):
+    if not text:
+        return ""
+    text = BeautifulSoup(text, "html.parser").get_text(" ") if "<" in text else text
+    text = re.sub(r"\s+", " ", text).strip()
+    if limit and len(text) > limit:
+        text = text[: limit - 1].rstrip() + "…"
+    return text
+
+
+def make_summary(body):
+    return clean(body, 220)
+
+
+def to_date(value):
+    """여러 형식의 날짜 문자열 -> YYYY-MM-DD (모르면 원문/None)."""
+    if not value:
+        return None
+    value = str(value).strip()
+    m = re.search(r"(20\d{2})[-./](\d{1,2})[-./](\d{1,2})", value)
+    if m:
+        return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+    m = re.search(r"(?<!\d)(\d{1,2})[/.](\d{1,2})(?!\d)", value)
+    if m:
+        today = now_kst().date()
+        mo, d = int(m.group(1)), int(m.group(2))
+        if 1 <= mo <= 12 and 1 <= d <= 31:
+            y = today.year + (1 if mo < today.month - 6 else 0)
+            return f"{y:04d}-{mo:02d}-{d:02d}"
+    if re.search(r"상시|채용시|수시|always|open", value, re.I):
+        return "상시"
+    return None
+
+
+EMPLOYMENT_MAP = {
+    "FULL_TIME": "정규직", "PART_TIME": "파트타임", "CONTRACTOR": "계약직", "CONTRACT": "계약직",
+    "TEMPORARY": "계약직", "INTERN": "인턴", "VOLUNTEER": "기타", "PER_DIEM": "일용직", "OTHER": "기타",
+    "Full-time": "정규직", "Part-time": "파트타임", "Contract": "계약직", "Internship": "인턴",
+    "Temporary": "계약직", "Freelance": "프리랜서",
+}
+
+
+def norm_employment(v):
+    if not v:
+        return ""
+    if isinstance(v, list):
+        return ", ".join(dict.fromkeys(norm_employment(x) for x in v if x))
+    v = str(v).strip()
+    return EMPLOYMENT_MAP.get(v, EMPLOYMENT_MAP.get(v.upper(), v))
+
+
+def jsonld_jobposting(soup):
+    """상세 페이지의 schema.org JobPosting(JSON-LD)을 찾아서 dict로."""
+    for tag in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(tag.string or tag.get_text() or "")
+        except Exception:
+            continue
+        stack = [data]
+        while stack:
+            d = stack.pop()
+            if isinstance(d, list):
+                stack.extend(d)
+            elif isinstance(d, dict):
+                t = d.get("@type")
+                if t == "JobPosting" or (isinstance(t, list) and "JobPosting" in t):
+                    return d
+                stack.extend(v for v in d.values() if isinstance(v, (list, dict)))
+    return None
+
+
+def location_from_ld(ld):
+    locs = ld.get("jobLocation")
+    if not locs:
+        return ""
+    if isinstance(locs, dict):
+        locs = [locs]
+    out = []
+    for loc in locs:
+        addr = (loc or {}).get("address") if isinstance(loc, dict) else None
+        if isinstance(addr, dict):
+            parts = [addr.get("addressRegion"), addr.get("addressLocality")]
+            s = " ".join(p for p in parts if p) or addr.get("streetAddress") or ""
+        else:
+            s = str(addr or "")
+        if s:
+            out.append(clean(s))
+    return ", ".join(dict.fromkeys(out))
+
+
+def meta(soup, *names):
+    for n in names:
+        tag = soup.find("meta", attrs={"property": n}) or soup.find("meta", attrs={"name": n})
+        if tag and tag.get("content"):
+            return tag["content"].strip()
+    return ""
+
+
+def parse_detail_generic(soup):
+    """JSON-LD 우선, 없으면 og 메타 + 본문 텍스트."""
+    out = {}
+    ld = jsonld_jobposting(soup)
+    if ld:
+        org = ld.get("hiringOrganization") or {}
+        out["title"] = clean(ld.get("title"))
+        out["company"] = clean(org.get("name") if isinstance(org, dict) else str(org))
+        out["location"] = location_from_ld(ld)
+        out["employment"] = norm_employment(ld.get("employmentType"))
+        out["deadline"] = to_date(ld.get("validThrough"))
+        out["industry"] = clean(ld.get("industry") if isinstance(ld.get("industry"), str) else " ".join(ld.get("industry") or []))
+        out["body"] = clean(ld.get("description"))
+    if not out.get("body"):
+        for t in soup(["script", "style", "noscript", "header", "footer", "nav"]):
+            t.decompose()
+        main = soup.find("main") or soup.find("article") or soup.body or soup
+        out["body"] = clean(main.get_text(" "), 8000)
+    out.setdefault("title", clean(meta(soup, "og:title", "twitter:title")))
+    if not out.get("summary"):
+        out["summary"] = clean(meta(soup, "og:description", "description"))
+    return out
+
+
+# ---------------------------------------------------------------- 사이트별 수집기
+# 각 수집기는 (fetcher, known_urls) 를 받아 list[dict] 를 돌려준다.
+# dict 필드: url, title, company, location, employment, deadline, industry, body(내부용)
+
+def _links(soup, base, pattern):
+    rx = re.compile(pattern)
+    found = {}
+    for a in soup.find_all("a", href=True):
+        href = urljoin(base, a["href"])
+        m = rx.search(href)
+        if m:
+            key = m.group(0)
+            text = clean(a.get_text(" "))
+            if key not in found or (text and len(text) > len(found[key])):
+                found[key] = text
+    return found
+
+
+def _run_terms(f, terms, fn):
+    """검색어마다 fn(term) 실행. 전부 실패하면 마지막 예외를 다시 던진다."""
+    results, last_exc, ok = [], None, 0
+    for t in terms:
+        try:
+            results.extend(fn(t))
+            ok += 1
+        except Blocked as e:
+            last_exc = e
+            f.errors.append(f"{t}: blocked ({e})")
+            if f.blocked >= 3 and ok == 0:
+                break  # 계속 두드리지 않는다
+        except Exception as e:  # noqa: BLE001
+            last_exc = e
+            f.errors.append(f"{t}: {type(e).__name__}: {e}"[:200])
+    if ok == 0 and last_exc:
+        raise last_exc
+    return results
+
+
+def _detail_pass(f, cards, known, detail_fn):
+    """카드 목록에서 상세를 채운다. 이미 아는 url은 상세 요청을 생략한다."""
+    out, fetched = [], 0
+    for c in cards:
+        if c["url"] in known:
+            prev = known[c["url"]]
+            c = {**prev, **{k: v for k, v in c.items() if v}}
+            c["_known"] = True
+            out.append(c)
+            continue
+        if fetched >= MAX_DETAILS_PER_SOURCE:
+            continue
+        fetched += 1
+        try:
+            d = detail_fn(c)
+            c = {**c, **{k: v for k, v in d.items() if v}}
+        except Blocked:
+            raise
+        except Exception as e:  # noqa: BLE001
+            f.errors.append(f"detail {c['url']}: {type(e).__name__}"[:200])
+        out.append(c)
+    return out
+
+
+def _dedupe(cards):
+    seen = {}
+    for c in cards:
+        if c["url"] not in seen:
+            seen[c["url"]] = c
+        else:
+            for k, v in c.items():
+                if v and not seen[c["url"]].get(k):
+                    seen[c["url"]][k] = v
+    return list(seen.values())
+
+
+# --- 사람인
+def src_saramin(f, known):
+    def search(term):
+        url = ("https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&recruitSort=reg_dt"
+               f"&recruitPageCount=40&searchword={quote(term)}")
+        soup = f.html(url)
+        cards = []
+        for it in soup.select("div.item_recruit"):
+            a = it.select_one("h2.job_tit a")
+            if not a:
+                continue
+            m = re.search(r"rec_idx=(\d+)", a.get("href", ""))
+            if not m:
+                continue
+            cond = [clean(s.get_text()) for s in it.select("div.job_condition span")]
+            cards.append({
+                "url": f"https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx={m.group(1)}",
+                "_id": m.group(1),
+                "title": clean(a.get("title") or a.get_text()),
+                "company": clean((it.select_one("strong.corp_name a") or it.select_one(".corp_name") or a).get_text()),
+                "location": cond[0] if cond else "",
+                "employment": cond[3] if len(cond) > 3 else "",
+                "deadline": to_date(clean((it.select_one("div.job_date .date") or it.new_tag("i")).get_text())),
+                "industry": clean((it.select_one("div.job_sector") or it.new_tag("i")).get_text()),
+            })
+        if not cards and DEBUG:
+            log("  saramin no cards; head:", soup.get_text(" ")[:300])
+        return cards
+
+    def detail(c):
+        soup = f.html(f"https://www.saramin.co.kr/zf_user/jobs/relay/view-detail?rec_idx={c['_id']}&rec_seq=0",
+                      referer=c["url"])
+        body = clean(soup.get_text(" "), 8000)
+        out = {"body": body}
+        try:  # 메인 페이지에 JSON-LD(마감일·업종)가 있다
+            d = parse_detail_generic(f.html(c["url"]))
+            out.update({k: d[k] for k in ("deadline", "industry", "employment") if d.get(k)})
+        except Blocked:
+            raise
+        except Exception:
+            pass
+        return out
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 원티드
+def src_wanted(f, known):
+    def walk_positions(data):
+        """API 응답 형태가 바뀌어도 position 객체를 찾아낸다."""
+        out, stack = [], [data]
+        while stack:
+            d = stack.pop()
+            if isinstance(d, list):
+                stack.extend(d)
+            elif isinstance(d, dict):
+                pid = d.get("id")
+                title = (d.get("position") or d.get("name")) if isinstance(d.get("company"), dict) else None
+                if isinstance(pid, int) and isinstance(title, str):
+                    out.append(d)
+                else:
+                    stack.extend(v for v in d.values() if isinstance(v, (list, dict)))
+        return out
+
+    def search(term):
+        q = quote(term)
+        endpoints = [
+            f"https://www.wanted.co.kr/api/chaos/search/v1/results?query={q}&tab=position&country=kr&limit=40&offset=0",
+            f"https://www.wanted.co.kr/api/v4/search?query={q}&tab=position&country=kr&limit=40",
+        ]
+        last = None
+        for ep in endpoints:
+            try:
+                data = f.json(ep, referer=f"https://www.wanted.co.kr/search?query={q}&tab=position")
+            except Blocked:
+                raise
+            except Exception as e:  # noqa: BLE001
+                last = e
+                continue
+            pos = walk_positions(data)
+            if pos:
+                return [{
+                    "url": f"https://www.wanted.co.kr/wd/{p['id']}",
+                    "_id": p["id"],
+                    "title": clean(p.get("position") or p.get("name")),
+                    "company": clean((p.get("company") or {}).get("name")),
+                    "location": clean((p.get("address") or {}).get("location") or ""),
+                    "deadline": to_date(p.get("due_time")) or ("상시" if "due_time" in p and not p.get("due_time") else None),
+                } for p in pos]
+            if DEBUG:
+                log("  wanted: no positions at", ep, str(data)[:300])
+        # 마지막 수단: 검색 페이지 HTML의 /wd/ 링크
+        soup = f.html(f"https://www.wanted.co.kr/search?query={q}&tab=position")
+        links = _links(soup, "https://www.wanted.co.kr", r"https://www\.wanted\.co\.kr/wd/\d+")
+        if not links and last:
+            raise last
+        return [{"url": u, "_id": int(u.rsplit("/", 1)[1]), "title": t} for u, t in links.items()]
+
+    def detail(c):
+        try:
+            j = f.json(f"https://www.wanted.co.kr/api/v4/jobs/{c['_id']}", referer=c["url"]).get("job", {})
+            det = j.get("detail") or {}
+            body = " ".join(clean(det.get(k)) for k in ("intro", "main_tasks", "requirements", "preferred_points", "benefits"))
+            return {
+                "title": clean(j.get("position")),
+                "company": clean((j.get("company") or {}).get("name")),
+                "industry": clean((j.get("company") or {}).get("industry_name")),
+                "location": clean((j.get("address") or {}).get("full_location") or (j.get("address") or {}).get("location")),
+                "deadline": to_date(j.get("due_time")) or "상시",
+                "employment": "",
+                "body": body,
+            }
+        except Blocked:
+            raise
+        except Exception:
+            return parse_detail_generic(f.html(c["url"]))
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 잡코리아
+def src_jobkorea(f, known):
+    def search(term):
+        soup = f.html(f"https://www.jobkorea.co.kr/Search/?stext={quote(term)}&tabType=recruit&Page_No=1")
+        links = _links(soup, "https://www.jobkorea.co.kr", r"https://www\.jobkorea\.co\.kr/Recruit/GI_Read/\d+")
+        if not links and DEBUG:
+            log("  jobkorea no links; head:", soup.get_text(" ")[:300])
+        return [{"url": u, "_id": u.rsplit("/", 1)[1], "title": t} for u, t in links.items()]
+
+    def detail(c):
+        soup = f.html(c["url"])
+        d = parse_detail_generic(soup)
+        og = meta(soup, "og:title")
+        # og:title 예: "(주)회사 채용 - 공고제목 | 잡코리아"
+        m = re.match(r"\s*(.+?)\s*채용\s*-\s*(.+?)\s*(?:\|.*)?$", og or "")
+        if m:
+            d.setdefault("company", m.group(1))
+            if not d.get("title"):
+                d["title"] = m.group(2)
+        try:
+            ifr = f.html(f"https://www.jobkorea.co.kr/Recruit/GI_Read_Comt_Ifrm?Gno={c['_id']}", referer=c["url"])
+            body = clean(ifr.get_text(" "), 8000)
+            if len(body) > len(d.get("body", "")):
+                d["body"] = body
+        except Blocked:
+            raise
+        except Exception:
+            pass
+        return d
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 점핏 (사람인 계열)
+def src_jumpit(f, known):
+    def search(term):
+        data = f.json(f"https://jumpit-api.saramin.co.kr/api/positions?sort=reg_dt&highlight=false&keyword={quote(term)}",
+                      referer="https://jumpit.saramin.co.kr/")
+        pos = (data.get("result") or {}).get("positions") or []
+        return [{
+            "url": f"https://jumpit.saramin.co.kr/position/{p['id']}",
+            "_id": p["id"],
+            "title": clean(p.get("title")),
+            "company": clean(p.get("companyName")),
+            "location": ", ".join(p.get("locations") or []),
+            "deadline": to_date(p.get("closedAt")) or ("상시" if p.get("alwaysOpen") else None),
+            "industry": " ".join(p.get("techStacks") or []),
+        } for p in pos if p.get("id")]
+
+    def detail(c):
+        try:
+            j = f.json(f"https://jumpit-api.saramin.co.kr/api/position/{c['_id']}", referer=c["url"]).get("result") or {}
+            body = " ".join(clean(j.get(k)) for k in ("serviceInfo", "responsibility", "qualifications", "preferredRequirements", "welfares"))
+            return {"body": body, "employment": "정규직" if j.get("jobCategory") is None else ""}
+        except Blocked:
+            raise
+        except Exception:
+            return parse_detail_generic(f.html(c["url"]))
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 인크루트
+def src_incruit(f, known):
+    def search(term):
+        soup = f.html(f"https://search.incruit.com/list/search.asp?col=job&kw={quote(term, encoding='euc-kr', errors='ignore')}")
+        links = _links(soup, "https://job.incruit.com", r"https?://job\.incruit\.com/jobdb_info/jobpost\.asp\?job=\d+")
+        return [{"url": u.replace("http://", "https://"), "title": t} for u, t in links.items()]
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
+
+
+# --- 로켓펀치
+def src_rocketpunch(f, known):
+    def search(term):
+        r = f.get(f"https://www.rocketpunch.com/api/jobs/template?page=1&q={quote(term)}",
+                  accept="application/json, text/javascript, */*; q=0.01", referer="https://www.rocketpunch.com/jobs")
+        try:
+            html = r.json().get("data", {}).get("template", "")
+        except ValueError:
+            html = r.text
+        soup = BeautifulSoup(html, "html.parser")
+        links = _links(soup, "https://www.rocketpunch.com", r"https://www\.rocketpunch\.com/jobs/\d+(?:/[^?#\"']*)?")
+        return [{"url": u, "title": t} for u, t in links.items()]
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
+
+
+# --- 링크드인 (로그인 없이 공개되는 게스트 검색)
+def src_linkedin(f, known):
+    def search(term):
+        url = ("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?"
+               f"keywords={quote(term)}&location={quote('South Korea')}&start=0")
+        soup = f.html(url)
+        cards = []
+        for li in soup.select("li"):
+            a = li.select_one("a.base-card__full-link") or li.select_one("a[href*='/jobs/view/']")
+            if not a:
+                continue
+            m = re.search(r"/jobs/view/(?:[^/?]*-)?(\d+)", a["href"])
+            if not m:
+                continue
+            cards.append({
+                "url": f"https://www.linkedin.com/jobs/view/{m.group(1)}",
+                "_id": m.group(1),
+                "title": clean((li.select_one(".base-search-card__title") or a).get_text()),
+                "company": clean((li.select_one(".base-search-card__subtitle") or li.new_tag("i")).get_text()),
+                "location": clean((li.select_one(".job-search-card__location") or li.new_tag("i")).get_text()),
+            })
+        return cards
+
+    def detail(c):
+        soup = f.html(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{c['_id']}")
+        body = clean((soup.select_one(".show-more-less-html__markup") or soup).get_text(" "), 8000)
+        crit = {}
+        for li in soup.select("li.description__job-criteria-item"):
+            k = clean((li.select_one("h3") or li).get_text())
+            v = clean((li.select_one("span") or li).get_text())
+            crit[k] = v
+        return {
+            "body": body,
+            "employment": norm_employment(crit.get("Employment type") or crit.get("고용 형태")),
+            "industry": crit.get("Industries") or crit.get("업계") or "",
+        }
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS_EN, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+SOURCES = {
+    "saramin": ("사람인", src_saramin),
+    "wanted": ("원티드", src_wanted),
+    "jobkorea": ("잡코리아", src_jobkorea),
+    "jumpit": ("점핏", src_jumpit),
+    "incruit": ("인크루트", src_incruit),
+    "rocketpunch": ("로켓펀치", src_rocketpunch),
+    "linkedin": ("LinkedIn", src_linkedin),
+}
+
+FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
+          "deadline", "first_seen", "last_seen"]
+
+
+# ---------------------------------------------------------------- 병합
+
+def load_json(path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return default
+
+
+def to_record(source, c, now_iso, prev=None):
+    body = c.get("body") or ""
+    text = " ".join([c.get("title") or "", body, c.get("industry") or ""])
+    tools = rules.find_tools(text) or (prev or {}).get("tools") or []
+    rec = {
+        "source": source,
+        "url": c["url"],
+        "title": c.get("title") or (prev or {}).get("title") or "",
+        "company": c.get("company") or (prev or {}).get("company") or "",
+        "location": c.get("location") or (prev or {}).get("location") or "",
+        "employment": c.get("employment") or (prev or {}).get("employment") or "",
+        "summary": make_summary(body) if body else (c.get("summary") or (prev or {}).get("summary") or ""),
+        "tools": tools,
+        "deadline": c.get("deadline") or (prev or {}).get("deadline"),
+        "first_seen": (prev or {}).get("first_seen") or now_iso,
+        "last_seen": now_iso,
+    }
+    return {k: rec[k] for k in FIELDS}
+
+
+def judge(c, prev=None):
+    """(포함 여부, 사유). 이미 저장된 공고는 본문 없이 제목·저장된 툴로 판단."""
+    title = c.get("title") or ""
+    body = c.get("body") or ""
+    tools = rules.find_tools(" ".join([title, body])) or (prev or {}).get("tools") or []
+    reason = rules.exclusion_reason(title, c.get("company"), c.get("industry"), body)
+    if reason:
+        return False, reason
+    if not rules.is_relevant(title, body, tools):
+        return False, "not-relevant"
+    return True, None
+
+
+def main():
+    DATA.mkdir(parents=True, exist_ok=True)
+    started = now_kst()
+    now_iso = started.isoformat()
+    old_jobs = load_json(JOBS_FILE, [])
+    if isinstance(old_jobs, dict):
+        old_jobs = old_jobs.get("jobs", [])
+    old_status = load_json(STATUS_FILE, {})
+    by_url = {j["url"]: j for j in old_jobs if j.get("url")}
+
+    only = [s.strip() for s in os.environ.get("RADAR_SOURCES", "").split(",") if s.strip()]
+    status_sites = {}
+    new_by_url = {}
+    ok_sources = set()
+
+    for key, (label, fn) in SOURCES.items():
+        if only and key not in only:
+            # 이번에 안 돈 사이트는 이전 상태 유지
+            if key in (old_status.get("sites") or {}):
+                status_sites[key] = old_status["sites"][key]
+            continue
+        f = Fetcher(key)
+        t0 = time.time()
+        known = {u: j for u, j in by_url.items() if j.get("source") == key}
+        st = {"label": label, "ok": False, "count": 0, "found": 0, "excluded": 0, "new": 0,
+              "requests": 0, "error": None, "checked_at": now_iso}
+        log(f"== {label} ({key})")
+        try:
+            cards = fn(f, known)
+            st["found"] = len(cards)
+            kept = 0
+            for c in cards:
+                prev = by_url.get(c["url"])
+                ok, why = judge(c, prev)
+                if not ok:
+                    st["excluded"] += 1
+                    if DEBUG:
+                        log(f"   - skip [{why}] {c.get('title')} / {c.get('company')}")
+                    continue
+                rec = to_record(key, c, now_iso, prev)
+                if not prev:
+                    st["new"] += 1
+                new_by_url[rec["url"]] = rec
+                kept += 1
+                log(f"   + {rec['title']} / {rec['company']} {rec['tools']}")
+            st["ok"] = True
+            st["count"] = kept
+            ok_sources.add(key)
+            st["last_success"] = now_iso
+        except Blocked as e:
+            st["error"] = f"차단됨: {e}"
+            st["blocked"] = True
+        except Exception as e:  # noqa: BLE001
+            st["error"] = f"{type(e).__name__}: {e}"[:300]
+            traceback.print_exc()
+        if not st["ok"]:
+            prev_st = (old_status.get("sites") or {}).get(key) or {}
+            if prev_st.get("last_success"):
+                st["last_success"] = prev_st["last_success"]
+        st["requests"] = f.requests
+        st["warnings"] = f.errors[:10]
+        st["seconds"] = round(time.time() - t0, 1)
+        status_sites[key] = st
+        log(f"   => ok={st['ok']} count={st['count']} found={st['found']} excluded={st['excluded']} err={st['error']}")
+
+    # 병합: 성공한 사이트는 새 결과 + (7일 안 지난) 미발견 공고, 실패한 사이트는 기존 그대로
+    cutoff = started - timedelta(days=STALE_DAYS)
+    merged = dict(new_by_url)
+    for url, j in by_url.items():
+        if url in merged:
+            continue
+        if j.get("source") in ok_sources:
+            try:
+                last = datetime.fromisoformat(j["last_seen"])
+            except Exception:
+                last = started
+            if last < cutoff:
+                continue  # 7일 연속 안 보임 -> 제거
+        merged[url] = j
+
+    jobs = sorted(merged.values(), key=lambda j: (j.get("first_seen") or "", j.get("last_seen") or ""), reverse=True)
+    for key, st in status_sites.items():
+        st["total"] = sum(1 for j in jobs if j.get("source") == key)
+
+    JOBS_FILE.write_text(json.dumps(jobs, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    status = {
+        "updated_at": now_iso,
+        "finished_at": now_kst().isoformat(),
+        "total": len(jobs),
+        "sites": status_sites,
+    }
+    STATUS_FILE.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    log(f"done: {len(jobs)} jobs, ok={sorted(ok_sources)}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
