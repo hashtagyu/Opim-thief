@@ -1,6 +1,46 @@
 [
  {
   "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49935025",
+  "title": "브랜드 SNS 콘텐츠 및 AI 콘텐츠 크리에이터",
+  "company": "㈜커넥티드코리아",
+  "location": "경기 양주시 청담로84번길 20-56 (고읍동) 본사",
+  "employment": "정규직",
+  "summary": "㈜커넥티드코리아 브랜드 SNS 콘텐츠 및 AI 콘텐츠 크리에이터 포지션 및 자격요건 포지션 ( 1명 ) 담당업무 ㆍ1인 콘텐츠 크리에이터 기반의 콘텐츠 기획 제작 ㆍ 브랜드 SNS/유투브 콘텐츠 기획 제작 ㆍ생성형 AI툴을 활용한 콘텐츠 제작 자격요건 및 우대사항 ㆍAdobe Software (Premiere Pro, After Effects, Photoshop) ㆍ 생성형 AI툴 (미드저…",
+  "tools": [
+   "Midjourney"
+  ],
+  "deadline": "2026-10-07",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T12:54:57+09:00",
+  "last_seen": "2026-10-07T12:54:57+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49939481",
+  "title": "POP/ POSM 디자인 정규직 사원 채용",
+  "company": "㈜유어스디자인그룹",
+  "location": "서울 강남구 봉은사로84길 10 (삼성동) 4층",
+  "employment": "정규직",
+  "summary": "㈜유어스디자인그룹 패키지 디자인 정규직 사원 채용 (주)유어스디자인그룹 은 변화하는 디자인 트렌드의 중심에 있습니다. 2015년부터 축적된 노하우와 10인의 프로페셔널한 팀워크를 바탕으로, 패키지 & POP 분야를 넘어 AI 모델링 등 혁신적인 디자인 영역을 개척하고 있습니다. 삼성동 코엑스 인근의 활기찬 환경에서, 저희와 함께 창의적인 비전을 실현하고 업계를 선도할 열정적인 경력 인재를…",
+  "tools": [
+   "ComfyUI",
+   "Midjourney",
+   "Stable Diffusion"
+  ],
+  "deadline": "2026-10-07",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "first_seen": "2026-10-07T12:54:57+09:00",
+  "last_seen": "2026-10-07T12:54:57+09:00"
+ },
+ {
+  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49987672",
   "title": "[SOOP/유튜브/숏폼/하이라이트] e스포츠·게임 VOD 영상편집자 채용",
   "company": "㈜엠제이플렉스",
@@ -13,11 +53,11 @@
   ],
   "deadline": "2026-10-14",
   "salary": "연 2,976~3,156만원",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3497,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T12:37:54+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -36,7 +76,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T12:37:54+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -53,7 +93,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -70,7 +110,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -83,11 +123,11 @@
   "tools": [],
   "deadline": "2026-10-29",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 7065,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -110,7 +150,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -132,7 +172,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -151,7 +191,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -168,7 +208,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -181,11 +221,11 @@
   "tools": [],
   "deadline": "2026-11-29",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3826,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 38,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -202,7 +242,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "incruit",
@@ -219,7 +259,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "incruit",
@@ -236,7 +276,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "incruit",
@@ -253,7 +293,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -266,11 +306,11 @@
   "tools": [],
   "deadline": "2026-12-05",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3826,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 38,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -288,11 +328,11 @@
   ],
   "deadline": "2026-11-30",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4217,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 8,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -313,7 +353,7 @@
   "avg_salary_src": "",
   "employees": 13,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -331,11 +371,11 @@
   ],
   "deadline": "2026-10-16",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3805,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 7,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -348,11 +388,11 @@
   "tools": [],
   "deadline": "2026-10-20",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4220,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -365,11 +405,11 @@
   "tools": [],
   "deadline": "2026-10-15",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 5301,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -385,11 +425,11 @@
   ],
   "deadline": "2026-10-09",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3514,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -404,11 +444,11 @@
   ],
   "deadline": "2026-10-16",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 3371,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 20,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -431,7 +471,7 @@
   "avg_salary_src": "",
   "employees": 9,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -449,11 +489,11 @@
   ],
   "deadline": "2026-11-02",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4217,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 8,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -475,7 +515,7 @@
   "avg_salary_src": "",
   "employees": 10,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -492,7 +532,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -511,11 +551,11 @@
   ],
   "deadline": "상시",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 6792,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -532,7 +572,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -545,11 +585,11 @@
   "tools": [],
   "deadline": "2026-11-05",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4200,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 7,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -572,7 +612,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -595,7 +635,7 @@
   "avg_salary_src": "",
   "employees": 5,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -608,11 +648,11 @@
   "tools": [],
   "deadline": "2026-11-01",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 7331,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 36,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -625,11 +665,11 @@
   "tools": [],
   "deadline": "2026-10-31",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4729,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 30,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -642,11 +682,11 @@
   "tools": [],
   "deadline": "2026-10-29",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -659,11 +699,11 @@
   "tools": [],
   "deadline": "2026-10-29",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "saramin",
@@ -676,11 +716,11 @@
   "tools": [],
   "deadline": "2026-10-29",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -693,11 +733,11 @@
   "tools": [],
   "deadline": "2026-11-05",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4200,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 7,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -710,11 +750,11 @@
   "tools": [],
   "deadline": "상시",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -731,7 +771,7 @@
   "avg_salary_src": "",
   "employees": 10,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -744,11 +784,11 @@
   "tools": [],
   "deadline": "2026-10-23",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4474,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 18,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -765,7 +805,7 @@
   "avg_salary_src": "",
   "employees": 59,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -780,11 +820,11 @@
   ],
   "deadline": "2026-10-12",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 7000,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -797,11 +837,11 @@
   "tools": [],
   "deadline": "2026-10-15",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 5354,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 25,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -814,11 +854,11 @@
   "tools": [],
   "deadline": "2026-10-28",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 6357,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 106,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -831,11 +871,11 @@
   "tools": [],
   "deadline": "2026-11-21",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4884,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 130,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -856,7 +896,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -872,11 +912,11 @@
   ],
   "deadline": "2026-10-23",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4120,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -895,7 +935,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -908,11 +948,11 @@
   "tools": [],
   "deadline": "상시",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 95,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -933,7 +973,7 @@
   "avg_salary_src": "",
   "employees": 25,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -946,11 +986,11 @@
   "tools": [],
   "deadline": "2026-11-01",
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 7331,
+  "avg_salary_src": "사람인 기업정보",
   "employees": 36,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -967,7 +1007,7 @@
   "avg_salary_src": "",
   "employees": 38,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "jobkorea",
@@ -984,7 +1024,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "linkedin",
@@ -1003,7 +1043,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "linkedin",
@@ -1022,7 +1062,7 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  },
  {
   "source": "linkedin",
@@ -1044,6 +1084,6 @@
   "avg_salary_src": "",
   "employees": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T12:37:54+09:00"
+  "last_seen": "2026-10-07T12:54:57+09:00"
  }
 ]
