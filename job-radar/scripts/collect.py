@@ -312,6 +312,62 @@ def saramin_salary(f, csn):
     return None
 
 
+JP_RATING = re.compile(r'ratingValue\\*"\s*:\s*\\*"?([0-9.]+)')
+JP_COUNT = re.compile(r'ratingCount\\*"\s*:\s*\\*"?([0-9]+)')
+RATING_VERSION = 1
+
+
+def jobplanet_rating(f, name):
+    """잡플래닛 자동완성으로 회사 id를 찾고(이름 정확히 일치), 리뷰 페이지에서 평점·리뷰 수."""
+    key = company_key(name)
+    data = f.json(f"https://www.jobplanet.co.kr/autocomplete/autocomplete/suggest.json?term={quote(name)}",
+                  referer="https://www.jobplanet.co.kr/")
+    cid = next((c.get("id") for c in (data.get("companies") or [])
+                if company_key(c.get("name")) == key), None)
+    if not cid:
+        return {"jp_id": None}
+    html = f.get(f"https://www.jobplanet.co.kr/companies/{cid}/reviews").text
+    m, n = JP_RATING.search(html), JP_COUNT.search(html)
+    out = {"jp_id": cid, "jp_rating": None, "jp_reviews": int(n.group(1)) if n else 0}
+    if m:
+        v = float(m.group(1))
+        if 0 < v <= 5:
+            out["jp_rating"] = round(v, 1)
+    return out
+
+
+def rating_pass(companies, jobs, now, budget_sec=420, max_lookups=40):
+    """잡플래닛 평점 조회. companies는 읽기만 하고, 바뀐 값은 돌려준다 (연봉 조회와 동시에 돌기 때문)."""
+    f = Fetcher("jobplanet-rating")
+    f.deadline = time.time() + budget_sec
+    now_iso = now.isoformat()
+    fresh = (now - timedelta(days=SALARY_REFRESH_DAYS)).isoformat()
+    names = {}
+    for j in jobs:
+        ck = company_key(j.get("company"))
+        if ck and ck not in names:
+            names[ck] = j["company"]
+    todo = [(ck, n) for ck, n in names.items()
+            if not ((companies.get(ck) or {}).get("jp_v") == RATING_VERSION
+                    and ((companies.get(ck) or {}).get("jp_checked") or "") >= fresh)]
+    updates, found = {}, 0
+    for ck, name in todo[:max_lookups]:
+        try:
+            info = jobplanet_rating(f, name)
+        except (Blocked, OutOfTime) as e:
+            log(f"   평점 조회 중단: {type(e).__name__}")
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"   평점 {name}: {type(e).__name__}")
+            continue
+        updates[ck] = {**info, "jp_checked": now_iso, "jp_v": RATING_VERSION}
+        if info.get("jp_rating"):
+            found += 1
+            log(f"   ★ {name}: {info['jp_rating']} (리뷰 {info['jp_reviews']})")
+    log(f"== 잡플래닛 평점: 대상 {len(todo)}곳 중 {len(updates)}곳 조회, {found}곳 확인 (요청 {f.requests})")
+    return updates, {"todo": len(todo), "checked": len(updates), "found": found}
+
+
 def salary_pass(companies, jobs, hints, now, budget_sec=420, max_lookups=40):
     """공고에 나온 회사들의 평균연봉을 사람인에서 채운다. 실패해도 수집 결과에는 영향 없음."""
     f = Fetcher("salary")
@@ -900,7 +956,8 @@ SOURCES = {
 }
 
 FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
-          "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "first_seen", "last_seen"]
+          "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "jp_rating", "jp_reviews", "jp_url",
+          "first_seen", "last_seen"]
 
 
 # ---------------------------------------------------------------- 병합
@@ -930,6 +987,9 @@ def to_record(source, c, now_iso, prev=None):
         "avg_salary": None,  # 마지막에 companies.json 캐시에서 채움
         "avg_salary_src": "",
         "employees": None,
+        "jp_rating": None,
+        "jp_reviews": None,
+        "jp_url": "",
         "first_seen": (prev or {}).get("first_seen") or now_iso,
         "last_seen": now_iso,
     }
@@ -1060,14 +1120,23 @@ def main():
                 continue  # 7일 연속 안 보임 -> 제거
         merged[url] = j
 
-    salary_stat = salary_pass(companies, list(merged.values()), salary_hints, started)
+    # 평균연봉(사람인)과 잡플래닛 평점은 서로 다른 사이트라 동시에 조회
+    with ThreadPoolExecutor(max_workers=2) as ex:
+        fut_rating = ex.submit(rating_pass, companies, list(merged.values()), started)
+        salary_stat = salary_pass(companies, list(merged.values()), salary_hints, started)
+        rating_updates, rating_stat = fut_rating.result()
+    for ck, upd in rating_updates.items():
+        companies[ck] = {**(companies.get(ck) or {}), **upd}
     for j in merged.values():
         info = companies.get(company_key(j.get("company"))) or {}
+        j["jp_rating"] = info.get("jp_rating")
+        j["jp_reviews"] = info.get("jp_reviews") if info.get("jp_rating") else None
+        j["jp_url"] = f"https://www.jobplanet.co.kr/companies/{info['jp_id']}/reviews" if info.get("jp_id") else ""
         j["avg_salary"] = info.get("avg_salary")
         j["avg_salary_src"] = f"{info['src']} 기업정보" if info.get("avg_salary") else ""
         j["employees"] = info.get("employees")
         for k in FIELDS:
-            j.setdefault(k, None if k in ("avg_salary", "employees") else "")
+            j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews") else "")
     COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
     jobs = sorted(merged.values(), key=lambda j: (j.get("first_seen") or "", j.get("last_seen") or ""), reverse=True)
@@ -1080,6 +1149,7 @@ def main():
         "finished_at": now_kst().isoformat(),
         "total": len(jobs),
         "salary": salary_stat,
+        "jobplanet_rating": rating_stat,
         "sites": status_sites,
     }
     STATUS_FILE.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

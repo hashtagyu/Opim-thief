@@ -71,6 +71,10 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .toggle{display:inline-flex;align-items:center;gap:6px;height:42px;padding:0 14px;cursor:pointer;user-select:none;font-weight:600;font-size:14px;white-space:nowrap}
 .sort{height:42px;padding:0 10px;font:inherit;font-size:14px;font-weight:600;color:var(--text);cursor:pointer}
 .sal{color:var(--ok);font-weight:600}
+.jp{color:var(--warn);font-weight:600;text-decoration:none}
+.jp:hover{text-decoration:underline}
+.toggle.jpon{border-color:var(--warn);color:var(--warn);background:var(--warn-soft)}
+.toggle #onlyJp{accent-color:var(--warn)}
 .toggle input{accent-color:var(--new);width:16px;height:16px;margin:0}
 .toggle.on{border-color:var(--new);color:var(--new);background:var(--new-soft)}
 .chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
@@ -115,6 +119,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   .job{padding:12px 14px}
   .job a.title{font-size:15px}
   .toggle,.sort{flex:1 1 40%;justify-content:center}
+  .sort{flex-basis:100%}
 }
 </style>
 </head>
@@ -143,9 +148,11 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       <div class="row">
         <label class="search panel">🔍<input id="q" type="search" placeholder="제목, 회사, 툴, 지역 검색" autocomplete="off"></label>
         <label class="toggle panel" id="newWrap"><input type="checkbox" id="onlyNew"> NEW만 보기</label>
+        <label class="toggle panel" id="jpWrap"><input type="checkbox" id="onlyJp"> ⭐ 잡플래닛 3점↑</label>
         <select class="sort panel" id="sort" aria-label="정렬">
           <option value="new">최신순</option>
           <option value="salary">평균연봉 높은 순</option>
+          <option value="rating">잡플래닛 평점 높은 순</option>
           <option value="deadline">마감 임박 순</option>
         </select>
       </div>
@@ -158,6 +165,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 
   <div class="foot">
     매일 오전 9시(한국시간) GitHub Actions가 자동으로 수집해요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
+    ⭐ 잡플래닛 평점은 회사명이 정확히 같은 잡플래닛 기업의 리뷰 평점(5점 만점)이에요. 리뷰 수가 적으면 몇 명의 의견에 좌우될 수 있어요.<br>
     💰 평균연봉은 사람인·잡코리아 기업정보에 나온 회사 전체 평균(국민연금 신고 기준)이라 이 직무의 연봉과 다를 수 있어요. 소규모 회사는 정보가 없을 수 있어요.<br>
     광고·광고대행사·커머스·뷰티·화장품·병원·마케팅·교육 관련 공고는 자동으로 제외돼요. 7일 연속 안 보이는 공고는 목록에서 빠져요.
   </div>
@@ -177,7 +185,8 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   }
   document.getElementById("refreshBtn").href = "https://github.com/" + repoSlug() + "/actions/workflows/" + WORKFLOW;
 
-  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, sort: "new" };
+  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new" };
+  var JP_MIN = 3.0;
   try { state.onlyNew = localStorage.getItem("radar.onlyNew") === "1"; } catch (e) {}
 
   function $(id){ return document.getElementById(id); }
@@ -256,9 +265,11 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     var q = state.q.trim().toLowerCase();
     var labels = {}; siteList().forEach(function(s){ labels[s.key] = s.label; });
     var list = state.jobs.filter(function(j){
-      return (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) && matches(j, q);
+      return (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) &&
+        (!state.onlyJp || (j.jp_rating || 0) >= JP_MIN) && matches(j, q);
     });
     if (state.sort === "salary") list.sort(function(a, b){ return (b.avg_salary || 0) - (a.avg_salary || 0); });
+    else if (state.sort === "rating") list.sort(function(a, b){ return (b.jp_rating || 0) - (a.jp_rating || 0) || (b.jp_reviews || 0) - (a.jp_reviews || 0); });
     else if (state.sort === "deadline") list.sort(function(a, b){
       function k(j){ return /^\d{4}-/.test(j.deadline || "") ? j.deadline : "9999"; }
       var today = new Date().toISOString().slice(0, 10);
@@ -267,7 +278,8 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     });
     $("jobsN").textContent = state.jobs.length + "건";
     var newCount = state.jobs.filter(isNew).length;
-    $("result").textContent = list.length + "건 표시 중" + (newCount ? " · NEW " + newCount + "건" : "");
+    var jpCount = state.jobs.filter(function(j){ return (j.jp_rating || 0) >= JP_MIN; }).length;
+    $("result").textContent = list.length + "건 표시 중" + (newCount ? " · NEW " + newCount + "건" : "") + " · 잡플래닛 3점↑ " + jpCount + "건";
     if (!list.length){
       $("jobs").innerHTML = '<div class="panel empty">' + (state.jobs.length ? "조건에 맞는 공고가 없어요." : "아직 수집된 공고가 없어요.") + "</div>";
       return;
@@ -280,6 +292,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       if (j.employment) metaParts.push("<span>" + esc(j.employment) + "</span>");
       if (j.avg_salary) metaParts.push('<span class="sal" title="' + esc((j.avg_salary_src || "") + " · 국민연금 신고 기준 회사 전체 평균") + '">💰 평균 ' + Number(j.avg_salary).toLocaleString("ko-KR") + "만원" + (j.employees ? " · 👥 " + esc(j.employees) + "명" : "") + "</span>");
       if (j.salary) metaParts.push('<span class="sal">공고 ' + esc(j.salary) + "</span>");
+      if (j.jp_rating) metaParts.push('<a class="jp" href="' + esc(safeUrl(j.jp_url)) + '" target="_blank" rel="noopener" title="잡플래닛 기업 리뷰">⭐ ' + Number(j.jp_rating).toFixed(1) + (j.jp_reviews ? " (리뷰 " + esc(j.jp_reviews) + ")" : "") + "</a>");
       if (dl) metaParts.push(typeof dl === "string" ? "<span>" + esc(dl) + "</span>" : '<span class="dl' + (dl.soon ? " soon" : "") + '">⏰ ' + esc(dl.text) + "</span>");
       var tags = (j.tools || []).map(function(t){ return '<button class="tag" data-tool="' + esc(t) + '">' + esc(t) + "</button>"; }).join("");
       return '<article class="job panel">' +
@@ -325,6 +338,14 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   nb.addEventListener("change", function(){
     state.onlyNew = nb.checked; $("newWrap").classList.toggle("on", nb.checked);
     try { localStorage.setItem("radar.onlyNew", nb.checked ? "1" : "0"); } catch (e) {}
+    renderJobs();
+  });
+  var jb = $("onlyJp");
+  try { state.onlyJp = localStorage.getItem("radar.onlyJp") === "1"; } catch (e) {}
+  jb.checked = state.onlyJp; $("jpWrap").classList.toggle("jpon", state.onlyJp);
+  jb.addEventListener("change", function(){
+    state.onlyJp = jb.checked; $("jpWrap").classList.toggle("jpon", jb.checked);
+    try { localStorage.setItem("radar.onlyJp", jb.checked ? "1" : "0"); } catch (e) {}
     renderJobs();
   });
   $("sort").addEventListener("change", function(e){ state.sort = e.target.value; renderJobs(); });
