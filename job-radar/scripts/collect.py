@@ -14,6 +14,7 @@ import re
 import sys
 import time
 import traceback
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote, urljoin
@@ -31,7 +32,8 @@ JOBS_FILE = DATA / "jobs.json"
 STATUS_FILE = DATA / "status.json"
 
 STALE_DAYS = 7
-MAX_DETAILS_PER_SOURCE = 40
+MAX_DETAILS_PER_SOURCE = 30
+SITE_BUDGET_SEC = int(os.environ.get("RADAR_SITE_BUDGET", "600"))  # 사이트당 최대 10분
 DELAY = (1.5, 3.0)
 DEBUG = os.environ.get("RADAR_DEBUG") == "1"
 
@@ -43,6 +45,10 @@ UA = (
 
 class Blocked(Exception):
     """403/429, 캡차, 봇 차단 페이지."""
+
+
+class OutOfTime(Exception):
+    """사이트별 시간 예산 초과. 그때까지 모은 결과는 쓴다."""
 
 
 def now_kst():
@@ -67,8 +73,13 @@ class Fetcher:
         self.requests = 0
         self.errors = []
         self.blocked = 0
+        self.deadline = time.time() + SITE_BUDGET_SEC
+        self.out_of_time = False
 
     def get(self, url, accept=None, referer=None):
+        if time.time() > self.deadline:
+            self.out_of_time = True
+            raise OutOfTime()
         time.sleep(random.uniform(*DELAY))
         headers = {}
         if accept:
@@ -76,7 +87,7 @@ class Fetcher:
         if referer:
             headers["Referer"] = referer
         self.requests += 1
-        r = self.s.get(url, headers=headers, timeout=25)
+        r = self.s.get(url, headers=headers, timeout=15)
         body_head = r.text[:3000].lower() if r.text else ""
         if DEBUG:
             log(f"  [{self.name}] {r.status_code} {len(r.content)}B {url}")
@@ -250,6 +261,9 @@ def _run_terms(f, terms, fn):
         try:
             results.extend(fn(t))
             ok += 1
+        except OutOfTime:
+            f.errors.append(f"시간 예산 초과: '{t}'부터 검색 생략")
+            break
         except Blocked as e:
             last_exc = e
             f.errors.append(f"{t}: blocked ({e})")
@@ -279,6 +293,10 @@ def _detail_pass(f, cards, known, detail_fn):
         try:
             d = detail_fn(c)
             c = {**c, **{k: v for k, v in d.items() if v}}
+        except OutOfTime:
+            f.errors.append("시간 예산 초과: 상세 일부 생략")
+            fetched = MAX_DETAILS_PER_SOURCE  # 남은 새 공고는 상세 없이 건너뜀 (기존 공고는 계속 갱신)
+            continue
         except Blocked:
             raise
         except Exception as e:  # noqa: BLE001
@@ -625,46 +643,41 @@ def main():
     new_by_url = {}
     ok_sources = set()
 
-    for key, (label, fn) in SOURCES.items():
-        if only and key not in only:
-            # 이번에 안 돈 사이트는 이전 상태 유지
-            if key in (old_status.get("sites") or {}):
-                status_sites[key] = old_status["sites"][key]
-            continue
+    def run_site(key, label, fn):
         f = Fetcher(key)
         t0 = time.time()
         known = {u: j for u, j in by_url.items() if j.get("source") == key}
         st = {"label": label, "ok": False, "count": 0, "found": 0, "excluded": 0, "new": 0,
               "requests": 0, "error": None, "checked_at": now_iso}
-        log(f"== {label} ({key})")
+        recs = {}
+        lines = [f"== {label} ({key})"]
         try:
             cards = fn(f, known)
             st["found"] = len(cards)
-            kept = 0
             for c in cards:
                 prev = by_url.get(c["url"])
                 ok, why = judge(c, prev)
                 if not ok:
                     st["excluded"] += 1
                     if DEBUG:
-                        log(f"   - skip [{why}] {c.get('title')} / {c.get('company')}")
+                        lines.append(f"   - skip [{why}] {c.get('title')} / {c.get('company')}")
                     continue
                 rec = to_record(key, c, now_iso, prev)
                 if not prev:
                     st["new"] += 1
-                new_by_url[rec["url"]] = rec
-                kept += 1
-                log(f"   + {rec['title']} / {rec['company']} {rec['tools']}")
+                recs[rec["url"]] = rec
+                lines.append(f"   + {rec['title']} / {rec['company']} {rec['tools']}")
             st["ok"] = True
-            st["count"] = kept
-            ok_sources.add(key)
+            st["count"] = len(recs)
             st["last_success"] = now_iso
+            if f.out_of_time:
+                st["partial"] = True
         except Blocked as e:
             st["error"] = f"차단됨: {e}"
             st["blocked"] = True
         except Exception as e:  # noqa: BLE001
             st["error"] = f"{type(e).__name__}: {e}"[:300]
-            traceback.print_exc()
+            lines.append(traceback.format_exc())
         if not st["ok"]:
             prev_st = (old_status.get("sites") or {}).get(key) or {}
             if prev_st.get("last_success"):
@@ -672,8 +685,27 @@ def main():
         st["requests"] = f.requests
         st["warnings"] = f.errors[:10]
         st["seconds"] = round(time.time() - t0, 1)
-        status_sites[key] = st
-        log(f"   => ok={st['ok']} count={st['count']} found={st['found']} excluded={st['excluded']} err={st['error']}")
+        lines.append(f"   => ok={st['ok']} count={st['count']} found={st['found']} excluded={st['excluded']} "
+                     f"requests={f.requests} {st['seconds']}s err={st['error']}")
+        log("\n".join(lines))
+        return key, st, recs
+
+    todo = []
+    for key, (label, fn) in SOURCES.items():
+        if only and key not in only:
+            # 이번에 안 돈 사이트는 이전 상태 유지
+            if key in (old_status.get("sites") or {}):
+                status_sites[key] = old_status["sites"][key]
+            continue
+        todo.append((key, label, fn))
+    # 사이트끼리는 동시에, 같은 사이트 안에서는 요청 간격을 지키며 순서대로
+    with ThreadPoolExecutor(max_workers=max(1, len(todo))) as ex:
+        for key, st, recs in ex.map(lambda a: run_site(*a), todo):
+            status_sites[key] = st
+            if st["ok"]:
+                ok_sources.add(key)
+                new_by_url.update(recs)
+    status_sites = {k: status_sites[k] for k in SOURCES if k in status_sites}
 
     # 병합: 성공한 사이트는 새 결과 + (7일 안 지난) 미발견 공고, 실패한 사이트는 기존 그대로
     cutoff = started - timedelta(days=STALE_DAYS)
