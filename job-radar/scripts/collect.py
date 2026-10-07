@@ -34,7 +34,7 @@ COMPANIES_FILE = DATA / "companies.json"  # 회사별 평균연봉 캐시
 SALARY_REFRESH_DAYS = 30
 
 STALE_DAYS = 7
-MAX_DETAILS_PER_SOURCE = 30
+MAX_DETAILS_PER_SOURCE = 45
 SITE_BUDGET_SEC = int(os.environ.get("RADAR_SITE_BUDGET", "600"))  # 사이트당 최대 10분
 DELAY = (1.5, 3.0)
 DEBUG = os.environ.get("RADAR_DEBUG") == "1"
@@ -523,9 +523,11 @@ def _dedupe(cards):
 
 # --- 사람인
 def src_saramin(f, known):
-    def search(term):
-        url = ("https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&recruitSort=reg_dt"
-               f"&recruitPageCount=40&searchword={quote(term)}")
+    def search(q):
+        # 검색 결과가 수천 건이라 최신순 40건만 보면 며칠 지난 공고가 밀려난다 -> 최신순 + 관련도순 2쪽
+        term, sort, page = q
+        url = (f"https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&recruitSort={sort}"
+               f"&recruitPageCount=40&recruitPage={page}&searchword={quote(term)}")
         soup = f.html(url)
         cards = []
         for it in soup.select("div.item_recruit"):
@@ -567,7 +569,9 @@ def src_saramin(f, known):
             pass
         return out
 
-    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    queries = ([(t, "reg_dt", 1) for t in rules.SEARCH_TERMS] + [(t, "relation", 1) for t in rules.SEARCH_TERMS]
+               + [(t, "relation", 2) for t in rules.SEARCH_TERMS])
+    cards = _dedupe(_run_terms(f, queries, search))
     return _detail_pass(f, cards, known, detail)
 
 
@@ -654,7 +658,8 @@ def src_wanted(f, known):
 # --- 잡코리아
 def src_jobkorea(f, known):
     def search(term):
-        soup = f.html(f"https://www.jobkorea.co.kr/Search/?stext={quote(term)}&tabType=recruit&Page_No=1")
+        term, page = term if isinstance(term, tuple) else (term, 1)
+        soup = f.html(f"https://www.jobkorea.co.kr/Search/?stext={quote(term)}&tabType=recruit&Page_No={page}")
         links = _links(soup, "https://www.jobkorea.co.kr", r"https://www\.jobkorea\.co\.kr/Recruit/GI_Read/\d+")
         if not links:
             log("  jobkorea no links; head:", soup.get_text(" ")[:300])
@@ -681,7 +686,8 @@ def src_jobkorea(f, known):
             pass
         return d
 
-    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    queries = [(t, 1) for t in rules.SEARCH_TERMS] + [(t, 2) for t in rules.SEARCH_TERMS]
+    cards = _dedupe(_run_terms(f, queries, search))
     return _detail_pass(f, cards, known, detail)
 
 
