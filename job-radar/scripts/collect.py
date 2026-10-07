@@ -503,8 +503,10 @@ def _paged(fetch_page, max_pages=MAX_PAGES_PER_TERM):
 
 
 def _detail_pass(f, cards, known, detail_fn):
-    """카드 목록에서 상세를 채운다. 이미 아는 url은 상세 요청을 생략한다."""
+    """카드 목록에서 상세를 채운다. 이미 아는 url은 상세 요청을 생략한다.
+    상세를 여는 순서: 제목에 'AI + 직무'가 있는 공고 먼저 (시간 예산이 모자라도 유력한 공고부터 보게)."""
     out, fetched = [], 0
+    cards = sorted(cards, key=lambda c: 0 if rules.ROLE_TITLE.search(c.get("title") or "") else 1)
     for c in cards:
         if c["url"] in known:
             prev = known[c["url"]]
