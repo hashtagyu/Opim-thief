@@ -1,5 +1,139 @@
 [
  {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49903895",
+  "title": "AI 영상 콘텐츠 크리에이터 경력직 채용의 건",
+  "company": "㈜자이언트엘",
+  "location": "경기 고양시 덕양구 꽃마을로 44 (향동동) 902호",
+  "employment": "정규직, 계약직",
+  "summary": "㈜자이언트엘 AI 영상 콘텐츠 크리에이터 경력직 채용의 건 포지션 및 자격요건 포지션 ( 1명 ) 담당업무 ㆍAI 기반 영상 콘텐츠 기획 및 제작 -이미지/영상/음성 생성 AI 툴을 활용한 숏폼 및 롱폼 영상 콘텐츠 제작 -스토리가 있는 AI 애니메이션, 예능, 광고 영상 등 다양한 장르의 콘텐츠 기획 및 연출 ㆍ생성형 AI 프롬프트 설계 및 연구 -일관성 있는 캐릭터, 씬, 스타일 구현을…",
+  "tools": [
+   "ComfyUI",
+   "Seedance",
+   "Midjourney",
+   "Stable Diffusion",
+   "ElevenLabs"
+  ],
+  "deadline": "상시",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49753962",
+  "title": "AI 콘텐츠 제작 크리에이터 채용 (영상 기획·제작)",
+  "company": "메가콘텐츠㈜",
+  "location": "인천 부평구 부평대로 293 (청천동, 부평테크시티) 1018호",
+  "employment": "정규직",
+  "summary": "메가콘텐츠㈜ AI 콘텐츠 제작 크리에이터 채용 (영상 기획·제작) 메가콘텐츠㈜는 2025년에 설립된 회사로 매출액 5억이상 (26년) 사원수 5명 규모의 중소기업입니다. 인천 부평구 부평대로 293 (청천동, 부평테크시티)에 위치하고 있으며, AI 애니메이션 제작, 콘텐츠 배급 사업을 하고 있습니다. 포지션 및 자격요건 AI 콘텐츠 제작자 ( ○명 ) [담당업무] · 생성형 AI 툴을 활용…",
+  "tools": [
+   "Midjourney",
+   "Runway",
+   "Sora",
+   "ElevenLabs"
+  ],
+  "deadline": "상시",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49932745",
+  "title": "감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건(comfyui 사용자)",
+  "company": "㈜자이언트엘",
+  "location": "경기 고양시 덕양구 꽃마을로 44 (향동동) 902호",
+  "employment": "정규직, 계약직",
+  "summary": "㈜자이언트엘 감각적인 AI 영상 콘텐츠 크리에이터 경력직 채용의 건 \"국내 최초 프로젝트\" 타이틀을 앞둔 AI 스타트업, 자이언트엘에서 AI 영상 크리에이터를 찾고 있습니다. 자이언트엘은 ComfyUI 활용 및 감각적인 영상 연출이 가능하거나, AI 영상 제작 경험을 갖춘 크리에이터분들을 찾고 있습니다. 탁월한 미적 감각으로 AI 영상의 매력과 가능성에 푹 빠져 계신 분이라면 언제든 환영합…",
+  "tools": [
+   "ComfyUI",
+   "Seedance",
+   "Midjourney",
+   "Stable Diffusion",
+   "ElevenLabs"
+  ],
+  "deadline": "상시",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49972957",
+  "title": "[KMP] 생성형 AI 영상·콘텐츠 디자이너 채용",
+  "company": "강남중고명품 김캡쳐",
+  "location": "서울 강남구 봉은사로 227 (논현동) 김명품 타워",
+  "employment": "정규직, 계약직",
+  "summary": "강남중고명품 김캡쳐에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 강남구 봉은사로 227 (논현동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-10-11",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50078498",
+  "title": "생성형 AI 이미지·영상 콘텐츠 크리에이터 모집",
+  "company": "하트에이아이㈜",
+  "location": "서울 구로구 디지털로26길 123 (구로동, 지플러스타워) 401호",
+  "employment": "계약직",
+  "summary": "하트에이아이㈜에서 계약직 신입 채용을 진행합니다. 근무지는 서울 구로구 디지털로26길 123 (구로동, 지플러스타워)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-11-29",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49885356",
+  "title": "[GENTLE MONSTER] AI 컨텐츠 제작자",
+  "company": "㈜아이아이컴바인드",
+  "location": "서울특별시 성동구 성수동2가 261 아이아이컴바인드",
+  "employment": "정규직",
+  "summary": "㈜아이아이컴바인드에서 정규직 경력 채용을 진행합니다. 근무지는 서울특별시 성동구 성수동2가이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-10-30",
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2608260004038",
+  "title": "[Blue Garage] AI Artist / Concept Artist",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609230003041",
+  "title": "[Blue Garage] AI Artist / AI Content Creator",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "incruit",
+  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609280005465",
+  "title": "[Blue Garage] AI Artist / Music&Voice Production & Planning",
+  "company": "(주)JYP엔터테인먼트",
+  "location": "",
+  "employment": "",
+  "summary": "",
+  "tools": [],
+  "deadline": null,
+  "first_seen": "2026-10-07T11:43:38+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
   "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55207348",
   "title": "생성형 AI이미지 영상 콘텐츠 크리에이터 모잡",
@@ -10,7 +144,7 @@
   "tools": [],
   "deadline": "2026-12-05",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -28,7 +162,7 @@
   ],
   "deadline": "2026-11-30",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -45,7 +179,7 @@
   ],
   "deadline": "2026-11-22",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -63,7 +197,7 @@
   ],
   "deadline": "2026-10-16",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -76,7 +210,7 @@
   "tools": [],
   "deadline": "2026-10-20",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -89,7 +223,7 @@
   "tools": [],
   "deadline": "2026-10-15",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -105,7 +239,7 @@
   ],
   "deadline": "2026-10-09",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -120,7 +254,7 @@
   ],
   "deadline": "2026-10-16",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -139,7 +273,7 @@
   ],
   "deadline": "상시",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -157,7 +291,7 @@
   ],
   "deadline": "2026-11-02",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -175,7 +309,7 @@
   ],
   "deadline": "2026-10-15",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -188,7 +322,7 @@
   "tools": [],
   "deadline": "2026-11-11",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -207,7 +341,7 @@
   ],
   "deadline": "상시",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -220,7 +354,20 @@
   "tools": [],
   "deadline": "2026-10-31",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55210538",
+  "title": "AI 아티스트 채용",
+  "company": "주식회사 에이브스튜디오",
+  "location": "서울 구로구",
+  "employment": "계약직",
+  "summary": "채용공고 상세",
+  "tools": [],
+  "deadline": "2026-11-05",
+  "first_seen": "2026-10-07T10:57:32+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -239,7 +386,7 @@
   ],
   "deadline": "2026-10-31",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -258,20 +405,7 @@
   ],
   "deadline": "2026-10-18",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55210538",
-  "title": "AI 아티스트 채용",
-  "company": "주식회사 에이브스튜디오",
-  "location": "서울 구로구",
-  "employment": "계약직",
-  "summary": "채용공고 상세",
-  "tools": [],
-  "deadline": "2026-11-05",
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -284,7 +418,7 @@
   "tools": [],
   "deadline": "2026-11-01",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -297,7 +431,7 @@
   "tools": [],
   "deadline": "2026-10-31",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -310,7 +444,7 @@
   "tools": [],
   "deadline": "2026-10-29",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "saramin",
@@ -323,7 +457,20 @@
   "tools": [],
   "deadline": "2026-10-29",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55161517",
+  "title": "AI Artist / Product Designer(9년~)",
+  "company": "(주)블루개러지",
+  "location": "서울 강동구",
+  "employment": "정규직",
+  "summary": "채용공고 상세 AI Artist / Product Designer(9년~) 서비스 소개 Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을…",
+  "tools": [],
+  "deadline": "2026-10-29",
+  "first_seen": "2026-10-07T10:57:32+09:00",
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -336,7 +483,7 @@
   "tools": [],
   "deadline": "2026-11-05",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -349,7 +496,7 @@
   "tools": [],
   "deadline": "2026-10-22",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -362,7 +509,7 @@
   "tools": [],
   "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -375,7 +522,7 @@
   "tools": [],
   "deadline": "2026-10-23",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -388,7 +535,7 @@
   "tools": [],
   "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -403,7 +550,7 @@
   ],
   "deadline": "2026-10-12",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -416,7 +563,7 @@
   "tools": [],
   "deadline": "2026-10-15",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -429,7 +576,7 @@
   "tools": [],
   "deadline": "2026-10-28",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -442,7 +589,7 @@
   "tools": [],
   "deadline": "2026-11-21",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -459,7 +606,7 @@
   ],
   "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -475,7 +622,7 @@
   ],
   "deadline": "2026-10-23",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -490,7 +637,7 @@
   ],
   "deadline": "2026-10-10",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -503,7 +650,7 @@
   "tools": [],
   "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -520,7 +667,7 @@
   ],
   "deadline": "2026-10-17",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -533,7 +680,7 @@
   "tools": [],
   "deadline": "2026-11-01",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -546,7 +693,7 @@
   "tools": [],
   "deadline": "2026-10-17",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "jobkorea",
@@ -559,7 +706,7 @@
   "tools": [],
   "deadline": "2026-10-17",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "linkedin",
@@ -574,7 +721,7 @@
   ],
   "deadline": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "linkedin",
@@ -589,7 +736,7 @@
   ],
   "deadline": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  },
  {
   "source": "linkedin",
@@ -607,19 +754,6 @@
   ],
   "deadline": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55161517",
-  "title": "AI Artist / Product Designer(9년~)",
-  "company": "(주)블루개러지",
-  "location": "서울 강동구",
-  "employment": "정규직",
-  "summary": "채용공고 상세 AI Artist / Product Designer(9년~) 서비스 소개 Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을…",
-  "tools": [],
-  "deadline": "2026-10-29",
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T10:57:32+09:00"
+  "last_seen": "2026-10-07T11:43:38+09:00"
  }
 ]
