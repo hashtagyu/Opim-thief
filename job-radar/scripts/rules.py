@@ -126,7 +126,8 @@ def exclusion_reason(title, company, industry, body):
 NON_ARTIST_TITLE = re.compile(
     r"엔지니어|개발자|백엔드|프론트엔드|풀스택|데이터\s*사이언|engineer|developer|software|full\s*stack|backend|frontend|"
     r"devops|data\s*scien|researcher|연구원|영업|세일즈|sales|회계|인사\b|"
-    r"라벨링|레이블링|어노테이션|annotation|labeling|검수|데이터\s*(?:구축|수집|가공)",
+    r"라벨링|레이블링|어노테이션|annotation|labeling|검수|데이터\s*(?:구축|수집|가공)|"
+    r"유지\s*보수|영상\s*보안|보안\s*시스템|cctv|관제|영상\s*분석|비전\s*(?:ai|엔지니어)",
     re.I,
 )
 
