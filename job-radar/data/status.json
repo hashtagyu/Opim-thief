@@ -1,32 +1,35 @@
 {
- "updated_at": "2026-10-07T14:49:32+09:00",
- "finished_at": "2026-10-07T15:01:42+09:00",
- "total": 102,
+ "updated_at": "2026-10-07T15:04:08+09:00",
+ "finished_at": "2026-10-07T15:29:47+09:00",
+ "total": 120,
  "salary": {
-  "todo": 16,
-  "checked": 16,
-  "found": 10
+  "todo": 7,
+  "checked": 7,
+  "found": 4
  },
  "jobplanet_rating": {
-  "todo": 16,
-  "checked": 16,
+  "todo": 7,
+  "checked": 7,
   "found": 4
  },
  "sites": {
   "saramin": {
    "label": "사람인",
    "ok": true,
-   "count": 14,
-   "found": 243,
-   "excluded": 229,
-   "new": 3,
-   "requests": 72,
+   "count": 33,
+   "found": 3548,
+   "excluded": 3515,
+   "new": 18,
+   "requests": 475,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
-   "warnings": [],
-   "seconds": 201.3,
-   "total": 15
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
+   "partial": true,
+   "warnings": [
+    "시간 예산 초과: 상세 일부 생략"
+   ],
+   "seconds": 1502.5,
+   "total": 33
   },
   "wanted": {
    "label": "원티드",
@@ -37,28 +40,39 @@
    "new": 0,
    "requests": 4,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
    "blocked": true,
    "warnings": [
     "AI 아티스트: blocked (HTTP 403)",
     "AI 영상: blocked (HTTP 403)"
    ],
-   "seconds": 8.8,
+   "seconds": 8.4,
    "total": 0
   },
   "jobkorea": {
    "label": "잡코리아",
-   "ok": true,
-   "count": 59,
-   "found": 152,
-   "excluded": 93,
-   "new": 11,
-   "requests": 72,
-   "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
+   "ok": false,
+   "count": 0,
+   "found": 0,
+   "excluded": 0,
+   "new": 0,
+   "requests": 12,
+   "error": "ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=Kling&tabType=recruit&Page_No=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.jobkorea.co.kr', port=443) at 0x7f18d4e96e70>, 'Connection to www.jobkorea.co.kr timed out",
+   "checked_at": "2026-10-07T15:04:08+09:00",
    "last_success": "2026-10-07T14:49:32+09:00",
-   "warnings": [],
-   "seconds": 202.4,
+   "warnings": [
+    "AI 아티스트: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8&tabType=recruit&Page_No=1 (Ca",
+    "AI 영상: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20%EC%98%81%EC%83%81&tabType=recruit&Page_No=1 (Caused by ConnectTimeo",
+    "AI 크리에이터: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0&tabType=recruit&Pag",
+    "생성형 AI 영상: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=%EC%83%9D%EC%84%B1%ED%98%95%20AI%20%EC%98%81%EC%83%81&tabType=recruit",
+    "AI 콘텐츠 제작: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20%EC%BD%98%ED%85%90%EC%B8%A0%20%EC%A0%9C%EC%9E%91&tabType=recruit",
+    "미드저니: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=%EB%AF%B8%EB%93%9C%EC%A0%80%EB%8B%88&tabType=recruit&Page_No=1 (Caused by ",
+    "ComfyUI: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=ComfyUI&tabType=recruit&Page_No=1 (Caused by ConnectTimeoutError(<HTTPS",
+    "Midjourney: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=Midjourney&tabType=recruit&Page_No=1 (Caused by ConnectTimeoutError(",
+    "AI artist: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20artist&tabType=recruit&Page_No=1 (Caused by ConnectTimeoutError(",
+    "AI video: ConnectTimeout: HTTPSConnectionPool(host='www.jobkorea.co.kr', port=443): Max retries exceeded with url: /Search/?stext=AI%20video&tabType=recruit&Page_No=1 (Caused by ConnectTimeoutError(<H"
+   ],
+   "seconds": 547.0,
    "total": 60
   },
   "jumpit": {
@@ -70,10 +84,10 @@
    "new": 0,
    "requests": 12,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 31.7,
+   "seconds": 34.1,
    "total": 0
   },
   "incruit": {
@@ -85,8 +99,8 @@
    "new": 0,
    "requests": 25,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "partial": true,
    "warnings": [
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609010000031: ConnectTimeout",
@@ -100,7 +114,7 @@
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609290000033: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609250000067: ConnectTimeout"
    ],
-   "seconds": 638.5,
+   "seconds": 631.2,
    "total": 3
   },
   "rocketpunch": {
@@ -112,25 +126,28 @@
    "new": 0,
    "requests": 12,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 38.3,
+   "seconds": 33.1,
    "total": 0
   },
   "jobplanet": {
    "label": "잡플래닛",
    "ok": true,
    "count": 2,
-   "found": 13,
-   "excluded": 11,
+   "found": 732,
+   "excluded": 730,
    "new": 0,
-   "requests": 14,
+   "requests": 540,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
-   "warnings": [],
-   "seconds": 39.5,
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
+   "partial": true,
+   "warnings": [
+    "시간 예산 초과: 상세 일부 생략"
+   ],
+   "seconds": 1500.2,
    "total": 2
   },
   "remember": {
@@ -139,13 +156,13 @@
    "count": 1,
    "found": 32,
    "excluded": 31,
-   "new": 1,
+   "new": 0,
    "requests": 12,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 31.8,
+   "seconds": 29.8,
    "total": 1
   },
   "mediajob": {
@@ -155,12 +172,12 @@
    "found": 25,
    "excluded": 22,
    "new": 0,
-   "requests": 32,
+   "requests": 28,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 118.5,
+   "seconds": 105.2,
    "total": 3
   },
   "superintern": {
@@ -172,7 +189,7 @@
    "new": 0,
    "requests": 1,
    "error": "RuntimeError: 사이트 보안 인증서(SSL) 오류로 접속 불가",
-   "checked_at": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
    "warnings": [],
    "seconds": 11.1,
    "total": 0
@@ -181,15 +198,15 @@
    "label": "편집몬",
    "ok": true,
    "count": 1,
-   "found": 43,
-   "excluded": 42,
-   "new": 1,
-   "requests": 33,
+   "found": 45,
+   "excluded": 44,
+   "new": 0,
+   "requests": 34,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 92.2,
+   "seconds": 99.3,
    "total": 1
   },
   "albamon": {
@@ -198,13 +215,13 @@
    "count": 14,
    "found": 27,
    "excluded": 13,
-   "new": 6,
-   "requests": 18,
+   "new": 0,
+   "requests": 12,
    "error": null,
-   "checked_at": "2026-10-07T14:49:32+09:00",
-   "last_success": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
+   "last_success": "2026-10-07T15:04:08+09:00",
    "warnings": [],
-   "seconds": 55.7,
+   "seconds": 34.5,
    "total": 14
   },
   "linkedin": {
@@ -214,13 +231,13 @@
    "found": 0,
    "excluded": 0,
    "new": 0,
-   "requests": 16,
+   "requests": 11,
    "error": "차단됨: HTTP 429",
-   "checked_at": "2026-10-07T14:49:32+09:00",
+   "checked_at": "2026-10-07T15:04:08+09:00",
    "blocked": true,
    "last_success": "2026-10-07T13:40:30+09:00",
    "warnings": [],
-   "seconds": 39.0,
+   "seconds": 26.2,
    "total": 3
   }
  }
