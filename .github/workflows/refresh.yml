@@ -66,7 +66,7 @@ jobs:
       - name: 바뀐 데이터만 커밋
         if: steps.plan.outputs.collect == 'true'
         run: |
-          git add job-radar/data/jobs.json job-radar/data/status.json
+          git add job-radar/data/jobs.json job-radar/data/status.json job-radar/data/companies.json
           if git diff --cached --quiet; then
             echo "데이터 변화 없음 - 커밋하지 않고 종료"
             exit 0

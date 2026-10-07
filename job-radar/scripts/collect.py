@@ -30,6 +30,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 JOBS_FILE = DATA / "jobs.json"
 STATUS_FILE = DATA / "status.json"
+COMPANIES_FILE = DATA / "companies.json"  # 회사별 평균연봉 캐시
+SALARY_REFRESH_DAYS = 30
+MAX_SALARY_LOOKUPS_PER_SOURCE = 25
 
 STALE_DAYS = 7
 MAX_DETAILS_PER_SOURCE = 30
@@ -222,6 +225,90 @@ def meta(soup, *names):
     return ""
 
 
+COMPANY_LINK = re.compile(
+    r"https://www\.saramin\.co\.kr/zf_user/company-info/view[^\"'#]*csn=[^&\"'#]+"
+    r"|https://www\.jobkorea\.co\.kr/(?:Recruit/Co_Read/C/[^?\"'#]+|company/\d+)"
+)
+COMPANY_BASES = ("https://www.saramin.co.kr", "https://www.jobkorea.co.kr")
+
+
+def company_link(soup, base):
+    """공고 페이지에서 사람인/잡코리아 기업정보 페이지 링크를 찾는다."""
+    for a in soup.find_all("a", href=True):
+        m = COMPANY_LINK.search(urljoin(base, a["href"]))
+        if m:
+            return m.group(0)
+    return None
+
+
+def salary_from_ld(ld):
+    """JSON-LD baseSalary -> '연 3,600~4,200만원' 같은 문자열 (숫자가 있을 때만)."""
+    bs = ld.get("baseSalary") if ld else None
+    if not isinstance(bs, dict):
+        return ""
+    v = bs.get("value") if isinstance(bs.get("value"), dict) else bs
+    lo, hi = v.get("minValue"), v.get("maxValue")
+    if lo is None and hi is None:
+        lo = v.get("value") if not isinstance(v.get("value"), dict) else None
+    unit = str(v.get("unitText") or bs.get("unitText") or "YEAR").upper()
+
+    def man(x):
+        try:
+            x = float(x)
+        except (TypeError, ValueError):
+            return None
+        if x <= 0:
+            return None
+        if unit == "MONTH":
+            x *= 12
+        elif unit == "HOUR":
+            return None
+        return int(round(x / 10000)) if x > 100000 else int(x)
+
+    lo, hi = man(lo), man(hi)
+    if not lo and not hi:
+        return ""
+    if lo and hi and lo != hi:
+        return f"연 {lo:,}~{hi:,}만원"
+    return f"연 {(lo or hi):,}만원"
+
+
+def company_key(name):
+    n = re.sub(r"\(.*?\)|㈜|주식회사|\(주\)|\(유\)|유한회사|corporation|corp\.?|inc\.?|co\.,?\s*ltd\.?|ltd\.?",
+               "", name or "", flags=re.I)
+    return re.sub(r"[\s·.,\-_]", "", n).lower()
+
+
+def parse_company_salary(soup):
+    text = clean(soup.get_text(" "))
+    out = {}
+    m = re.search(r"평균\s*연봉[^0-9]{0,40}?([0-9][0-9,]{2,6})\s*만\s*원", text)
+    if m:
+        v = int(m.group(1).replace(",", ""))
+        if 1000 <= v <= 30000:
+            out["avg_salary"] = v
+    m = re.search(r"(?:사원\s*수|직원\s*수|임직원\s*수)[^0-9]{0,20}([0-9][0-9,]*)\s*명", text)
+    if m:
+        out["employees"] = int(m.group(1).replace(",", ""))
+    return out, text
+
+
+def lookup_company(f, url):
+    """기업정보 페이지에서 평균연봉·사원수. 사람인은 연봉 탭도 확인."""
+    soup = f.html(url)
+    info, text = parse_company_salary(soup)
+    if "avg_salary" not in info and "saramin.co.kr" in url:
+        m = re.search(r"csn=([^&]+)", url)
+        if m:
+            info2, text = parse_company_salary(
+                f.html(f"https://www.saramin.co.kr/zf_user/company-info/view-inner-salary?csn={m.group(1)}", referer=url))
+            info = {**info, **info2}
+    if "avg_salary" not in info:
+        i = text.find("연봉")
+        log(f"   ? 평균연봉 못 찾음 {url} :: {text[max(0, i - 60):i + 120] if i >= 0 else text[:120]}")
+    return info
+
+
 def parse_detail_generic(soup):
     """JSON-LD 우선, 없으면 og 메타 + 본문 텍스트."""
     out = {}
@@ -235,6 +322,7 @@ def parse_detail_generic(soup):
         out["deadline"] = to_date(ld.get("validThrough"))
         out["industry"] = clean(ld.get("industry") if isinstance(ld.get("industry"), str) else " ".join(ld.get("industry") or []))
         out["body"] = clean(ld.get("description"))
+        out["salary"] = salary_from_ld(ld)
     if not out.get("body"):
         for t in soup(["script", "style", "noscript", "header", "footer", "nav"]):
             t.decompose()
@@ -350,6 +438,7 @@ def src_saramin(f, known):
                 "_id": m.group(1),
                 "title": clean(a.get("title") or a.get_text()),
                 "company": clean((it.select_one("strong.corp_name a") or it.select_one(".corp_name") or a).get_text()),
+                "_company_url": company_link(it, "https://www.saramin.co.kr"),
                 "location": cond[0] if cond else "",
                 "employment": cond[3] if len(cond) > 3 else "",
                 "deadline": to_date(clean((it.select_one("div.job_date .date") or it.new_tag("i")).get_text())),
@@ -365,8 +454,10 @@ def src_saramin(f, known):
         body = clean(soup.get_text(" "), 8000)
         out = {"body": body}
         try:  # 메인 페이지에 JSON-LD(마감일·업종)가 있다
-            d = parse_detail_generic(f.html(c["url"]))
-            out.update({k: d[k] for k in ("deadline", "industry", "employment") if d.get(k)})
+            main = f.html(c["url"])
+            d = parse_detail_generic(main)
+            out.update({k: d[k] for k in ("deadline", "industry", "employment", "salary") if d.get(k)})
+            out["_company_url"] = c.get("_company_url") or company_link(main, "https://www.saramin.co.kr")
         except Blocked:
             raise
         except Exception:
@@ -468,7 +559,9 @@ def src_jobkorea(f, known):
 
     def detail(c):
         soup = f.html(c["url"])
+        link = company_link(soup, "https://www.jobkorea.co.kr")
         d = parse_detail_generic(soup)
+        d["_company_url"] = link
         og = meta(soup, "og:title")
         # og:title 예: "(주)회사 채용 - 공고제목 | 잡코리아"
         m = re.match(r"\s*(.+?)\s*채용\s*-\s*(.+?)\s*(?:\|.*)?$", og or "")
@@ -611,7 +704,7 @@ SOURCES = {
 }
 
 FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
-          "deadline", "first_seen", "last_seen"]
+          "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "first_seen", "last_seen"]
 
 
 # ---------------------------------------------------------------- 병합
@@ -637,6 +730,10 @@ def to_record(source, c, now_iso, prev=None):
         "summary": make_summary(body) if body else (c.get("summary") or (prev or {}).get("summary") or ""),
         "tools": tools,
         "deadline": c.get("deadline") or (prev or {}).get("deadline"),
+        "salary": c.get("salary") or (prev or {}).get("salary") or "",
+        "avg_salary": None,  # 마지막에 companies.json 캐시에서 채움
+        "avg_salary_src": "",
+        "employees": None,
         "first_seen": (prev or {}).get("first_seen") or now_iso,
         "last_seen": now_iso,
     }
@@ -673,6 +770,8 @@ def main():
         old_jobs = old_jobs.get("jobs", [])
     old_status = load_json(STATUS_FILE, {})
     by_url = {j["url"]: j for j in old_jobs if j.get("url")}
+    companies = load_json(COMPANIES_FILE, {})
+    salary_cutoff = (started - timedelta(days=SALARY_REFRESH_DAYS)).isoformat()
 
     only = [s.strip() for s in os.environ.get("RADAR_SOURCES", "").split(",") if s.strip()]
     status_sites = {}
@@ -686,7 +785,7 @@ def main():
         known = {u: j for u, j in by_url.items() if j.get("source") == key}
         st = {"label": label, "ok": False, "count": 0, "found": 0, "excluded": 0, "new": 0,
               "requests": 0, "error": None, "checked_at": now_iso}
-        recs, dropped = {}, set()
+        recs, dropped, lookups = {}, set(), {}
         lines = [f"== {label} ({key})"]
         try:
             cards = fn(f, known)
@@ -704,7 +803,36 @@ def main():
                 if not prev:
                     st["new"] += 1
                 recs[rec["url"]] = rec
+                ck = company_key(rec["company"])
+                cached = companies.get(ck) or {}
+                host_ok = any(c["url"].startswith(b) for b in COMPANY_BASES)
+                if ck and (c.get("_company_url") or host_ok) and (cached.get("checked") or "") < salary_cutoff:
+                    lookups[ck] = (rec["company"], c.get("_company_url"), c["url"])
                 lines.append(f"   + {rec['title']} / {rec['company']} {rec['tools']}")
+            # 회사 평균연봉 조회 (실패해도 사이트 수집은 성공으로 둔다)
+            done = 0
+            for ck, (name, curl, jurl) in list(lookups.items())[:MAX_SALARY_LOOKUPS_PER_SOURCE]:
+                try:
+                    if not curl:  # 이미 아는 공고라 상세를 안 열었으면 공고 페이지에서 기업정보 링크만 찾는다
+                        base = next(b for b in COMPANY_BASES if jurl.startswith(b))
+                        curl = company_link(f.html(jurl), base)
+                        if not curl:
+                            companies[ck] = {**(companies.get(ck) or {}), "name": name, "checked": now_iso}
+                            continue
+                    info = lookup_company(f, curl)
+                except (Blocked, OutOfTime) as e:
+                    f.errors.append(f"연봉 조회 중단: {type(e).__name__}")
+                    break
+                except Exception as e:  # noqa: BLE001
+                    f.errors.append(f"연봉 {name}: {type(e).__name__}"[:120])
+                    continue
+                prev_c = companies.get(ck) or {}
+                companies[ck] = {**prev_c, "name": name, "url": curl, "checked": now_iso,
+                                 "src": "사람인" if "saramin" in curl else "잡코리아", **info}
+                done += 1
+                if info.get("avg_salary"):
+                    lines.append(f"   $ {name}: 평균 {info['avg_salary']:,}만원")
+            st["salary_lookups"] = done
             st["ok"] = True
             st["count"] = len(recs)
             st["last_success"] = now_iso
@@ -762,6 +890,15 @@ def main():
             if last < cutoff:
                 continue  # 7일 연속 안 보임 -> 제거
         merged[url] = j
+
+    for j in merged.values():
+        info = companies.get(company_key(j.get("company"))) or {}
+        j["avg_salary"] = info.get("avg_salary")
+        j["avg_salary_src"] = f"{info['src']} 기업정보" if info.get("avg_salary") else ""
+        j["employees"] = info.get("employees")
+        for k in FIELDS:
+            j.setdefault(k, None if k in ("avg_salary", "employees") else "")
+    COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
     jobs = sorted(merged.values(), key=lambda j: (j.get("first_seen") or "", j.get("last_seen") or ""), reverse=True)
     for key, st in status_sites.items():
