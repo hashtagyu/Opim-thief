@@ -53,11 +53,14 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
 /* 인스타 */
 .insta{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
-.studio{padding:12px 14px;text-decoration:none;display:block}
-.studio:hover{border-color:var(--accent)}
+.studio{padding:12px 14px;display:block}
 .studio .h{font-weight:650}
-.studio .id{color:var(--accent);font-size:13px}
+.studio .id{color:var(--accent);font-size:13px;text-decoration:none;display:inline-block}
+.studio .post{display:block;font-size:14px;font-weight:600;margin-top:6px;text-decoration:none;line-height:1.4}
+.studio a:hover{text-decoration:underline}
+.studio .pd{font-size:12px;color:var(--muted)}
 .studio .note{color:var(--muted);font-size:13px;margin-top:4px}
+.studio .hire.past{color:var(--muted);background:var(--chip)}
 .studio .hire{display:inline-block;font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);padding:1px 6px;border-radius:5px;margin-left:6px;vertical-align:1px}
 .empty{padding:16px;color:var(--muted);font-size:14px}
 /* 컨트롤 */
@@ -128,7 +131,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   </header>
 
   <section id="instaSec">
-    <h2>📸 인스타 스튜디오 <span class="n" id="instaN"></span></h2>
+    <h2>📸 인스타그램 채용 스튜디오 <span class="n" id="instaN"></span></h2>
     <div class="insta" id="insta"></div>
   </section>
 
@@ -273,21 +276,27 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   }
 
   function renderInsta(data){
-    var list = (data && data.studios) || [];
+    var list = ((data && data.studios) || []).slice();
     $("instaN").textContent = list.length ? list.length + "곳" : "";
     if (!list.length){
       $("insta").innerHTML = '<div class="panel empty" style="grid-column:1/-1">아직 등록된 스튜디오가 없어요. 저장소의 job-radar/data/insta.json에 추가하면 여기에 보여요.</div>';
       return;
     }
+    function hiring(s){ return !!(s.hiring_now || s.hiring); }
+    list.sort(function(a, b){ return (hiring(b) - hiring(a)) || String(b.post_date || "").localeCompare(String(a.post_date || "")); });
     $("insta").innerHTML = list.map(function(s){
-      var handle = String(s.handle || "").replace(/^@/, "");
-      var url = s.url || (handle ? "https://www.instagram.com/" + encodeURIComponent(handle) + "/" : "#");
-      return '<a class="studio panel" href="' + esc(safeUrl(url)) + '" target="_blank" rel="noopener">' +
-        '<div class="h">' + esc(s.name || handle) + (s.hiring ? '<span class="hire">채용중</span>' : "") + "</div>" +
-        (handle ? '<div class="id">@' + esc(handle) + "</div>" : "") +
-        (s.note ? '<div class="note">' + esc(s.note) + "</div>" : "") +
-        ((s.tags || []).length ? '<div class="tags">' + s.tags.map(function(t){ return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") +
-        "</a>";
+      var handle = String(s.account || s.handle || "").replace(/^@/, "");
+      var profile = s.url || (handle ? "https://www.instagram.com/" + encodeURIComponent(handle) + "/" : "");
+      var tools = s.tools || s.tags || [];
+      var note = s.summary || s.note;
+      return '<div class="studio panel">' +
+        '<div class="h">' + esc(s.name || handle) + '<span class="hire' + (hiring(s) ? "" : " past") + '">' + (hiring(s) ? "채용중" : "채용 이력") + "</span></div>" +
+        (profile ? '<a class="id" href="' + esc(safeUrl(profile)) + '" target="_blank" rel="noopener">' + (handle ? "@" + esc(handle) : "인스타에서 찾기") + "</a>" : "") +
+        (s.post_title ? '<a class="post" href="' + esc(safeUrl(s.post_url || profile)) + '" target="_blank" rel="noopener">📌 ' + esc(s.post_title) + "</a>" : "") +
+        (s.post_date ? '<div class="pd">' + esc(s.post_date) + " 게시</div>" : "") +
+        (note ? '<div class="note">' + esc(note) + "</div>" : "") +
+        (tools.length ? '<div class="tags">' + tools.map(function(t){ return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div>" : "") +
+        "</div>";
     }).join("");
   }
 

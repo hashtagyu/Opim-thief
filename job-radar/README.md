@@ -35,15 +35,20 @@ GitHub Pages
 
 ```json
 {
- "studios": [
-  {"name": "스튜디오 이름", "handle": "instagram_id", "note": "한 줄 메모", "tags": ["Kling"], "hiring": true, "added": "2026-10-07"}
- ]
+ "account": "instagram_id",
+ "name": "스튜디오 이름",
+ "hiring_now": true,
+ "post_url": "채용 게시물 주소",
+ "post_title": "AI 아티스트 모집",
+ "post_date": "2026-10-07",
+ "tools": ["Kling"],
+ "summary": "한 줄 메모"
 }
 ```
 
-- `handle` 만 있으면 링크는 자동으로 만들어져요. `url` 을 따로 적으면 그 주소를 써요.
-- `hiring: true` 면 "채용중" 표시가 붙어요.
-- 쉼표 하나만 빠져도 JSON이 깨지니, 커밋 전에 따옴표·쉼표를 확인하세요. 커밋하면 자동으로 페이지에 반영돼요(1~2분).
+- `account` 만 있으면 인스타 프로필 링크는 자동으로 만들어져요. 아이디를 모르면 비우고 `url` 에 다른 주소를 넣어도 돼요.
+- `hiring_now: true` 면 "채용중", `false` 면 "채용 이력"으로 표시돼요. 채용중인 곳이 위로 올라가요.
+- 항목 사이에는 쉼표가 필요해요. 쉼표나 따옴표 하나만 빠져도 JSON이 깨지니 커밋 전에 확인하세요. 커밋하면 1~2분 뒤 페이지에 반영돼요.
 
 ## 수집 규칙
 
