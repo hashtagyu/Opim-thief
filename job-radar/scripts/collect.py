@@ -941,6 +941,55 @@ def src_superintern(f, known):
     return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
 
 
+# --- 편집몬 (영상 편집자 구인구직, 검색어 대신 최신 목록 몇 페이지를 훑는다)
+def src_editmon(f, known):
+    def page(n):
+        soup = f.html(f"https://editmon.com/work/employ_list.html?sort=write_date&page={n}")
+        cards = {}
+        for a in soup.find_all("a", href=re.compile(r"employ_detail\.html\?no=\d+")):
+            m = re.search(r"no=(\d+)", a["href"])
+            url = f"https://editmon.com/work/employ_detail.html?no={m.group(1)}"
+            title = clean(a.get_text(" "))
+            if not title:
+                continue
+            tds = [clean(td.get_text(" ")) for td in (a.find_parent("tr").find_all("td") if a.find_parent("tr") else [])]
+            cards[url] = {
+                "url": url, "title": title,
+                "company": tds[1] if len(tds) > 1 else "",
+                "industry": tds[3] if len(tds) > 3 else "",  # 사용 툴 (예: 프리미어프로)
+                "deadline": to_date(tds[5]) if len(tds) > 5 else None,
+            }
+        return list(cards.values())
+
+    cards = _dedupe(_run_terms(f, ["1", "2", "3"], page))
+    return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
+
+
+# --- 알바몬 (단기·아르바이트)
+def src_albamon(f, known):
+    def search(term):
+        soup = f.html(f"https://www.albamon.com/total-search?keyword={quote(term)}")
+        out = {}
+        for a in soup.find_all("a", href=True):
+            m = re.search(r"albamon\.com/jobs/detail/(\d+)|^/jobs/detail/(\d+)", a["href"])
+            if not m:
+                continue
+            jid = m.group(1) or m.group(2)
+            url = f"https://www.albamon.com/jobs/detail/{jid}"
+            t = clean(a.get_text(" "))
+            if url not in out or len(t) > len(out[url]["title"]):
+                out[url] = {"url": url, "title": t, "employment": "아르바이트"}
+        return list(out.values())
+
+    def detail(c):
+        d = parse_detail_generic(f.html(c["url"]))
+        d.setdefault("employment", "아르바이트")
+        return d
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS[:8], search))
+    return _detail_pass(f, cards, known, detail)
+
+
 SOURCES = {
     "saramin": ("사람인", src_saramin),
     "wanted": ("원티드", src_wanted),
@@ -952,12 +1001,14 @@ SOURCES = {
     "remember": ("리멤버", src_remember),
     "mediajob": ("미디어잡", src_mediajob),
     "superintern": ("슈퍼인턴", src_superintern),
+    "editmon": ("편집몬", src_editmon),
+    "albamon": ("알바몬", src_albamon),
     "linkedin": ("LinkedIn", src_linkedin),
 }
 
 FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
           "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "jp_rating", "jp_reviews", "jp_url",
-          "first_seen", "last_seen"]
+          "kind", "first_seen", "last_seen"]
 
 
 # ---------------------------------------------------------------- 병합
@@ -990,6 +1041,8 @@ def to_record(source, c, now_iso, prev=None):
         "jp_rating": None,
         "jp_reviews": None,
         "jp_url": "",
+        "kind": rules.job_kind(source, c.get("title"), c.get("employment") or (prev or {}).get("employment"),
+                               body[:600] or (prev or {}).get("summary") or ""),
         "first_seen": (prev or {}).get("first_seen") or now_iso,
         "last_seen": now_iso,
     }
@@ -1135,6 +1188,8 @@ def main():
         j["avg_salary"] = info.get("avg_salary")
         j["avg_salary_src"] = f"{info['src']} 기업정보" if info.get("avg_salary") else ""
         j["employees"] = info.get("employees")
+        if not j.get("kind"):
+            j["kind"] = rules.job_kind(j.get("source"), j.get("title"), j.get("employment"), j.get("summary") or "")
         for k in FIELDS:
             j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews") else "")
     COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")

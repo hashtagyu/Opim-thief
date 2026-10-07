@@ -92,6 +92,12 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .chip.fail .dot{background:var(--bad)}
 .chip.active .dot{background:#fff}
 .sitenote{font-size:12px;color:var(--bad);margin-top:4px;min-height:0}
+.tabs{display:flex;gap:0;border-bottom:2px solid var(--line);margin-top:4px}
+.tab{flex:1;border:0;background:transparent;color:var(--muted);font:inherit;font-size:15px;font-weight:700;padding:10px 8px;cursor:pointer;
+  border-bottom:3px solid transparent;margin-bottom:-2px}
+.tab .c{font-weight:500;font-size:13px;font-variant-numeric:tabular-nums}
+.tab.active{color:var(--text);border-bottom-color:var(--accent)}
+.tab[data-tab="gig"].active{border-bottom-color:var(--new)}
 .result{font-size:13px;color:var(--muted);margin:6px 2px 8px}
 /* 공고 카드 */
 .jobs{display:flex;flex-direction:column;gap:10px}
@@ -143,7 +149,11 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   </section>
 
   <section style="margin-top:26px">
-    <h2>💼 채용 공고 <span class="n" id="jobsN"></span></h2>
+    <h2>💼 공고 <span class="n" id="jobsN"></span></h2>
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab active" role="tab" data-tab="job" aria-selected="true">💼 채용 <span class="c" id="tabJob"></span></button>
+      <button class="tab" role="tab" data-tab="gig" aria-selected="false">⚡ 단기·프리랜서 <span class="c" id="tabGig"></span></button>
+    </div>
     <div class="controls">
       <div class="row">
         <label class="search panel">🔍<input id="q" type="search" placeholder="제목, 회사, 툴, 지역 검색" autocomplete="off"></label>
@@ -165,6 +175,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 
   <div class="foot">
     매일 오전 9시(한국시간) GitHub Actions가 자동으로 수집해요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
+    ⚡ 단기·프리랜서 탭은 제목·근무형태에 프리랜서·외주·단기·알바·건당·주말·파트타임·짧은 계약직(6개월 이하)이 있거나 알바몬에서 온 공고예요.<br>
     ⭐ 잡플래닛 평점은 회사명이 정확히 같은 잡플래닛 기업의 리뷰 평점(5점 만점)이에요. 리뷰 수가 적으면 몇 명의 의견에 좌우될 수 있어요.<br>
     💰 평균연봉은 사람인·잡코리아 기업정보에 나온 회사 전체 평균(국민연금 신고 기준)이라 이 직무의 연봉과 다를 수 있어요. 소규모 회사는 정보가 없을 수 있어요.<br>
     광고·광고대행사·커머스·뷰티·화장품·병원·마케팅·교육 관련 공고는 자동으로 제외돼요. 7일 연속 안 보이는 공고는 목록에서 빠져요.
@@ -185,7 +196,10 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   }
   document.getElementById("refreshBtn").href = "https://github.com/" + repoSlug() + "/actions/workflows/" + WORKFLOW;
 
-  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new" };
+  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new", tab: "job" };
+  try { if (localStorage.getItem("radar.tab") === "gig") state.tab = "gig"; } catch (e) {}
+  function kindOf(j){ return j.kind === "gig" ? "gig" : "job"; }
+  function inTab(j){ return kindOf(j) === state.tab; }
   var JP_MIN = 3.0;
   try { state.onlyNew = localStorage.getItem("radar.onlyNew") === "1"; } catch (e) {}
 
@@ -239,11 +253,12 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 
   function renderSites(){
     var box = $("sites"), list = siteList(), html = [];
-    var all = state.jobs.length;
+    var tabJobs = state.jobs.filter(inTab);
+    var all = tabJobs.length;
     html.push('<button class="chip' + (state.site === "all" ? " active" : "") + '" data-site="all">전체 <span class="c">' + all + '</span></button>');
     var fails = [];
     list.forEach(function(s){
-      var n = state.jobs.filter(function(j){ return j.source === s.key; }).length;
+      var n = tabJobs.filter(function(j){ return j.source === s.key; }).length;
       var failed = s.st && s.st.ok === false;
       if (failed) fails.push(s.label + ": " + (s.st.error || "실패") + (n ? " (이전 공고 " + n + "건 유지 중)" : ""));
       var title = s.st ? (failed ? "수집 실패 · " + (s.st.error || "") : "이번 수집 " + (s.st.count || 0) + "건 · 새 공고 " + (s.st.new || 0) + "건") : "";
@@ -265,7 +280,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     var q = state.q.trim().toLowerCase();
     var labels = {}; siteList().forEach(function(s){ labels[s.key] = s.label; });
     var list = state.jobs.filter(function(j){
-      return (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) &&
+      return inTab(j) && (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) &&
         (!state.onlyJp || (j.jp_rating || 0) >= JP_MIN) && matches(j, q);
     });
     if (state.sort === "salary") list.sort(function(a, b){ return (b.avg_salary || 0) - (a.avg_salary || 0); });
@@ -277,11 +292,13 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       return ka < kb ? -1 : ka > kb ? 1 : 0;
     });
     $("jobsN").textContent = state.jobs.length + "건";
-    var newCount = state.jobs.filter(isNew).length;
-    var jpCount = state.jobs.filter(function(j){ return (j.jp_rating || 0) >= JP_MIN; }).length;
+    $("tabJob").textContent = state.jobs.filter(function(j){ return kindOf(j) === "job"; }).length;
+    $("tabGig").textContent = state.jobs.filter(function(j){ return kindOf(j) === "gig"; }).length;
+    var newCount = state.jobs.filter(function(j){ return inTab(j) && isNew(j); }).length;
+    var jpCount = state.jobs.filter(function(j){ return inTab(j) && (j.jp_rating || 0) >= JP_MIN; }).length;
     $("result").textContent = list.length + "건 표시 중" + (newCount ? " · NEW " + newCount + "건" : "") + " · 잡플래닛 3점↑ " + jpCount + "건";
     if (!list.length){
-      $("jobs").innerHTML = '<div class="panel empty">' + (state.jobs.length ? "조건에 맞는 공고가 없어요." : "아직 수집된 공고가 없어요.") + "</div>";
+      $("jobs").innerHTML = '<div class="panel empty">' + (state.jobs.length ? (state.tab === "gig" ? "조건에 맞는 단기·프리랜서 공고가 없어요." : "조건에 맞는 공고가 없어요.") : "아직 수집된 공고가 없어요.") + "</div>";
       return;
     }
     $("jobs").innerHTML = list.map(function(j){
@@ -348,6 +365,16 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     try { localStorage.setItem("radar.onlyJp", jb.checked ? "1" : "0"); } catch (e) {}
     renderJobs();
   });
+  function setTab(t){
+    state.tab = t;
+    Array.prototype.forEach.call(document.querySelectorAll(".tab"), function(b){
+      var on = b.getAttribute("data-tab") === t; b.classList.toggle("active", on); b.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    try { localStorage.setItem("radar.tab", t); } catch (e) {}
+    renderSites(); renderJobs();
+  }
+  $("tabs").addEventListener("click", function(e){ var b = e.target.closest("[data-tab]"); if (b) setTab(b.getAttribute("data-tab")); });
+  setTab(state.tab);
   $("sort").addEventListener("change", function(e){ state.sort = e.target.value; renderJobs(); });
   $("sites").addEventListener("click", function(e){
     var b = e.target.closest("[data-site]"); if (!b) return;
