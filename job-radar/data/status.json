@@ -1,7 +1,7 @@
 {
- "updated_at": "2026-10-07T11:43:38+09:00",
- "finished_at": "2026-10-07T11:54:11+09:00",
- "total": 51,
+ "updated_at": "2026-10-07T11:55:32+09:00",
+ "finished_at": "2026-10-07T12:06:07+09:00",
+ "total": 54,
  "sites": {
   "saramin": {
    "label": "사람인",
@@ -12,10 +12,10 @@
    "new": 0,
    "requests": 72,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "warnings": [],
-   "seconds": 225.8,
+   "seconds": 198.3,
    "total": 10
   },
   "wanted": {
@@ -27,29 +27,29 @@
    "new": 0,
    "requests": 4,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
    "blocked": true,
    "warnings": [
     "AI 아티스트: blocked (HTTP 403)",
     "AI 영상: blocked (HTTP 403)"
    ],
-   "seconds": 10.9,
+   "seconds": 9.1,
    "total": 0
   },
   "jobkorea": {
    "label": "잡코리아",
    "ok": true,
-   "count": 35,
-   "found": 138,
-   "excluded": 103,
-   "new": 6,
+   "count": 38,
+   "found": 144,
+   "excluded": 106,
+   "new": 3,
    "requests": 72,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "warnings": [],
-   "seconds": 217.0,
-   "total": 35
+   "seconds": 203.3,
+   "total": 38
   },
   "jumpit": {
    "label": "점핏",
@@ -60,37 +60,37 @@
    "new": 0,
    "requests": 13,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "warnings": [],
-   "seconds": 32.9,
+   "seconds": 33.1,
    "total": 0
   },
   "incruit": {
    "label": "인크루트",
    "ok": true,
    "count": 3,
-   "found": 89,
-   "excluded": 86,
-   "new": 3,
+   "found": 92,
+   "excluded": 89,
+   "new": 0,
    "requests": 25,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "partial": true,
    "warnings": [
-    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2608260004038: ConnectTimeout",
-    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609230003041: ConnectTimeout",
-    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609280005465: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609010000031: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609090001213: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2608220000257: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2610060005070: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2610060005082: ConnectTimeout",
     "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2608310000016: ConnectTimeout",
-    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2610030000074: ConnectTimeout"
+    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2610030000074: ConnectTimeout",
+    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609070000014: ConnectTimeout",
+    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609290000033: ConnectTimeout",
+    "detail https://job.incruit.com/jobdb_info/jobpost.asp?job=2609250000067: ConnectTimeout"
    ],
-   "seconds": 633.5,
+   "seconds": 634.0,
    "total": 3
   },
   "rocketpunch": {
@@ -102,10 +102,10 @@
    "new": 0,
    "requests": 12,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "warnings": [],
-   "seconds": 31.8,
+   "seconds": 36.0,
    "total": 0
   },
   "linkedin": {
@@ -117,10 +117,10 @@
    "new": 0,
    "requests": 17,
    "error": null,
-   "checked_at": "2026-10-07T11:43:38+09:00",
-   "last_success": "2026-10-07T11:43:38+09:00",
+   "checked_at": "2026-10-07T11:55:32+09:00",
+   "last_success": "2026-10-07T11:55:32+09:00",
    "warnings": [],
-   "seconds": 39.8,
+   "seconds": 45.0,
    "total": 3
   }
  }
