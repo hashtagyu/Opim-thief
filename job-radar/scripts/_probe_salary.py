@@ -4,14 +4,19 @@ from bs4 import BeautifulSoup
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 s = requests.Session(); s.headers.update({"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9"})
 urls = [
+ "https://www.jobkorea.co.kr/Recruit/Co_Read/C/35809179",
+ "https://www.jobkorea.co.kr/company/35809179/Salary",
  "https://www.saramin.co.kr/zf_user/company-info/view-inner-salary?csn=ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
  "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/35809179",
  "https://www.jobkorea.co.kr/Recruit/Co_Read/C/33958138",
 ]
 for u in urls:
-    time.sleep(2)
-    r = s.get(u, timeout=20)
+    time.sleep(3)
+    try:
+        r = s.get(u, timeout=30)
+    except Exception as e:
+        print("=====", "ERR", type(e).__name__, u); continue
     h = r.text
     print("=====", r.status_code, len(h), u)
     for m in list(re.finditer(r"평균\s*연봉", h))[:6]:
