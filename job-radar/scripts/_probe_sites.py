@@ -3,68 +3,61 @@ from urllib.parse import urljoin, quote
 from bs4 import BeautifulSoup
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
 s = requests.Session(); s.headers.update({"User-Agent": UA, "Accept-Language": "ko-KR,ko;q=0.9"})
-Q = quote("AI 영상")
-def get(u, **kw):
+def req(m, u, **kw):
     time.sleep(1.5)
     try:
-        return s.get(u, timeout=25, **kw)
+        return s.request(m, u, timeout=25, **kw)
     except Exception as e:
         print("  ERR", type(e).__name__, str(e)[:200], u); return None
 
-print("##### JOBPLANET")
-for p in ["q", "query", "keyword", "search", "keywords"]:
-    r = get(f"https://www.jobplanet.co.kr/api/v3/job/postings?{p}={Q}&page=1&page_size=5")
-    if r is None: continue
-    try:
-        d = r.json()["data"]; rec = d.get("recruits") or []
-        print(" ", p, r.status_code, d.get("total_count"), [x.get("title") for x in rec[:3]])
-    except Exception as e:
-        print(" ", p, r.status_code, r.text[:200])
-r = get(f"https://www.jobplanet.co.kr/api/v3/job/postings?q={Q}&page=1&page_size=1")
-if r is not None:
-    rec = r.json()["data"]["recruits"][0]
-    print("  keys:", list(rec.keys()))
-    print("  sample:", json.dumps(rec, ensure_ascii=False)[:1500])
-r = get(f"https://www.jobplanet.co.kr/job/search?q={Q}")
-if r is not None:
-    for m in list(re.finditer(r"api/v\d/[\w/]+", r.text))[:10]: print("  apiref:", m.group(0))
-    for sc in BeautifulSoup(r.text, "html.parser").find_all("script", src=True)[:30]:
-        print("  script:", sc["src"][:150])
-
 print("##### REMEMBER")
-r = get("https://career.rememberapp.co.kr/job/postings")
+H = {"Origin": "https://career.rememberapp.co.kr", "Referer": "https://career.rememberapp.co.kr/", "Accept": "application/json", "Content-Type": "application/json"}
+bodies = [
+ {"search": {"keywords": ["AI 영상"]}, "page": 1, "per": 20},
+ {"search": {"keyword": "AI 영상"}, "page": 1, "per": 20},
+ {"keyword": "AI 영상", "page": 1, "per": 20},
+ {"search": {"query": "AI 영상"}, "page": 1, "per": 20},
+ {"page": 1, "per": 5},
+]
+for b in bodies:
+    r = req("POST", "https://career-api.rememberapp.co.kr/job_postings/search", json=b, headers=H)
+    if r is None: continue
+    print(" body", json.dumps(b, ensure_ascii=False), "->", r.status_code, re.sub(r"\s+", " ", r.text[:700]))
+r = req("GET", "https://career.rememberapp.co.kr/job/postings?search=%7B%22keywords%22%3A%5B%22AI%20%EC%98%81%EC%83%81%22%5D%7D")
 if r is not None:
-    srcs = [urljoin(r.url, sc["src"]) for sc in BeautifulSoup(r.text, "html.parser").find_all("script", src=True)]
-    print("  scripts", len(srcs))
-    hits = set()
-    for u in srcs[:60]:
-        rr = get(u)
-        if rr is None: continue
-        for m in re.finditer(r".{0,120}(job_postings|career-api|/search\b|jobPostings).{0,160}", rr.text):
-            t = m.group(0)
-            if t not in hits and ("http" in t or "/job" in t or "search" in t):
-                hits.add(t)
-                if len(hits) <= 25: print("  [js]", u.rsplit('/',1)[-1][:40], "::", t[:300])
+    for m in list(re.finditer(r"/job/posting/\d+", r.text))[:5]: print("  link", m.group(0))
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+    if m:
+        t = m.group(1); i = t.find("jobPosting"); print("  next:", t[max(0,i-100):i+800])
 
 print("##### MEDIAJOB")
-r = get("https://www.mediajob.co.kr/")
+for u in ["https://www.mediajob.co.kr/search/search.htm?search=" + quote("AI 영상"),
+          "https://www.mediajob.co.kr/search/search.htm?search=" + quote("AI")]:
+    r = req("GET", u)
+    if r is None: continue
+    soup = BeautifulSoup(r.text, "html.parser")
+    print("=====", r.status_code, len(r.text), u, (soup.title.get_text(strip=True) if soup.title else ""))
+    links = []
+    for a in soup.find_all("a", href=True):
+        full = urljoin(u, a["href"])
+        if "rec_idx=" in full and full not in [l[0] for l in links]:
+            links.append((full, a.get_text(" ", strip=True)[:60]))
+    print("  rec links", len(links), links[:8])
+    if links:
+        a = soup.find("a", href=re.compile("rec_idx="))
+        box = a.find_parent(["li", "tr"]) or a.parent
+        print("  card html:", re.sub(r"\s+", " ", str(box))[:1500])
+r = req("GET", "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326314")
 if r is not None:
     soup = BeautifulSoup(r.text, "html.parser")
-    for fm in soup.find_all("form")[:8]:
-        print("  form", fm.get("action"), fm.get("method"), [(i.get("name"), i.get("type")) for i in fm.find_all(["input","select"])][:10])
-    seen = []
-    for a in soup.find_all("a", href=True):
-        h = a["href"]
-        if re.search(r"\d{4,}", h) and h not in seen:
-            seen.append(h)
-    print("  digit links:", seen[:25])
-    print("  onclick samples:", [a.get("onclick") for a in soup.find_all(attrs={"onclick": True})][:10])
-r = get(f"https://www.mediajob.co.kr/search?keyword={Q}")
-if r is not None: print("  search body:", re.sub(r"\s+"," ", r.text[:1500]))
+    print("  detail", r.status_code, len(r.text), soup.title.get_text(strip=True) if soup.title else "")
+    print("  og:", [(m.get("property"), (m.get("content") or "")[:120]) for m in soup.find_all("meta", property=True)][:6])
+    print("  ld:", "ld+json" in r.text, " iframe:", [i.get("src") for i in soup.find_all("iframe")][:5])
+    print("  text:", re.sub(r"\s+", " ", soup.get_text(" "))[:800])
 
-print("##### SUPERINTERN")
-for u in ["https://superintern.kr/", "http://www.superintern.kr/", "https://www.superintern.co.kr/", "https://superintern.co.kr/", "https://app.superintern.kr/"]:
-    r = get(u)
-    if r is not None:
-        t = BeautifulSoup(r.text, "html.parser").title
-        print("  ", r.status_code, r.url, len(r.text), t.get_text(strip=True)[:80] if t else "")
+print("##### JOBPLANET detail")
+for u in ["https://www.jobplanet.co.kr/api/v1/job/postings/1714385", "https://www.jobplanet.co.kr/api/v3/job/postings/1714385",
+          "https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1714385"]:
+    r = req("GET", u)
+    if r is None: continue
+    print(" ", r.status_code, len(r.text), r.headers.get("content-type"), u, re.sub(r"\s+", " ", r.text[:300]) if "json" in (r.headers.get("content-type") or "") else "")
