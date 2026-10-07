@@ -1,0 +1,13 @@
+name: probe (temporary)
+on:
+  push:
+    branches: [claude/ai-artist-job-radar-github-938ydu]
+    paths: [job-radar/scripts/_probe_sites.py, .github/workflows/probe.yml]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests beautifulsoup4 && python job-radar/scripts/_probe_sites.py
