@@ -77,8 +77,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .toggle #onlyJp{accent-color:var(--warn)}
 .toggle input{accent-color:var(--new);width:16px;height:16px;margin:0}
 .toggle.on{border-color:var(--new);color:var(--new);background:var(--new-soft)}
-.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.chips::-webkit-scrollbar{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:8px 0 2px}
 .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:5px 12px;
   font-size:13px;cursor:pointer;display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
 .chip .c{color:var(--muted);font-variant-numeric:tabular-nums}
@@ -118,6 +117,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .err{padding:14px 16px;color:var(--bad)}
 @media (max-width:560px){
   .wrap{padding:16px 16px 48px}
+  .controls{position:static}
   h1{font-size:20px}
   .refresh{align-items:flex-start;width:100%}
   .hint{text-align:left}
