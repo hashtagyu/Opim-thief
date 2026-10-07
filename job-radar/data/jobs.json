@@ -137,7 +137,7 @@
    "Runway",
    "Veo"
   ],
-  "deadline": "2027-10-04",
+  "deadline": "상시",
   "first_seen": "2026-10-07T11:32:04+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -205,7 +205,7 @@
    "Midjourney",
    "Stable Diffusion"
   ],
-  "deadline": "2027-09-21",
+  "deadline": "상시",
   "first_seen": "2026-10-07T11:32:04+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -360,7 +360,7 @@
   "employment": "계약직",
   "summary": "NOW HIRING · AI 사업실 AI Artist / Concept Artist Character Concept Artist 실사 기반 가상 인물의 얼굴과 실루엣을 설계하고, 3D 제작의 기준이 되는 비주얼 컨셉을 구축할 아티스트를 찾습니다. 근무지역 서울 고용형태 계약직 (3개월) 경력 경력 무관 도메인 AI 사업실 ABOUT BLUE GARAGE Blue Garage는 JYP Ent…",
   "tools": [],
-  "deadline": "2027-08-25",
+  "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -386,7 +386,7 @@
   "employment": "정규직",
   "summary": "㈜스튜디오프리윌루전에서 정규직 경력 채용을 진행합니다. 근무지는 서울 서초구 매헌로16길 32 (양재동, 희경빌딩)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
   "tools": [],
-  "deadline": "2027-09-06",
+  "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -457,7 +457,7 @@
    "Midjourney",
    "Stable Diffusion"
   ],
-  "deadline": "2027-09-20",
+  "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -501,7 +501,7 @@
   "employment": "정규직",
   "summary": "NOW HIRING · AI 사업실 AI Artist / AI Content Creator Generative AI Visual & Video Content 생성형 AI로 AI 아티스트의 비주얼과 세계관을 영상·이미지 콘텐츠로 구현할 크리에이터를 찾습니다. 근무지역 서울 고용형태 정규직 경력 경력 무관 소속 AI 사업실 ABOUT BLUE GARAGE Blue Garage는 JYP Ente…",
   "tools": [],
-  "deadline": "2027-09-22",
+  "deadline": "상시",
   "first_seen": "2026-10-07T10:57:32+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
@@ -562,71 +562,6 @@
   "last_seen": "2026-10-07T11:32:04+09:00"
  },
  {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2608260004038",
-  "title": "[Blue Garage] AI Artist / Concept Artist",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609230003041",
-  "title": "[Blue Garage] AI Artist / AI Content Creator",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2609280005465",
-  "title": "[Blue Garage] AI Artist / Music&Voice Production & Planning",
-  "company": "(주)JYP엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2610050000322",
-  "title": "AI 콘텐츠 디자이너 채용",
-  "company": "셀레디언트",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "incruit",
-  "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2610060005123",
-  "title": "[GENTLE MONSTER] AI 컨텐츠 제작자",
-  "company": "(주)아이아이컴바인드",
-  "location": "",
-  "employment": "",
-  "summary": "",
-  "tools": [],
-  "deadline": null,
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
   "source": "linkedin",
   "url": "https://www.linkedin.com/jobs/view/4460973023",
   "title": "Visual AI Creative Lead",
@@ -673,19 +608,6 @@
   "deadline": null,
   "first_seen": "2026-10-07T10:57:32+09:00",
   "last_seen": "2026-10-07T11:32:04+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55161522",
-  "title": "AI Artist / LLM Engineer(9년~)",
-  "company": "(주)블루개러지",
-  "location": "서울 강동구",
-  "employment": "정규직",
-  "summary": "채용공고 상세 AI Artist / LLM Engineer(9년~) 서비스 소개 Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을 새롭게…",
-  "tools": [],
-  "deadline": "2026-10-29",
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-07T10:57:32+09:00"
  },
  {
   "source": "saramin",

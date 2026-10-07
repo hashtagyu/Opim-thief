@@ -87,7 +87,11 @@ class Fetcher:
         if referer:
             headers["Referer"] = referer
         self.requests += 1
-        r = self.s.get(url, headers=headers, timeout=15)
+        try:
+            r = self.s.get(url, headers=headers, timeout=15)
+        except (requests.ConnectionError, requests.Timeout):
+            time.sleep(8)  # 잠깐 쉬고 한 번만 다시 (일시적 끊김 대비)
+            r = self.s.get(url, headers=headers, timeout=20)
         body_head = r.text[:3000].lower() if r.text else ""
         if DEBUG:
             log(f"  [{self.name}] {r.status_code} {len(r.content)}B {url}")
@@ -135,7 +139,13 @@ def to_date(value):
     value = str(value).strip()
     m = re.search(r"(20\d{2})[-./](\d{1,2})[-./](\d{1,2})", value)
     if m:
-        return f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
+        try:
+            d = datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=KST)
+        except ValueError:
+            return None
+        if d - now_kst() > timedelta(days=300):  # 상시채용을 1년 뒤 날짜로 넣는 사이트가 있다
+            return "상시"
+        return d.strftime("%Y-%m-%d")
     m = re.search(r"(?<!\d)(\d{1,2})[/.](\d{1,2})(?!\d)", value)
     if m:
         today = now_kst().date()
@@ -523,8 +533,8 @@ def src_incruit(f, known):
                 continue
             url = m.group(0).replace("http://", "https://")
             title = clean(a.get_text(" "))
-            box = a.find_parent("li") or a.find_parent("div")
-            cp = box.select_one(".cpname, a[href*='company'], a[href*='/corp']") if box else None
+            box = a.find_parent("li")
+            cp = box.select_one(".cpname") if box else None
             c = cards.setdefault(url, {"url": url, "title": "", "company": ""})
             if len(title) > len(c["title"]):
                 c["title"] = title
@@ -646,6 +656,14 @@ def judge(c, prev=None):
     return True, None
 
 
+def title_ok(j):
+    """본문 없이 제목·회사명만으로 다시 거르기 (규칙 변경을 기존 공고에도 반영)."""
+    title = j.get("title") or ""
+    if rules.NON_ARTIST_TITLE.search(title):
+        return False
+    return not rules.EXCLUDE_META.search(" ".join([title, j.get("company") or ""]))
+
+
 def main():
     DATA.mkdir(parents=True, exist_ok=True)
     started = now_kst()
@@ -734,6 +752,8 @@ def main():
     for url, j in by_url.items():
         if url in merged or url in dropped_urls:
             continue
+        if not title_ok(j):
+            continue  # 규칙이 바뀌어 이제는 제외 대상
         if j.get("source") in ok_sources:
             try:
                 last = datetime.fromisoformat(j["last_seen"])
