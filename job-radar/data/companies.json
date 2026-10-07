@@ -1,9 +1,38 @@
 {
+ "aurifyllc": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "Aurify, LLC",
+  "src": "사람인",
+  "v": 2
+ },
+ "jyp엔터테인먼트": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "(주)JYP엔터테인먼트",
+  "src": "사람인",
+  "v": 2
+ },
+ "theflex": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "The Flex",
+  "src": "사람인",
+  "v": 2
+ },
  "강남중고명품김캡쳐": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
   "csn": "bUMvTnFCTzg4UURkZnZpcjdHSnY4Zz09",
   "name": "강남중고명품 김캡쳐",
+  "src": "사람인",
+  "v": 2
+ },
+ "그레이13": {
+  "avg_salary": 4803,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "aWpySXB1RzY5WWJFc2pCSENNcVpsZz09",
+  "name": "그레이13㈜",
   "src": "사람인",
   "v": 2
  },
@@ -15,6 +44,14 @@
   "name": "㈜노벨라스튜디오",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/44095340",
+  "v": 2
+ },
+ "농협은행": {
+  "avg_salary": 9882,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "U2duVHpKK0Zpb2o4UnBQaEtBOW5Rdz09",
+  "name": "농협은행㈜",
+  "src": "사람인",
   "v": 2
  },
  "뉴클럭스": {
@@ -53,6 +90,14 @@
   "src": "사람인",
   "v": 2
  },
+ "메타크래프트": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "VnV6b21pOTcxdlpFaVlMSVRPRnFnZz09",
+  "name": "㈜메타크래프트",
+  "src": "사람인",
+  "v": 2
+ },
  "모브윅스": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -66,6 +111,13 @@
   "checked": "2026-10-07T12:54:57+09:00",
   "csn": "ZS9mY1VYMm4xclVubVJrK1hNRDlmZz09",
   "name": "㈜모비데이즈",
+  "src": "사람인",
+  "v": 2
+ },
+ "미툰앤노벨": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "㈜미툰앤노벨",
   "src": "사람인",
   "v": 2
  },
@@ -163,6 +215,14 @@
   "src": "사람인",
   "v": 2
  },
+ "스푼랩스": {
+  "avg_salary": 7960,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "NUFSQkF1M0ZWTER3WFE3Q0RUTDN4Zz09",
+  "name": "(주)스푼랩스",
+  "src": "사람인",
+  "v": 2
+ },
  "아이스크림스튜디오": {
   "avg_salary": 4474,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -246,6 +306,14 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/34356307",
   "v": 2
  },
+ "유어스디자인그룹": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "RUZCMkJZZGdXb2pUNHplWm4xaFVjQT09",
+  "name": "㈜유어스디자인그룹",
+  "src": "사람인",
+  "v": 2
+ },
  "인바이트넷": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -261,6 +329,14 @@
   "src": "사람인",
   "v": 2
  },
+ "주리메지": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "UFRiMGQvbFl5K0VXVFJ4NURzVGxHUT09",
+  "name": "주리메지",
+  "src": "사람인",
+  "v": 2
+ },
  "카이버스": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -269,6 +345,30 @@
   "name": "㈜카이버스",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/51939072",
+  "v": 2
+ },
+ "커넥티드코리아": {
+  "avg_salary": 4236,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "ZlBrM0Jnd3RZcGErUDQ3WW9lL25Ndz09",
+  "name": "㈜커넥티드코리아",
+  "src": "사람인",
+  "v": 2
+ },
+ "컷백": {
+  "avg_salary": 6123,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "bjlFL0FSSGw3SUtFNktpbGRXblBFZz09",
+  "name": "(주)컷백",
+  "src": "사람인",
+  "v": 2
+ },
+ "콘텐츠새로": {
+  "avg_salary": 4196,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "THBUOHZhV1NUVjJXemdFd0N2eENsZz09",
+  "name": "(주)콘텐츠새로",
+  "src": "사람인",
   "v": 2
  },
  "큐피스트": {
@@ -297,6 +397,21 @@
   "url": "https://www.jobkorea.co.kr/company/45257507",
   "v": 2
  },
+ "키다리스튜디오": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "csn": "amhwVm1sbHZkREhqY2JGdHprL0Ewdz09",
+  "name": "키다리스튜디오",
+  "src": "사람인",
+  "v": 2
+ },
+ "테이트이삼": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "㈜테이트이삼",
+  "src": "사람인",
+  "v": 2
+ },
  "포에버스튜디오": {
   "avg_salary": 5301,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -314,6 +429,13 @@
   "name": "(주)포자랩스",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/25996904",
+  "v": 2
+ },
+ "픽스피드": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:28:02+09:00",
+  "name": "픽스피드㈜",
+  "src": "사람인",
   "v": 2
  },
  "하트에이아이": {
