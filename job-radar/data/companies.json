@@ -1,7 +1,20 @@
 {
+ "(주）플렉시온": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "(주）플렉시온",
+  "src": "사람인",
+  "v": 2
+ },
  "aurifyllc": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "Aurify, LLC",
   "src": "사람인",
   "v": 2
@@ -9,6 +22,9 @@
  "jyp엔터테인먼트": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "(주)JYP엔터테인먼트",
   "src": "사람인",
   "v": 2
@@ -16,6 +32,9 @@
  "theflex": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "The Flex",
   "src": "사람인",
   "v": 2
@@ -37,6 +56,11 @@
   "avg_salary": 4803,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "aWpySXB1RzY5WWJFc2pCSENNcVpsZz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 536027,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
   "name": "그레이13㈜",
   "src": "사람인",
   "v": 2
@@ -58,6 +82,9 @@
   "avg_salary": 9882,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "U2duVHpKK0Zpb2o4UnBQaEtBOW5Rdz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "농협은행㈜",
   "src": "사람인",
   "v": 2
@@ -88,6 +115,17 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/44639605",
   "v": 2
  },
+ "드림프레임": {
+  "avg_salary": 3330,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "csn": "YkM2blFPRk83WE9oV0NwZ2dwRWJZQT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "드림프레임㈜",
+  "src": "사람인",
+  "v": 2
+ },
  "디지털아이디어": {
   "avg_salary": 6357,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -116,10 +154,26 @@
   "src": "사람인",
   "v": 2
  },
+ "메디테라피": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "csn": "clA2VGlGd0VFTkVpTDZkVGdsTndaQT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 339459,
+  "jp_rating": 3.1,
+  "jp_reviews": 238,
+  "jp_v": 1,
+  "name": "(주)메디테라피",
+  "src": "사람인",
+  "v": 2
+ },
  "메타크래프트": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "VnV6b21pOTcxdlpFaVlMSVRPRnFnZz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜메타크래프트",
   "src": "사람인",
   "v": 2
@@ -149,6 +203,9 @@
  "미툰앤노벨": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜미툰앤노벨",
   "src": "사람인",
   "v": 2
@@ -166,6 +223,19 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/52667963",
   "v": 2
  },
+ "발전존중": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "csn": "Q3RRM1lYeGRvMkxOSklLN0M5dFh1UT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 534177,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "㈜발전존중",
+  "src": "사람인",
+  "v": 2
+ },
  "베이컨디자인스튜디오": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -179,6 +249,16 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/18325039",
   "v": 2
  },
+ "뷰어즈": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "주식회사 뷰어즈",
+  "src": "사람인",
+  "v": 2
+ },
  "블루개러지": {
   "avg_salary": 8614,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -190,6 +270,17 @@
   "name": "(주)블루개러지",
   "src": "사람인",
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
+  "v": 2
+ },
+ "새벽다섯시": {
+  "avg_salary": 3704,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "csn": "MjgzTjhRZW1iTjNaZnFJYVZTTUJjQT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜새벽다섯시",
+  "src": "사람인",
   "v": 2
  },
  "세로본능": {
@@ -287,6 +378,11 @@
   "avg_salary": 7960,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "NUFSQkF1M0ZWTER3WFE3Q0RUTDN4Zz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 78061,
+  "jp_rating": 3.2,
+  "jp_reviews": 134,
+  "jp_v": 1,
   "name": "(주)스푼랩스",
   "src": "사람인",
   "v": 2
@@ -373,6 +469,9 @@
   "avg_salary": 3497,
   "checked": "2026-10-07T12:54:57+09:00",
   "csn": "Rjg0SThJcldINm9CQTJVUXVOcjlDUT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜엠제이플렉스",
   "src": "사람인",
   "v": 2
@@ -404,10 +503,23 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/34356307",
   "v": 2
  },
+ "웰포유": {
+  "avg_salary": null,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "주식회사 웰포유",
+  "src": "사람인",
+  "v": 2
+ },
  "유어스디자인그룹": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "RUZCMkJZZGdXb2pUNHplWm4xaFVjQT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜유어스디자인그룹",
   "src": "사람인",
   "v": 2
@@ -439,7 +551,21 @@
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "UFRiMGQvbFl5K0VXVFJ4NURzVGxHUT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "주리메지",
+  "src": "사람인",
+  "v": 2
+ },
+ "지피티더블유인스티튜트": {
+  "avg_salary": 5492,
+  "checked": "2026-10-07T13:56:39+09:00",
+  "csn": "cDBSaG9mQ0VKMnBHMUhldzVVNWFIUT09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜지피티더블유인스티튜트",
   "src": "사람인",
   "v": 2
  },
@@ -462,6 +588,9 @@
   "avg_salary": 4236,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "ZlBrM0Jnd3RZcGErUDQ3WW9lL25Ndz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜커넥티드코리아",
   "src": "사람인",
   "v": 2
@@ -470,6 +599,11 @@
   "avg_salary": 6123,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "bjlFL0FSSGw3SUtFNktpbGRXblBFZz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 490484,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
   "name": "(주)컷백",
   "src": "사람인",
   "v": 2
@@ -478,6 +612,9 @@
   "avg_salary": 4196,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "THBUOHZhV1NUVjJXemdFd0N2eENsZz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "(주)콘텐츠새로",
   "src": "사람인",
   "v": 2
@@ -536,6 +673,11 @@
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
   "csn": "amhwVm1sbHZkREhqY2JGdHprL0Ewdz09",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 331640,
+  "jp_rating": 2.8,
+  "jp_reviews": 251,
+  "jp_v": 1,
   "name": "키다리스튜디오",
   "src": "사람인",
   "v": 2
@@ -543,6 +685,9 @@
  "테이트이삼": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": null,
+  "jp_v": 1,
   "name": "㈜테이트이삼",
   "src": "사람인",
   "v": 2
@@ -579,6 +724,11 @@
  "픽스피드": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
+  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_id": 541378,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
   "name": "픽스피드㈜",
   "src": "사람인",
   "v": 2
