@@ -738,6 +738,153 @@ def src_linkedin(f, known):
     return _detail_pass(f, cards, known, detail)
 
 
+# --- 잡플래닛 (공개 API)
+def src_jobplanet(f, known):
+    def search(term):
+        data = f.json(f"https://www.jobplanet.co.kr/api/v3/job/postings?query={quote(term)}&page=1&page_size=30",
+                      referer="https://www.jobplanet.co.kr/job/search")
+        out = []
+        for p in ((data.get("data") or {}).get("recruits") or []):
+            if not p.get("id") or p.get("jobkorea_posting_id"):
+                continue  # 잡코리아에서 옮겨온 공고는 잡코리아 쪽에서 이미 수집
+            out.append({
+                "url": f"https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D={p['id']}",
+                "_id": p["id"],
+                "title": clean(p.get("title")),
+                "company": clean((p.get("company") or {}).get("name")),
+                "location": ", ".join(p.get("cities") or []),
+                "employment": clean(p.get("job_type")),
+                "deadline": to_date(p.get("end_at")) or ("상시" if not p.get("end_at") else None),
+                "industry": " ".join((p.get("occupation_names") or {}).get("level2") or []),
+                "body": " ".join(p.get("skills") or []) if isinstance(p.get("skills"), list) and all(isinstance(x, str) for x in p.get("skills") or []) else "",
+            })
+        return out
+
+    def detail(c):
+        d = f.json(f"https://www.jobplanet.co.kr/api/v1/job/postings/{c['_id']}", referer=c["url"]).get("data") or {}
+        texts = []
+
+        def walk(x):
+            if isinstance(x, str):
+                if len(x) > 1 and not x.startswith("http"):
+                    texts.append(x)
+            elif isinstance(x, dict):
+                for k, v in x.items():
+                    if k not in ("logo_url", "image", "company"):
+                        walk(v)
+            elif isinstance(x, list):
+                for v in x:
+                    walk(v)
+        walk(d)
+        return {"body": clean(" ".join(texts), 8000), "company": clean(d.get("name"))}
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 리멤버 (경력직 채용, 공개 검색 API)
+def src_remember(f, known):
+    shown = {"keys": False}
+
+    def first(d, *paths):
+        for path in paths:
+            v = d
+            for k in path.split("."):
+                v = v.get(k) if isinstance(v, dict) else None
+            if v:
+                return v
+        return None
+
+    def search(term):
+        if time.time() > f.deadline:
+            f.out_of_time = True
+            raise OutOfTime()
+        r = f.s.post("https://career-api.rememberapp.co.kr/job_postings/search",
+                     json={"search": {"keywords": [term]}, "page": 1, "per": 30},
+                     headers={"Origin": "https://career.rememberapp.co.kr", "Referer": "https://career.rememberapp.co.kr/",
+                              "Accept": "application/json"}, timeout=20)
+        f.requests += 1
+        time.sleep(random.uniform(*DELAY))
+        if r.status_code in (401, 403, 429):
+            f.blocked += 1
+            raise Blocked(f"HTTP {r.status_code}")
+        r.raise_for_status()
+        items = r.json().get("data") or []
+        if items and not shown["keys"]:
+            shown["keys"] = True
+            log("  remember keys:", sorted(items[0].keys())[:60])
+        out = []
+        for p in items:
+            if not p.get("id"):
+                continue
+            body = " ".join(clean(p.get(k)) for k in ("job_description", "qualifications", "preferred_qualifications", "benefits") if isinstance(p.get(k), str))
+            addr = first(p, "addresses") or []
+            loc = ""
+            if isinstance(addr, list) and addr and isinstance(addr[0], dict):
+                loc = " ".join(str(v) for k, v in addr[0].items() if "level" in k and v)
+            lo, hi = p.get("min_salary"), p.get("max_salary")
+            sal = ""
+            if isinstance(lo, (int, float)) or isinstance(hi, (int, float)):
+                sal = f"연 {int(lo):,}~{int(hi):,}만원" if lo and hi else f"연 {int(lo or hi):,}만원"
+            out.append({
+                "url": f"https://career.rememberapp.co.kr/job/posting/{p['id']}",
+                "title": clean(p.get("title")),
+                "company": clean(first(p, "organization.name", "company.name", "organization_name", "company_name") or ""),
+                "location": clean(loc),
+                "employment": clean(p.get("employment_type") or ""),
+                "deadline": to_date(first(p, "ending_date", "end_date", "ends_at", "closed_at")) or None,
+                "industry": clean(p.get("job_role") or ""),
+                "salary": sal,
+                "body": body,
+            })
+        return out
+
+    return _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+
+
+# --- 미디어잡 (방송·영상·매스컴 전문)
+def src_mediajob(f, known):
+    def search(term):
+        soup = f.html(f"https://www.mediajob.co.kr/search/search.htm?search={quote(term)}")
+        links = _links(soup, "https://www.mediajob.co.kr",
+                       r"https://www\.mediajob\.co\.kr/recruit/recruit\.htm\?cmd=view&rec_idx=\d+")
+        return [{"url": u, "_id": u.rsplit("=", 1)[1], "title": t} for u, t in links.items()]
+
+    def detail(c):
+        soup = f.html(c["url"])
+        d = parse_detail_generic(soup)
+        if "미디어잡" in (d.get("title") or ""):
+            d.pop("title")  # og:title은 "회사 채용 | 미디어잡"이라 목록의 공고 제목을 쓴다
+        if not d.get("company"):
+            m = re.match(r"\s*(.+?)\s*채용\s*\|", meta(soup, "og:title") or "")
+            if m:
+                d["company"] = m.group(1)
+        try:
+            ifr = f.html(f"https://www.mediajob.co.kr/company/recruit_detail_iframe.htm?rec_idx={c['_id']}", referer=c["url"])
+            body = clean(ifr.get_text(" "), 8000)
+            if len(body) > 50:
+                d["body"] = body
+        except Blocked:
+            raise
+        except Exception:
+            pass
+        return d
+
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
+    return _detail_pass(f, cards, known, detail)
+
+
+# --- 슈퍼인턴
+def src_superintern(f, known):
+    try:
+        soup = f.html("https://www.superintern.kr/")
+    except requests.exceptions.SSLError:
+        raise RuntimeError("사이트 보안 인증서(SSL) 오류로 접속 불가")
+    links = _links(soup, "https://www.superintern.kr", r"https://www\.superintern\.kr/[^\s\"'#?]*\d+")
+    cards = [{"url": u, "title": t} for u, t in links.items()]
+    return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
+
+
 SOURCES = {
     "saramin": ("사람인", src_saramin),
     "wanted": ("원티드", src_wanted),
@@ -745,6 +892,10 @@ SOURCES = {
     "jumpit": ("점핏", src_jumpit),
     "incruit": ("인크루트", src_incruit),
     "rocketpunch": ("로켓펀치", src_rocketpunch),
+    "jobplanet": ("잡플래닛", src_jobplanet),
+    "remember": ("리멤버", src_remember),
+    "mediajob": ("미디어잡", src_mediajob),
+    "superintern": ("슈퍼인턴", src_superintern),
     "linkedin": ("LinkedIn", src_linkedin),
 }
 
