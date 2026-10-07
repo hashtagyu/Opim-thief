@@ -14,6 +14,7 @@ on:
         type: boolean
         default: false
   push:
+    branches: [main]
     paths:
       - "job-radar/**"
       - ".github/workflows/refresh.yml"

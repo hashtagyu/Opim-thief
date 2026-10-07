@@ -32,7 +32,6 @@ JOBS_FILE = DATA / "jobs.json"
 STATUS_FILE = DATA / "status.json"
 COMPANIES_FILE = DATA / "companies.json"  # 회사별 평균연봉 캐시
 SALARY_REFRESH_DAYS = 30
-MAX_SALARY_LOOKUPS_PER_SOURCE = 25
 
 STALE_DAYS = 7
 MAX_DETAILS_PER_SOURCE = 30
@@ -229,7 +228,6 @@ COMPANY_LINK = re.compile(
     r"https://www\.saramin\.co\.kr/zf_user/company-info/view[^\"'#]*csn=[^&\"'#]+"
     r"|https://www\.jobkorea\.co\.kr/(?:Recruit/Co_Read/C/[^?\"'#]+|company/\d+)"
 )
-COMPANY_BASES = ("https://www.saramin.co.kr", "https://www.jobkorea.co.kr")
 
 
 def company_link(soup, base):
@@ -279,34 +277,83 @@ def company_key(name):
     return re.sub(r"[\s·.,\-_]", "", n).lower()
 
 
-def parse_company_salary(soup):
-    text = clean(soup.get_text(" "))
-    out = {}
-    m = re.search(r"평균\s*연봉[^0-9]{0,40}?([0-9][0-9,]{2,6})\s*만\s*원", text)
+SALARY_META = re.compile(r"평균\s*연봉\s*:?\s*([0-9][0-9,]{2,6})\s*만\s*원")
+SALARY_VERSION = 2  # 조회 방식이 바뀌면 올려서 캐시를 다시 채운다
+
+
+def saramin_csn(url):
+    m = re.search(r"csn[=/]([^&/?#]+)", url or "")
+    return m.group(1) if m else None
+
+
+def find_saramin_csn(f, name):
+    """사람인 기업 검색에서 이름이 정확히 같은 회사의 csn."""
+    key = company_key(name)
+    if not key:
+        return None
+    soup = f.html(f"https://www.saramin.co.kr/zf_user/search/company?searchType=search&searchword={quote(name)}")
+    for a in soup.find_all("a", href=True):
+        csn = saramin_csn(a["href"]) if "company-info" in a["href"] else None
+        if not csn:
+            continue
+        if any(company_key(clean(x)) == key for x in (a.get("title"), a.get_text(" ")) if x):
+            return csn
+    return None
+
+
+def saramin_salary(f, csn):
+    """사람인 기업 연봉 페이지 메타 설명의 '평균연봉 : 8614만원' (국민연금 기준)."""
+    r = f.get(f"https://www.saramin.co.kr/zf_user/company-info/view-inner-salary?csn={csn}")
+    m = SALARY_META.search(r.text)
     if m:
         v = int(m.group(1).replace(",", ""))
         if 1000 <= v <= 30000:
-            out["avg_salary"] = v
-    m = re.search(r"(?:사원\s*수|직원\s*수|임직원\s*수)[^0-9]{0,20}([0-9][0-9,]*)\s*명", text)
-    if m:
-        out["employees"] = int(m.group(1).replace(",", ""))
-    return out, text
+            return v
+    return None
 
 
-def lookup_company(f, url):
-    """기업정보 페이지에서 평균연봉·사원수. 사람인은 연봉 탭도 확인."""
-    soup = f.html(url)
-    info, text = parse_company_salary(soup)
-    if "avg_salary" not in info and "saramin.co.kr" in url:
-        m = re.search(r"csn=([^&]+)", url)
-        if m:
-            info2, text = parse_company_salary(
-                f.html(f"https://www.saramin.co.kr/zf_user/company-info/view-inner-salary?csn={m.group(1)}", referer=url))
-            info = {**info, **info2}
-    if "avg_salary" not in info:
-        i = text.find("연봉")
-        log(f"   ? 평균연봉 못 찾음 {url} :: {text[max(0, i - 60):i + 120] if i >= 0 else text[:120]}")
-    return info
+def salary_pass(companies, jobs, hints, now, budget_sec=420, max_lookups=40):
+    """공고에 나온 회사들의 평균연봉을 사람인에서 채운다. 실패해도 수집 결과에는 영향 없음."""
+    f = Fetcher("salary")
+    f.deadline = time.time() + budget_sec
+    now_iso = now.isoformat()
+    fresh = (now - timedelta(days=SALARY_REFRESH_DAYS)).isoformat()
+    retry_missing = (now - timedelta(days=7)).isoformat()
+    names = {}
+    for j in jobs:
+        ck = company_key(j.get("company"))
+        if ck and ck not in names:
+            names[ck] = j["company"]
+    todo = []
+    for ck, name in names.items():
+        c = companies.get(ck) or {}
+        checked = c.get("checked") or ""
+        if c.get("v") == SALARY_VERSION and checked >= fresh and (c.get("avg_salary") or checked >= retry_missing):
+            continue
+        todo.append((ck, name))
+    found = done = 0
+    for ck, name in todo[:max_lookups]:
+        c = dict(companies.get(ck) or {})
+        try:
+            csn = c.get("csn") or saramin_csn(hints.get(ck)) or find_saramin_csn(f, name)
+            sal = saramin_salary(f, csn) if csn else None
+        except (Blocked, OutOfTime) as e:
+            log(f"   연봉 조회 중단: {type(e).__name__}")
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"   연봉 {name}: {type(e).__name__}")
+            continue
+        c.update({"name": name, "checked": now_iso, "v": SALARY_VERSION, "src": "사람인"})
+        if csn:
+            c["csn"] = csn
+        c["avg_salary"] = sal
+        companies[ck] = c
+        done += 1
+        if sal:
+            found += 1
+            log(f"   $ {name}: 평균 {sal:,}만원")
+    log(f"== 평균연봉: 대상 {len(todo)}곳 중 {done}곳 조회, {found}곳 확인 (요청 {f.requests})")
+    return {"todo": len(todo), "checked": done, "found": found}
 
 
 def parse_detail_generic(soup):
@@ -559,9 +606,7 @@ def src_jobkorea(f, known):
 
     def detail(c):
         soup = f.html(c["url"])
-        link = company_link(soup, "https://www.jobkorea.co.kr")
         d = parse_detail_generic(soup)
-        d["_company_url"] = link
         og = meta(soup, "og:title")
         # og:title 예: "(주)회사 채용 - 공고제목 | 잡코리아"
         m = re.match(r"\s*(.+?)\s*채용\s*-\s*(.+?)\s*(?:\|.*)?$", og or "")
@@ -771,7 +816,7 @@ def main():
     old_status = load_json(STATUS_FILE, {})
     by_url = {j["url"]: j for j in old_jobs if j.get("url")}
     companies = load_json(COMPANIES_FILE, {})
-    salary_cutoff = (started - timedelta(days=SALARY_REFRESH_DAYS)).isoformat()
+    salary_hints = {}  # 회사키 -> 사람인 기업정보 링크 (사람인 공고에서 얻은 것)
 
     only = [s.strip() for s in os.environ.get("RADAR_SOURCES", "").split(",") if s.strip()]
     status_sites = {}
@@ -785,7 +830,7 @@ def main():
         known = {u: j for u, j in by_url.items() if j.get("source") == key}
         st = {"label": label, "ok": False, "count": 0, "found": 0, "excluded": 0, "new": 0,
               "requests": 0, "error": None, "checked_at": now_iso}
-        recs, dropped, lookups = {}, set(), {}
+        recs, dropped = {}, set()
         lines = [f"== {label} ({key})"]
         try:
             cards = fn(f, known)
@@ -803,36 +848,9 @@ def main():
                 if not prev:
                     st["new"] += 1
                 recs[rec["url"]] = rec
-                ck = company_key(rec["company"])
-                cached = companies.get(ck) or {}
-                host_ok = any(c["url"].startswith(b) for b in COMPANY_BASES)
-                if ck and (c.get("_company_url") or host_ok) and (cached.get("checked") or "") < salary_cutoff:
-                    lookups[ck] = (rec["company"], c.get("_company_url"), c["url"])
+                if "saramin.co.kr" in (c.get("_company_url") or ""):
+                    salary_hints[company_key(rec["company"])] = c["_company_url"]
                 lines.append(f"   + {rec['title']} / {rec['company']} {rec['tools']}")
-            # 회사 평균연봉 조회 (실패해도 사이트 수집은 성공으로 둔다)
-            done = 0
-            for ck, (name, curl, jurl) in list(lookups.items())[:MAX_SALARY_LOOKUPS_PER_SOURCE]:
-                try:
-                    if not curl:  # 이미 아는 공고라 상세를 안 열었으면 공고 페이지에서 기업정보 링크만 찾는다
-                        base = next(b for b in COMPANY_BASES if jurl.startswith(b))
-                        curl = company_link(f.html(jurl), base)
-                        if not curl:
-                            companies[ck] = {**(companies.get(ck) or {}), "name": name, "checked": now_iso}
-                            continue
-                    info = lookup_company(f, curl)
-                except (Blocked, OutOfTime) as e:
-                    f.errors.append(f"연봉 조회 중단: {type(e).__name__}")
-                    break
-                except Exception as e:  # noqa: BLE001
-                    f.errors.append(f"연봉 {name}: {type(e).__name__}"[:120])
-                    continue
-                prev_c = companies.get(ck) or {}
-                companies[ck] = {**prev_c, "name": name, "url": curl, "checked": now_iso,
-                                 "src": "사람인" if "saramin" in curl else "잡코리아", **info}
-                done += 1
-                if info.get("avg_salary"):
-                    lines.append(f"   $ {name}: 평균 {info['avg_salary']:,}만원")
-            st["salary_lookups"] = done
             st["ok"] = True
             st["count"] = len(recs)
             st["last_success"] = now_iso
@@ -891,6 +909,7 @@ def main():
                 continue  # 7일 연속 안 보임 -> 제거
         merged[url] = j
 
+    salary_stat = salary_pass(companies, list(merged.values()), salary_hints, started)
     for j in merged.values():
         info = companies.get(company_key(j.get("company"))) or {}
         j["avg_salary"] = info.get("avg_salary")
@@ -909,6 +928,7 @@ def main():
         "updated_at": now_iso,
         "finished_at": now_kst().isoformat(),
         "total": len(jobs),
+        "salary": salary_stat,
         "sites": status_sites,
     }
     STATUS_FILE.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
