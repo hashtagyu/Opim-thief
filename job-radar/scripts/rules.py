@@ -76,7 +76,7 @@ CREATIVE_TITLE = re.compile(
 # 제목·회사명·업종에 하나라도 있으면 제외
 EXCLUDE_META = re.compile(
     r"광고|대행사|커머스|쇼핑몰|뷰티|화장품|코스메틱|병원|의원|클리닉|성형외과|(?<!생)성형|피부과|치과|한의원|"
-    r"마케팅|마케터|퍼포먼스|교육|학원|강사|튜터|에듀|아카데미|"
+    r"마케팅|마케터|퍼포먼스|교육|학원|강사|튜터|에듀|아카데미|상세\s*페이지|쇼핑|"
     r"advertis|ad\s*agency|commerce|beauty|cosmetic|hospital|clinic|medical|marketing|marketer|"
     r"education|edtech|academy|tutor|instructor|teacher",
     re.I,
@@ -119,8 +119,28 @@ def exclusion_reason(title, company, industry, body):
     return None
 
 
+# 개발·엔지니어 직군은 제목에 "AI Artist"가 붙어 있어도 제외
+NON_ARTIST_TITLE = re.compile(
+    r"엔지니어|개발자|백엔드|프론트엔드|풀스택|데이터\s*사이언|engineer|developer|software|full\s*stack|backend|frontend|"
+    r"devops|data\s*scien|researcher|연구원|영업|세일즈|sales|회계|인사\b",
+    re.I,
+)
+
+
+def title_could_match(title):
+    """상세를 열기 전 제목만으로 후보가 될 수 있는지 (요청 수 줄이기용)."""
+    title = title or ""
+    if not title:
+        return True
+    if NON_ARTIST_TITLE.search(title) or EXCLUDE_META.search(title):
+        return False
+    return bool(ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title))
+
+
 def is_relevant(title, body, tools):
     title = title or ""
+    if NON_ARTIST_TITLE.search(title):
+        return False
     if ROLE_TITLE.search(title):
         return True
     return bool(tools) and bool(CREATIVE_TITLE.search(title))

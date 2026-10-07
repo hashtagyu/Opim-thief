@@ -287,6 +287,9 @@ def _detail_pass(f, cards, known, detail_fn):
             c["_known"] = True
             out.append(c)
             continue
+        if not rules.title_could_match(c.get("title")) or rules.EXCLUDE_META.search(c.get("company") or ""):
+            out.append(c)  # 제목·회사만으로 탈락 -> 상세 요청 생략 (judge에서 제외로 집계)
+            continue
         if fetched >= MAX_DETAILS_PER_SOURCE:
             continue
         fetched += 1
@@ -342,7 +345,7 @@ def src_saramin(f, known):
                 "deadline": to_date(clean((it.select_one("div.job_date .date") or it.new_tag("i")).get_text())),
                 "industry": clean((it.select_one("div.job_sector") or it.new_tag("i")).get_text()),
             })
-        if not cards and DEBUG:
+        if not cards:
             log("  saramin no cards; head:", soup.get_text(" ")[:300])
         return cards
 
@@ -392,8 +395,11 @@ def src_wanted(f, known):
         for ep in endpoints:
             try:
                 data = f.json(ep, referer=f"https://www.wanted.co.kr/search?query={q}&tab=position")
-            except Blocked:
-                raise
+            except (Blocked, OutOfTime) as e:
+                if isinstance(e, OutOfTime):
+                    raise
+                last = e
+                break  # API가 막히면 공개 검색 페이지로
             except Exception as e:  # noqa: BLE001
                 last = e
                 continue
@@ -412,6 +418,8 @@ def src_wanted(f, known):
         # 마지막 수단: 검색 페이지 HTML의 /wd/ 링크
         soup = f.html(f"https://www.wanted.co.kr/search?query={q}&tab=position")
         links = _links(soup, "https://www.wanted.co.kr", r"https://www\.wanted\.co\.kr/wd/\d+")
+        if not links:
+            log("  wanted html no links; head:", soup.get_text(" ")[:300])
         if not links and last:
             raise last
         return [{"url": u, "_id": int(u.rsplit("/", 1)[1]), "title": t} for u, t in links.items()]
@@ -444,7 +452,7 @@ def src_jobkorea(f, known):
     def search(term):
         soup = f.html(f"https://www.jobkorea.co.kr/Search/?stext={quote(term)}&tabType=recruit&Page_No=1")
         links = _links(soup, "https://www.jobkorea.co.kr", r"https://www\.jobkorea\.co\.kr/Recruit/GI_Read/\d+")
-        if not links and DEBUG:
+        if not links:
             log("  jobkorea no links; head:", soup.get_text(" ")[:300])
         return [{"url": u, "_id": u.rsplit("/", 1)[1], "title": t} for u, t in links.items()]
 
@@ -507,8 +515,22 @@ def src_jumpit(f, known):
 def src_incruit(f, known):
     def search(term):
         soup = f.html(f"https://search.incruit.com/list/search.asp?col=job&kw={quote(term, encoding='euc-kr', errors='ignore')}")
-        links = _links(soup, "https://job.incruit.com", r"https?://job\.incruit\.com/jobdb_info/jobpost\.asp\?job=\d+")
-        return [{"url": u.replace("http://", "https://"), "title": t} for u, t in links.items()]
+        rx = re.compile(r"https?://job\.incruit\.com/jobdb_info/jobpost\.asp\?job=\d+")
+        cards = {}
+        for a in soup.find_all("a", href=True):
+            m = rx.search(urljoin("https://job.incruit.com", a["href"]))
+            if not m:
+                continue
+            url = m.group(0).replace("http://", "https://")
+            title = clean(a.get_text(" "))
+            box = a.find_parent("li") or a.find_parent("div")
+            cp = box.select_one(".cpname, a[href*='company'], a[href*='/corp']") if box else None
+            c = cards.setdefault(url, {"url": url, "title": "", "company": ""})
+            if len(title) > len(c["title"]):
+                c["title"] = title
+            if cp and not c["company"]:
+                c["company"] = clean(cp.get_text(" "))
+        return list(cards.values())
 
     cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
     return _detail_pass(f, cards, known, lambda c: parse_detail_generic(f.html(c["url"])))
@@ -517,14 +539,10 @@ def src_incruit(f, known):
 # --- 로켓펀치
 def src_rocketpunch(f, known):
     def search(term):
-        r = f.get(f"https://www.rocketpunch.com/api/jobs/template?page=1&q={quote(term)}",
-                  accept="application/json, text/javascript, */*; q=0.01", referer="https://www.rocketpunch.com/jobs")
-        try:
-            html = r.json().get("data", {}).get("template", "")
-        except ValueError:
-            html = r.text
-        soup = BeautifulSoup(html, "html.parser")
+        soup = f.html(f"https://www.rocketpunch.com/jobs?keywords={quote(term)}")
         links = _links(soup, "https://www.rocketpunch.com", r"https://www\.rocketpunch\.com/jobs/\d+(?:/[^?#\"']*)?")
+        if not links:
+            log("  rocketpunch no links; head:", soup.get_text(" ")[:300])
         return [{"url": u, "title": t} for u, t in links.items()]
 
     cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS, search))
@@ -642,6 +660,7 @@ def main():
     status_sites = {}
     new_by_url = {}
     ok_sources = set()
+    dropped_urls = set()  # 이번에 다시 보였지만 규칙상 제외된 공고 -> 바로 삭제
 
     def run_site(key, label, fn):
         f = Fetcher(key)
@@ -649,7 +668,7 @@ def main():
         known = {u: j for u, j in by_url.items() if j.get("source") == key}
         st = {"label": label, "ok": False, "count": 0, "found": 0, "excluded": 0, "new": 0,
               "requests": 0, "error": None, "checked_at": now_iso}
-        recs = {}
+        recs, dropped = {}, set()
         lines = [f"== {label} ({key})"]
         try:
             cards = fn(f, known)
@@ -659,6 +678,7 @@ def main():
                 ok, why = judge(c, prev)
                 if not ok:
                     st["excluded"] += 1
+                    dropped.add(c["url"])
                     if DEBUG:
                         lines.append(f"   - skip [{why}] {c.get('title')} / {c.get('company')}")
                     continue
@@ -688,7 +708,7 @@ def main():
         lines.append(f"   => ok={st['ok']} count={st['count']} found={st['found']} excluded={st['excluded']} "
                      f"requests={f.requests} {st['seconds']}s err={st['error']}")
         log("\n".join(lines))
-        return key, st, recs
+        return key, st, recs, dropped
 
     todo = []
     for key, (label, fn) in SOURCES.items():
@@ -700,18 +720,19 @@ def main():
         todo.append((key, label, fn))
     # 사이트끼리는 동시에, 같은 사이트 안에서는 요청 간격을 지키며 순서대로
     with ThreadPoolExecutor(max_workers=max(1, len(todo))) as ex:
-        for key, st, recs in ex.map(lambda a: run_site(*a), todo):
+        for key, st, recs, dropped in ex.map(lambda a: run_site(*a), todo):
             status_sites[key] = st
             if st["ok"]:
                 ok_sources.add(key)
                 new_by_url.update(recs)
+                dropped_urls.update(dropped)
     status_sites = {k: status_sites[k] for k in SOURCES if k in status_sites}
 
     # 병합: 성공한 사이트는 새 결과 + (7일 안 지난) 미발견 공고, 실패한 사이트는 기존 그대로
     cutoff = started - timedelta(days=STALE_DAYS)
     merged = dict(new_by_url)
     for url, j in by_url.items():
-        if url in merged:
+        if url in merged or url in dropped_urls:
             continue
         if j.get("source") in ok_sources:
             try:
