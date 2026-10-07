@@ -61,7 +61,7 @@ for _k in _CASE_SENSITIVE:
 
 # 제목에 있으면 AI 아티스트 직무로 바로 인정
 ROLE_TITLE = re.compile(
-    r"(?:ai|생성형|인공지능|gen\s*ai)\s*[-·/]?\s*(?:기반\s*)?"
+    r"(?:ai|생성형|인공지능|gen\s*ai)\s*[-·/]?\s*(?:기반\s*)?(?:[^\s,/|()\[\]]{1,6}\s*){0,2}?"  # "AI 교육 영상", "AI 숏폼 콘텐츠"처럼 사이에 단어 1~2개 허용
     r"(?:아티스트|영상|크리에이터|콘텐츠|컨텐츠|디자이너|애니메이터|애니메이션|비디오|이미지|필름|감독|pd|작가|"
     r"artist|video|creator|content|filmmaker|animator|animation|designer|director|motion|visual|image|cinemat)",
     re.I,
@@ -76,9 +76,8 @@ CREATIVE_TITLE = re.compile(
 # 제목·회사명·업종에 하나라도 있으면 제외
 EXCLUDE_META = re.compile(
     r"광고|대행사|커머스|쇼핑몰|뷰티|화장품|코스메틱|병원|의원|클리닉|성형외과|(?<!생)성형|피부과|치과|한의원|"
-    r"마케팅|마케터|퍼포먼스|교육|학원|강사|튜터|에듀|아카데미|상세\s*페이지|쇼핑|"
-    r"advertis|ad\s*agency|commerce|beauty|cosmetic|hospital|clinic|medical|marketing|marketer|"
-    r"education|edtech|academy|tutor|instructor|teacher",
+    r"마케팅|마케터|퍼포먼스|상세\s*페이지|쇼핑|"
+    r"advertis|ad\s*agency|commerce|beauty|cosmetic|hospital|clinic|medical|marketing|marketer",
     re.I,
 )
 # 본문: 구체적인 표현은 1번만 나와도 제외
@@ -86,13 +85,14 @@ EXCLUDE_BODY_STRONG = re.compile(
     r"광고\s*대행|종합\s*광고|광고\s*에이전시|디지털\s*광고\s*회사|이\s*커머스|커머스\s*(?:기업|회사|플랫폼|브랜드)|"
     r"쇼핑몰\s*운영|뷰티\s*(?:브랜드|기업|회사)|화장품\s*(?:브랜드|기업|회사|제조)|코스메틱|"
     r"(?:성형외과|피부과|치과|한의원|병원)\s*(?:입니다|에서|소속|전문)|마케팅\s*(?:대행|에이전시|전문\s*기업|회사)|"
-    r"퍼포먼스\s*마케팅|교육\s*기관|교육\s*(?:전문\s*|콘텐츠\s*)?(?:기업|회사)|교육\s*콘텐츠|에듀테크|학원|강사\s*(?:모집|채용)|"
+    r"퍼포먼스\s*마케팅|"
     r"advertising\s*agency|marketing\s*agency|e-?commerce\s*(?:company|brand|platform)|beauty\s*brand|"
-    r"cosmetics?\s*(?:brand|company)|edtech|education\s*company",
+    r"cosmetics?\s*(?:brand|company)",
     re.I,
 )
-# 본문: 흔한 단어는 3번 이상 나와야 제외 ("교육비 지원" 같은 복지 문구 오탐 방지)
-EXCLUDE_BODY_WEAK = re.compile(r"광고|마케팅|교육|뷰티|커머스|병원|advertis|marketing|education|beauty|commerce", re.I)
+# 본문: 흔한 단어는 3번 이상 나와야 제외
+# 교육 분야(EBS·메가스터디·비상교육 같은 교육 업체의 교육 영상 제작 등)는 2026-10 사용자 요청으로 제외 대상에서 뺐다
+EXCLUDE_BODY_WEAK = re.compile(r"광고|마케팅|뷰티|커머스|병원|advertis|marketing|beauty|commerce", re.I)
 WEAK_THRESHOLD = 3
 # 복지 문구는 약한 단어 계산에서 빼고 센다
 BENEFIT_NOISE = re.compile(r"교육\s*(?:비|지원|프로그램|기회)|사내\s*교육|직무\s*교육|도서\s*.{0,4}교육|education\s*(?:budget|stipend|support)", re.I)
@@ -122,7 +122,8 @@ def exclusion_reason(title, company, industry, body):
 # 개발·엔지니어 직군은 제목에 "AI Artist"가 붙어 있어도 제외
 NON_ARTIST_TITLE = re.compile(
     r"엔지니어|개발자|백엔드|프론트엔드|풀스택|데이터\s*사이언|engineer|developer|software|full\s*stack|backend|frontend|"
-    r"devops|data\s*scien|researcher|연구원|영업|세일즈|sales|회계|인사\b",
+    r"devops|data\s*scien|researcher|연구원|영업|세일즈|sales|회계|인사\b|"
+    r"라벨링|레이블링|어노테이션|annotation|labeling|검수|데이터\s*(?:구축|수집|가공)",
     re.I,
 )
 
