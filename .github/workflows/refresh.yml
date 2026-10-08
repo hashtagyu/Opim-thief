@@ -2,7 +2,7 @@ name: AI 잡 레이더 새로고침
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 매일 한국시간 오전 9시 (UTC 00:00)
+    - cron: "37 22 * * *" # 매일 한국시간 오전 7시 37분 (UTC 22:37). 정각은 GitHub가 붐벼서 몇 시간씩 밀리므로 피함
   workflow_dispatch:
     inputs:
       sources:

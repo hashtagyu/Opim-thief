@@ -3,7 +3,7 @@
 맥북 없이 GitHub Actions가 매일 채용 공고를 모으고, GitHub Pages가 페이지를 띄워요.
 
 ```
-GitHub Actions (매일 09:00 KST)
+GitHub Actions (매일 07:37 KST 시작)
   └─ scripts/collect.py  →  data/jobs.json, data/status.json 커밋
 GitHub Pages
   └─ index.html  ←  data/jobs.json, data/insta.json, data/status.json 을 fetch
