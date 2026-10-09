@@ -275,6 +275,17 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/44639605",
   "v": 2
  },
+ "더메이블": {
+  "avg_salary": 5186,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "anlUNDlzVkJwZUIzUXFDdkV6QWJYdz09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "주식회사더메이블(TheMable)",
+  "src": "사람인",
+  "v": 2
+ },
  "더모임컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -335,6 +346,19 @@
   "src": "사람인",
   "v": 2
  },
+ "더컴퍼니": {
+  "avg_salary": 7193,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "Z1ZSdXdoYzNwc1N2VEpFUkNqZkVMUT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": 342960,
+  "jp_rating": 2.1,
+  "jp_reviews": 15,
+  "jp_v": 1,
+  "name": "(주)더컴퍼니",
+  "src": "사람인",
+  "v": 2
+ },
  "더파운더즈": {
   "avg_salary": null,
   "checked": "2026-10-07T16:00:06+09:00",
@@ -343,6 +367,17 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜더파운더즈",
+  "src": "사람인",
+  "v": 2
+ },
+ "데이원컴퍼니": {
+  "avg_salary": 5199,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "UkRGb0RjcVJqRUhRUHluVFIwd3lyQT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜데이원컴퍼니",
   "src": "사람인",
   "v": 2
  },
@@ -379,6 +414,17 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "드림프레임㈜",
+  "src": "사람인",
+  "v": 2
+ },
+ "디스이즈": {
+  "avg_salary": null,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "emxpLys4dzljYi9OQUZ2RVFqbkxIUT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "디스이즈",
   "src": "사람인",
   "v": 2
  },
@@ -1320,6 +1366,19 @@
   "src": "사람인",
   "v": 2
  },
+ "아카엔터테인먼트": {
+  "avg_salary": 2719,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "SUdaSWRrS29VejIxdWdXUXVsZmNZUT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": 536739,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "㈜아카엔터테인먼트",
+  "src": "사람인",
+  "v": 2
+ },
  "아크프로젝트": {
   "avg_salary": 7065,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -1536,6 +1595,17 @@
   "src": "사람인",
   "v": 2
  },
+ "엣지랭크": {
+  "avg_salary": 4628,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "VU8vOUljZ3NJdjdLNUtqOVl6UDQxUT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜엣지랭크",
+  "src": "사람인",
+  "v": 2
+ },
  "연희직업전문학교": {
   "avg_salary": 4030,
   "checked": "2026-10-07T16:00:06+09:00",
@@ -1612,6 +1682,19 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "(주)와트니",
+  "src": "사람인",
+  "v": 2
+ },
+ "워스웍스": {
+  "avg_salary": 5399,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "aXlSUXZ5czk5M0dyL0Rab2l5bWlOdz09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": 529181,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "(주)워스웍스",
   "src": "사람인",
   "v": 2
  },
@@ -2356,6 +2439,18 @@
   "src": "사람인",
   "v": 2
  },
+ "피에프컴퍼니": {
+  "avg_salary": null,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": 548329,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "피에프컴퍼니(PF COMPANY)",
+  "src": "사람인",
+  "v": 2
+ },
  "픽스피드": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
@@ -2463,6 +2558,19 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "유한회사현상(Hyunsang)",
+  "src": "사람인",
+  "v": 2
+ },
+ "화신이앤엘": {
+  "avg_salary": 4207,
+  "checked": "2026-10-09T11:31:15+09:00",
+  "csn": "ZjU0RG5MVmZJMEtLV0VLaTUwcUNNUT09",
+  "jp_checked": "2026-10-09T11:31:15+09:00",
+  "jp_id": 180411,
+  "jp_rating": 2.4,
+  "jp_reviews": 18,
+  "jp_v": 1,
+  "name": "(주)화신이앤엘",
   "src": "사람인",
   "v": 2
  },
