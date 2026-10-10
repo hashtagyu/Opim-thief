@@ -62,6 +62,19 @@
   "src": "사람인",
   "v": 2
  },
+ "거상코리아": {
+  "avg_salary": 4422,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "czNaYUJtU1pYUVBEM3lZc3dFUnlnZz09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 389934,
+  "jp_rating": 1.8,
+  "jp_reviews": 13,
+  "jp_v": 1,
+  "name": "(주)거상코리아",
+  "src": "사람인",
+  "v": 2
+ },
  "고민미디어": {
   "avg_salary": null,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -70,6 +83,19 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "고민미디어",
+  "src": "사람인",
+  "v": 2
+ },
+ "고워드": {
+  "avg_salary": 4997,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "UTlpVGxJTTNBSDdTcHRYcUJkaGl4dz09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 327241,
+  "jp_rating": 4.3,
+  "jp_reviews": 9,
+  "jp_v": 1,
+  "name": "(주)고워드",
   "src": "사람인",
   "v": 2
  },
@@ -477,6 +503,17 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "㈜라이프스킬즈",
+  "src": "사람인",
+  "v": 2
+ },
+ "러너블": {
+  "avg_salary": 5585,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "Mmk4TWtpU09LVkpETG9sTDRDQzFhUT09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "러너블㈜",
   "src": "사람인",
   "v": 2
  },
@@ -955,6 +992,17 @@
   "src": "사람인",
   "v": 2
  },
+ "비쥬얼메이커": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "RE93S2NCbCtFc2J0UDRUbEJZenpOZz09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "비쥬얼메이커㈜",
+  "src": "사람인",
+  "v": 2
+ },
  "비탑에이아이": {
   "avg_salary": 5342,
   "checked": "2026-10-07T16:00:06+09:00",
@@ -1034,6 +1082,18 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜새벽다섯시",
+  "src": "사람인",
+  "v": 2
+ },
+ "샌드베이지": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 534228,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "㈜샌드베이지 (SANDBEIGE Co.,Ltd.)",
   "src": "사람인",
   "v": 2
  },
@@ -1329,6 +1389,19 @@
   "src": "사람인",
   "v": 2
  },
+ "아성다이소": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "bytsRWZDbGYvamdqQTh4U2Qzd0xQUT09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 82693,
+  "jp_rating": 2.7,
+  "jp_reviews": 1460,
+  "jp_v": 1,
+  "name": "아성다이소",
+  "src": "사람인",
+  "v": 2
+ },
  "아이스크림스튜디오": {
   "avg_salary": 4474,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -1473,6 +1546,19 @@
   "src": "사람인",
   "v": 2
  },
+ "에스유컴퍼니": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "WDE5Q1owOVhJYVVUcUZSRmlXSndsUT09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 445020,
+  "jp_rating": 1.0,
+  "jp_reviews": 1,
+  "jp_v": 1,
+  "name": "에스유컴퍼니",
+  "src": "사람인",
+  "v": 2
+ },
  "에이브스튜디오": {
   "avg_salary": 4200,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -1496,6 +1582,19 @@
   "jp_reviews": 12,
   "jp_v": 1,
   "name": "(주)에이스피지",
+  "src": "사람인",
+  "v": 2
+ },
+ "에이에스엑스컴퍼니": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "VXNwYWZiaEZNbkZzamd2RVhSVk10UT09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 537650,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "㈜에이에스엑스컴퍼니",
   "src": "사람인",
   "v": 2
  },
@@ -1808,6 +1907,17 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜유토26",
+  "src": "사람인",
+  "v": 2
+ },
+ "이노테크미디어": {
+  "avg_salary": 6286,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "dU1VQ0M3UHJGNTBRcUkwQVdNeTg1Zz09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜이노테크미디어",
   "src": "사람인",
   "v": 2
  },
@@ -2485,6 +2595,19 @@
   "src": "사람인",
   "v": 2
  },
+ "하미글로벌": {
+  "avg_salary": 5816,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "csn": "R29FbWtQWHQ2L1BlRGJIZG43MW5EZz09",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": 316330,
+  "jp_rating": 2.7,
+  "jp_reviews": 143,
+  "jp_v": 1,
+  "name": "(주)하미글로벌",
+  "src": "사람인",
+  "v": 2
+ },
  "하이미디어아카데미": {
   "avg_salary": 4279,
   "checked": "2026-10-07T14:49:32+09:00",
@@ -2522,6 +2645,16 @@
   "name": "㈜한국경매",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/211170",
+  "v": 2
+ },
+ "한국온라인정보시스템": {
+  "avg_salary": null,
+  "checked": "2026-10-10T10:53:43+09:00",
+  "jp_checked": "2026-10-10T10:53:43+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "한국온라인정보시스템",
+  "src": "사람인",
   "v": 2
  },
  "헌터스그룹": {
