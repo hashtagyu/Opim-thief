@@ -49,6 +49,16 @@
   "src": "사람인",
   "v": 2
  },
+ "themable": {
+  "avg_salary": null,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "THE MABLE (더 메이블)",
+  "src": "사람인",
+  "v": 2
+ },
  "강남중고명품김캡쳐": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -567,6 +577,17 @@
   "src": "사람인",
   "v": 2
  },
+ "링코": {
+  "avg_salary": null,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "cGZvWmEvejkzRnVyOWZ6dmwreEY1UT09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "주식회사링코",
+  "src": "사람인",
+  "v": 2
+ },
  "마제스타지": {
   "avg_salary": null,
   "checked": "2026-10-07T16:00:06+09:00",
@@ -808,6 +829,17 @@
   "src": "사람인",
   "v": 2
  },
+ "바인드": {
+  "avg_salary": 5455,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "V2lyajgwOWg1N0xRQy9wRitGM25xUT09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜바인드",
+  "src": "사람인",
+  "v": 2
+ },
  "바인바이브스튜디오": {
   "avg_salary": null,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -918,6 +950,19 @@
   "name": "(주)블루개러지",
   "src": "사람인",
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
+  "v": 2
+ },
+ "블루밍그레이스": {
+  "avg_salary": 6989,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "TElJMlBEb0svU1dCV0VOeWRreXF4dz09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 522610,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "블루밍그레이스",
+  "src": "사람인",
   "v": 2
  },
  "블루엘리펀트": {
@@ -1172,6 +1217,19 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/50202119",
   "v": 2
  },
+ "슈퍼센트": {
+  "avg_salary": 6583,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "VmJKSUk2ZzhSckd6ODJnR3h4bUJidz09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 391410,
+  "jp_rating": 3.2,
+  "jp_reviews": 46,
+  "jp_v": 1,
+  "name": "슈퍼센트",
+  "src": "사람인",
+  "v": 2
+ },
  "스노우코리아": {
   "avg_salary": null,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -1338,6 +1396,19 @@
   "jp_reviews": 134,
   "jp_v": 1,
   "name": "(주)스푼랩스",
+  "src": "사람인",
+  "v": 2
+ },
+ "시너지온": {
+  "avg_salary": 6256,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "NDRVbnlSZGdXc3lZQWFyb1IrcFhNUT09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 70495,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "시너지온",
   "src": "사람인",
   "v": 2
  },
@@ -1632,6 +1703,16 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "(주)에폴레아",
+  "src": "사람인",
+  "v": 2
+ },
+ "엑스에이아이": {
+  "avg_salary": null,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "엑스에이아이 (xAI)",
   "src": "사람인",
   "v": 2
  },
@@ -2380,6 +2461,18 @@
   "jp_id": null,
   "jp_v": 1
  },
+ "테이블오브컨텐츠": {
+  "avg_salary": null,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 404041,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "테이블오브컨텐츠",
+  "src": "사람인",
+  "v": 2
+ },
  "테이트이삼": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
@@ -2445,6 +2538,19 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "퍼스트프로그",
+  "src": "사람인",
+  "v": 2
+ },
+ "퍼스트해빗": {
+  "avg_salary": 6472,
+  "checked": "2026-10-11T10:12:29+09:00",
+  "csn": "cUpuOTNHZ01wdjR4M0tJVXhibEY5UT09",
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 463389,
+  "jp_rating": 2.8,
+  "jp_reviews": 20,
+  "jp_v": 1,
+  "name": "퍼스트해빗",
   "src": "사람인",
   "v": 2
  },
@@ -2572,6 +2678,13 @@
   "name": "픽스피드㈜",
   "src": "사람인",
   "v": 2
+ },
+ "핑크베리안": {
+  "jp_checked": "2026-10-11T10:12:29+09:00",
+  "jp_id": 325380,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1
  },
  "하네": {
   "avg_salary": null,
