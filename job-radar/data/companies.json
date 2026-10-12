@@ -288,6 +288,17 @@
   "src": "사람인",
   "v": 2
  },
+ "다산팩": {
+  "avg_salary": 4804,
+  "checked": "2026-10-12T10:41:50+09:00",
+  "csn": "NElLMW5TSWhGcEkrM2JiNGl2R3ZLdz09",
+  "jp_checked": "2026-10-12T10:41:50+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "다산팩 주식회사",
+  "src": "사람인",
+  "v": 2
+ },
  "대우능력개발교육원": {
   "avg_salary": 4210,
   "checked": "2026-10-07T14:49:32+09:00",
@@ -1643,6 +1654,19 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/40555011",
   "v": 2
  },
+ "에이스파트너스서치펌": {
+  "avg_salary": null,
+  "checked": "2026-10-12T10:41:50+09:00",
+  "csn": "R0dJRXpKd2dWQ1RCcTFucWN1VzZCQT09",
+  "jp_checked": "2026-10-12T10:41:50+09:00",
+  "jp_id": 345075,
+  "jp_rating": 5.0,
+  "jp_reviews": 1,
+  "jp_v": 1,
+  "name": "(주)에이스파트너스서치펌",
+  "src": "사람인",
+  "v": 2
+ },
  "에이스피지": {
   "avg_salary": 4156,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -2212,6 +2236,17 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜지피티더블유인스티튜트",
+  "src": "사람인",
+  "v": 2
+ },
+ "청년후계영농사회적협동조합": {
+  "avg_salary": null,
+  "checked": "2026-10-12T10:41:50+09:00",
+  "csn": "U0xDTGw3V281bHIxT1Z5VzNYbnA0UT09",
+  "jp_checked": "2026-10-12T10:41:50+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "청년후계영농사회적협동조합",
   "src": "사람인",
   "v": 2
  },
