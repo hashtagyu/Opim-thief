@@ -463,7 +463,7 @@ def _links(soup, base, pattern):
 
 def _run_terms(f, terms, fn):
     """검색어마다 fn(term) 실행. 전부 실패하면 마지막 예외를 다시 던진다."""
-    results, last_exc, ok = [], None, 0
+    results, last_exc, ok, conn_fail = [], None, 0, 0
     for t in terms:
         try:
             results.extend(fn(t))
@@ -479,6 +479,10 @@ def _run_terms(f, terms, fn):
         except Exception as e:  # noqa: BLE001
             last_exc = e
             f.errors.append(f"{t}: {type(e).__name__}: {e}"[:200])
+            if isinstance(e, (requests.ConnectionError, requests.Timeout)) and ok == 0:
+                conn_fail += 1
+                if conn_fail >= 2:
+                    break  # 처음부터 연결이 안 되면 (이 서버 IP를 안 받아주는 날) 빨리 포기
     if ok == 0 and last_exc:
         raise last_exc
     return results

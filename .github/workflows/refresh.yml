@@ -3,6 +3,7 @@ name: AI 잡 레이더 새로고침
 on:
   schedule:
     - cron: "37 22 * * *" # 매일 한국시간 오전 7시 37분 (UTC 22:37). 정각은 GitHub가 붐벼서 몇 시간씩 밀리므로 피함
+    - cron: "37 5 * * *" # 오후 2시 37분 한 번 더. 매번 다른 GitHub 서버(IP)라 아침에 잡코리아 연결이 안 된 날도 오후엔 대개 됨
   workflow_dispatch:
     inputs:
       sources:
