@@ -1116,7 +1116,7 @@ def judge(c, prev=None):
 def title_ok(j):
     """본문 없이 제목·회사명만으로 다시 거르기 (규칙 변경을 기존 공고에도 반영)."""
     title = j.get("title") or ""
-    if rules.NON_ARTIST_TITLE.search(title):
+    if rules.NON_ARTIST_TITLE.search(title) or rules.design_blocked(title):
         return False
     return not rules.EXCLUDE_META.search(" ".join([title, j.get("company") or ""]))
 

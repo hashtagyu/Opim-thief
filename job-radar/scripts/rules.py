@@ -132,19 +132,37 @@ NON_ARTIST_TITLE = re.compile(
 )
 
 
+# 디자인 직군 제외 (2026-10 사용자 요청): 웹·UI/UX·인테리어·공간·일러스트, 그리고 디자이너 전반.
+# 단 웹툰·웹소설 같은 콘텐츠 형식은 살리고, 영상·모션 쪽 디자이너는 영상 직무라서 살린다.
+DESIGN_BLOCK = re.compile(
+    r"웹(?!툰|소설|드라마|예능|무비|시리즈|콘텐츠|컨텐츠|애니)|(?<![a-z])ui(?![a-z])|(?<![a-z])ux(?![a-z])|uiux|"
+    r"인테리어|공간\s*디자|일러스트|illustrat",
+    re.I,
+)
+DESIGNER_WORD = re.compile(r"디자이너|디자인|designer|design", re.I)
+VIDEO_WORD = re.compile(r"영상|모션|비디오|video|motion|vfx|애니메이|animat|크리에이터|creator", re.I)
+
+
+def design_blocked(title):
+    title = title or ""
+    if DESIGN_BLOCK.search(title):
+        return True
+    return bool(DESIGNER_WORD.search(title)) and not VIDEO_WORD.search(title)
+
+
 def title_could_match(title):
     """상세를 열기 전 제목만으로 후보가 될 수 있는지 (요청 수 줄이기용)."""
     title = title or ""
     if not title:
         return True
-    if NON_ARTIST_TITLE.search(title) or EXCLUDE_META.search(title):
+    if NON_ARTIST_TITLE.search(title) or EXCLUDE_META.search(title) or design_blocked(title):
         return False
     return bool(ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title))
 
 
 def is_relevant(title, body, tools):
     title = title or ""
-    if NON_ARTIST_TITLE.search(title):
+    if NON_ARTIST_TITLE.search(title) or design_blocked(title):
         return False
     if ROLE_TITLE.search(title):
         return True
