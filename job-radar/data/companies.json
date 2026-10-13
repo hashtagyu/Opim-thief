@@ -54,6 +54,16 @@
   "jp_id": null,
   "jp_v": 1
  },
+ "pixaera": {
+  "avg_salary": null,
+  "checked": "2026-10-13T12:49:38+09:00",
+  "jp_checked": "2026-10-13T12:49:38+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "Pixaera",
+  "src": "사람인",
+  "v": 2
+ },
  "theflex": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
@@ -1668,6 +1678,17 @@
   "src": "사람인",
   "v": 2
  },
+ "쑥쑥컴퍼니": {
+  "avg_salary": null,
+  "checked": "2026-10-13T12:49:38+09:00",
+  "csn": "V3hrMmFGMExPUVdkY2dYbGhic21Ndz09",
+  "jp_checked": "2026-10-13T12:49:38+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜쑥쑥컴퍼니",
+  "src": "사람인",
+  "v": 2
+ },
  "씨씨씨컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-08T14:00:38+09:00",
@@ -1960,6 +1981,19 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜에이틴에이치",
+  "src": "사람인",
+  "v": 2
+ },
+ "에임드": {
+  "avg_salary": 5192,
+  "checked": "2026-10-13T12:49:38+09:00",
+  "csn": "eGN4a1phWm4wVkZsbkdEOXhZMk1zdz09",
+  "jp_checked": "2026-10-13T12:49:38+09:00",
+  "jp_id": 85783,
+  "jp_rating": 2.9,
+  "jp_reviews": 140,
+  "jp_v": 1,
+  "name": "(주)에임드",
   "src": "사람인",
   "v": 2
  },
