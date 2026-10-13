@@ -9,6 +9,19 @@
   "src": "사람인",
   "v": 2
  },
+ "143엔터테인먼트": {
+  "avg_salary": 4042,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "d243YWJSRmtZS3JZeFRVbGw1dnpOZz09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": 511431,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "143엔터테인먼트",
+  "src": "사람인",
+  "v": 2
+ },
  "aurifyllc": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
@@ -570,6 +583,18 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "(주)라온스퀘어",
+  "src": "사람인",
+  "v": 2
+ },
+ "라이브나우": {
+  "avg_salary": null,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": 400371,
+  "jp_rating": 2.4,
+  "jp_reviews": 12,
+  "jp_v": 1,
+  "name": "라이브나우",
   "src": "사람인",
   "v": 2
  },
@@ -1304,6 +1329,16 @@
   "src": "사람인",
   "v": 2
  },
+ "빅링크": {
+  "avg_salary": null,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜빅링크",
+  "src": "사람인",
+  "v": 2
+ },
  "빅처": {
   "avg_salary": 5262,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -1473,6 +1508,19 @@
   "src": "사람인",
   "v": 2
  },
+ "스노우": {
+  "avg_salary": 9091,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "TUtzSkY1eWEwdFhLRjhPUHcvdXVvQT09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": 324866,
+  "jp_rating": 4.2,
+  "jp_reviews": 361,
+  "jp_v": 1,
+  "name": "스노우(주)",
+  "src": "사람인",
+  "v": 2
+ },
  "스노우코리아": {
   "avg_salary": null,
   "checked": "2026-10-07T15:31:03+09:00",
@@ -1580,6 +1628,17 @@
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=M2hEdWVySVM1RkVPZ1AzOFNNUGtUdz09",
   "v": 2
  },
+ "스튜디오벨루카": {
+  "avg_salary": null,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "a2VrZEEyQ092NnZhbjhGSkdhRE91Zz09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜스튜디오벨루카",
+  "src": "사람인",
+  "v": 2
+ },
  "스튜디오이온": {
   "avg_salary": 5354,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -1639,6 +1698,17 @@
   "jp_reviews": 134,
   "jp_v": 1,
   "name": "(주)스푼랩스",
+  "src": "사람인",
+  "v": 2
+ },
+ "슬릭스": {
+  "avg_salary": null,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "MUtuT2pDSC8vQ3FYU3gzbWJ0QU5RQT09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "슬릭스(SLYX)",
   "src": "사람인",
   "v": 2
  },
@@ -2298,6 +2368,19 @@
   "src": "사람인",
   "v": 2
  },
+ "유니씨앤씨": {
+  "avg_salary": 5246,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "R0VHRHEyWG42RWdhZW1VbHhJTGV4Zz09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": 288002,
+  "jp_rating": 2.5,
+  "jp_reviews": 32,
+  "jp_v": 1,
+  "name": "(주)유니씨앤씨",
+  "src": "사람인",
+  "v": 2
+ },
  "유비소시어스": {
   "avg_salary": 3970,
   "checked": "2026-10-07T14:49:32+09:00",
@@ -2432,6 +2515,17 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "일류ENT",
+  "src": "사람인",
+  "v": 2
+ },
+ "임팩트스테이션": {
+  "avg_salary": 3634,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "ekVSbWRoNW8rYUlaZVpGNU1QU3I2UT09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "임팩트스테이션㈜",
   "src": "사람인",
   "v": 2
  },
@@ -2922,6 +3016,19 @@
   "jp_reviews": 221,
   "jp_v": 1,
   "name": "(주)투믹스",
+  "src": "사람인",
+  "v": 2
+ },
+ "트렌드림": {
+  "avg_salary": null,
+  "checked": "2026-10-13T21:54:08+09:00",
+  "csn": "T1BSUUVJNnF4UjZBdlRGSmQrVzZTQT09",
+  "jp_checked": "2026-10-13T21:54:08+09:00",
+  "jp_id": 542083,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "트렌드림",
   "src": "사람인",
   "v": 2
  },
