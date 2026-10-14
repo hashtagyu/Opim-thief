@@ -1,6 +1,73 @@
 [
  {
   "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55283852",
+  "title": "[1440롱제비티] 콘텐츠 에디터 (SNS·브랜드 콘텐츠)",
+  "company": "주식회사 1440롱제비티",
+  "location": "서울 강남구",
+  "employment": "정규직·인턴직",
+  "summary": "채용공고 상세 Live Better, Live Longer 하루 1,440분의 선택으로 더 나은 삶을 만들어가는 당신, 1440 롱제비티가 기다립니다. 1440 롱제비티는 '죽기 직전까지 일상을 건강하게 누리는 삶'을 지향하는 웰니스 라이프스타일 브랜드입니다. 롱제비티는 일부를 위한 럭셔리가 아닌, 매일 주어지는 1,440분을 어떻게 채우느냐에 달려 있습니다. 우리는 신체, 정신, 자본,…",
+  "tools": [
+   "Midjourney"
+  ],
+  "deadline": "2026-11-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-14T10:21:42+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158060",
+  "title": "[스튜디오하이] AI 애니메이션 제작자 채용",
+  "company": "스튜디오하이",
+  "location": "서울 마포구 월드컵북로58길 10 (상암동, 팬엔터테인먼트 사옥) 12층",
+  "employment": "정규직, 계약직",
+  "summary": "스튜디오하이에서 정규직 신입·경력 채용을 진행합니다. 근무지는 서울 마포구 월드컵북로58길 10 (상암동, 팬엔터테인먼트 사옥)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 5238,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 3.0,
+  "jp_reviews": 3,
+  "jp_url": "https://www.jobplanet.co.kr/companies/483864/reviews",
+  "kind": "job",
+  "first_seen": "2026-10-14T10:21:42+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50164738",
+  "title": "영상 PD - 유튜브,틱톡,릴스 등 [기획 / 촬영 / 편집 / AI]",
+  "company": "㈜알파플러스",
+  "location": "서울 구로구 디지털로33길 28 (구로동, 우림이비지센터1차) 2층",
+  "employment": "정규직, 계약직, 인턴",
+  "summary": "㈜알파플러스 커뮤니티 & 플랫폼 관리자 모집 ㈜알파플러스 는 2017년에 설립되어 매출액 약 20억원 / 사원 수 10명 규모의 중소기입니다. 경기도 광명시와 서울시 구로구에 위치하고 있으며, 커뮤니티 운영을 통한 웹기반 비즈니스 사업 및 아웃도어 쇼핑몰 을 운영하고 있습니다. 모집분야 및 자격요건 모집분야 및 자격요건 정보 모집분야 담당업무 우대사항 영상 PD (유튜브,틱톡,릴스) [ 영…",
+  "tools": [
+   "Kling"
+  ],
+  "deadline": "2026-11-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-14T10:21:42+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55277667",
   "title": "유튜브 엑셀 방송 AI 영상 디자이너 채용 (2D 모션그래픽 가능자",
   "company": "슬릭스(SLYX)",
@@ -18,7 +85,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -39,7 +106,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/330907/reviews",
   "kind": "gig",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -60,7 +127,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/542083/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -81,7 +148,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/288002/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -104,7 +171,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/324866/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -125,7 +192,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -150,7 +217,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/390237/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -171,7 +238,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -192,7 +259,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/542083/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -213,7 +280,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/288002/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -234,28 +301,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/511431/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50161072",
-  "title": "AI 콘텐츠 서비스 PM",
-  "company": "임팩트스테이션㈜",
-  "location": "서울 영등포구 국회대로66길 23 (여의도동, 산정빌딩) 9층",
-  "employment": "계약직",
-  "summary": "임팩트스테이션㈜ AI 콘텐츠 서비스 PM 포지션 및 자격요건 AI 콘텐츠 서비스 PM ( 1명 ) AI 콘텐츠 교육-제작-유통 특화 솔루션 임팩트스테이션은 누구나 AI 크리에이터로 성장할 기회를 제공하며 , 혁신적인 AI 콘텐츠로 넥스트 K- 콘텐츠를 리드합니다! -매출 연 168%, 자산 연 187% 성장 (2025) -동종 업계 내 활동성, 성장성, 수익성 최상위 등급 평가 (나이스 평…",
-  "tools": [],
-  "deadline": "2026-10-13",
-  "salary": "연 3,000~3,501만원",
-  "avg_salary": 3634,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "kind": "job",
-  "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -276,7 +322,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -299,15 +345,15 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/324866/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
   "url": "https://www.albamon.com/jobs/detail/119726893",
-  "title": "AI 콘텐츠 크리에이터 모집",
+  "title": "라이브나우 AI 콘텐츠 크리에이터 모집",
   "company": "라이브나우",
   "location": "서울 서초구",
-  "employment": "파트타임",
+  "employment": "아르바이트",
   "summary": "라이브나우에서 채용을 진행합니다. 업직종:그래픽·영상·편집디자인 근무기간:3개월~6개월 복리후생:고용보험,국민연금,건강보험,산재보험 우대조건:유사업무경험우대,인근거주우대",
   "tools": [],
   "deadline": "2026-11-02",
@@ -319,6 +365,27 @@
   "jp_reviews": 12,
   "jp_url": "https://www.jobplanet.co.kr/companies/400371/reviews",
   "kind": "gig",
+  "first_seen": "2026-10-13T21:54:08+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50161072",
+  "title": "AI 콘텐츠 서비스 PM",
+  "company": "임팩트스테이션㈜",
+  "location": "서울 영등포구 국회대로66길 23 (여의도동, 산정빌딩) 9층",
+  "employment": "계약직",
+  "summary": "임팩트스테이션㈜ AI 콘텐츠 서비스 PM 포지션 및 자격요건 AI 콘텐츠 서비스 PM ( 1명 ) AI 콘텐츠 교육-제작-유통 특화 솔루션 임팩트스테이션은 누구나 AI 크리에이터로 성장할 기회를 제공하며 , 혁신적인 AI 콘텐츠로 넥스트 K- 콘텐츠를 리드합니다! -매출 연 168%, 자산 연 187% 성장 (2025) -동종 업계 내 활동성, 성장성, 수익성 최상위 등급 평가 (나이스 평…",
+  "tools": [],
+  "deadline": "2026-10-13",
+  "salary": "연 3,000~3,501만원",
+  "avg_salary": 3634,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
   "first_seen": "2026-10-13T21:54:08+09:00",
   "last_seen": "2026-10-13T21:54:08+09:00"
  },
@@ -345,7 +412,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T12:49:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobplanet",
@@ -369,7 +436,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/85783/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T12:49:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "linkedin",
@@ -396,7 +463,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T12:49:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -417,7 +484,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -438,7 +505,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -459,7 +526,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/323960/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -480,7 +547,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/536411/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -503,7 +570,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobplanet",
@@ -526,7 +593,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -547,7 +614,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -568,7 +635,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/180411/reviews",
   "kind": "gig",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -589,7 +656,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -610,7 +677,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -631,7 +698,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -652,7 +719,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/526868/reviews",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -673,7 +740,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -694,7 +761,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -715,7 +782,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -736,7 +803,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/526868/reviews",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -759,7 +826,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -782,7 +849,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-12T10:41:50+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -803,7 +870,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/323960/reviews",
   "kind": "gig",
   "first_seen": "2026-10-12T10:41:50+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobplanet",
@@ -824,7 +891,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-12T10:41:50+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -851,7 +918,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/64797/reviews",
   "kind": "job",
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -874,7 +941,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -897,7 +964,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/532767/reviews",
   "kind": "job",
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -920,7 +987,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "wanted",
@@ -1295,30 +1362,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/327241/reviews",
   "kind": "gig",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55024199",
-  "title": "영상 콘텐츠 편집자 채용",
-  "company": "(주)퍼플아카데미",
-  "location": "서울 양천구",
-  "employment": "정규직·계약직",
-  "summary": "채용공고 상세 퍼플아카데미 영상 콘텐츠 편집자 채용 OUR COMPANY [회사소개] 퍼플아카데미와 함께 성장하며 발전할 인재를 모집합니다. 퍼플아카데미는 빠르게 변화하는 한국 영어교육 시장에서 진정한 영어교육 환경을 만들기 위해 끊임없이 도전하며, 고객에게 더 나은 학습 경험을 제공하고자 최신 기술과 플랫폼을 활용해 최적의 영어교육 솔루션을 연구·개발하는 기업입니다. 비영어권 학습자들이…",
-  "tools": [
-   "Midjourney"
-  ],
-  "deadline": "2026-10-13",
-  "salary": "",
-  "avg_salary": 4233,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "kind": "job",
-  "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -1344,7 +1388,28 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50010135",
+  "title": "[휴먼다큐]유튜브 콘텐츠 PD 및 영상 편집자 채용 (AI 영상 제작 우대)",
+  "company": "에스유컴퍼니",
+  "location": "서울 강남구 압구정로4길 13-13 (신사동) 202호",
+  "employment": "정규직, 계약직",
+  "summary": "에스유컴퍼니 [휴먼다큐]유튜브 콘텐츠 PD 및 영상 편집자 채용 (AI 영상 제작 우대) 포지션 및 자격요건 유튜브 인터뷰 채널 PD 콘텐츠 PD (기획·촬영) ( 5명 ) 담당업무 ㆍ 유튜브 콘텐츠 기획 및 촬영 ㆍ 인터뷰 및 온라인 교육 콘텐츠 제작 ㆍ 유튜브 채널 분석 및 콘텐츠 개선 방향 제안 ㆍ 출연자 촬영 일정 조율 ㆍ 콘텐츠 제작 과정 전반의 일정 및 품질 관리 ㆍ 초기에는 촬…",
+  "tools": [],
+  "deadline": "2026-10-17",
+  "salary": "연 3,000~4,212만원",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": 1.0,
+  "jp_reviews": 1,
+  "jp_url": "https://www.jobplanet.co.kr/companies/445020/reviews",
+  "kind": "job",
+  "first_seen": "2026-10-10T10:53:43+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1368,28 +1433,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/327241/reviews",
   "kind": "gig",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50010135",
-  "title": "[휴먼다큐]유튜브 콘텐츠 PD 및 영상 편집자 채용 (AI 영상 제작 우대)",
-  "company": "에스유컴퍼니",
-  "location": "서울 강남구 압구정로4길 13-13 (신사동) 202호",
-  "employment": "정규직, 계약직",
-  "summary": "에스유컴퍼니 [휴먼다큐]유튜브 콘텐츠 PD 및 영상 편집자 채용 (AI 영상 제작 우대) 포지션 및 자격요건 유튜브 인터뷰 채널 PD 콘텐츠 PD (기획·촬영) ( 5명 ) 담당업무 ㆍ 유튜브 콘텐츠 기획 및 촬영 ㆍ 인터뷰 및 온라인 교육 콘텐츠 제작 ㆍ 유튜브 채널 분석 및 콘텐츠 개선 방향 제안 ㆍ 출연자 촬영 일정 조율 ㆍ 콘텐츠 제작 과정 전반의 일정 및 품질 관리 ㆍ 초기에는 촬…",
-  "tools": [],
-  "deadline": "2026-10-17",
-  "salary": "연 3,000~4,212만원",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": 1.0,
-  "jp_reviews": 1,
-  "jp_url": "https://www.jobplanet.co.kr/companies/445020/reviews",
-  "kind": "job",
-  "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1413,7 +1457,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1436,7 +1480,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1459,7 +1503,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/546074/reviews",
   "kind": "job",
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1482,6 +1526,50 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/546074/reviews",
   "kind": "job",
   "first_seen": "2026-10-10T10:53:43+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "albamon",
+  "url": "https://www.albamon.com/jobs/detail/119638836",
+  "title": "한국온라인정보시스템 AI 콘텐츠 제작, 업무운영 담당 아르바이트 채용",
+  "company": "한국온라인정보시스템",
+  "location": "부산 기장군",
+  "employment": "아르바이트",
+  "summary": "한국온라인정보시스템에서 채용을 진행합니다. 업직종:고객상담·인바운드,바이럴·SNS마케팅,교재·교육콘텐츠제작 근무기간:1개월~3개월 우대조건:컴퓨터활용가능,업무관련자격증소지(AI활용관련),유사업무경험우대,인근거주우대,대학휴학생우대",
+  "tools": [],
+  "deadline": "2026-10-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "gig",
+  "first_seen": "2026-10-10T10:53:43+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55024199",
+  "title": "영상 콘텐츠 편집자 채용",
+  "company": "(주)퍼플아카데미",
+  "location": "서울 양천구",
+  "employment": "정규직·계약직",
+  "summary": "채용공고 상세 퍼플아카데미 영상 콘텐츠 편집자 채용 OUR COMPANY [회사소개] 퍼플아카데미와 함께 성장하며 발전할 인재를 모집합니다. 퍼플아카데미는 빠르게 변화하는 한국 영어교육 시장에서 진정한 영어교육 환경을 만들기 위해 끊임없이 도전하며, 고객에게 더 나은 학습 경험을 제공하고자 최신 기술과 플랫폼을 활용해 최적의 영어교육 솔루션을 연구·개발하는 기업입니다. 비영어권 학습자들이…",
+  "tools": [
+   "Midjourney"
+  ],
+  "deadline": "2026-10-13",
+  "salary": "",
+  "avg_salary": 4233,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-10T10:53:43+09:00",
   "last_seen": "2026-10-13T21:54:08+09:00"
  },
  {
@@ -1501,27 +1589,6 @@
   "jp_rating": 2.4,
   "jp_reviews": 18,
   "jp_url": "https://www.jobplanet.co.kr/companies/180411/reviews",
-  "kind": "gig",
-  "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "albamon",
-  "url": "https://www.albamon.com/jobs/detail/119638836",
-  "title": "한국온라인정보시스템 AI 콘텐츠 제작, 업무운영 담당 아르바이트 채용",
-  "company": "한국온라인정보시스템",
-  "location": "부산 기장군",
-  "employment": "아르바이트",
-  "summary": "한국온라인정보시스템에서 채용을 진행합니다. 업직종:고객상담·인바운드,바이럴·SNS마케팅,교재·교육콘텐츠제작 근무기간:1개월~3개월 우대조건:컴퓨터활용가능,업무관련자격증소지(AI활용관련),유사업무경험우대,인근거주우대,대학휴학생우대",
-  "tools": [],
-  "deadline": "2026-10-13",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-10T10:53:43+09:00",
   "last_seen": "2026-10-13T21:54:08+09:00"
@@ -1569,7 +1636,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -1590,7 +1657,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/180411/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -1613,7 +1680,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -1636,7 +1703,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1661,7 +1728,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/528969/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1682,7 +1749,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1703,7 +1770,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/536739/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1724,7 +1791,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1745,7 +1812,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1774,7 +1841,28 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50137341",
+  "title": "[매쓰프로] AI영상 제작/편집 담당 계약직 모집",
+  "company": "㈜화신이앤엘(E&L)",
+  "location": "서울 금천구 가산디지털2로 144 (가산동) 현대테라타워 가산DK 817호~820호",
+  "employment": "계약직, 파트타임",
+  "summary": "㈜화신이앤엘(E&L)에서 계약직 경력무관 채용을 진행합니다. 근무지는 서울 금천구 가산디지털2로 144 (가산동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 4207,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 2.4,
+  "jp_reviews": 18,
+  "jp_url": "https://www.jobplanet.co.kr/companies/180411/reviews",
+  "kind": "gig",
+  "first_seen": "2026-10-09T11:31:15+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1795,7 +1883,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1818,7 +1906,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1839,7 +1927,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1862,7 +1950,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/532767/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1885,7 +1973,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -1908,28 +1996,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/548329/reviews",
   "kind": "job",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50137341",
-  "title": "[매쓰프로] AI영상 제작/편집 담당 계약직 모집",
-  "company": "㈜화신이앤엘(E&L)",
-  "location": "서울 금천구 가산디지털2로 144 (가산동) 현대테라타워 가산DK 817호~820호",
-  "employment": "계약직, 파트타임",
-  "summary": "㈜화신이앤엘(E&L)에서 계약직 경력무관 채용을 진행합니다. 근무지는 서울 금천구 가산디지털2로 144 (가산동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 4207,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 2.4,
-  "jp_reviews": 18,
-  "jp_url": "https://www.jobplanet.co.kr/companies/180411/reviews",
-  "kind": "gig",
-  "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T12:49:38+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -1950,7 +2017,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-10-13T12:49:38+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2002,7 +2069,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2025,7 +2092,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2048,7 +2115,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/546074/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2073,7 +2140,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2098,7 +2165,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/552053/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2122,7 +2189,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/387117/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2146,7 +2213,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2167,28 +2234,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/44578/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50126563",
-  "title": "11월 전분야 체험형 인턴 - AI 챗봇 한국 콘텐츠 기획",
-  "company": "네이버제트",
-  "location": "경기도 성남시 분당구 불정로 6 (정자동)",
-  "employment": "인턴",
-  "summary": "네이버제트 11월 전분야 체험형 인턴 - AI 챗봇 한국 콘텐츠 기획 포지션 및 자격요건 AI 챗봇 한국 콘텐츠 기획 담당업무 ㆍ 국내/해외 AI 캐릭터 챗봇 서비스 트렌드 리서치 업무 지원 ㆍ 캐릭터 설정·세계관·대화 시나리오 기획 및 프롬프트 작성 ㆍ 캐릭터 챗봇 제작 실습 및 대화 품질 테스트 (말투 일관성, 몰입도, 대화 전개 등) ㆍ 캐릭터 썸네일·프로필 이미지 등 서비스용 리소스…",
-  "tools": [],
-  "deadline": "2026-10-13",
-  "salary": "",
-  "avg_salary": 9129,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 4.0,
-  "jp_reviews": 124,
-  "jp_url": "https://www.jobplanet.co.kr/companies/366207/reviews",
-  "kind": "job",
-  "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2214,7 +2260,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2237,7 +2283,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2260,7 +2306,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/529761/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2284,7 +2330,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/549841/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2308,7 +2354,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/387117/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2331,7 +2377,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2357,7 +2403,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/532767/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2380,7 +2426,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2406,7 +2452,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "editmon",
@@ -2427,6 +2473,27 @@
   "jp_rating": null,
   "jp_reviews": null,
   "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-08T14:00:38+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50126563",
+  "title": "11월 전분야 체험형 인턴 - AI 챗봇 한국 콘텐츠 기획",
+  "company": "네이버제트",
+  "location": "경기도 성남시 분당구 불정로 6 (정자동)",
+  "employment": "인턴",
+  "summary": "네이버제트 11월 전분야 체험형 인턴 - AI 챗봇 한국 콘텐츠 기획 포지션 및 자격요건 AI 챗봇 한국 콘텐츠 기획 담당업무 ㆍ 국내/해외 AI 캐릭터 챗봇 서비스 트렌드 리서치 업무 지원 ㆍ 캐릭터 설정·세계관·대화 시나리오 기획 및 프롬프트 작성 ㆍ 캐릭터 챗봇 제작 실습 및 대화 품질 테스트 (말투 일관성, 몰입도, 대화 전개 등) ㆍ 캐릭터 썸네일·프로필 이미지 등 서비스용 리소스…",
+  "tools": [],
+  "deadline": "2026-10-13",
+  "salary": "",
+  "avg_salary": 9129,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 4.0,
+  "jp_reviews": 124,
+  "jp_url": "https://www.jobplanet.co.kr/companies/366207/reviews",
   "kind": "job",
   "first_seen": "2026-10-08T14:00:38+09:00",
   "last_seen": "2026-10-13T21:54:08+09:00"
@@ -2544,7 +2611,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/488263/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2567,7 +2634,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/380774/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2590,7 +2657,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2611,7 +2678,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2632,7 +2699,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/527695/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2653,7 +2720,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/415204/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2674,7 +2741,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2695,7 +2762,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/532270/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2716,7 +2783,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2737,7 +2804,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2762,7 +2829,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/540307/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2785,7 +2852,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/519322/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2810,7 +2877,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/511501/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2836,7 +2903,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -2902,7 +2969,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/300322/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2927,7 +2994,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/321099/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2948,7 +3015,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/415204/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2969,7 +3036,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -2990,7 +3057,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/349272/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3017,7 +3084,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3041,7 +3108,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3062,7 +3129,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3083,7 +3150,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3104,7 +3171,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/538927/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3125,7 +3192,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/323960/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3153,7 +3220,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3174,7 +3241,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/346927/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3195,7 +3262,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3216,7 +3283,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3237,7 +3304,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/468117/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3258,7 +3325,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/374253/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3279,7 +3346,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/380792/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3302,7 +3369,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3323,7 +3390,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78995/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3344,7 +3411,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/530121/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3365,7 +3432,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3386,7 +3453,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/530458/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3412,7 +3479,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3433,7 +3500,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3454,7 +3521,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/528947/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3477,7 +3544,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/356632/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3498,7 +3565,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3521,7 +3588,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3544,7 +3611,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3565,7 +3632,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/442325/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3586,7 +3653,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/550340/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3607,7 +3674,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/335949/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3628,7 +3695,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3649,7 +3716,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/527695/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3670,7 +3737,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3691,7 +3758,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3716,7 +3783,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3737,7 +3804,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/468117/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3758,7 +3825,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/543441/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3779,7 +3846,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/326711/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3800,7 +3867,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3821,7 +3888,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/326711/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3842,7 +3909,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/311855/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3863,7 +3930,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/44578/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3884,7 +3951,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/390031/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -3905,7 +3972,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/60629/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -3926,7 +3993,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/519851/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -3950,7 +4017,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -3971,7 +4038,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/331640/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -3998,7 +4065,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4019,7 +4086,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4040,7 +4107,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4068,7 +4135,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4089,7 +4156,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4110,7 +4177,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4131,7 +4198,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4152,7 +4219,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/550340/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4173,7 +4240,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4199,7 +4266,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/408990/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4223,7 +4290,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4244,7 +4311,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4265,7 +4332,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/530121/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4286,7 +4353,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/468117/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4307,7 +4374,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4330,7 +4397,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/312239/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4351,7 +4418,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4372,7 +4439,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4393,7 +4460,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/380792/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4414,28 +4481,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50025867",
-  "title": "AI를 활용한 영상제작 및 편집과정 훈련교강사 채용 (유의사항 확인 필수)",
-  "company": "㈜이젠컴퓨터아카데미안산",
-  "location": "경기 안산시 상록구 이동 715-3 강우빌딩 5층",
-  "employment": "계약직",
-  "summary": "㈜이젠컴퓨터아카데미안산 [KDT] AI를 활용한 영상제작/편집과정 강의 하실 강사님을 모십니다. ㈜이젠컴퓨터아카데미안산은 2008년에 설립된 회사로 사원수 9명 규모의 중소기업입니다. 경기 안산시 상록구 이동에 위치하고 있으며, IT정보기술, 빅데이터, 영상편집, 웹디자인,컴퓨터그래픽디자인,회계,세무, OA, CAD사업을 하고 있습니다. 포지션 및 자격요건 ※ 주요업무 ㆍ K-디지털 트레이…",
-  "tools": [],
-  "deadline": "2026-10-13",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": 4.0,
-  "jp_reviews": 4,
-  "jp_url": "https://www.jobplanet.co.kr/companies/380792/reviews",
-  "kind": "job",
-  "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4461,7 +4507,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/194123/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4482,7 +4528,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/528145/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4503,7 +4549,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4524,7 +4570,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/321099/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4545,7 +4591,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4566,7 +4612,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4587,7 +4633,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4608,7 +4654,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4629,7 +4675,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/408990/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4650,7 +4696,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4671,7 +4717,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4692,7 +4738,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4716,7 +4762,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4739,7 +4785,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4760,7 +4806,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4781,7 +4827,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/346927/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4802,7 +4848,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/442325/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4823,7 +4869,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4844,7 +4890,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4865,7 +4911,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4886,7 +4932,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4907,7 +4953,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/511368/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4928,7 +4974,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/321329/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4949,7 +4995,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4970,7 +5016,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -4991,7 +5037,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -5012,7 +5058,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/349272/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -5033,7 +5079,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/60629/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -5054,7 +5100,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -5077,7 +5123,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -5098,7 +5144,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -5119,7 +5165,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -5140,7 +5186,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/311855/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -5161,7 +5207,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -5180,6 +5226,27 @@
   "jp_rating": 4.3,
   "jp_reviews": 23,
   "jp_url": "https://www.jobplanet.co.kr/companies/311855/reviews",
+  "kind": "job",
+  "first_seen": "2026-10-07T15:31:03+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50025867",
+  "title": "AI를 활용한 영상제작 및 편집과정 훈련교강사 채용 (유의사항 확인 필수)",
+  "company": "㈜이젠컴퓨터아카데미안산",
+  "location": "경기 안산시 상록구 이동 715-3 강우빌딩 5층",
+  "employment": "계약직",
+  "summary": "㈜이젠컴퓨터아카데미안산 [KDT] AI를 활용한 영상제작/편집과정 강의 하실 강사님을 모십니다. ㈜이젠컴퓨터아카데미안산은 2008년에 설립된 회사로 사원수 9명 규모의 중소기업입니다. 경기 안산시 상록구 이동에 위치하고 있으며, IT정보기술, 빅데이터, 영상편집, 웹디자인,컴퓨터그래픽디자인,회계,세무, OA, CAD사업을 하고 있습니다. 포지션 및 자격요건 ※ 주요업무 ㆍ K-디지털 트레이…",
+  "tools": [],
+  "deadline": "2026-10-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": 4.0,
+  "jp_reviews": 4,
+  "jp_url": "https://www.jobplanet.co.kr/companies/380792/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:31:03+09:00",
   "last_seen": "2026-10-13T21:54:08+09:00"
@@ -5720,7 +5787,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/543381/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5741,7 +5808,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/517882/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5762,7 +5829,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5783,7 +5850,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/396545/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5804,7 +5871,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/518057/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5829,7 +5896,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/528969/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5855,7 +5922,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/326711/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5876,7 +5943,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5897,7 +5964,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5918,7 +5985,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/330907/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5939,7 +6006,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5960,7 +6027,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/383836/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -5983,7 +6050,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/331640/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -6004,7 +6071,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/331640/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -6029,7 +6096,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/370426/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -6094,7 +6161,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -6115,7 +6182,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -6136,7 +6203,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/311855/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6157,7 +6224,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/530458/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6178,7 +6245,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6199,7 +6266,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6220,7 +6287,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6241,7 +6308,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/94632/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6262,7 +6329,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6283,7 +6350,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6306,7 +6373,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6327,7 +6394,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T14:49:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6477,7 +6544,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/339459/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6498,7 +6565,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6519,7 +6586,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6540,7 +6607,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6561,7 +6628,7 @@
   "jp_url": "",
   "kind": "gig",
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "albamon",
@@ -6671,7 +6738,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:40:30+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6694,7 +6761,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6717,7 +6784,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/331640/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6740,7 +6807,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6763,7 +6830,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6786,7 +6853,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobplanet",
@@ -6809,7 +6876,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/326711/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobplanet",
@@ -6833,7 +6900,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "mediajob",
@@ -6857,7 +6924,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/490484/reviews",
   "kind": "gig",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "mediajob",
@@ -6882,7 +6949,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "mediajob",
@@ -6903,7 +6970,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6950,7 +7017,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T12:37:54+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -6971,28 +7038,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49866399",
-  "title": "[서울소재 대기업] AI 콘텐츠 제작 부문 경력직 채용",
-  "company": "㈜인바이트넷",
-  "location": "서울 중구 필동2가",
-  "employment": "정규직",
-  "summary": "㈜인바이트넷 에서 정규직 경력 채용을 진행합니다. 근무지는 서울 중구 필동2가이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-10-26",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "kind": "job",
-  "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7013,7 +7059,28 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:55:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49866399",
+  "title": "[서울소재 대기업] AI 콘텐츠 제작 부문 경력직 채용",
+  "company": "㈜인바이트넷",
+  "location": "서울 중구 필동2가",
+  "employment": "정규직",
+  "summary": "㈜인바이트넷 에서 정규직 경력 채용을 진행합니다. 근무지는 서울 중구 필동2가이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-10-26",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-07T11:55:32+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7040,7 +7107,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/547466/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7063,7 +7130,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/547466/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7084,7 +7151,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7105,7 +7172,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -7126,7 +7193,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -7147,7 +7214,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "incruit",
@@ -7168,7 +7235,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7236,7 +7303,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -7262,7 +7329,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/548850/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7288,7 +7355,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/543381/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7309,7 +7376,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7334,7 +7401,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7361,7 +7428,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7387,7 +7454,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/548850/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7413,7 +7480,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7434,7 +7501,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7455,7 +7522,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7482,7 +7549,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/326711/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7503,7 +7570,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/528947/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7571,7 +7638,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -7592,7 +7659,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/519851/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "saramin",
@@ -7619,7 +7686,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/540467/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7640,28 +7707,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49858459",
-  "title": "[Blue Garage] AI Artist / Concept Artist",
-  "company": "㈜블루개러지(Blue Garage corporation)",
-  "location": "서울 강동구 성안로 7-13 (성내동, 광채빌딩) 2층 Blue Garage",
-  "employment": "계약직",
-  "summary": "NOW HIRING · AI 사업실 AI Artist / Concept Artist Character Concept Artist 실사 기반 가상 인물의 얼굴과 실루엣을 설계하고, 3D 제작의 기준이 되는 비주얼 컨셉을 구축할 아티스트를 찾습니다. 근무지역 서울 고용형태 계약직 (3개월) 경력 경력 무관 도메인 AI 사업실 ABOUT BLUE GARAGE Blue Garage는 JYP Ent…",
-  "tools": [],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 8614,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": 95,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "kind": "job",
-  "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7682,7 +7728,28 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/518057/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49858459",
+  "title": "[Blue Garage] AI Artist / Concept Artist",
+  "company": "㈜블루개러지(Blue Garage corporation)",
+  "location": "서울 강동구 성안로 7-13 (성내동, 광채빌딩) 2층 Blue Garage",
+  "employment": "계약직",
+  "summary": "NOW HIRING · AI 사업실 AI Artist / Concept Artist Character Concept Artist 실사 기반 가상 인물의 얼굴과 실루엣을 설계하고, 3D 제작의 기준이 되는 비주얼 컨셉을 구축할 아티스트를 찾습니다. 근무지역 서울 고용형태 계약직 (3개월) 경력 경력 무관 도메인 AI 사업실 ABOUT BLUE GARAGE Blue Garage는 JYP Ent…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 95,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "kind": "job",
+  "first_seen": "2026-10-07T10:57:32+09:00",
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7703,7 +7770,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7724,7 +7791,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7745,7 +7812,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/517882/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7766,7 +7833,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/396545/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7787,7 +7854,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7812,7 +7879,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7836,7 +7903,7 @@
   "jp_url": "https://www.jobplanet.co.kr/companies/516060/reviews",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7857,7 +7924,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7878,7 +7945,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",
@@ -7899,7 +7966,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "linkedin",
@@ -7922,7 +7989,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "linkedin",
@@ -7945,7 +8012,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "linkedin",
@@ -7971,7 +8038,7 @@
   "jp_url": "",
   "kind": "job",
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-10-13T21:54:08+09:00"
+  "last_seen": "2026-10-14T10:21:42+09:00"
  },
  {
   "source": "jobkorea",

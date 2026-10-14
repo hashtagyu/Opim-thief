@@ -22,6 +22,17 @@
   "src": "사람인",
   "v": 2
  },
+ "1440롱제비티": {
+  "avg_salary": null,
+  "checked": "2026-10-14T10:21:42+09:00",
+  "csn": "Nyt4RmJuU1dteXZ3bFZML0pPSHVXZz09",
+  "jp_checked": "2026-10-14T10:21:42+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "주식회사 1440롱제비티",
+  "src": "사람인",
+  "v": 2
+ },
  "aurifyllc": {
   "avg_salary": null,
   "checked": "2026-10-07T13:28:02+09:00",
@@ -1899,6 +1910,17 @@
   "jp_rating": 2.9,
   "jp_reviews": 13,
   "jp_v": 1
+ },
+ "알파플러스": {
+  "avg_salary": null,
+  "checked": "2026-10-14T10:21:42+09:00",
+  "csn": "MDZlMHFCMWFKRzJJamhDbGE0UzJ5Zz09",
+  "jp_checked": "2026-10-14T10:21:42+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜알파플러스",
+  "src": "사람인",
+  "v": 2
  },
  "앱스트": {
   "avg_salary": null,
