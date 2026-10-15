@@ -1376,6 +1376,13 @@ def main():
                                         ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
     COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
+    # 마감일이 지난 공고는 뺀다 (오늘 마감은 남김). "상시"·날짜 없음은 그대로
+    today = started.date().isoformat()
+    expired = [u for u, j in merged.items() if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(j.get("deadline") or "")) and j["deadline"] < today]
+    for u in expired:
+        merged.pop(u)
+    if expired:
+        log(f"== 마감 지난 공고 {len(expired)}건 제외")
     jobs = sorted(merged.values(), key=lambda j: (j.get("first_seen") or "", j.get("last_seen") or ""), reverse=True)
     for key, st in status_sites.items():
         st["total"] = sum(1 for j in jobs if j.get("source") == key)

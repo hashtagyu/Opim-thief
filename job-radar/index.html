@@ -246,7 +246,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   </section>
 
   <div class="foot">
-    매일 아침(7시 반쯤)과 오후(2시 반쯤) 두 번 GitHub Actions가 자동으로 수집해요. GitHub 사정으로 1~3시간 늦게 시작할 때도 있어요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
+    매일 아침(7시 반쯤)과 오후(2시 반쯤) 두 번 GitHub Actions가 자동으로 수집해요. 마감일이 지난 공고는 목록에서 빠져요(오늘 마감까지는 보여요). GitHub 사정으로 1~3시간 늦게 시작할 때도 있어요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
     ⚡ 단기·프리랜서 탭은 제목·근무형태에 프리랜서·외주·단기·알바·건당·주말·파트타임·짧은 계약직(6개월 이하)이 있거나 알바몬에서 온 공고예요.<br>
     🏢 기업 규모·매출은 사람인 기업정보(NICE평가정보) 기준이에요. 대기업=사람인 "대기업" 표시, 준대기업="1000대기업" 표시가 있지만 대기업은 아닌 곳 또는 매출 1조 원 이상 중견기업, 스타트업·벤처는 중소기업으로 묶었어요. 매출 추이는 최근 연도와 그 전 해를 비교해 +5% 이상 상승, −5% 이하 하락, 그 사이는 유지예요.<br>
     ⭐ 잡플래닛 평점은 회사명이 정확히 같은 잡플래닛 기업의 리뷰 평점(5점 만점)이에요. 리뷰 수가 적으면 몇 명의 의견에 좌우될 수 있어요.<br>
@@ -328,6 +328,13 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   function hoursSince(iso){ var d = new Date(iso); return isNaN(d) ? Infinity : (Date.now() - d.getTime()) / 36e5; }
   function isNew(j){ return hoursSince(j.first_seen) <= NEW_HOURS; }
 
+  // 마감일이 지난 공고는 보여주지 않는다 (오늘 마감은 보여줌)
+  function isExpired(j){
+    var dl = j.deadline || "";
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dl)) return false;
+    var today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Seoul" }).format(new Date());
+    return dl < today;
+  }
   function deadlineText(dl){
     if (!dl) return "";
     if (dl === "상시") return "상시채용";
@@ -515,7 +522,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     getJSON("data/jobs.json").catch(function(){ return []; }),
     getJSON("data/status.json").catch(function(){ return {}; })
   ]).then(function(r){
-    state.jobs = Array.isArray(r[0]) ? r[0] : (r[0].jobs || []);
+    state.jobs = (Array.isArray(r[0]) ? r[0] : (r[0].jobs || [])).filter(function(j){ return !isExpired(j); });
     state.status = r[1] || {};
     renderAll();
   }).catch(function(err){
