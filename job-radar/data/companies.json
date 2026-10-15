@@ -12,6 +12,12 @@
  "143엔터테인먼트": {
   "avg_salary": 4042,
   "checked": "2026-10-13T21:54:08+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "d243YWJSRmtZS3JZeFRVbGw1dnpOZz09",
   "jp_checked": "2026-10-13T21:54:08+09:00",
   "jp_id": 511431,
@@ -19,6 +25,11 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "143엔터테인먼트",
+  "revenue": 533977,
+  "revenue_by_year": {
+   "2024": 533977
+  },
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -59,7 +70,7 @@
  },
  "ecn교육": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -221,6 +232,15 @@
  "구름": {
   "avg_salary": 5249,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "스타트업",
+   "중소기업",
+   "주식회사",
+   "병역특례 인증업체"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "OFRvZmtuTldTNDkzbHRvUktPeUJBQT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 321329,
@@ -307,7 +327,7 @@
  },
  "네이버클라우드": {
   "avg_salary": null,
-  "checked": "2026-10-08T18:24:48+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -318,17 +338,35 @@
  "넥스트증권": {
   "avg_salary": 9434,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "대기업",
+   "주식회사",
+   "외부감사법인",
+   "금융기관"
+  ],
+  "co_size": "대기업",
+  "co_v": 1,
   "csn": "UEd2WjlZeGRGQ3dCUjEvT250WDlLZz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "넥스트증권㈜",
+  "revenue": 4628424,
+  "revenue_by_year": {
+   "2022": 4971567,
+   "2023": 4531426,
+   "2024": 5297593,
+   "2025": 4628424
+  },
+  "revenue_growth": -12.6,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "노라조": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 529761,
   "jp_rating": null,
@@ -435,6 +473,10 @@
  "니우스엔": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "Z0RSRDhKZjZsMU5LUkVjTGY5RFlzUT09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": null,
@@ -527,13 +569,30 @@
   "src": "사람인",
   "v": 2
  },
- "더스크랙": {
+ "더블유컴퓨터아트학원": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "jp_checked": "2026-10-15T19:14:11+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜더블유컴퓨터아트학원",
+  "src": "사람인",
+  "v": 2
+ },
+ "더스크랙": {
+  "avg_salary": 4157,
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "V3Jnd2tYZWl2c1F4SHhFZ0xrWWlYZz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
-  "name": "주식회사 더스크랙",
+  "name": "(주)더스크랙",
   "src": "사람인",
   "v": 2
  },
@@ -559,7 +618,13 @@
  },
  "더워터멜론": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "YXVkTUZNc2R3Tlc3OVRyZ3Y1dnF0QT09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
@@ -597,6 +662,13 @@
  "더파운더즈": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "1000대기업",
+   "중소기업"
+  ],
+  "co_size": "준대기업",
+  "co_v": 1,
   "csn": "c3NCbk1LRkJ0Uk9DMU5GRnhUbG9HQT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
@@ -608,11 +680,27 @@
  "데이원컴퍼니": {
   "avg_salary": 5199,
   "checked": "2026-10-09T11:31:15+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "코스닥"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "UkRGb0RjcVJqRUhRUHluVFIwd3lyQT09",
   "jp_checked": "2026-10-09T11:31:15+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜데이원컴퍼니",
+  "revenue": 12208892,
+  "revenue_by_year": {
+   "2022": 10409453,
+   "2023": 11658956,
+   "2024": 12768010,
+   "2025": 12208892
+  },
+  "revenue_growth": -4.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -644,6 +732,12 @@
  "두루픽스": {
   "avg_salary": 4202,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "S1JmbWo1WTlab01lRmh6bThhTDBlZz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 194123,
@@ -651,6 +745,15 @@
   "jp_reviews": 15,
   "jp_v": 1,
   "name": "두루픽스",
+  "revenue": 262048,
+  "revenue_by_year": {
+   "2021": 188374,
+   "2022": 146701,
+   "2023": 239955,
+   "2024": 262048
+  },
+  "revenue_growth": 9.2,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -713,9 +816,33 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/46647675",
   "v": 2
  },
+ "라라스튜디오": {
+  "avg_salary": null,
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "THEyYXQzV3hDcjBiU1BOZjRDWE54Zz09",
+  "jp_checked": "2026-10-15T19:14:11+09:00",
+  "jp_id": 356597,
+  "jp_rating": 2.5,
+  "jp_reviews": 2,
+  "jp_v": 1,
+  "name": "라라스튜디오",
+  "revenue": 5733,
+  "revenue_by_year": {
+   "2025": 5733
+  },
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "라온스퀘어": {
   "avg_salary": null,
-  "checked": "2026-10-08T18:24:48+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "co_checked": "2026-10-15T12:03:13+09:00",
   "co_labels": [
    "중소기업",
@@ -787,6 +914,13 @@
  "라이프스킬즈": {
   "avg_salary": 4115,
   "checked": "2026-10-08T14:00:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "eG1icVg0bHVyNnBsQ01hMkZkeEZBUT09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 532767,
@@ -794,6 +928,15 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "㈜라이프스킬즈",
+  "revenue": 112952,
+  "revenue_by_year": {
+   "2022": 32095,
+   "2023": 55675,
+   "2024": 67916,
+   "2025": 112952
+  },
+  "revenue_growth": 66.3,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -846,11 +989,25 @@
  "로프트브이에프엑스": {
   "avg_salary": 4821,
   "checked": "2026-10-13T12:08:45+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "K0dJT0t2RGxEY21TK1AwQ2tJZWZWdz09",
   "jp_checked": "2026-10-13T12:08:45+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜로프트브이에프엑스",
+  "revenue": 123165,
+  "revenue_by_year": {
+   "2021": 92613,
+   "2022": 135154,
+   "2023": 123165
+  },
+  "revenue_growth": -8.9,
+  "revenue_year": "2023",
   "src": "사람인",
   "v": 2
  },
@@ -886,7 +1043,13 @@
  },
  "리가먼트": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "WU90TGJWR0dGTkYyZWRWTW1hSWwxQT09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 519322,
@@ -977,6 +1140,12 @@
  "메가콘텐츠": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "aDJrVXltYmlodmRMUjFNL21NY1pNUT09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": 546078,
@@ -984,6 +1153,15 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "메가콘텐츠㈜",
+  "revenue": 263602,
+  "revenue_by_year": {
+   "2021": 135332,
+   "2022": 199347,
+   "2023": 250300,
+   "2024": 263602
+  },
+  "revenue_growth": 5.3,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -1119,6 +1297,13 @@
  "모비데이즈": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "코스닥"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "ZS9mY1VYMm4xclVubVJrK1hNRDlmZz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": null,
@@ -1281,6 +1466,13 @@
  "바인드": {
   "avg_salary": 5455,
   "checked": "2026-10-11T10:12:29+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "V2lyajgwOWg1N0xRQy9wRitGM25xUT09",
   "jp_checked": "2026-10-11T10:12:29+09:00",
   "jp_id": null,
@@ -1292,6 +1484,10 @@
  "바인바이브스튜디오": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "RWdJMVllTUNDVzF0dlBZM1RQZVhrdz09",
   "employees": 9,
   "jp_checked": "2026-10-07T13:40:30+09:00",
@@ -1318,17 +1514,37 @@
  "베베폼": {
   "avg_salary": 4687,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "UVJFc01lZDNPS0RXOHY0TVVKSVhFQT09",
   "jp_checked": "2026-10-15T09:47:57+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜베베폼",
+  "revenue": 116285,
+  "revenue_by_year": {
+   "2019": 5632,
+   "2020": 116285
+  },
+  "revenue_growth": 1964.7,
+  "revenue_year": "2020",
   "src": "사람인",
   "v": 2
  },
  "베이컨디자인스튜디오": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "U1h1bURQZFVOc0lPa3Q1ZnVEcmVQZz09",
   "employees": 13,
   "jp_checked": "2026-10-07T13:40:30+09:00",
@@ -1342,6 +1558,12 @@
  "뷰스컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "VENWNjl3TlY2UFVLRXA2dGliRThpdz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 312239,
@@ -1378,6 +1600,12 @@
  "브라이트비드": {
   "avg_salary": 3594,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "ZndzVko2b2RzYm1JUzIzL2ZqVzdZQT09",
   "jp_checked": "2026-10-14T19:30:30+09:00",
   "jp_id": 533450,
@@ -1423,6 +1651,12 @@
  "브리스캔영어쏘시에이츠": {
   "avg_salary": 6286,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "cHFtRU4zdTk2LzJFSWIyU2dhNjJYZz09",
   "jp_checked": "2026-10-14T19:30:30+09:00",
   "jp_id": 31351,
@@ -1430,6 +1664,14 @@
   "jp_reviews": 12,
   "jp_v": 1,
   "name": "브리스캔영어쏘시에이츠(주)",
+  "revenue": 684373,
+  "revenue_by_year": {
+   "2022": 532858,
+   "2023": 486239,
+   "2024": 684373
+  },
+  "revenue_growth": 40.7,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -1466,12 +1708,27 @@
  "블루개러지": {
   "avg_salary": 8614,
   "checked": "2026-10-07T12:54:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
   "employees": 95,
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "(주)블루개러지",
+  "revenue": 12235494,
+  "revenue_by_year": {
+   "2022": 2398229,
+   "2023": 6187966,
+   "2024": 9067986,
+   "2025": 12235494
+  },
+  "revenue_growth": 34.9,
+  "revenue_year": "2025",
   "src": "사람인",
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZDgyeUcwaEtza2VRZm1MUTUzTXdZZz09",
   "v": 2
@@ -1504,7 +1761,7 @@
  },
  "비비드에이아이": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "co_checked": "2026-10-15T12:03:13+09:00",
   "co_labels": [],
   "co_size": null,
@@ -1513,7 +1770,7 @@
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
-  "name": "㈜비비드에이아이",
+  "name": "주식회사비비드에이아이",
   "src": "사람인",
   "v": 2
  },
@@ -1587,6 +1844,14 @@
  "비쥬얼메이커": {
   "avg_salary": null,
   "checked": "2026-10-10T10:53:43+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "사단법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "RE93S2NCbCtFc2J0UDRUbEJZenpOZz09",
   "jp_checked": "2026-10-10T10:53:43+09:00",
   "jp_id": null,
@@ -1700,11 +1965,29 @@
  "사운드리퍼블리카": {
   "avg_salary": 5055,
   "checked": "2026-10-08T14:00:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "외부감사법인",
+   "수출입 기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "VTIwT3dsa3IzUk5lZFJDKzJpZ0lDZz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜사운드리퍼블리카",
+  "revenue": 500327,
+  "revenue_by_year": {
+   "2022": 235481,
+   "2023": 227584,
+   "2024": 312896,
+   "2025": 500327
+  },
+  "revenue_growth": 59.9,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -1721,6 +2004,12 @@
  "상상누리": {
   "avg_salary": 3169,
   "checked": "2026-10-08T14:00:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "cklZajRrRlRsTVFBUXdlakJDdkUydz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 549841,
@@ -1728,17 +2017,41 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "㈜상상누리",
+  "revenue": 90192,
+  "revenue_by_year": {
+   "2020": 25894,
+   "2023": 19399,
+   "2024": 50150,
+   "2025": 90192
+  },
+  "revenue_growth": 79.8,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "새벽다섯시": {
   "avg_salary": 3704,
   "checked": "2026-10-07T13:56:39+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "MjgzTjhRZW1iTjNaZnFJYVZTTUJjQT09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜새벽다섯시",
+  "revenue": 174263,
+  "revenue_by_year": {
+   "2021": 197099,
+   "2022": 69153,
+   "2023": 149313,
+   "2024": 174263
+  },
+  "revenue_growth": 16.7,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -1780,6 +2093,12 @@
  "세로본능": {
   "avg_salary": 4120,
   "checked": "2026-10-07T12:54:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "Wks3NkFKb0NESjgwYUtsT1FsT3EzZz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": 516060,
@@ -1934,11 +2253,27 @@
  "스마일게이트": {
   "avg_salary": 9447,
   "checked": "2026-10-08T18:24:48+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중견기업",
+   "주식회사",
+   "외부감사법인"
+  ],
+  "co_size": "중견기업",
+  "co_v": 1,
   "csn": "czRmdmhjUXYvTmNNRlJ4MHNOL1h3dz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "주식회사스마일게이트",
+  "revenue": 6503308,
+  "revenue_by_year": {
+   "2023": 61030521,
+   "2024": 76794832,
+   "2025": 6503308
+  },
+  "revenue_growth": -91.5,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -1975,6 +2310,15 @@
  "스카이벤처스": {
   "avg_salary": 4042,
   "checked": "2026-10-07T15:31:03+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "외부감사법인",
+   "병역특례 인증업체"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "Rmp5VkQyZVRPSERKejdIdEhMZFJ3UT09",
   "jp_checked": "2026-10-07T15:31:03+09:00",
   "jp_id": null,
@@ -2006,7 +2350,7 @@
  },
  "스텔라앤(stella&i": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -2076,6 +2420,12 @@
  "스튜디오벨루카": {
   "avg_salary": null,
   "checked": "2026-10-13T21:54:08+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중견기업"
+  ],
+  "co_size": "중견기업",
+  "co_v": 1,
   "csn": "a2VrZEEyQ092NnZhbjhGSkdhRE91Zz09",
   "jp_checked": "2026-10-13T21:54:08+09:00",
   "jp_id": null,
@@ -2135,6 +2485,12 @@
  "스튜디오하이": {
   "avg_salary": 5238,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "eU82Y3hFNHFrMTVvUE1JYzV6Zit2Zz09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": 483864,
@@ -2142,6 +2498,15 @@
   "jp_reviews": 3,
   "jp_v": 1,
   "name": "스튜디오하이",
+  "revenue": 673539,
+  "revenue_by_year": {
+   "2022": 88750,
+   "2023": 299958,
+   "2024": 505138,
+   "2025": 673539
+  },
+  "revenue_growth": 33.3,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -2219,6 +2584,13 @@
  "시너지온": {
   "avg_salary": 6256,
   "checked": "2026-10-11T10:12:29+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "NDRVbnlSZGdXc3lZQWFyb1IrcFhNUT09",
   "jp_checked": "2026-10-11T10:12:29+09:00",
   "jp_id": 70495,
@@ -2226,23 +2598,43 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "시너지온",
+  "revenue": 4594887,
+  "revenue_by_year": {
+   "2024": 716340,
+   "2025": 4594887
+  },
+  "revenue_growth": 541.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "시스원": {
   "avg_salary": 5737,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "aDlWSjNvV1c1bzVXeHN5b01mMGphdz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜시스원",
+  "revenue": 13672916,
+  "revenue_by_year": {
+   "2022": 12283519,
+   "2023": 11786640,
+   "2024": 11690658,
+   "2025": 13672916
+  },
+  "revenue_growth": 17.0,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "신한글로벌인재교육원": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 511501,
   "jp_rating": null,
@@ -2255,11 +2647,28 @@
  "쑥쑥컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-13T12:49:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "수출입 기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "V3hrMmFGMExPUVdkY2dYbGhic21Ndz09",
   "jp_checked": "2026-10-13T12:49:38+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜쑥쑥컴퍼니",
+  "revenue": 8461603,
+  "revenue_by_year": {
+   "2022": 282876,
+   "2023": 1407828,
+   "2024": 3845408,
+   "2025": 8461603
+  },
+  "revenue_growth": 120.0,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -2319,6 +2728,10 @@
  "아시아부동산중개": {
   "avg_salary": null,
   "checked": "2026-10-12T19:55:22+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "WmY0WUI1MDFHYzlaMEpGRks0SCtFUT09",
   "jp_checked": "2026-10-12T19:55:22+09:00",
   "jp_id": null,
@@ -2423,6 +2836,10 @@
  "아카엔터테인먼트": {
   "avg_salary": 2719,
   "checked": "2026-10-09T11:31:15+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "SUdaSWRrS29VejIxdWdXUXVsZmNZUT09",
   "jp_checked": "2026-10-09T11:31:15+09:00",
   "jp_id": 536739,
@@ -2436,6 +2853,12 @@
  "아크프로젝트": {
   "avg_salary": 7065,
   "checked": "2026-10-07T12:54:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "OUpWUVhrRGhLR3lpaVd2SG9ta1RIdz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": null,
@@ -2475,7 +2898,13 @@
  },
  "앱스트": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "N2hITERjcDk2dGNwemE1STBqaWFzdz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 511368,
@@ -2592,6 +3021,12 @@
  "에스유컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-10T10:53:43+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "WDE5Q1owOVhJYVVUcUZSRmlXSndsUT09",
   "jp_checked": "2026-10-10T10:53:43+09:00",
   "jp_id": 445020,
@@ -2672,6 +3107,12 @@
  "에임드": {
   "avg_salary": 5192,
   "checked": "2026-10-13T12:49:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "eGN4a1phWm4wVkZsbkdEOXhZMk1zdz09",
   "jp_checked": "2026-10-13T12:49:38+09:00",
   "jp_id": 85783,
@@ -2679,6 +3120,15 @@
   "jp_reviews": 140,
   "jp_v": 1,
   "name": "(주)에임드",
+  "revenue": 1262922,
+  "revenue_by_year": {
+   "2022": 432543,
+   "2023": 598219,
+   "2024": 768394,
+   "2025": 1262922
+  },
+  "revenue_growth": 64.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -2826,6 +3276,13 @@
  "엠티콜렉션": {
   "avg_salary": 4344,
   "checked": "2026-10-08T14:00:38+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중견기업",
+   "외부감사법인"
+  ],
+  "co_size": "중견기업",
+  "co_v": 1,
   "csn": "Y3BqeDVUL3h5MFdZZWo4a1JCcGNXUT09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
@@ -2837,33 +3294,81 @@
  "엠플랜잇": {
   "avg_salary": 5253,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "dnBBNHFUY0NIZi9JQ3JMRUx6NzBKdz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜엠플랜잇",
+  "revenue": 5174610,
+  "revenue_by_year": {
+   "2022": 1719812,
+   "2023": 2068099,
+   "2024": 1935278,
+   "2025": 5174610
+  },
+  "revenue_growth": 167.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "엣지랭크": {
   "avg_salary": 4628,
   "checked": "2026-10-09T11:31:15+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "사단법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "VU8vOUljZ3NJdjdLNUtqOVl6UDQxUT09",
   "jp_checked": "2026-10-09T11:31:15+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜엣지랭크",
+  "revenue": 1946073,
+  "revenue_by_year": {
+   "2022": 3366096,
+   "2023": 3018339,
+   "2024": 2589543,
+   "2025": 1946073
+  },
+  "revenue_growth": -24.8,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "연희직업전문학교": {
   "avg_salary": 4030,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "U2w5V0h5SEZOTksvUDRhSXlHUGp1QT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "연희직업전문학교㈜",
+  "revenue": 222700,
+  "revenue_by_year": {
+   "2021": 86463,
+   "2023": 195403,
+   "2024": 211060,
+   "2025": 222700
+  },
+  "revenue_growth": 5.5,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -2877,6 +3382,13 @@
  "오픈노트": {
   "avg_salary": 4342,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "VEZRaTNkYmhBUjFEV0ZlQjAyb0NMQT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
@@ -2887,7 +3399,7 @@
  },
  "오피유커스": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -2925,6 +3437,13 @@
  "와트니": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "c1NHOG9PVUVOaU93TG1kbi9IM3d6dz09",
   "jp_checked": "2026-10-07T15:31:03+09:00",
   "jp_id": 543441,
@@ -3046,11 +3565,16 @@
  },
  "윙카디아": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "UUVvMXdWSEZFUGFRc202U3BWSUVodz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
-  "name": "㈜윙카디아",
+  "name": "주식회사윙카디아",
   "src": "사람인",
   "v": 2
  },
@@ -3160,11 +3684,27 @@
  "이노테크미디어": {
   "avg_salary": 6286,
   "checked": "2026-10-10T10:53:43+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "dU1VQ0M3UHJGNTBRcUkwQVdNeTg1Zz09",
   "jp_checked": "2026-10-10T10:53:43+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜이노테크미디어",
+  "revenue": 1214671,
+  "revenue_by_year": {
+   "2022": 949483,
+   "2023": 1012801,
+   "2024": 1009611,
+   "2025": 1214671
+  },
+  "revenue_growth": 20.3,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -3206,17 +3746,40 @@
  "이젠아카데미": {
   "avg_salary": 4283,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "MEo3ZktMK1Z6REtBWFJLZ1Q3SzBJdz09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜이젠아카데미",
+  "revenue": 891690,
+  "revenue_by_year": {
+   "2022": 961642,
+   "2023": 786074,
+   "2024": 679729,
+   "2025": 891690
+  },
+  "revenue_growth": 31.2,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "이젠아카데미컴퓨터학원": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "학교/교육기관"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "YzRINytPNW51bFprTFJUMHBDLzZ6dz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 408990,
@@ -3224,6 +3787,15 @@
   "jp_reviews": 6,
   "jp_v": 1,
   "name": "이젠아카데미컴퓨터학원",
+  "revenue": 3890,
+  "revenue_by_year": {
+   "2021": 7368,
+   "2022": 7729,
+   "2023": 5559,
+   "2024": 3890
+  },
+  "revenue_growth": -30.0,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -3267,7 +3839,13 @@
  },
  "일류ent": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "bk9leU5TQWdSV0hCY0xUVDlONldxdz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 540307,
@@ -3292,6 +3870,10 @@
  "자이언트엘": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "VmhHSDBSV0srR3ZiOFV0YmY5eUFyZz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": 547466,
@@ -3345,7 +3927,7 @@
  },
  "제이씨드컴퍼니": {
   "avg_salary": null,
-  "checked": "2026-10-08T18:24:48+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -3420,6 +4002,10 @@
  "주리메지": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "UFRiMGQvbFl5K0VXVFJ4NURzVGxHUT09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": null,
@@ -3450,6 +4036,13 @@
  "지피티더블유인스티튜트": {
   "avg_salary": 5492,
   "checked": "2026-10-07T13:56:39+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "cDBSaG9mQ0VKMnBHMUhldzVVNWFIUT09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": null,
@@ -3485,6 +4078,10 @@
  "차원기획": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "UzNmZlY1RjVYZ1gwV3ZRUUhocEpHZz09",
   "jp_checked": "2026-10-14T19:30:30+09:00",
   "jp_id": 541431,
@@ -3552,6 +4149,13 @@
  "캣츠아이엔터테인먼트": {
   "avg_salary": 3858,
   "checked": "2026-10-12T19:55:22+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "NHF2VlJsZ1FzSXB1MWJCLzdwc1Nwdz09",
   "jp_checked": "2026-10-12T19:55:22+09:00",
   "jp_id": null,
@@ -3563,17 +4167,39 @@
  "커넥티드코리아": {
   "avg_salary": 4236,
   "checked": "2026-10-07T13:28:02+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "연구소",
+   "수출입 기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "ZlBrM0Jnd3RZcGErUDQ3WW9lL25Ndz09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜커넥티드코리아",
+  "revenue": 1223316,
+  "revenue_by_year": {
+   "2022": 923087,
+   "2023": 1097609,
+   "2024": 1295586,
+   "2025": 1223316
+  },
+  "revenue_growth": -5.6,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
  "컷백": {
   "avg_salary": 6123,
   "checked": "2026-10-07T13:28:02+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
   "csn": "bjlFL0FSSGw3SUtFNktpbGRXblBFZz09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": 490484,
@@ -3641,11 +4267,24 @@
  "콘텐츠새로": {
   "avg_salary": 4196,
   "checked": "2026-10-07T13:28:02+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "THBUOHZhV1NUVjJXemdFd0N2eENsZz09",
   "jp_checked": "2026-10-07T13:56:39+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "(주)콘텐츠새로",
+  "revenue": 124652,
+  "revenue_by_year": {
+   "2024": 66865,
+   "2025": 124652
+  },
+  "revenue_growth": 86.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -3681,11 +4320,30 @@
  "크라우드웍스": {
   "avg_salary": 3745,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "스타트업",
+   "중소기업",
+   "코스닥",
+   "주식회사",
+   "병역특례 인증업체"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "eE52N0dmQ0F2Y0VrcEtHREtZS2xMQT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜크라우드웍스",
+  "revenue": 976010,
+  "revenue_by_year": {
+   "2022": 1068914,
+   "2023": 2273443,
+   "2024": 1176673,
+   "2025": 976010
+  },
+  "revenue_growth": -17.1,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -3703,6 +4361,13 @@
  "크로마엔터테인먼트": {
   "avg_salary": 4220,
   "checked": "2026-10-07T12:54:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "MzBqNlJMVVlnNHlQSGM5ckdsR3FsZz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": null,
@@ -3746,6 +4411,12 @@
  "클랙": {
   "avg_salary": 3308,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "b3ZNYkl3SU5sTTh4RVoyYy9NaUl5QT09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": null,
@@ -3757,6 +4428,14 @@
  "클레온": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "수출입 기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "V1RaVmRQczlyb1E3NmdoT3B0UEQxZz09",
   "employees": 25,
   "jp_checked": "2026-10-07T13:40:30+09:00",
@@ -3765,6 +4444,15 @@
   "jp_reviews": 35,
   "jp_v": 1,
   "name": "클레온",
+  "revenue": 1053697,
+  "revenue_by_year": {
+   "2021": 1039057,
+   "2022": 1054754,
+   "2023": 1046804,
+   "2024": 1053697
+  },
+  "revenue_growth": 0.7,
+  "revenue_year": "2024",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/company/45257507",
   "v": 2
@@ -3772,11 +4460,24 @@
  "클립에듀": {
   "avg_salary": 3025,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "YmI4RFFiN29jZ1RhclZYbm0xSUhpUT09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜클립에듀",
+  "revenue": 139082,
+  "revenue_by_year": {
+   "2024": 64282,
+   "2025": 139082
+  },
+  "revenue_growth": 116.4,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -3800,11 +4501,23 @@
  "키스템프": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "외부감사법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "cG1jU1FkVFB2RTg2Umo4YUkxWEliZz09",
   "jp_checked": "2026-10-14T19:30:30+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜키스템프",
+  "revenue": 4351225,
+  "revenue_by_year": {
+   "2017": 4351225
+  },
+  "revenue_year": "2017",
   "src": "사람인",
   "v": 2
  },
@@ -3856,19 +4569,33 @@
  },
  "탑픽이엔엠": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "a0ZKL0tleDBLYnFEbzZPc0tZRDAwUT09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 524854,
   "jp_rating": null,
   "jp_reviews": 0,
   "jp_v": 1,
-  "name": "주식회사 탑픽이엔엠",
+  "name": "(주)탑픽이엔엠",
   "src": "사람인",
   "v": 2
  },
  "터라이프": {
   "avg_salary": 3834,
   "checked": "2026-10-07T15:31:03+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "YkZKbFNiMDkwbXJmZzgxSVd6aXNTQT09",
   "jp_checked": "2026-10-07T15:31:03+09:00",
   "jp_id": null,
@@ -3957,7 +4684,14 @@
  },
  "트루디": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "OHlqcGcyZHJwa2xJZjlDdUNGSFBxdz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
@@ -3969,6 +4703,13 @@
  "팀브레인즈": {
   "avg_salary": 6840,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "U2k2NkZEbzRZTWpzWHhpa29zc3ZHQT09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
@@ -4007,7 +4748,7 @@
  },
  "퍼스트프로그": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -4018,6 +4759,12 @@
  "퍼스트해빗": {
   "avg_salary": 6472,
   "checked": "2026-10-11T10:12:29+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "cUpuOTNHZ01wdjR4M0tJVXhibEY5UT09",
   "jp_checked": "2026-10-11T10:12:29+09:00",
   "jp_id": 463389,
@@ -4031,6 +4778,13 @@
  "퍼플아카데미": {
   "avg_salary": 4233,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "TzQrTFRja3BIOTU4Z29aNmZmNFBxUT09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": null,
@@ -4079,6 +4833,13 @@
  "포자랩스": {
   "avg_salary": 7331,
   "checked": "2026-10-07T12:54:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "스타트업",
+   "병역특례 인증업체"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "ODAvdzQvdExBZ1dhSmQxSVYvV2owQT09",
   "employees": 36,
   "jp_checked": "2026-10-07T13:40:30+09:00",
@@ -4087,6 +4848,15 @@
   "jp_reviews": 20,
   "jp_v": 1,
   "name": "(주)포자랩스",
+  "revenue": 44375,
+  "revenue_by_year": {
+   "2022": 13042,
+   "2023": 12218,
+   "2024": 30931,
+   "2025": 44375
+  },
+  "revenue_growth": 43.5,
+  "revenue_year": "2025",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/25996904",
   "v": 2
@@ -4202,7 +4972,7 @@
  },
  "하네": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -4212,7 +4982,7 @@
  },
  "하루엔터테인먼트": {
   "avg_salary": null,
-  "checked": "2026-10-08T14:00:38+09:00",
+  "checked": "2026-10-15T19:14:11+09:00",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 532270,
   "jp_rating": null,
@@ -4238,6 +5008,14 @@
  "하이미디어아카데미": {
   "avg_salary": 4279,
   "checked": "2026-10-07T14:49:32+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "학교/교육기관"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "bk00b0M2TDNQRXpkekdHMHM0RG1idz09",
   "jp_checked": "2026-10-07T14:49:32+09:00",
   "jp_id": 94632,
@@ -4245,6 +5023,15 @@
   "jp_reviews": 114,
   "jp_v": 1,
   "name": "하이미디어아카데미",
+  "revenue": 1231496,
+  "revenue_by_year": {
+   "2022": 1005514,
+   "2023": 1021287,
+   "2024": 1297715,
+   "2025": 1231496
+  },
+  "revenue_growth": -5.1,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -4278,6 +5065,14 @@
  "한국경매": {
   "avg_salary": null,
   "checked": "2026-10-14T19:30:30+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "사단법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "bzlGbmptQmFzVE16MzBLSVNGQmVBdz09",
   "employees": 38,
   "jp_checked": "2026-10-07T13:40:30+09:00",
@@ -4427,11 +5222,27 @@
  "휴멜로": {
   "avg_salary": 8897,
   "checked": "2026-10-15T09:47:57+09:00",
+  "co_checked": "2026-10-15T19:14:11+09:00",
+  "co_labels": [
+   "스타트업",
+   "병역특례 인증업체"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "WE4wTWp3RGFoM1pwNkVmU3FmMzdxZz09",
   "jp_checked": "2026-10-07T13:40:30+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "휴멜로",
+  "revenue": 48656,
+  "revenue_by_year": {
+   "2022": 53464,
+   "2023": 77975,
+   "2024": 29445,
+   "2025": 48656
+  },
+  "revenue_growth": 65.2,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  }
