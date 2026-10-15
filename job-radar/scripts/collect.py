@@ -374,6 +374,117 @@ def rating_pass(companies, jobs, now, budget_sec=420, max_lookups=40):
     return updates, {"todo": len(todo), "checked": len(updates), "found": found}
 
 
+COMPANY_VERSION = 1
+
+
+def won_to_man(text):
+    """'1조 2,345억 5,494만원' -> 만원 단위 정수. 못 읽으면 None."""
+    if not text:
+        return None
+    t = str(text).replace(",", "").replace(" ", "")
+    m = re.search(r"(?:(\d+)조)?(?:(\d+)억)?(?:(\d+)만)?", t)
+    if not m or not any(m.groups()):
+        return None
+    jo, eok, man = (int(x) if x else 0 for x in m.groups())
+    return jo * 100000000 + eok * 10000 + man
+
+
+def size_tier(labels, revenue_man):
+    """사람인 기업형태 라벨 -> 대기업 / 준대기업 / 중견기업 / 중소기업 / 기타."""
+    labels = {x.strip() for x in labels}
+    if "대기업" in labels:
+        return "대기업"
+    if "1000대기업" in labels or ("중견기업" in labels and (revenue_man or 0) >= 100000000):  # 매출 1조 이상 중견
+        return "준대기업"
+    if "중견기업" in labels:
+        return "중견기업"
+    if labels & {"중소기업", "스타트업", "벤처기업", "소기업", "강소기업"}:
+        return "중소기업"
+    if labels & {"공기업", "공공기관", "외국계", "외국계기업", "외국인 투자기업"}:
+        return "기타"
+    return None
+
+
+def saramin_company_info(f, csn):
+    """사람인 기업정보: 기업형태 라벨, 연도별 매출(재무정보 탭의 JSON-LD 표)."""
+    out = {}
+    soup = f.html(f"https://www.saramin.co.kr/zf_user/company-info/view?csn={csn}")
+    labels = []
+    for li in soup.select(".company_summary_item"):
+        t = clean(li.get_text(" "))
+        if "기업형태" in t:
+            m = re.search(r"기업형태\s*:\s*(.+?)\s*기업형태\s*$", t)
+            labels = [x for x in re.split(r"\s*,\s*", m.group(1))] if m else [t.replace("기업형태", "").strip()]
+    if not labels:
+        m = re.search(r"기업형태\s*:\s*(.+?),\s*업종", soup.get_text(" "))
+        if m:
+            labels = re.split(r"\s*,\s*", m.group(1))
+    out["co_labels"] = [x for x in labels if x]
+    # 재무정보: 연도별 매출액
+    fin = f.html(f"https://www.saramin.co.kr/zf_user/company-info/view-inner-finance?csn={csn}")
+    years = {}
+    for tag in fin.find_all("script", type="application/ld+json"):
+        try:
+            data = json.loads(tag.string or "")
+        except Exception:
+            continue
+        cols = (((data.get("mainEntity") or {}).get("csvw:tableSchema") or {}).get("csvw:columns") or [])
+        for col in cols:
+            if col.get("csvw:name") == "매출액":
+                for cell in col.get("csvw:cells") or []:
+                    v = won_to_man(cell.get("csvw:value"))
+                    y = str(cell.get("csvw:primaryKey") or "")
+                    if v and re.fullmatch(r"20\d\d", y):
+                        years[y] = v
+    if years:
+        ys = sorted(years)
+        out["revenue_by_year"] = {y: years[y] for y in ys}
+        out["revenue"] = years[ys[-1]]
+        out["revenue_year"] = ys[-1]
+        if len(ys) >= 2 and years[ys[-2]] > 0:
+            out["revenue_growth"] = round((years[ys[-1]] - years[ys[-2]]) / years[ys[-2]] * 100, 1)
+    out["co_size"] = size_tier(out["co_labels"], out.get("revenue"))
+    return out
+
+
+def company_pass(companies, jobs, now, budget_sec=900, max_lookups=80):
+    """기업 규모·매출 추이 (사람인). 연봉 조회에서 찾아둔 csn을 쓴다."""
+    f = Fetcher("company-info")
+    f.deadline = time.time() + budget_sec
+    now_iso = now.isoformat()
+    fresh = (now - timedelta(days=SALARY_REFRESH_DAYS)).isoformat()
+    seen, todo = set(), []
+    for j in jobs:
+        ck = company_key(j.get("company"))
+        c = companies.get(ck) or {}
+        if not ck or ck in seen or not c.get("csn"):
+            continue
+        seen.add(ck)
+        if c.get("co_v") == COMPANY_VERSION and (c.get("co_checked") or "") >= fresh:
+            continue
+        todo.append(ck)
+    done = 0
+    for ck in todo[:max_lookups]:
+        try:
+            info = saramin_company_info(f, companies[ck]["csn"])
+        except (Blocked, OutOfTime) as e:
+            log(f"   기업정보 조회 중단: {type(e).__name__}")
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"   기업정보 {companies[ck].get('name')}: {type(e).__name__}")
+            continue
+        companies[ck] = {**companies[ck], **info, "co_checked": now_iso, "co_v": COMPANY_VERSION}
+        done += 1
+    log(f"== 기업 규모·매출: 대상 {len(todo)}곳 중 {done}곳 조회 (요청 {f.requests})")
+    return {"todo": len(todo), "checked": done}
+
+
+def revenue_trend(growth):
+    if growth is None:
+        return ""
+    return "up" if growth >= 5 else ("down" if growth <= -5 else "flat")
+
+
 def salary_pass(companies, jobs, hints, now, budget_sec=420, max_lookups=40):
     """공고에 나온 회사들의 평균연봉을 사람인에서 채운다. 실패해도 수집 결과에는 영향 없음."""
     f = Fetcher("salary")
@@ -1062,6 +1173,7 @@ SOURCES = {
 
 FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
           "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "jp_rating", "jp_reviews", "jp_url",
+          "co_size", "revenue", "revenue_year", "revenue_growth", "revenue_trend",
           "kind", "rv", "first_seen", "last_seen"]
 
 
@@ -1095,6 +1207,7 @@ def to_record(source, c, now_iso, prev=None):
         "jp_rating": None,
         "jp_reviews": None,
         "jp_url": "",
+        "co_size": "", "revenue": None, "revenue_year": "", "revenue_growth": None, "revenue_trend": "",  # 마지막에 채움
         "kind": rules.job_kind(source, c.get("title"), c.get("employment") or (prev or {}).get("employment"),
                                body[:600] or (prev or {}).get("summary") or ""),
         "rv": rules.RULES_VERSION if c.get("_fetched") or c.get("body") else (prev or {}).get("rv"),
@@ -1241,8 +1354,14 @@ def main():
         rating_updates, rating_stat = fut_rating.result()
     for ck, upd in rating_updates.items():
         companies[ck] = {**(companies.get(ck) or {}), **upd}
+    company_stat = company_pass(companies, list(merged.values()), started)
     for j in merged.values():
         info = companies.get(company_key(j.get("company"))) or {}
+        j["co_size"] = info.get("co_size") or ""
+        j["revenue"] = info.get("revenue")
+        j["revenue_year"] = info.get("revenue_year") or ""
+        j["revenue_growth"] = info.get("revenue_growth")
+        j["revenue_trend"] = revenue_trend(info.get("revenue_growth"))
         j["jp_rating"] = info.get("jp_rating")
         j["jp_reviews"] = info.get("jp_reviews") if info.get("jp_rating") else None
         j["jp_url"] = f"https://www.jobplanet.co.kr/companies/{info['jp_id']}/reviews" if info.get("jp_id") else ""
@@ -1252,7 +1371,7 @@ def main():
         if not j.get("kind"):
             j["kind"] = rules.job_kind(j.get("source"), j.get("title"), j.get("employment"), j.get("summary") or "")
         for k in FIELDS:
-            j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews") else "")
+            j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews", "revenue", "revenue_growth") else "")
     EXCLUDED_FILE.write_text(json.dumps({"version": rules.RULES_VERSION, "urls": dict(sorted(REJECTED.items()))},
                                         ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
     COMPANIES_FILE.write_text(json.dumps(companies, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
@@ -1268,6 +1387,7 @@ def main():
         "total": len(jobs),
         "salary": salary_stat,
         "jobplanet_rating": rating_stat,
+        "company_info": company_stat,
         "sites": status_sites,
     }
     STATUS_FILE.write_text(json.dumps(status, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

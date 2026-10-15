@@ -112,6 +112,13 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
 .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ok)}
 .chip.fail .dot{background:var(--bad)}
 .chip.active .dot{background:#fff}
+.facet{display:flex;align-items:flex-start;gap:8px;margin-top:4px}
+.flabel{flex:0 0 auto;font-size:12.5px;font-weight:700;color:var(--muted);padding-top:13px;min-width:74px}
+.chips.mini .chip{font-size:12.5px;padding:4px 10px}
+.co{color:var(--text)}
+.rev.up{color:var(--ok);font-weight:600}
+.rev.down{color:var(--bad);font-weight:600}
+.rev.flat{color:var(--muted);font-weight:600}
 .sitenote{font-size:12px;color:var(--bad);margin-top:4px;min-height:0}
 .tabs{display:flex;gap:0;border-bottom:2px solid var(--line);margin-top:4px}
 .tab{flex:1;border:0;background:transparent;color:var(--muted);font:inherit;font-size:15px;font-weight:700;padding:10px 8px;cursor:pointer;
@@ -225,11 +232,14 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
           <option value="new">최신순</option>
           <option value="salary">평균연봉 높은 순</option>
           <option value="rating">잡플래닛 평점 높은 순</option>
+          <option value="growth">매출 성장률 높은 순</option>
           <option value="deadline">마감 임박 순</option>
         </select>
       </div>
       <div class="chips" id="sites"></div>
       <div class="sitenote" id="siteNote"></div>
+      <div class="facet"><span class="flabel">🏢 기업 규모</span><div class="chips mini" id="sizes"></div></div>
+      <div class="facet"><span class="flabel">📊 매출 추이</span><div class="chips mini" id="trends"></div></div>
     </div>
     <div class="result" id="result"></div>
     <div class="jobs" id="jobs"></div>
@@ -238,6 +248,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   <div class="foot">
     매일 아침(7시 반쯤)과 오후(2시 반쯤) 두 번 GitHub Actions가 자동으로 수집해요. GitHub 사정으로 1~3시간 늦게 시작할 때도 있어요. NEW는 처음 발견된 지 48시간 이내인 공고예요.<br>
     ⚡ 단기·프리랜서 탭은 제목·근무형태에 프리랜서·외주·단기·알바·건당·주말·파트타임·짧은 계약직(6개월 이하)이 있거나 알바몬에서 온 공고예요.<br>
+    🏢 기업 규모·매출은 사람인 기업정보(NICE평가정보) 기준이에요. 대기업=사람인 "대기업" 표시, 준대기업="1000대기업" 표시가 있지만 대기업은 아닌 곳 또는 매출 1조 원 이상 중견기업, 스타트업·벤처는 중소기업으로 묶었어요. 매출 추이는 최근 연도와 그 전 해를 비교해 +5% 이상 상승, −5% 이하 하락, 그 사이는 유지예요.<br>
     ⭐ 잡플래닛 평점은 회사명이 정확히 같은 잡플래닛 기업의 리뷰 평점(5점 만점)이에요. 리뷰 수가 적으면 몇 명의 의견에 좌우될 수 있어요.<br>
     💰 평균연봉은 사람인·잡코리아 기업정보에 나온 회사 전체 평균(국민연금 신고 기준)이라 이 직무의 연봉과 다를 수 있어요. 소규모 회사는 정보가 없을 수 있어요.<br>
     광고·광고대행사·커머스·뷰티·화장품·병원·마케팅 관련 공고는 자동으로 제외돼요. 교육 분야는 포함해요. 7일 연속 안 보이는 공고는 목록에서 빠져요.
@@ -266,7 +277,34 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   })();
   document.getElementById("refreshBtn").href = "https://github.com/" + repoSlug() + "/actions/workflows/" + WORKFLOW;
 
-  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new", tab: "job" };
+  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new", tab: "job", size: "all", trend: "all" };
+  var SIZES = ["대기업", "준대기업", "중견기업", "중소기업", "기타"];
+  var TRENDS = [["up", "📈 상승"], ["flat", "➖ 유지"], ["down", "📉 하락"]];
+  function sizeOf(j){ return j.co_size || "none"; }
+  function trendOf(j){ return j.revenue_trend || "none"; }
+  function fmtMoney(man){
+    if (!man) return "";
+    if (man >= 100000000) return (man / 100000000).toFixed(1).replace(/\.0$/, "") + "조";
+    if (man >= 10000) return Math.round(man / 10000).toLocaleString("ko-KR") + "억";
+    return man.toLocaleString("ko-KR") + "만";
+  }
+  function renderFacets(){
+    var base = state.jobs.filter(inTab);
+    function chip(id, key, label, n, active){
+      return '<button class="chip' + (active ? " active" : "") + '" data-' + id + '="' + key + '">' + label + ' <span class="c">' + n + "</span></button>";
+    }
+    var h = [chip("size", "all", "전체", base.length, state.size === "all")];
+    SIZES.forEach(function(k){
+      var n = base.filter(function(j){ return sizeOf(j) === k; }).length;
+      if (n || state.size === k) h.push(chip("size", k, k, n, state.size === k));
+    });
+    h.push(chip("size", "none", "정보 없음", base.filter(function(j){ return sizeOf(j) === "none"; }).length, state.size === "none"));
+    $("sizes").innerHTML = h.join("");
+    var t = [chip("trend", "all", "전체", base.length, state.trend === "all")];
+    TRENDS.forEach(function(p){ t.push(chip("trend", p[0], p[1], base.filter(function(j){ return trendOf(j) === p[0]; }).length, state.trend === p[0])); });
+    t.push(chip("trend", "none", "정보 없음", base.filter(function(j){ return trendOf(j) === "none"; }).length, state.trend === "none"));
+    $("trends").innerHTML = t.join("");
+  }
   try { if (localStorage.getItem("radar.tab") === "gig") state.tab = "gig"; } catch (e) {}
   function kindOf(j){ return j.kind === "gig" ? "gig" : "job"; }
   function inTab(j){ return kindOf(j) === state.tab; }
@@ -351,9 +389,11 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     var labels = {}; siteList().forEach(function(s){ labels[s.key] = s.label; });
     var list = state.jobs.filter(function(j){
       return inTab(j) && (state.site === "all" || j.source === state.site) && (!state.onlyNew || isNew(j)) &&
+        (state.size === "all" || sizeOf(j) === state.size) && (state.trend === "all" || trendOf(j) === state.trend) &&
         (!state.onlyJp || (j.jp_rating || 0) >= JP_MIN) && matches(j, q);
     });
     if (state.sort === "salary") list.sort(function(a, b){ return (b.avg_salary || 0) - (a.avg_salary || 0); });
+    else if (state.sort === "growth") list.sort(function(a, b){ return (b.revenue_growth == null ? -1e9 : b.revenue_growth) - (a.revenue_growth == null ? -1e9 : a.revenue_growth); });
     else if (state.sort === "rating") list.sort(function(a, b){ return (b.jp_rating || 0) - (a.jp_rating || 0) || (b.jp_reviews || 0) - (a.jp_reviews || 0); });
     else if (state.sort === "deadline") list.sort(function(a, b){
       function k(j){ return /^\d{4}-/.test(j.deadline || "") ? j.deadline : "9999"; }
@@ -379,6 +419,13 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       if (j.employment) metaParts.push("<span>" + esc(j.employment) + "</span>");
       if (j.avg_salary) metaParts.push('<span class="sal" title="' + esc((j.avg_salary_src || "") + " · 국민연금 신고 기준 회사 전체 평균") + '">💰 평균 ' + Number(j.avg_salary).toLocaleString("ko-KR") + "만원" + (j.employees ? " · 👥 " + esc(j.employees) + "명" : "") + "</span>");
       if (j.salary) metaParts.push('<span class="sal">공고 ' + esc(j.salary) + "</span>");
+      if (j.co_size || j.revenue) {
+        var co = "🏢 " + esc(j.co_size || "규모 정보 없음");
+        if (j.revenue) co += " · 매출 " + fmtMoney(j.revenue) + (j.revenue_year ? "(" + esc(j.revenue_year) + ")" : "");
+        if (j.revenue_growth !== null && j.revenue_growth !== undefined && j.revenue_growth !== "")
+          co += ' <span class="rev ' + esc(j.revenue_trend) + '">' + (j.revenue_trend === "up" ? "📈 +" : j.revenue_trend === "down" ? "📉 " : "➖ ") + esc(j.revenue_growth) + "%</span>";
+        metaParts.push('<span class="co" title="사람인 기업정보 기준 · 전년 대비 매출 증감">' + co + "</span>");
+      }
       if (j.jp_rating) metaParts.push('<a class="jp" href="' + esc(safeUrl(j.jp_url)) + '" target="_blank" rel="noopener" title="잡플래닛 기업 리뷰">⭐ ' + Number(j.jp_rating).toFixed(1) + (j.jp_reviews ? " (리뷰 " + esc(j.jp_reviews) + ")" : "") + "</a>");
       if (dl) metaParts.push(typeof dl === "string" ? "<span>" + esc(dl) + "</span>" : '<span class="dl' + (dl.soon ? " soon" : "") + '">⏰ ' + esc(dl.text) + "</span>");
       var tags = (j.tools || []).map(function(t){ return '<button class="tag" data-tool="' + esc(t) + '">' + esc(t) + "</button>"; }).join("");
@@ -417,7 +464,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     }).join("");
   }
 
-  function renderAll(){ renderUpdated(); renderSites(); renderJobs(); }
+  function renderAll(){ renderUpdated(); renderSites(); renderFacets(); renderJobs(); }
 
   $("q").addEventListener("input", function(e){ state.q = e.target.value; renderJobs(); });
   var nb = $("onlyNew");
@@ -441,11 +488,19 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       var on = b.getAttribute("data-tab") === t; b.classList.toggle("active", on); b.setAttribute("aria-selected", on ? "true" : "false");
     });
     try { localStorage.setItem("radar.tab", t); } catch (e) {}
-    renderSites(); renderJobs();
+    renderSites(); renderFacets(); renderJobs();
   }
   $("tabs").addEventListener("click", function(e){ var b = e.target.closest("[data-tab]"); if (b) setTab(b.getAttribute("data-tab")); });
   setTab(state.tab);
   $("sort").addEventListener("change", function(e){ state.sort = e.target.value; renderJobs(); });
+  $("sizes").addEventListener("click", function(e){
+    var b = e.target.closest("[data-size]"); if (!b) return;
+    state.size = b.getAttribute("data-size"); renderFacets(); renderJobs();
+  });
+  $("trends").addEventListener("click", function(e){
+    var b = e.target.closest("[data-trend]"); if (!b) return;
+    state.trend = b.getAttribute("data-trend"); renderFacets(); renderJobs();
+  });
   $("sites").addEventListener("click", function(e){
     var b = e.target.closest("[data-site]"); if (!b) return;
     state.site = b.getAttribute("data-site"); renderSites(); renderJobs();
