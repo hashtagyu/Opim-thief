@@ -512,7 +512,10 @@ def _detail_pass(f, cards, known, detail_fn):
     out, fetched = [], 0
     cards = sorted(cards, key=lambda c: 0 if rules.ROLE_TITLE.search(c.get("title") or "") else 1)
     for c in cards:
-        if c["url"] in known:
+        stale = c["url"] in known and known[c["url"]].get("rv") != rules.RULES_VERSION
+        if stale and fetched < MAX_DETAILS_PER_SOURCE and rules.title_could_match(c.get("title") or known[c["url"]].get("title")):
+            pass  # 규칙이 바뀐 뒤 아직 다시 안 본 공고 -> 상세를 다시 열어 새 규칙으로 검사
+        elif c["url"] in known:
             prev = known[c["url"]]
             c = {**prev, **{k: v for k, v in c.items() if v}}
             c["_known"] = True
@@ -1059,7 +1062,7 @@ SOURCES = {
 
 FIELDS = ["source", "url", "title", "company", "location", "employment", "summary", "tools",
           "deadline", "salary", "avg_salary", "avg_salary_src", "employees", "jp_rating", "jp_reviews", "jp_url",
-          "kind", "first_seen", "last_seen"]
+          "kind", "rv", "first_seen", "last_seen"]
 
 
 # ---------------------------------------------------------------- 병합
@@ -1094,6 +1097,7 @@ def to_record(source, c, now_iso, prev=None):
         "jp_url": "",
         "kind": rules.job_kind(source, c.get("title"), c.get("employment") or (prev or {}).get("employment"),
                                body[:600] or (prev or {}).get("summary") or ""),
+        "rv": rules.RULES_VERSION if c.get("_fetched") or c.get("body") else (prev or {}).get("rv"),
         "first_seen": (prev or {}).get("first_seen") or now_iso,
         "last_seen": now_iso,
     }
