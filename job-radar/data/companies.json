@@ -779,6 +779,16 @@
   "src": "사람인",
   "v": 2
  },
+ "디어센틱": {
+  "avg_salary": null,
+  "checked": "2026-10-16T19:03:42+09:00",
+  "jp_checked": "2026-10-16T19:03:42+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜디어센틱",
+  "src": "사람인",
+  "v": 2
+ },
  "디자인크루": {
   "avg_salary": null,
   "checked": "2026-10-13T12:08:45+09:00",
@@ -1526,6 +1536,23 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/52667963",
   "v": 2
  },
+ "박사장가계": {
+  "avg_salary": null,
+  "checked": "2026-10-16T19:03:42+09:00",
+  "co_checked": "2026-10-16T19:03:42+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "TmtoYUd0YUNyQ3dmZ0VJZFhyNGF1QT09",
+  "jp_checked": "2026-10-16T19:03:42+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "박사장가계",
+  "src": "사람인",
+  "v": 2
+ },
  "발전존중": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
@@ -2118,6 +2145,32 @@
   "src": "사람인",
   "v": 2
  },
+ "서울경제신문": {
+  "avg_salary": 8733,
+  "checked": "2026-10-16T19:03:42+09:00",
+  "co_checked": "2026-10-16T19:03:42+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "Z1NTeUNuL1lWRUg3UEg1dldHMkRTQT09",
+  "jp_checked": "2026-10-16T19:03:42+09:00",
+  "jp_id": 73019,
+  "jp_rating": 3.1,
+  "jp_reviews": 117,
+  "jp_v": 1,
+  "name": "(주)서울경제신문",
+  "revenue": 7613958,
+  "revenue_by_year": {
+   "2022": 7162462,
+   "2023": 7122026,
+   "2024": 7365036,
+   "2025": 7613958
+  },
+  "revenue_growth": 3.4,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "세로본능": {
   "avg_salary": 4120,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -2669,6 +2722,16 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "㈜신한글로벌인재교육원",
+  "src": "사람인",
+  "v": 2
+ },
+ "심러": {
+  "avg_salary": null,
+  "checked": "2026-10-16T19:03:42+09:00",
+  "jp_checked": "2026-10-16T19:03:42+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "심러",
   "src": "사람인",
   "v": 2
  },
@@ -5022,7 +5085,7 @@
  },
  "피에프컴퍼니": {
   "avg_salary": null,
-  "checked": "2026-10-09T11:31:15+09:00",
+  "checked": "2026-10-16T19:03:42+09:00",
   "jp_checked": "2026-10-09T11:31:15+09:00",
   "jp_id": 548329,
   "jp_rating": null,
