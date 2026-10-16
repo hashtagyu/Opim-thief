@@ -986,6 +986,34 @@
   "src": "사람인",
   "v": 2
  },
+ "로크미디어": {
+  "avg_salary": 4233,
+  "checked": "2026-10-16T09:41:04+09:00",
+  "co_checked": "2026-10-16T09:41:04+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "외부감사법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "KzdoZUxXajZ3U0dxck1BTWtiS1Rpdz09",
+  "jp_checked": "2026-10-16T09:41:04+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "(주)로크미디어",
+  "revenue": 1071121,
+  "revenue_by_year": {
+   "2022": 1697906,
+   "2023": 1332541,
+   "2024": 973387,
+   "2025": 1071121
+  },
+  "revenue_growth": 10.0,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "로프트브이에프엑스": {
   "avg_salary": 4821,
   "checked": "2026-10-13T12:08:45+09:00",
@@ -3163,6 +3191,33 @@
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WGZDM2QyZFRGTlNRRCtqQUZkN29QZz09",
   "v": 2
  },
+ "에제드": {
+  "avg_salary": 4503,
+  "checked": "2026-10-16T09:41:04+09:00",
+  "co_checked": "2026-10-16T09:41:04+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "ZEtnWVVWWDJJNXRRS2NnMWJkR0g2dz09",
+  "jp_checked": "2026-10-16T09:41:04+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜에제드",
+  "revenue": 241847,
+  "revenue_by_year": {
+   "2022": 109428,
+   "2023": 138161,
+   "2024": 203682,
+   "2025": 241847
+  },
+  "revenue_growth": 18.7,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "에테르스튜디오": {
   "avg_salary": null,
   "checked": "2026-10-13T12:08:45+09:00",
@@ -3343,6 +3398,32 @@
   },
   "revenue_growth": -24.8,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "연유": {
+  "avg_salary": null,
+  "checked": "2026-10-16T09:41:04+09:00",
+  "co_checked": "2026-10-16T09:41:04+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "WVJIMUNyREsxY3EyaTE4MXlNQ1JBQT09",
+  "jp_checked": "2026-10-16T09:41:04+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "(주)연유",
+  "revenue": 14819,
+  "revenue_by_year": {
+   "2021": 3797,
+   "2022": 5261,
+   "2023": 4585,
+   "2024": 14819
+  },
+  "revenue_growth": 223.2,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
