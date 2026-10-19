@@ -3113,7 +3113,13 @@
  },
  "에런비": {
   "avg_salary": null,
-  "checked": "2026-10-07T16:00:06+09:00",
+  "checked": "2026-10-19T09:26:21+09:00",
+  "co_checked": "2026-10-19T09:26:21+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "VzVTUExSMWFnWXZ0YnUzdUZkNXRLdz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": 546928,
@@ -3707,6 +3713,23 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "위키리크스코리아홀딩스㈜ (WiKiLeaks Korea Holdings",
+  "src": "사람인",
+  "v": 2
+ },
+ "위트너리": {
+  "avg_salary": null,
+  "checked": "2026-10-19T09:26:21+09:00",
+  "co_checked": "2026-10-19T09:26:21+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "OXBGVmtPNHlPVkZ1NXZkYjJ3R3BnZz09",
+  "jp_checked": "2026-10-19T09:26:21+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "위트너리",
   "src": "사람인",
   "v": 2
  },
