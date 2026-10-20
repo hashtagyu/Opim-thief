@@ -105,7 +105,7 @@
  },
  "pixaera": {
   "avg_salary": null,
-  "checked": "2026-10-13T12:49:38+09:00",
+  "checked": "2026-10-20T19:20:57+09:00",
   "jp_checked": "2026-10-13T12:49:38+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -2498,6 +2498,30 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜스텔라앤 (Stella& I",
+  "src": "사람인",
+  "v": 2
+ },
+ "스튜디오나무": {
+  "avg_salary": 3624,
+  "checked": "2026-10-20T19:20:57+09:00",
+  "co_checked": "2026-10-20T19:20:57+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "QjUwc2xoYklLZ1c5UC9iakNkUVBLQT09",
+  "jp_checked": "2026-10-20T19:20:57+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "(주)스튜디오나무",
+  "revenue": 70882,
+  "revenue_by_year": {
+   "2022": 11594,
+   "2023": 70882
+  },
+  "revenue_growth": 511.4,
+  "revenue_year": "2023",
   "src": "사람인",
   "v": 2
  },
