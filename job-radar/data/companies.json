@@ -315,6 +315,12 @@
  "네이버제트": {
   "avg_salary": 9129,
   "checked": "2026-10-08T14:00:38+09:00",
+  "co_checked": "2026-10-20T10:12:56+09:00",
+  "co_labels": [
+   "대기업"
+  ],
+  "co_size": "대기업",
+  "co_v": 1,
   "csn": "TVd3SU9mWnN0WTN4UlU5VVFDNTIxZz09",
   "jp_checked": "2026-10-08T14:00:38+09:00",
   "jp_id": 366207,
@@ -322,6 +328,15 @@
   "jp_reviews": 124,
   "jp_v": 1,
   "name": "네이버제트",
+  "revenue": 5490221,
+  "revenue_by_year": {
+   "2022": 5211006,
+   "2023": 5759839,
+   "2024": 6309507,
+   "2025": 5490221
+  },
+  "revenue_growth": -13.0,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -1452,6 +1467,18 @@
   "jp_rating": null,
   "jp_reviews": 0,
   "jp_v": 1
+ },
+ "미디어링크드": {
+  "avg_salary": null,
+  "checked": "2026-10-20T10:12:56+09:00",
+  "jp_checked": "2026-10-20T10:12:56+09:00",
+  "jp_id": 354896,
+  "jp_rating": 3.1,
+  "jp_reviews": 9,
+  "jp_v": 1,
+  "name": "미디어링크드",
+  "src": "사람인",
+  "v": 2
  },
  "미디어트리컴퍼니": {
   "avg_salary": 5071,
@@ -3083,6 +3110,28 @@
   "src": "사람인",
   "v": 2
  },
+ "억셉티드": {
+  "avg_salary": 5127,
+  "checked": "2026-10-20T10:12:56+09:00",
+  "co_checked": "2026-10-20T10:12:56+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "MlhFdWY3a2FabTE4eVQ5eG15T3k5QT09",
+  "jp_checked": "2026-10-20T10:12:56+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜억셉티드",
+  "revenue": 16568,
+  "revenue_by_year": {
+   "2024": 16568
+  },
+  "revenue_year": "2024",
+  "src": "사람인",
+  "v": 2
+ },
  "언에이아이": {
   "avg_salary": 4058,
   "checked": "2026-10-12T19:55:22+09:00",
@@ -4039,6 +4088,16 @@
   "src": "사람인",
   "v": 2
  },
+ "인핸스": {
+  "avg_salary": null,
+  "checked": "2026-10-20T10:12:56+09:00",
+  "jp_checked": "2026-10-20T10:12:56+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "인핸스(Enhans)",
+  "src": "사람인",
+  "v": 2
+ },
  "일류ent": {
   "avg_salary": null,
   "checked": "2026-10-15T19:14:11+09:00",
@@ -4055,6 +4114,33 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "일류ENT",
+  "src": "사람인",
+  "v": 2
+ },
+ "일만백만": {
+  "avg_salary": 4580,
+  "checked": "2026-10-20T10:12:56+09:00",
+  "co_checked": "2026-10-20T10:12:56+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "ajFSVkl4djdQaHY3RnVTNE4vTmdMZz09",
+  "jp_checked": "2026-10-20T10:12:56+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜ 일만백만",
+  "revenue": 216563,
+  "revenue_by_year": {
+   "2022": 36900,
+   "2023": 67730,
+   "2024": 63520,
+   "2025": 216563
+  },
+  "revenue_growth": 240.9,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
