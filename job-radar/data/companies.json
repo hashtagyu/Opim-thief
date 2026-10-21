@@ -759,6 +759,26 @@
   "src": "사람인",
   "v": 2
  },
+ "두드림it교육원": {
+  "avg_salary": null,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [
+   "중소기업",
+   "학교/교육기관"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "TUROczZVSWdkMTF6QXNZS2NUZExqQT09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": 365257,
+  "jp_rating": 1.4,
+  "jp_reviews": 7,
+  "jp_v": 1,
+  "name": "두드림 IT교육원",
+  "src": "사람인",
+  "v": 2
+ },
  "두루픽스": {
   "avg_salary": 4202,
   "checked": "2026-10-07T16:00:06+09:00",
@@ -1822,6 +1842,26 @@
   "src": "사람인",
   "v": 2
  },
+ "브이유컴퍼니": {
+  "avg_salary": 3372,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "SHE3cUJQRmdWcDlBUkl5YzlqcU1DZz09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": 516767,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "(주)브이유컴퍼니",
+  "src": "사람인",
+  "v": 2
+ },
  "블루개러지": {
   "avg_salary": 8614,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -2525,6 +2565,23 @@
   "src": "사람인",
   "v": 2
  },
+ "스튜디오담": {
+  "avg_salary": null,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "U0FhQkIyYVpMYVVLNG9MdzVWdkpEUT09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": 506540,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "스튜디오담",
+  "src": "사람인",
+  "v": 2
+ },
  "스튜디오레논": {
   "avg_salary": 6740,
   "checked": "2026-10-14T19:30:30+09:00",
@@ -2674,6 +2731,25 @@
   },
   "revenue_growth": 33.3,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "스튜디오휀": {
+  "avg_salary": 3774,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "VU9HTnFpRU8rcnhtOTJzVEhIUm9OZz09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": 538671,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "스튜디오휀",
   "src": "사람인",
   "v": 2
  },
@@ -3259,6 +3335,23 @@
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/40555011",
   "v": 2
  },
+ "에이블링크랩": {
+  "avg_salary": null,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "bVhzM2NvSi9vYVJsTDFLd1dhNEZjZz09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "(주)에이블링크랩",
+  "src": "사람인",
+  "v": 2
+ },
  "에이스파트너스서치펌": {
   "avg_salary": null,
   "checked": "2026-10-12T10:41:50+09:00",
@@ -3749,6 +3842,25 @@
   },
   "revenue_growth": -37.7,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "웰버스": {
+  "avg_salary": null,
+  "checked": "2026-10-21T19:30:16+09:00",
+  "co_checked": "2026-10-21T19:30:16+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "cGl5ZjdpUEM0MDVZYW9iM1NVOFAvdz09",
+  "jp_checked": "2026-10-21T19:30:16+09:00",
+  "jp_id": 335356,
+  "jp_rating": 1.0,
+  "jp_reviews": 1,
+  "jp_v": 1,
+  "name": "웰버스",
   "src": "사람인",
   "v": 2
  },
