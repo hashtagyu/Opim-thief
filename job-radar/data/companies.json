@@ -199,6 +199,23 @@
   "src": "사람인",
   "v": 2
  },
+ "골드프레임서울": {
+  "avg_salary": null,
+  "checked": "2026-10-23T09:53:27+09:00",
+  "co_checked": "2026-10-23T09:53:27+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "c0swdFI3T2NueHdHdDZaaFVDa2pmUT09",
+  "jp_checked": "2026-10-23T09:53:27+09:00",
+  "jp_id": 438569,
+  "jp_rating": 1.0,
+  "jp_reviews": 1,
+  "jp_v": 1,
+  "name": "골드프레임 서울",
+  "src": "사람인",
+  "v": 2
+ },
  "교육지대": {
   "avg_salary": 5828,
   "checked": "2026-10-07T16:00:06+09:00",
