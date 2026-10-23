@@ -848,7 +848,7 @@
  },
  "디어센틱": {
   "avg_salary": null,
-  "checked": "2026-10-16T19:03:42+09:00",
+  "checked": "2026-10-23T19:25:58+09:00",
   "jp_checked": "2026-10-16T19:03:42+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -1664,7 +1664,7 @@
  },
  "박사장가계": {
   "avg_salary": null,
-  "checked": "2026-10-16T19:03:42+09:00",
+  "checked": "2026-10-23T19:25:58+09:00",
   "co_checked": "2026-10-16T19:03:42+09:00",
   "co_labels": [
    "중소기업"
@@ -2933,7 +2933,7 @@
  },
  "심러": {
   "avg_salary": null,
-  "checked": "2026-10-16T19:03:42+09:00",
+  "checked": "2026-10-23T19:25:58+09:00",
   "jp_checked": "2026-10-16T19:03:42+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -3173,6 +3173,24 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "㈜아카엔터테인먼트",
+  "src": "사람인",
+  "v": 2
+ },
+ "아캐인": {
+  "avg_salary": null,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "co_checked": "2026-10-23T19:25:58+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "Ung3dVUvNWFzWCtnTGQ2bVBkSWNIUT09",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "아캐인(주)",
   "src": "사람인",
   "v": 2
  },
@@ -3634,6 +3652,21 @@
   "src": "사람인",
   "v": 2
  },
+ "엔터넥스트": {
+  "avg_salary": null,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "co_checked": "2026-10-23T19:25:58+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "NlJJVmNmcnd1eFNJRGhqbkYwOHZFUT09",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "엔터넥스트",
+  "src": "사람인",
+  "v": 2
+ },
  "엘앤비": {
   "avg_salary": null,
   "checked": "2026-10-08T14:00:38+09:00",
@@ -3761,6 +3794,35 @@
   "src": "사람인",
   "v": 2
  },
+ "여성기업종합지원센터": {
+  "avg_salary": null,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "co_checked": "2026-10-23T19:25:58+09:00",
+  "co_labels": [
+   "기타",
+   "재단법인",
+   "비영리단체/협회"
+  ],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "blpjYlJrcE5NcHVYMm9mc2Vvd3MvZz09",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": 96006,
+  "jp_rating": 1.9,
+  "jp_reviews": 68,
+  "jp_v": 1,
+  "name": "(재)여성기업종합지원센터",
+  "revenue": 96862,
+  "revenue_by_year": {
+   "2022": 100062,
+   "2023": 99122,
+   "2024": 96862
+  },
+  "revenue_growth": -2.3,
+  "revenue_year": "2024",
+  "src": "사람인",
+  "v": 2
+ },
  "연유": {
   "avg_salary": null,
   "checked": "2026-10-16T09:41:04+09:00",
@@ -3873,6 +3935,16 @@
   "name": "와이그램",
   "src": "사람인",
   "url": "https://www.jobkorea.co.kr/Recruit/Co_Read/C/34356307",
+  "v": 2
+ },
+ "와키": {
+  "avg_salary": null,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜와키",
+  "src": "사람인",
   "v": 2
  },
  "와트니": {
@@ -4081,6 +4153,36 @@
    "2025": 81320
   },
   "revenue_growth": -15.1,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "유니스캔": {
+  "avg_salary": null,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "co_checked": "2026-10-23T19:25:58+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사",
+   "수출입 기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "UWlQUDdTK0hIblNYZmlYa2k3Rlprdz09",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": 508725,
+  "jp_rating": 3.0,
+  "jp_reviews": 1,
+  "jp_v": 1,
+  "name": "(주)유니스캔",
+  "revenue": 100566,
+  "revenue_by_year": {
+   "2022": 66788,
+   "2023": 16919,
+   "2024": 101999,
+   "2025": 100566
+  },
+  "revenue_growth": -1.4,
   "revenue_year": "2025",
   "src": "사람인",
   "v": 2
@@ -4638,6 +4740,35 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "청신호",
+  "src": "사람인",
+  "v": 2
+ },
+ "초이락컨텐츠컴퍼니": {
+  "avg_salary": 4512,
+  "checked": "2026-10-23T19:25:58+09:00",
+  "co_checked": "2026-10-23T19:25:58+09:00",
+  "co_labels": [
+   "중소기업",
+   "외부감사법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "OHZjQkRGRnp4T3NYdDBMaE0yVjlMUT09",
+  "jp_checked": "2026-10-23T19:25:58+09:00",
+  "jp_id": 380836,
+  "jp_rating": 2.4,
+  "jp_reviews": 67,
+  "jp_v": 1,
+  "name": "초이락컨텐츠컴퍼니",
+  "revenue": 3710746,
+  "revenue_by_year": {
+   "2022": 4844635,
+   "2023": 3576758,
+   "2024": 3947195,
+   "2025": 3710746
+  },
+  "revenue_growth": -6.0,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -5495,7 +5626,7 @@
  },
  "피에프컴퍼니": {
   "avg_salary": null,
-  "checked": "2026-10-16T19:03:42+09:00",
+  "checked": "2026-10-23T19:25:58+09:00",
   "jp_checked": "2026-10-09T11:31:15+09:00",
   "jp_id": 548329,
   "jp_rating": null,
