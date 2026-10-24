@@ -2557,11 +2557,25 @@
  "스카이인텔리전스": {
   "avg_salary": 5337,
   "checked": "2026-10-07T16:00:06+09:00",
+  "co_checked": "2026-10-24T10:00:07+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "azgyMnRaSlF0Yitidmx3Snk1a09Udz09",
   "jp_checked": "2026-10-07T16:00:06+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜스카이인텔리전스",
+  "revenue": 786358,
+  "revenue_by_year": {
+   "2023": 14245,
+   "2024": 276263,
+   "2025": 786358
+  },
+  "revenue_growth": 184.6,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
