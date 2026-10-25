@@ -113,6 +113,16 @@
   "src": "사람인",
   "v": 2
  },
+ "sac시스템고등관학원": {
+  "avg_salary": null,
+  "checked": "2026-10-25T09:29:54+09:00",
+  "jp_checked": "2026-10-25T09:29:54+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "SAC시스템 고등관학원",
+  "src": "사람인",
+  "v": 2
+ },
  "theflex": {
   "avg_salary": null,
   "checked": "2026-10-22T19:30:53+09:00",
