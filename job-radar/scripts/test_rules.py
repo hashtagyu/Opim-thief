@@ -29,6 +29,11 @@ class ExpandedSearchTest(unittest.TestCase):
         cards = collect._run_terms(Fetcher(), ["프리랜서"], lambda _: [{"url": "example", "title": "번역가"}])
         self.assertTrue(cards[0]["_gig_search"])
 
+    def test_outsourcing_manager_is_not_a_freelance_job(self):
+        self.assertEqual(rules.job_kind("saramin", "외주관리 생산관리 사원", "정규직"), "job")
+        self.assertEqual(collect.judge("saramin", {"title": "외주관리 생산관리 사원", "employment": "정규직"})[0], False)
+        self.assertEqual(rules.job_kind("saramin", "영상 편집 외주 모집", ""), "gig")
+
 
 if __name__ == "__main__":
     unittest.main()

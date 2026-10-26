@@ -2,7 +2,7 @@
 import re
 
 # 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
-RULES_VERSION = 5
+RULES_VERSION = 6
 
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
@@ -188,17 +188,20 @@ def is_relevant(title, body, tools, source="", employment=""):
 # 단기·프리랜서 구분 ("gig") — 그 외는 일반 채용("job")
 GIG_SOURCES = {"albamon"}
 GIG_WORDS = re.compile(
-    r"프리랜서|프리랜스|외주|단기|알바|아르바이트|건당|건\s*바이\s*건|건별|일당|당일\s*지급|주말|파트\s*타임|시급|"
+    r"프리랜서|프리랜스|단기|알바|아르바이트|건당|건\s*바이\s*건|건별|일당|당일\s*지급|주말|파트\s*타임|시급|"
     r"부업|재택\s*부업|프로젝트\s*(?:성|단위)|\d\s*(?:개월|주)\s*(?:계약|단기)|(?:계약직|계약)\s*\(?\s*[1-6]\s*개월|"
     r"freelance|part[\s-]?time|contract\s*\(?\s*\d+\s*(?:month|week)|gig",
     re.I,
 )
+OUTSOURCED_GIG_TITLE = re.compile(r"외주\s*(?:제작|작업|계약|프로젝트|파트너|모집|구함|구인|의뢰|가능|건|편집|촬영|디자인|번역)(?!\s*관리)|외주\s*$")
 
 
 def job_kind(source, title, employment, text=""):
     if source in GIG_SOURCES:
         return "gig"
     if GIG_WORDS.search(" ".join(x for x in (title, employment) if x)):
+        return "gig"
+    if re.search(r"외주", employment or "") or OUTSOURCED_GIG_TITLE.search(title or ""):
         return "gig"
     # 본문 앞부분에 근무형태로 프리랜서/외주가 적힌 경우
     if re.search(r"(?:근무\s*형태|고용\s*형태|계약\s*형태)\s*[:：]?\s*(?:프리랜서|외주|단기|아르바이트)", text or ""):
