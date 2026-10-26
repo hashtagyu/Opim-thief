@@ -33,6 +33,8 @@ class ExpandedSearchTest(unittest.TestCase):
         self.assertEqual(rules.job_kind("saramin", "외주관리 생산관리 사원", "정규직"), "job")
         self.assertEqual(collect.judge("saramin", {"title": "외주관리 생산관리 사원", "employment": "정규직"})[0], False)
         self.assertEqual(rules.job_kind("saramin", "영상 편집 외주 모집", ""), "gig")
+        self.assertEqual(rules.job_kind("mediajob", "외주제작팀 조연출 모집", ""), "job")
+        self.assertEqual(rules.job_kind("mediajob", "외주 제작팀 조연출 모집", ""), "job")
 
 
 if __name__ == "__main__":

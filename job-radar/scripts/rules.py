@@ -2,7 +2,7 @@
 import re
 
 # 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
-RULES_VERSION = 6
+RULES_VERSION = 7
 
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
@@ -193,7 +193,7 @@ GIG_WORDS = re.compile(
     r"freelance|part[\s-]?time|contract\s*\(?\s*\d+\s*(?:month|week)|gig",
     re.I,
 )
-OUTSOURCED_GIG_TITLE = re.compile(r"외주\s*(?:제작|작업|계약|프로젝트|파트너|모집|구함|구인|의뢰|가능|건|편집|촬영|디자인|번역)(?!\s*관리)|외주\s*$")
+OUTSOURCED_GIG_TITLE = re.compile(r"외주(?=$|[\s\[\]()/,·:-])(?![\s\[\]()/,·:-]*(?:관리|구매|생산|업체|일정|제작\s*(?:팀|관리)))")
 
 
 def job_kind(source, title, employment, text=""):
