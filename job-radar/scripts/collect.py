@@ -577,7 +577,11 @@ def _run_terms(f, terms, fn):
     results, last_exc, ok, conn_fail = [], None, 0, 0
     for t in terms:
         try:
-            results.extend(fn(t))
+            cards = fn(t)
+            if t in rules.GIG_SEARCH_TERMS:
+                for card in cards:
+                    card["_gig_search"] = True
+            results.extend(cards)
             ok += 1
         except OutOfTime:
             f.errors.append(f"시간 예산 초과: '{t}'부터 검색 생략")
@@ -621,10 +625,13 @@ def _detail_pass(f, cards, known, detail_fn):
     """카드 목록에서 상세를 채운다. 이미 아는 url은 상세 요청을 생략한다.
     상세를 여는 순서: 제목에 'AI + 직무'가 있는 공고 먼저 (시간 예산이 모자라도 유력한 공고부터 보게)."""
     out, fetched = [], 0
-    cards = sorted(cards, key=lambda c: 0 if rules.ROLE_TITLE.search(c.get("title") or "") else 1)
+    cards = sorted(cards, key=lambda c: 0 if rules.ROLE_TITLE.search(c.get("title") or "")
+                   else 1 if rules.PD_TITLE.search(c.get("title") or "")
+                   else 2 if rules.job_kind(f.name, c.get("title"), c.get("employment")) == "gig" or c.get("_gig_search")
+                   else 3)
     for c in cards:
         stale = c["url"] in known and known[c["url"]].get("rv") != rules.RULES_VERSION
-        if stale and fetched < MAX_DETAILS_PER_SOURCE and rules.title_could_match(c.get("title") or known[c["url"]].get("title")):
+        if stale and fetched < MAX_DETAILS_PER_SOURCE and rules.title_could_match(c.get("title") or known[c["url"]].get("title"), f.name, c.get("employment") or known[c["url"]].get("employment"), c.get("_gig_search")):
             pass  # 규칙이 바뀐 뒤 아직 다시 안 본 공고 -> 상세를 다시 열어 새 규칙으로 검사
         elif c["url"] in known:
             prev = known[c["url"]]
@@ -634,7 +641,7 @@ def _detail_pass(f, cards, known, detail_fn):
             continue
         if c["url"] in REJECTED:
             continue  # 최근 14일 안에 상세까지 보고 제외한 공고 -> 다시 열지 않는다
-        if not rules.title_could_match(c.get("title")) or rules.EXCLUDE_META.search(c.get("company") or ""):
+        if not rules.title_could_match(c.get("title"), f.name, c.get("employment"), c.get("_gig_search")) or rules.EXCLUDE_META.search(c.get("company") or ""):
             out.append(c)  # 제목·회사만으로 탈락 -> 상세 요청 생략 (judge에서 제외로 집계)
             continue
         if fetched >= MAX_DETAILS_PER_SOURCE:
@@ -1151,7 +1158,7 @@ def src_albamon(f, known):
         d.setdefault("employment", "아르바이트")
         return d
 
-    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS[:8], search))
+    cards = _dedupe(_run_terms(f, rules.SEARCH_TERMS[:12], search))
     return _detail_pass(f, cards, known, detail)
 
 
@@ -1217,7 +1224,7 @@ def to_record(source, c, now_iso, prev=None):
     return {k: rec[k] for k in FIELDS}
 
 
-def judge(c, prev=None):
+def judge(source, c, prev=None):
     """(포함 여부, 사유). 이미 저장된 공고는 본문 없이 제목·저장된 툴로 판단."""
     title = c.get("title") or ""
     body = c.get("body") or ""
@@ -1225,7 +1232,8 @@ def judge(c, prev=None):
     reason = rules.exclusion_reason(title, c.get("company"), c.get("industry"), body)
     if reason:
         return False, reason
-    if not rules.is_relevant(title, body, tools):
+    if not rules.is_relevant(title, body or (prev or {}).get("summary") or "", tools,
+                             source, c.get("employment") or (prev or {}).get("employment") or ""):
         return False, "not-relevant"
     return True, None
 
@@ -1233,7 +1241,7 @@ def judge(c, prev=None):
 def title_ok(j):
     """본문 없이 제목·회사명만으로 다시 거르기 (규칙 변경을 기존 공고에도 반영)."""
     title = j.get("title") or ""
-    if rules.NON_ARTIST_TITLE.search(title) or rules.design_blocked(title):
+    if j.get("kind") != "gig" and (rules.NON_ARTIST_TITLE.search(title) or rules.design_blocked(title)):
         return False
     return not rules.EXCLUDE_META.search(" ".join([title, j.get("company") or ""]))
 
@@ -1273,7 +1281,7 @@ def main():
             st["found"] = len(cards)
             for c in cards:
                 prev = by_url.get(c["url"])
-                ok, why = judge(c, prev)
+                ok, why = judge(key, c, prev)
                 if not ok:
                     st["excluded"] += 1
                     dropped.add(c["url"])

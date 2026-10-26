@@ -2,10 +2,14 @@
 import re
 
 # 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
-RULES_VERSION = 4
+RULES_VERSION = 5
 
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
+    "프리랜서",
+    "외주",
+    "부업",
+    "PD",
     "AI 아티스트",
     "AI 영상",
     "AI 크리에이터",
@@ -22,12 +26,17 @@ SEARCH_TERMS = [
 
 # 영문 위주 사이트(LinkedIn)용 검색어
 SEARCH_TERMS_EN = [
+    "freelance",
+    "producer",
     "AI artist",
     "AI video creator",
     "generative AI video",
     "ComfyUI",
     "Midjourney",
 ]
+
+GIG_SEARCH_TERMS = {"프리랜서", "외주", "부업", "freelance"}
+PD_TITLE = re.compile(r"(?<![A-Za-z])PD(?![A-Za-z])|프로듀서|연출", re.I)
 
 # 표시 이름 -> 패턴. 한글/영문 표기 모두.
 TOOLS = {
@@ -151,21 +160,27 @@ def design_blocked(title):
     return bool(DESIGNER_WORD.search(title)) and not VIDEO_WORD.search(title)
 
 
-def title_could_match(title):
+def title_could_match(title, source="", employment="", gig_search=False):
     """상세를 열기 전 제목만으로 후보가 될 수 있는지 (요청 수 줄이기용)."""
     title = title or ""
     if not title:
         return True
-    if NON_ARTIST_TITLE.search(title) or EXCLUDE_META.search(title) or design_blocked(title):
+    if EXCLUDE_META.search(title):
         return False
-    return bool(ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title))
-
-
-def is_relevant(title, body, tools):
-    title = title or ""
+    if job_kind(source, title, employment) == "gig" or gig_search:
+        return True
     if NON_ARTIST_TITLE.search(title) or design_blocked(title):
         return False
-    if ROLE_TITLE.search(title):
+    return bool(ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title) or PD_TITLE.search(title))
+
+
+def is_relevant(title, body, tools, source="", employment=""):
+    title = title or ""
+    if job_kind(source, title, employment, body[:600]) == "gig":
+        return True
+    if NON_ARTIST_TITLE.search(title) or design_blocked(title):
+        return False
+    if ROLE_TITLE.search(title) or PD_TITLE.search(title):
         return True
     return bool(tools) and bool(CREATIVE_TITLE.search(title))
 
