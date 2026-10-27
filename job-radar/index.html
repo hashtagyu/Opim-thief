@@ -215,7 +215,8 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   <section style="margin-top:26px">
     <h2>💼 공고 <span class="n" id="jobsN"></span></h2>
     <div class="tabs" role="tablist" id="tabs">
-      <button class="tab active" role="tab" data-tab="job" aria-selected="true">💼 AI 영상 채용 <span class="c" id="tabJob"></span></button>
+      <button class="tab active" role="tab" data-tab="all" aria-selected="true">🎬 AI 영상 전체 <span class="c" id="tabAll"></span></button>
+      <button class="tab" role="tab" data-tab="job" aria-selected="false">💼 AI 영상 채용 <span class="c" id="tabJob"></span></button>
       <button class="tab" role="tab" data-tab="gig" aria-selected="false">⚡ 알바·외주 <span class="c" id="tabGig"></span></button>
     </div>
     <div class="controls">
@@ -272,7 +273,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
   })();
   document.getElementById("refreshBtn").href = "https://github.com/" + repoSlug() + "/actions/workflows/" + WORKFLOW;
 
-  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new", tab: "job", size: "all", trend: "all" };
+  var state = { jobs: [], status: {}, site: "all", q: "", onlyNew: false, onlyJp: false, sort: "new", tab: "all", size: "all", trend: "all" };
   var SIZES = ["대기업", "준대기업", "중견기업", "중소기업", "기타"];
   var TRENDS = [["up", "📈 상승"], ["flat", "➖ 유지"], ["down", "📉 하락"]];
   function sizeOf(j){ return j.co_size || "none"; }
@@ -300,9 +301,9 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
     t.push(chip("trend", "none", "정보 없음", base.filter(function(j){ return trendOf(j) === "none"; }).length, state.trend === "none"));
     $("trends").innerHTML = t.join("");
   }
-  try { if (localStorage.getItem("radar.tab") === "gig") state.tab = "gig"; } catch (e) {}
+  try { if (["job", "gig"].includes(localStorage.getItem("radar.tab"))) state.tab = localStorage.getItem("radar.tab"); } catch (e) {}
   function kindOf(j){ return j.kind === "gig" ? "gig" : "job"; }
-  function inTab(j){ return kindOf(j) === state.tab; }
+  function inTab(j){ return state.tab === "all" || kindOf(j) === state.tab; }
   var JP_MIN = 3.0;
   try { state.onlyNew = localStorage.getItem("radar.onlyNew") === "1"; } catch (e) {}
 
@@ -404,6 +405,7 @@ h2 .n{font-size:13px;color:var(--muted);font-weight:500}
       return ka < kb ? -1 : ka > kb ? 1 : 0;
     });
     $("jobsN").textContent = state.jobs.length + "건";
+    $("tabAll").textContent = state.jobs.length;
     $("tabJob").textContent = state.jobs.filter(function(j){ return kindOf(j) === "job"; }).length;
     $("tabGig").textContent = state.jobs.filter(function(j){ return kindOf(j) === "gig"; }).length;
     var newCount = state.jobs.filter(function(j){ return inTab(j) && isNew(j); }).length;
