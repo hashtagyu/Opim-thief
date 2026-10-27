@@ -1243,7 +1243,7 @@ def title_ok(j):
     title = j.get("title") or ""
     if rules.logistics_job(title, j.get("summary")):
         return False
-    if j.get("kind") != "gig" and (rules.NON_ARTIST_TITLE.search(title) or rules.design_blocked(title)):
+    if not rules.is_relevant(title, j.get("summary") or "", j.get("tools") or []):
         return False
     return not rules.EXCLUDE_META.search(" ".join([title, j.get("company") or ""]))
 
@@ -1378,8 +1378,7 @@ def main():
         j["avg_salary"] = info.get("avg_salary")
         j["avg_salary_src"] = f"{info['src']} 기업정보" if info.get("avg_salary") else ""
         j["employees"] = info.get("employees")
-        if not j.get("kind"):
-            j["kind"] = rules.job_kind(j.get("source"), j.get("title"), j.get("employment"), j.get("summary") or "")
+        j["kind"] = rules.job_kind(j.get("source"), j.get("title"), j.get("employment"), j.get("summary") or "")
         for k in FIELDS:
             j.setdefault(k, None if k in ("avg_salary", "employees", "jp_rating", "jp_reviews", "revenue", "revenue_growth") else "")
     EXCLUDED_FILE.write_text(json.dumps({"version": rules.RULES_VERSION, "urls": dict(sorted(REJECTED.items()))},

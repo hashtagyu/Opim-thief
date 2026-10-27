@@ -2,7 +2,7 @@
 import re
 
 # 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
-RULES_VERSION = 8
+RULES_VERSION = 9
 
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
@@ -151,8 +151,12 @@ def exclusion_reason(title, company, industry, body):
 NON_ARTIST_TITLE = re.compile(
     r"엔지니어|개발자|백엔드|프론트엔드|풀스택|데이터\s*사이언|engineer|developer|software|full\s*stack|backend|frontend|"
     r"devops|data\s*scien|researcher|연구원|영업|세일즈|sales|회계|인사\b|"
-    r"라벨링|레이블링|어노테이션|annotation|labeling|검수|데이터\s*(?:구축|수집|가공)|"
-    r"유지\s*보수|영상\s*보안|보안\s*시스템|cctv|관제|영상\s*분석|비전\s*(?:ai|엔지니어)",
+    r"라벨링|레이블링|라벨러|어노테이션|annotation|labeling|labeler|검수|데이터\s*(?:구축|수집|가공)|"
+    r"유지\s*보수|영상\s*보안|보안\s*시스템|cctv|관제|영상\s*분석|비전\s*(?:ai|엔지니어)|"
+    r"트레이너|강사|피트니스|필라테스|요가|trainer|instructor|tutor|튜터|"
+    r"머신\s*비전|영상\s*처리|이미지\s*처리|사업\s*운영|제품\s*촬영|사진\s*작가|포토그래퍼|"
+    r"챗봇|채팅|캐릭터\s*챗|chatbot|작곡|편곡|음악\s*감독|생체\s*신호|rppg|"
+    r"훈련\s*교사|선생님|취업\s*캠프|product\s*manager|프로덕트\s*매니저",
     re.I,
 )
 
@@ -166,6 +170,16 @@ DESIGN_BLOCK = re.compile(
 )
 DESIGNER_WORD = re.compile(r"디자이너|디자인|designer|design", re.I)
 VIDEO_WORD = re.compile(r"영상|모션|비디오|video|motion|vfx|애니메이|animat|크리에이터|creator", re.I)
+AI_WORD = re.compile(r"(?<![A-Za-z])AI(?![A-Za-z])|인공지능|생성형|gen\s*ai|generative\s*ai", re.I)
+VIDEO_WORK = re.compile(
+    r"영상|비디오|모션|애니메이|vfx|숏폼|릴스|뮤직비디오|유튜브|동영상|영화|드라마|필름|"
+    r"video|motion|animat|cinemat|filmmak|film|vfx", re.I,
+)
+AI_VIDEO_BODY = re.compile(
+    r"(?:(?<![A-Za-z])ai(?![A-Za-z])|생성형|인공지능|gen\s*ai).{0,30}(?:영상|비디오|모션|애니메이|vfx|video|motion|animat|film)|"
+    r"(?:영상|비디오|모션|애니메이|vfx|video|motion|animat|film).{0,30}(?:(?<![A-Za-z])ai(?![A-Za-z])|생성형|인공지능|gen\s*ai)", re.I,
+)
+VIDEO_TOOLS = {"Higgsfield", "Seedance", "Kling", "Runway", "Veo", "Sora", "Pika", "Luma", "Hailuo", "Wan", "Hedra"}
 
 
 def design_blocked(title):
@@ -184,8 +198,6 @@ def title_could_match(title, source="", employment="", gig_search=False):
         return False
     if EXCLUDE_META.search(title):
         return False
-    if job_kind(source, title, employment) == "gig" or gig_search:
-        return True
     if NON_ARTIST_TITLE.search(title) or design_blocked(title):
         return False
     return bool(ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title) or PD_TITLE.search(title))
@@ -193,17 +205,17 @@ def title_could_match(title, source="", employment="", gig_search=False):
 
 def is_relevant(title, body, tools, source="", employment=""):
     title = title or ""
-    if job_kind(source, title, employment, body[:600]) == "gig":
-        return True
+    body = body or ""
     if NON_ARTIST_TITLE.search(title) or design_blocked(title):
         return False
-    if ROLE_TITLE.search(title) or PD_TITLE.search(title):
-        return True
-    return bool(tools) and bool(CREATIVE_TITLE.search(title))
+    creative = ROLE_TITLE.search(title) or CREATIVE_TITLE.search(title) or PD_TITLE.search(title)
+    video_tools = VIDEO_TOOLS.intersection(tools or [])
+    video_context = AI_VIDEO_BODY.search(body)
+    return bool(creative and (AI_WORD.search(title) or video_tools or video_context)
+                and (VIDEO_WORK.search(title) or video_tools or video_context))
 
 
 # 단기·프리랜서 구분 ("gig") — 그 외는 일반 채용("job")
-GIG_SOURCES = {"albamon"}
 GIG_WORDS = re.compile(
     r"프리랜서|프리랜스|단기|알바|아르바이트|건당|건\s*바이\s*건|건별|일당|당일\s*지급|주말|파트\s*타임|시급|"
     r"부업|재택\s*부업|프로젝트\s*(?:성|단위)|\d\s*(?:개월|주)\s*(?:계약|단기)|(?:계약직|계약)\s*\(?\s*[1-6]\s*개월|"
@@ -214,8 +226,6 @@ OUTSOURCED_GIG_TITLE = re.compile(r"외주(?=$|[\s\[\]()/,·:-])(?![\s\[\]()/,·
 
 
 def job_kind(source, title, employment, text=""):
-    if source in GIG_SOURCES:
-        return "gig"
     if GIG_WORDS.search(" ".join(x for x in (title, employment) if x)):
         return "gig"
     if re.search(r"외주", employment or "") or OUTSOURCED_GIG_TITLE.search(title or ""):

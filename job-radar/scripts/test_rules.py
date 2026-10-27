@@ -5,6 +5,19 @@ import rules
 
 
 class ExpandedSearchTest(unittest.TestCase):
+    def test_only_ai_video_work_survives_in_both_tabs(self):
+        self.assertFalse(collect.judge("albamon", {"title": "PT 트레이너", "employment": "아르바이트"})[0])
+        self.assertFalse(collect.judge("incruit", {"title": "프리랜서 번역가", "employment": "프리랜서"})[0])
+        self.assertFalse(collect.judge("mediajob", {"title": "콘텐츠 PD"})[0])
+        self.assertFalse(collect.judge("saramin", {"title": "AI Tutor - Video", "body": "Kling AI video"})[0])
+        self.assertFalse(collect.judge("albamon", {"title": "AI 영상 라벨러 모집", "employment": "아르바이트"})[0])
+        self.assertFalse(collect.judge("saramin", {"title": "AI 영상 제작 훈련교사"})[0])
+        self.assertFalse(collect.judge("saramin", {"title": "Product Manager (AI 영상 스튜디오)"})[0])
+        self.assertEqual(collect.judge("albamon", {"title": "AI 영상 편집 알바", "employment": "아르바이트"}), (True, None))
+        self.assertEqual(collect.judge("saramin", {"title": "영상 제작 PD", "body": "Runway로 AI 영상 제작", "employment": "정규직"}), (True, None))
+        self.assertEqual(rules.job_kind("albamon", "AI 영상 PD", "정규직"), "job")
+        self.assertEqual(rules.job_kind("albamon", "AI 영상 편집 알바", "아르바이트"), "gig")
+
     def test_logistics_jobs_are_excluded_even_when_gigs(self):
         courier = {"title": "쿠팡 배송기사 모집", "employment": "프리랜서"}
         warehouse = {"title": "저녁 박스 포장 부업", "body": "업직종:입출고·창고관리,상하차·소화물 분류"}
@@ -12,24 +25,28 @@ class ExpandedSearchTest(unittest.TestCase):
             self.assertFalse(collect.judge("albamon", card)[0])
             self.assertFalse(collect.title_ok({**card, "kind": "gig", "summary": card.get("body", "")}))
         self.assertFalse(rules.title_could_match(courier["title"], "albamon"))
-        self.assertEqual(collect.judge("jobkorea", {"title": "AI 콘텐츠 크리에이터", "body": "화물운송 회사의 영상 제작", "employment": "프리랜서"}), (True, None))
+        self.assertEqual(collect.judge("jobkorea", {"title": "AI 콘텐츠 크리에이터", "body": "화물운송 회사의 AI 영상 제작", "employment": "프리랜서"}), (True, None))
 
     def test_plain_pd_hiring_uses_existing_industry_filter(self):
         self.assertTrue(rules.title_could_match("콘텐츠 PD"))
-        self.assertEqual(collect.judge("saramin", {"title": "콘텐츠 PD", "company": "방송사"}), (True, None))
-        self.assertEqual(collect.judge("saramin", {"title": "콘텐츠 PD", "company": "광고대행사"})[0], False)
+        self.assertEqual(collect.judge("saramin", {"title": "콘텐츠 PD", "company": "방송사"})[0], False)
+        self.assertEqual(collect.judge("saramin", {"title": "AI 영상 콘텐츠 PD", "company": "방송사"}), (True, None))
+        self.assertEqual(collect.judge("saramin", {"title": "AI 영상 콘텐츠 PD", "company": "광고대행사"})[0], False)
 
-    def test_freelance_other_roles_are_included(self):
+    def test_freelance_video_roles_are_included(self):
         card = {"title": "프리랜서 번역가", "company": "출판사", "employment": "프리랜서"}
-        self.assertTrue(rules.title_could_match(card["title"], "saramin", card["employment"]))
+        self.assertFalse(rules.title_could_match(card["title"], "saramin", card["employment"]))
+        self.assertEqual(collect.judge("saramin", card)[0], False)
+        card["title"] = "프리랜서 AI 영상 편집자"
         self.assertEqual(collect.judge("saramin", card), (True, None))
         self.assertEqual(rules.job_kind("saramin", card["title"], card["employment"]), "gig")
         self.assertEqual(collect.judge("saramin", {**card, "company": "광고회사"})[0], False)
 
     def test_gig_search_opens_candidate_but_does_not_accept_full_time_job(self):
-        self.assertTrue(rules.title_could_match("번역가", "saramin", gig_search=True))
+        self.assertFalse(rules.title_could_match("번역가", "saramin", gig_search=True))
+        self.assertTrue(rules.title_could_match("AI 영상 편집자", "saramin", gig_search=True))
         self.assertEqual(collect.judge("saramin", {"title": "번역가", "employment": "정규직"})[0], False)
-        self.assertEqual(collect.judge("saramin", {"title": "번역가", "body": "근무형태: 프리랜서"}), (True, None))
+        self.assertEqual(collect.judge("saramin", {"title": "AI 영상 편집자", "body": "근무형태: 프리랜서"}), (True, None))
 
     def test_gig_search_marks_cards_for_detail_lookup(self):
         class Fetcher:
