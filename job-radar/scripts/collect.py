@@ -1229,7 +1229,7 @@ def judge(source, c, prev=None):
     title = c.get("title") or ""
     body = c.get("body") or ""
     tools = rules.find_tools(" ".join([title, body])) or (prev or {}).get("tools") or []
-    reason = rules.exclusion_reason(title, c.get("company"), c.get("industry"), body)
+    reason = rules.exclusion_reason(title, c.get("company"), c.get("industry"), body or c.get("summary") or (prev or {}).get("summary") or "")
     if reason:
         return False, reason
     if not rules.is_relevant(title, body or (prev or {}).get("summary") or "", tools,
@@ -1241,6 +1241,8 @@ def judge(source, c, prev=None):
 def title_ok(j):
     """본문 없이 제목·회사명만으로 다시 거르기 (규칙 변경을 기존 공고에도 반영)."""
     title = j.get("title") or ""
+    if rules.logistics_job(title, j.get("summary")):
+        return False
     if j.get("kind") != "gig" and (rules.NON_ARTIST_TITLE.search(title) or rules.design_blocked(title)):
         return False
     return not rules.EXCLUDE_META.search(" ".join([title, j.get("company") or ""]))

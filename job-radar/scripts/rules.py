@@ -2,7 +2,7 @@
 import re
 
 # 포함·제외 규칙을 바꾸면 올린다 -> 예전에 제외해 둔 공고(excluded.json)를 다시 검사한다
-RULES_VERSION = 7
+RULES_VERSION = 8
 
 # 각 사이트에 넣을 검색어 (한글·영문)
 SEARCH_TERMS = [
@@ -92,6 +92,19 @@ EXCLUDE_META = re.compile(
     r"advertis|ad\s*agency|commerce|beauty|cosmetic|hospital|clinic|medical|marketing|marketer",
     re.I,
 )
+LOGISTICS_TITLE = re.compile(
+    r"물류|배송|택배|배달|상하차|입출고|창고|운송|납품\s*기사|퀵플렉스|라이더|지게차|소화물|포워딩|피킹|박스\s*포장|쿠플|프리기사",
+    re.I,
+)
+LOGISTICS_OCCUPATION = re.compile(
+    r"(?:업직종|모집분야):.{0,100}?(?:물류|배송|택배|배달|상하차|입출고|창고|운송|납품|포워딩|피킹|소화물)",
+    re.I,
+)
+
+
+def logistics_job(title, body=""):
+    return bool(LOGISTICS_TITLE.search(title or "") or LOGISTICS_OCCUPATION.search(body or ""))
+
 # 본문: 구체적인 표현은 1번만 나와도 제외
 EXCLUDE_BODY_STRONG = re.compile(
     r"쇼핑몰|병원|패션|라이프\s*스타일|커머스|fashion|lifestyle|"  # 2026-10 사용자 요청: 본문에 한 번만 나와도 제외
@@ -117,6 +130,8 @@ def find_tools(text):
 
 
 def exclusion_reason(title, company, industry, body):
+    if logistics_job(title, body):
+        return "logistics"
     meta = " ".join(x for x in (title, company, industry) if x)
     m = EXCLUDE_META.search(meta)
     if m:
@@ -165,6 +180,8 @@ def title_could_match(title, source="", employment="", gig_search=False):
     title = title or ""
     if not title:
         return True
+    if logistics_job(title):
+        return False
     if EXCLUDE_META.search(title):
         return False
     if job_kind(source, title, employment) == "gig" or gig_search:

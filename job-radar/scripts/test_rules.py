@@ -5,6 +5,15 @@ import rules
 
 
 class ExpandedSearchTest(unittest.TestCase):
+    def test_logistics_jobs_are_excluded_even_when_gigs(self):
+        courier = {"title": "쿠팡 배송기사 모집", "employment": "프리랜서"}
+        warehouse = {"title": "저녁 박스 포장 부업", "body": "업직종:입출고·창고관리,상하차·소화물 분류"}
+        for card in (courier, warehouse):
+            self.assertFalse(collect.judge("albamon", card)[0])
+            self.assertFalse(collect.title_ok({**card, "kind": "gig", "summary": card.get("body", "")}))
+        self.assertFalse(rules.title_could_match(courier["title"], "albamon"))
+        self.assertEqual(collect.judge("jobkorea", {"title": "AI 콘텐츠 크리에이터", "body": "화물운송 회사의 영상 제작", "employment": "프리랜서"}), (True, None))
+
     def test_plain_pd_hiring_uses_existing_industry_filter(self):
         self.assertTrue(rules.title_could_match("콘텐츠 PD"))
         self.assertEqual(collect.judge("saramin", {"title": "콘텐츠 PD", "company": "방송사"}), (True, None))
