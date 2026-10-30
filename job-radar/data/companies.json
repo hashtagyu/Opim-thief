@@ -365,7 +365,7 @@
  },
  "골드프레임서울": {
   "avg_salary": null,
-  "checked": "2026-10-23T09:53:27+09:00",
+  "checked": "2026-10-30T11:07:06+09:00",
   "co_checked": "2026-10-23T09:53:27+09:00",
   "co_labels": [],
   "co_size": null,
@@ -6658,6 +6658,35 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜인바이트넷",
+  "src": "사람인",
+  "v": 2
+ },
+ "인사이드아웃사회적협동조합": {
+  "avg_salary": 3761,
+  "checked": "2026-10-30T11:07:06+09:00",
+  "co_checked": "2026-10-30T11:07:06+09:00",
+  "co_labels": [
+   "기타",
+   "협동조합",
+   "비영리단체/협회"
+  ],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "N3dydExMMklPMEljcGFhemVpaEhTQT09",
+  "jp_checked": "2026-10-30T11:07:06+09:00",
+  "jp_id": 529047,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "인사이드아웃사회적협동조합",
+  "revenue": 355717,
+  "revenue_by_year": {
+   "2022": 450,
+   "2023": 53898,
+   "2024": 355717
+  },
+  "revenue_growth": 560.0,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
