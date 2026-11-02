@@ -1042,7 +1042,7 @@
  },
  "닥터리본": {
   "avg_salary": null,
-  "checked": "2026-10-26T20:26:50+09:00",
+  "checked": "2026-11-02T22:46:18+09:00",
   "jp_checked": "2026-10-12T19:55:22+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -1618,6 +1618,36 @@
   "src": "사람인",
   "v": 2
  },
+ "라르고": {
+  "avg_salary": null,
+  "checked": "2026-11-02T22:46:18+09:00",
+  "co_checked": "2026-11-02T22:46:18+09:00",
+  "co_labels": [
+   "기타",
+   "주식회사",
+   "사단법인"
+  ],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "MzZiajVtdFc5RndIbVV0Y2FLRkZHUT09",
+  "jp_checked": "2026-11-02T22:46:18+09:00",
+  "jp_id": 373454,
+  "jp_rating": 4.5,
+  "jp_reviews": 2,
+  "jp_v": 1,
+  "name": "라르고",
+  "revenue": 32786,
+  "revenue_by_year": {
+   "2021": 3786,
+   "2022": 12530,
+   "2023": 14132,
+   "2024": 32786
+  },
+  "revenue_growth": 132.0,
+  "revenue_year": "2024",
+  "src": "사람인",
+  "v": 2
+ },
  "라온스퀘어": {
   "avg_salary": null,
   "checked": "2026-10-29T20:41:09+09:00",
@@ -2143,6 +2173,23 @@
   "jp_reviews": 8,
   "jp_v": 1,
   "name": "(주)마바산업",
+  "src": "사람인",
+  "v": 2
+ },
+ "마이다스아이티": {
+  "avg_salary": 8790,
+  "checked": "2026-11-02T22:46:18+09:00",
+  "co_checked": "2026-11-02T22:46:18+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "ZGlINXJzREZNaW5YZG1hSG5tSWovUT09",
+  "jp_checked": "2026-11-02T22:46:18+09:00",
+  "jp_id": 78090,
+  "jp_rating": 3.2,
+  "jp_reviews": 673,
+  "jp_v": 1,
+  "name": "(주)마이다스아이티",
   "src": "사람인",
   "v": 2
  },
@@ -7920,7 +7967,7 @@
  },
  "투비픽쳐스": {
   "avg_salary": null,
-  "checked": "2026-10-26T20:26:50+09:00",
+  "checked": "2026-11-02T22:46:18+09:00",
   "jp_checked": "2026-10-19T20:08:05+09:00",
   "jp_id": null,
   "jp_v": 1,
