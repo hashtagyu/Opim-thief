@@ -375,7 +375,7 @@
  },
  "골드프레임서울": {
   "avg_salary": null,
-  "checked": "2026-10-30T11:07:06+09:00",
+  "checked": "2026-11-06T11:46:43+09:00",
   "co_checked": "2026-10-23T09:53:27+09:00",
   "co_labels": [],
   "co_size": null,
@@ -3935,6 +3935,32 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "셀레디언트",
+  "src": "사람인",
+  "v": 2
+ },
+ "셀루체": {
+  "avg_salary": 5495,
+  "checked": "2026-11-06T11:46:43+09:00",
+  "co_checked": "2026-11-06T11:46:43+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "R1hYU3luM0EwUzhrVXpGekRPbWlqdz09",
+  "jp_checked": "2026-11-06T11:46:43+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜셀루체",
+  "revenue": 414623,
+  "revenue_by_year": {
+   "2022": 365940,
+   "2023": 431191,
+   "2024": 338208,
+   "2025": 414623
+  },
+  "revenue_growth": 22.6,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
