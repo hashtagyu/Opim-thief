@@ -1,15 +1,101 @@
 [
  {
-  "source": "mediajob",
-  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326468",
-  "title": "[SBS 시사교양국] 외주제작팀 조연출 모집",
-  "company": "cu미디어",
-  "location": "서울 영등포구 양산로 43",
-  "employment": "계약직",
-  "summary": "[SBS 시사교양국] 외주 제작팀 조연출(AD) 모집 ???? 모집 분야 • 모집 분야: 조연출(AD) • 근무 프로그램: SBS 시사교양국 「지적인 잡담」 • 근무 형태: 외주 제작팀 소속 • 근무 장소: SBS 본사 출근 ???? 주요 업무 • 방송 프로그램 제작 전반 보조 • 예고편 및 방송 관련 영상 편집 • 방송 자료 수집 및 정리 • 스튜디오 녹화 관련 업무 • AI 툴을 활용한…",
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/397000",
+  "title": "AI 영상 제작 PD",
+  "company": "이엠엑스",
+  "location": "서울 마포구 월드컵북로1길 26-12, 1~6층",
+  "employment": "",
+  "summary": "EMX는 영화와 애니메이션 제작 과정을 돕는 도구를 개발하는 회사입니다. 기획, 콘티, 레퍼런스 영상 제작부터 리뷰와 수정, 작품 공개까지 각 단계의 작업이 자연스럽게 이어지도록 만드는 것이 목표입니다. 현장에서 쓸 만한 도구를 만들려면 실제 제작 과정도 잘 알아야 한다고 생각합니다. 원하는 장면을 만드는 데 어디서 시간이 걸리는지, 수정 요청을 반영할 때 어떤 작업이 반복되는지 직접 겪어…",
+  "tools": [
+   "Higgsfield",
+   "ComfyUI",
+   "Kling",
+   "Midjourney"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 7605,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 5.0,
+  "jp_reviews": 2,
+  "jp_url": "https://www.jobplanet.co.kr/companies/498095/reviews",
+  "co_size": "중소기업",
+  "revenue": 44415,
+  "revenue_year": "2025",
+  "revenue_growth": 605.7,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/380332",
+  "title": "CTO — AI 영상 생성 & 권리 인프라 (경력 5년 이상)",
+  "company": "블루필드",
+  "location": "서울 강남구 논현로145길 50, 1층",
+  "employment": "",
+  "summary": "음악에는 저작권 관리 단체가 있습니다. 이 단체들은 곡이 어디서 재생되는지 추적하고, 권리자에게 정산합니다. 그런데 생성형 AI가 매일 수많은 얼굴과 캐릭터를 만들어내는 지금, 그 얼굴들의 권리를 관리하는 층은 세상에 없습니다. 저희가 만들고자 하는 서비스는 이 생각에서 시작했습니다. 먼저 기획부터 이미지·영상 생성, 편집까지 파편화된 AI 제작 파이프라인을 하나의 워크스페이스로 통합하고,…",
   "tools": [],
-  "deadline": null,
-  "salary": "연 70만원",
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "https://www.jobplanet.co.kr/companies/125914/reviews",
+  "co_size": "중소기업",
+  "revenue": 201128,
+  "revenue_year": "2017",
+  "revenue_growth": 7.2,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/388800",
+  "title": "AI Artist / AI Content Creator",
+  "company": "블루개러지(Blue Garage)",
+  "location": "강동구 성안로 7-13 2층",
+  "employment": "",
+  "summary": "Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을 새롭게 정의하기 위한 도약을 시작했습니다. 설립 4년 만에 연 매출 1200억 원 이상…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 95,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": 12235494,
+  "revenue_year": "2025",
+  "revenue_growth": 34.9,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/272737",
+  "title": "[스튜디오] 웹툰 PD",
+  "company": "콘텐츠퍼스트(Tappytoon/태피툰)",
+  "location": "서울 강남구 테헤란로 211, 6층(역삼동, 한국고등교육재단)",
+  "employment": "",
+  "summary": "[당신의 기획이 전 세계 독자의 세상을 바꿉니다] “PD님, 요즘 어떤 작품을 만들고 계신가요? PD님의 치열한 기획과 작품을 보는 날카로운 안목이 혹시 '더 넓은 글로벌 무대'에서 빛나야 한다고 느끼신 적은 없으신가요?” [241개국 1,400만 독자가 선택한 글로벌 콘텐츠 플랫폼, 태피툰!] 2021년 설립된 태피툰 스튜디오(tt studio)는 단순한 웹툰 제작사를 넘어, 전 세계 독…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
@@ -21,45 +107,126 @@
   "revenue_year": "",
   "revenue_growth": null,
   "revenue_trend": "",
-  "kind": "gig",
+  "kind": "job",
   "rv": 9,
-  "first_seen": "2026-11-06T11:46:43+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
-  "source": "mediajob",
-  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326575",
-  "title": "영상 제작 PD",
-  "company": "㈜엘리스",
-  "location": "",
-  "employment": "정규직, 인턴",
-  "summary": "엘리스는 AI 인프라를 설계하고, 문화를 확산시킵니다. 엘리스그룹은 강력한 인프라를 바탕으로 클라우드, 솔루션, 모델, 교육을 통합 제공하는 AI 풀스택 기업입니다. 국내에 없던 모듈형 데이터센터인 AI PMDC를 구축하고, 클라우드 가상화 솔루션 ECI를 개발해 국내 AI 산업을 이끌고 있습니다. 신뢰할 수 있는 AI 인프라와 교육 실습 플랫폼, AI 모델, 솔루션을 통해 국내외 기업·기…",
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/393441",
+  "title": "[Vigloo] 북미 파트너십 매니저 (숏드라마 콘텐츠)",
+  "company": "스푼랩스",
+  "location": "서울 강남구 테헤란로4길 14, 12~13F",
+  "employment": "",
+  "summary": "===== 글로벌 탑 ​10, ​국내 ​1위 숏드라마 ​플랫폼 Vigloo와 함께 하실 북미 ​파트너십 ​매니저를 지금 ​찾고 있어요 ===== 잠깐! ​Content ​Partnerships팀 ​직무 인터뷰를 읽어보시면 ​더 ​자세히 알 수 ​있어요 ​: ​https://brunch.co.kr/@spoonlabs/184 [Vigloo ​Content Partnerships ​팀을 ​소개합…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 7960,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 3.2,
+  "jp_reviews": 135,
+  "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
+  "co_size": "중소기업",
+  "revenue": 6844482,
+  "revenue_year": "2025",
+  "revenue_growth": 28.1,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "remember",
+  "url": "https://career.rememberapp.co.kr/job/posting/352918",
+  "title": "[Vigloo] AI 숏드라마 편집자 (1년 계약직/AI Content Editor)",
+  "company": "(주)스푼랩스",
+  "location": "서울특별시 강남구",
+  "employment": "",
+  "summary": "• AI 기반 숏드라마의 영상 편집 및 포스트 프로덕션 전반 • 컷 편집, 사운드 디자인 등을 통한 고밀도 콘텐츠 제작 • 감독의 연출 방향성에 맞춘 프레임 단위의 디테일 구현 및 영상 완성도 향상 • 생성형 AI를 활용한 이미지/영상 소스 제작 및 편집 파이프라인 적용 • 3년 이상의 영상 편집 관련 실무 경험 및 높은 수준의 편집 역량을 보유하신 분 • Adobe Premiere Pro…",
   "tools": [],
   "deadline": null,
   "salary": "",
-  "avg_salary": 4059,
+  "avg_salary": 7960,
   "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 3.2,
+  "jp_reviews": 135,
+  "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
+  "co_size": "중소기업",
+  "revenue": 6844482,
+  "revenue_year": "2025",
+  "revenue_growth": 28.1,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "editmon",
+  "url": "https://editmon.com/work/employ_detail.html?no=15765",
+  "title": "편집자 모집 상세보기 :: 편집몬",
+  "company": "리브스튜디오",
+  "location": "",
+  "employment": "",
+  "summary": "광고배너 안내 서비스안내 마이페이지 고객센터 편집자 모집 에디터 프로필 커뮤니티 공지사항 스토어 스토어 등록 - 이미지뷰 - (400x300) 최종 수정일: 2026년 10월 29일 스크랩 인쇄 신고하기 리브스튜디오 [재택근무] 유튜브 정보성 콘텐츠 편집자분 모집합니다. 기업 정보보기 모집정보 접수기간 채용시 모집인원 ○○명 나이 세이상 경력 1년 ↑ 접수방법 이메일 근무조건 급여 15,0…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
   "employees": null,
   "jp_rating": null,
   "jp_reviews": null,
   "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": 63665,
-  "revenue_year": "2025",
-  "revenue_growth": -19.0,
-  "revenue_trend": "down",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
   "kind": "job",
   "rv": 9,
-  "first_seen": "2026-11-06T11:46:43+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "editmon",
+  "url": "https://editmon.com/work/employ_detail.html?no=15759",
+  "title": "편집자 모집 상세보기 :: 편집몬",
+  "company": "어반웨이브컴퍼니",
+  "location": "",
+  "employment": "",
+  "summary": "광고배너 안내 서비스안내 마이페이지 고객센터 편집자 모집 에디터 프로필 커뮤니티 공지사항 스토어 스토어 등록 - 이미지뷰 - (400x300) 최종 수정일: 2026년 10월 28일 스크랩 인쇄 신고하기 어반웨이브컴퍼니 촬영 및 영상 편집자 1명 기업 정보보기 모집정보 접수기간 채용시 모집인원 1명 나이 세이상 경력 1년 ↑ 접수방법 이메일, 온라인접수 근무조건 급여 2,800,000원 근…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-11-06T22:10:23+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
   "url": "https://www.albamon.com/jobs/detail/120124348",
-  "title": "AI영상제작 및 편집 전문가",
+  "title": "㈜셀루체 AI영상제작 및 편집 전문가",
   "company": "㈜셀루체",
   "location": "인천 부평구",
-  "employment": "계약직",
+  "employment": "아르바이트",
   "summary": "(주)셀루체에서 채용을 진행합니다. 업직종:그래픽·영상·편집디자인 근무기간:1년이상",
   "tools": [],
   "deadline": "2026-11-17",
@@ -75,10 +242,10 @@
   "revenue_year": "2025",
   "revenue_growth": 22.6,
   "revenue_trend": "up",
-  "kind": "job",
+  "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-06T11:46:43+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -105,7 +272,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -132,7 +299,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -159,7 +326,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "incruit",
@@ -186,7 +353,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-04T11:39:02+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "mediajob",
@@ -213,7 +380,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-04T11:39:02+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jumpit",
@@ -267,7 +434,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-03T12:40:31+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -294,7 +461,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-03T12:40:31+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -321,7 +488,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-02T22:46:18+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "remember",
@@ -402,7 +569,34 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-31T10:46:07+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/394963",
+  "title": "[롯데컬처웍스] AI 콘텐츠 제작 · 프로듀싱 (AI Studio)",
+  "company": "롯데그룹 (LOTTE)",
+  "location": "서울",
+  "employment": "",
+  "summary": "오늘을 새롭게, 내일을 이롭게. 롯데 롯데와 함께 비전을 공유할 수 있는 유능한 인재를 모십니다. • AI 기반 영상 제작 파이프라인 구축 - 영화·드라마의 프리프로덕션, CG/VFX 및 마케팅 콘텐츠 제작 과정에 생성형 AI 기술 도입 및 제작공정 효율화 • AI 콘텐츠 기획 및 제작 - 생성형 AI를 활용한 영화·드라마·숏폼 등 영상 콘텐츠 기획 및 제작 • AI 제작 프로젝트 관리 -…",
+  "tools": [],
+  "deadline": "2026-11-09",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-30T20:33:15+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "remember",
@@ -430,65 +624,6 @@
   "rv": 9,
   "first_seen": "2026-10-30T20:33:15+09:00",
   "last_seen": "2026-11-02T10:45:31+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/394963",
-  "title": "[롯데컬처웍스] AI 콘텐츠 제작 · 프로듀싱 (AI Studio)",
-  "company": "롯데그룹 (LOTTE)",
-  "location": "서울시 송파구 올림픽로 300 (신천동, 롯데월드타워)",
-  "employment": "",
-  "summary": "오늘을 새롭게, 내일을 이롭게. 롯데 롯데와 함께 비전을 공유할 수 있는 유능한 인재를 모십니다. • AI 기반 영상 제작 파이프라인 구축 - 영화·드라마의 프리프로덕션, CG/VFX 및 마케팅 콘텐츠 제작 과정에 생성형 AI 기술 도입 및 제작공정 효율화 • AI 콘텐츠 기획 및 제작 - 생성형 AI를 활용한 영화·드라마·숏폼 등 영상 콘텐츠 기획 및 제작 • AI 제작 프로젝트 관리 -…",
-  "tools": [],
-  "deadline": "2026-11-09",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-30T20:33:15+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/395657",
-  "title": "재테크 유튜브 채널 영상/콘텐츠 PD",
-  "company": "팬딩(Fanding)",
-  "location": "서울 강남구 선릉로92길 36, 1~5층, 7~8층",
-  "employment": "",
-  "summary": "안녕하세요, 크리에이터와 팬을 위한 글로벌 팬덤 플랫폼, 팬딩입니다. 팬딩은 주식·암호화폐·부동산 유튜버부터 버추얼 아이돌, 서브컬처 IP, 인플루언서까지 탄탄한 팬덤을 가진 다양한 크리에이터 및 기업과 함께 공식 팬 커뮤니티를 구축하고, 더 깊이 있는 팬 경험을 만들어가고 있습니다. 현재 팬딩은 1,500개 이상의 파트너 크리에이터, 130만 명 이상의 팬 유저와 함께 성장하고 있으며,…",
-  "tools": [
-   "Midjourney",
-   "Runway",
-   "Veo",
-   "Pika"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-30T20:33:15+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
  },
  {
   "source": "editmon",
@@ -542,7 +677,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-29T10:55:36+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "mediajob",
@@ -596,7 +731,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T20:32:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "incruit",
@@ -623,7 +758,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T10:38:00+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "incruit",
@@ -650,7 +785,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "incruit",
@@ -677,7 +812,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -704,7 +839,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-27T10:36:10+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -731,7 +866,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-27T10:36:10+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "mediajob",
@@ -758,7 +893,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-26T20:26:50+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "mediajob",
@@ -794,7 +929,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-26T09:39:51+09:00",
-  "last_seen": "2026-11-05T22:26:26+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -825,7 +960,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-25T09:29:54+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -852,7 +987,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-24T10:00:07+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -879,7 +1014,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-23T19:25:58+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -906,7 +1041,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-23T19:25:58+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -987,7 +1122,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-23T09:53:27+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1003,9 +1138,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 3.1,
+  "jp_reviews": 182,
+  "jp_url": "https://www.jobplanet.co.kr/companies/331898/reviews",
   "co_size": "준대기업",
   "revenue": null,
   "revenue_year": "",
@@ -1014,7 +1149,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "mediajob",
@@ -1037,8 +1172,8 @@
   "avg_salary": 4267,
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
-  "jp_rating": 2.9,
-  "jp_reviews": 56,
+  "jp_rating": 2.8,
+  "jp_reviews": 58,
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -1048,7 +1183,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1078,7 +1213,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1105,7 +1240,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1138,7 +1273,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1165,7 +1300,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1198,7 +1333,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1229,7 +1364,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -1256,7 +1391,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "incruit",
@@ -1301,7 +1436,7 @@
   "employees": null,
   "jp_rating": null,
   "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/530458/reviews",
+  "jp_url": "",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -1311,6 +1446,126 @@
   "rv": 4,
   "first_seen": "2026-10-20T19:20:57+09:00",
   "last_seen": "2026-11-02T10:45:31+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/392308",
+  "title": "AI 기반 2D·3D 애니메이션 생성팀 아티스트",
+  "company": "니우스엔",
+  "location": "서울",
+  "employment": "",
+  "summary": "#회사 소개 ㈜니우스엔은 2D·3D 애니메이션과 생성형 AI 기술을 활용해 애니메이션 및 영상 제작의 패러다임을 바꾸고자 하는 목표를 가지고 독보적인 기술을 기반으로 스토리 분석부터 캐릭터, 연출, 사운드, 모션까지 제작 전 과정을 시스템화한 자체 AI 워크스테이션을 운영하고 있습니다. 니우스엔은 단순한 콘텐츠 제작사가 아니라 AI가 이야기를 이해하고 제작하는 Production Syste…",
+  "tools": [],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": 2.4,
+  "jp_reviews": 9,
+  "jp_url": "https://www.jobplanet.co.kr/companies/508149/reviews",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-20T10:12:56+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/387060",
+  "title": "여성향 AI 드라마 크리에이터",
+  "company": "노벨라스튜디오",
+  "location": "서울",
+  "employment": "",
+  "summary": "[About 노벨라스튜디오] 노벨라스튜디오는 글로벌 여성향 AI 드라마 플랫폼 ‘노벨라플레이’를 만들고 있습니다. 노벨라플레이는 웹소설과 웹툰의 재미를 영상으로 만나는 플랫폼입니다. 로맨스, 로맨스판타지, BL 등 여성향 장르를 중심으로, 영화 같은 가로 화면에 매력적인 캐릭터와 탄탄한 서사를 담아 깊이 몰입할 수 있는 드라마를 선보입니다. 크리에이터의 상상력과 생성형 AI 기술이 만나 탄…",
+  "tools": [
+   "Higgsfield",
+   "Seedance",
+   "Kling",
+   "Runway"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 3805,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 7,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-20T10:12:56+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/393283",
+  "title": "AI Artist / AI Content Producer",
+  "company": "블루개러지(Blue Garage)",
+  "location": "서울",
+  "employment": "",
+  "summary": "Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을 새롭게 정의하기 위한 도약을 시작했습니다. 설립 4년 만에 연 매출 1200억 원 이상…",
+  "tools": [
+   "Seedance",
+   "Kling"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 8614,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": 95,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": 12235494,
+  "revenue_year": "2025",
+  "revenue_growth": 34.9,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-20T10:12:56+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "wanted",
+  "url": "https://www.wanted.co.kr/wd/392690",
+  "title": "유튜브 웹예능·숏폼 제작 PD",
+  "company": "미디어링크드",
+  "location": "서울",
+  "employment": "",
+  "summary": "미디어링크드는 감각적인 영상 기획과 체계적인 제작 파이프라인을 바탕으로 뉴미디어 오리지널 콘텐츠를 제작하는 스튜디오입니다. 트렌디한 시네마틱 비주얼을 기반으로, 스피디한 호흡과 도파민 터지는 재미를 담은 신규 유튜브 웹예능 및 바이럴 숏폼을 제작합니다. 제작자의 연출 감각과 자율성을 전폭적으로 존중하는 환경에서, 자신만의 감각으로 기획·촬영·편집 전 과정을 주도하며 채널의 성장을 함께할 제…",
+  "tools": [
+   "Kling",
+   "Midjourney",
+   "Runway"
+  ],
+  "deadline": "2026-11-16",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": 3.1,
+  "jp_reviews": 9,
+  "jp_url": "https://www.jobplanet.co.kr/companies/354896/reviews",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-20T10:12:56+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1337,7 +1592,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1364,127 +1619,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/392308",
-  "title": "AI 기반 2D·3D 애니메이션 생성팀 아티스트",
-  "company": "니우스엔",
-  "location": "서울 강남구 도산대로57길 18, 1층",
-  "employment": "",
-  "summary": "#회사 소개 ㈜니우스엔은 2D·3D 애니메이션과 생성형 AI 기술을 활용해 애니메이션 및 영상 제작의 패러다임을 바꾸고자 하는 목표를 가지고 독보적인 기술을 기반으로 스토리 분석부터 캐릭터, 연출, 사운드, 모션까지 제작 전 과정을 시스템화한 자체 AI 워크스테이션을 운영하고 있습니다. 니우스엔은 단순한 콘텐츠 제작사가 아니라 AI가 이야기를 이해하고 제작하는 Production Syste…",
-  "tools": [],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/387060",
-  "title": "여성향 AI 드라마 크리에이터",
-  "company": "노벨라스튜디오",
-  "location": "서울 마포구 동교로16길 31, 3층",
-  "employment": "",
-  "summary": "[About 노벨라스튜디오] 노벨라스튜디오는 글로벌 여성향 AI 드라마 플랫폼 ‘노벨라플레이’를 만들고 있습니다. 노벨라플레이는 웹소설과 웹툰의 재미를 영상으로 만나는 플랫폼입니다. 로맨스, 로맨스판타지, BL 등 여성향 장르를 중심으로, 영화 같은 가로 화면에 매력적인 캐릭터와 탄탄한 서사를 담아 깊이 몰입할 수 있는 드라마를 선보입니다. 크리에이터의 상상력과 생성형 AI 기술이 만나 탄…",
-  "tools": [
-   "Higgsfield",
-   "Seedance",
-   "Kling",
-   "Runway"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 3805,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": 7,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/393283",
-  "title": "AI Artist / AI Content Producer",
-  "company": "블루개러지(Blue Garage)",
-  "location": "강동구 성안로 7-13 2층",
-  "employment": "",
-  "summary": "Blue Garage는 JYP Entertainment의 자회사로, 기술과 IP(지식 재산권)의 융합을 통해 엔터테인먼트 경험의 새로운 가능성을 구현하기 위해 설립되었습니다. 기존 JYP360에서 사명을 변경하며, 단순한 IP 유통을 넘어 AI와 플랫폼 기술을 중심으로 콘텐츠 제작과 팬 경험의 패러다임을 새롭게 정의하기 위한 도약을 시작했습니다. 설립 4년 만에 연 매출 1200억 원 이상…",
-  "tools": [
-   "Seedance",
-   "Kling"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 8614,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": 95,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": 12235494,
-  "revenue_year": "2025",
-  "revenue_growth": 34.9,
-  "revenue_trend": "up",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/392690",
-  "title": "유튜브 웹예능·숏폼 제작 PD",
-  "company": "미디어링크드",
-  "location": "서울 강남구 논현로157길 22, B1",
-  "employment": "",
-  "summary": "미디어링크드는 감각적인 영상 기획과 체계적인 제작 파이프라인을 바탕으로 뉴미디어 오리지널 콘텐츠를 제작하는 스튜디오입니다. 트렌디한 시네마틱 비주얼을 기반으로, 스피디한 호흡과 도파민 터지는 재미를 담은 신규 유튜브 웹예능 및 바이럴 숏폼을 제작합니다. 제작자의 연출 감각과 자율성을 전폭적으로 존중하는 환경에서, 자신만의 감각으로 기획·촬영·편집 전 과정을 주도하며 채널의 성장을 함께할 제…",
-  "tools": [
-   "Kling",
-   "Midjourney",
-   "Runway"
-  ],
-  "deadline": "2026-11-16",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": 3.1,
-  "jp_reviews": 9,
-  "jp_url": "https://www.jobplanet.co.kr/companies/354896/reviews",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1511,7 +1646,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1538,7 +1673,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1565,7 +1700,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1597,7 +1732,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1627,7 +1762,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1654,7 +1789,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1686,7 +1821,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1742,7 +1877,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T09:26:21+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1774,7 +1909,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-17T18:37:00+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -1801,7 +1936,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-16T19:03:42+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1828,7 +1963,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-16T19:03:42+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1889,7 +2024,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1916,7 +2051,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1932,9 +2067,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 2.4,
+  "jp_reviews": 9,
+  "jp_url": "https://www.jobplanet.co.kr/companies/508149/reviews",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -1943,7 +2078,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-15T19:14:11+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -1973,7 +2108,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-15T19:14:11+09:00",
-  "last_seen": "2026-11-05T22:26:26+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "albamon",
@@ -2018,7 +2153,7 @@
   "employees": null,
   "jp_rating": null,
   "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/530458/reviews",
+  "jp_url": "",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -2056,7 +2191,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-15T09:47:57+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2083,7 +2218,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2110,7 +2245,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2137,7 +2272,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2164,7 +2299,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2191,7 +2326,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2207,9 +2342,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 2.4,
+  "jp_reviews": 9,
+  "jp_url": "https://www.jobplanet.co.kr/companies/508149/reviews",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -2218,7 +2353,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2250,7 +2385,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2279,7 +2414,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2311,7 +2446,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2328,7 +2463,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -2365,7 +2500,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T10:21:42+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2392,7 +2527,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2419,7 +2554,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2446,7 +2581,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2473,7 +2608,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2500,7 +2635,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2527,7 +2662,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobplanet",
@@ -2557,7 +2692,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-13T12:49:38+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2574,7 +2709,7 @@
   "avg_salary_src": "",
   "employees": null,
   "jp_rating": 3.9,
-  "jp_reviews": 15,
+  "jp_reviews": 17,
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -2584,7 +2719,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobplanet",
@@ -2603,7 +2738,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -2613,7 +2748,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2630,7 +2765,7 @@
   "avg_salary_src": "",
   "employees": null,
   "jp_rating": 3.9,
-  "jp_reviews": 15,
+  "jp_reviews": 17,
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -2640,7 +2775,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2667,7 +2802,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2694,100 +2829,14 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50140801",
-  "title": "AI시대 올라운드 그래픽디자이너 모집 (출력/영상/촬영)",
-  "company": "㈜라이프스킬즈",
-  "location": "경기 부천시 원미구 부천로198번길 18 (춘의동, 춘의테크노파크II) 202동 1204호",
-  "employment": "정규직",
-  "summary": "LIFESKILZ · DESIGNER RECRUIT 올라운드 그래픽/영상 디자이너 를 모십니다. 인쇄물과 실사 출력물, 영상 그래픽과 모션까지 직접 디자인하고 제작하며, AI로 작업 효율을 높이는 디자이너 신입 · 경력 지원 가능 · 채용 1명 인쇄 · 실사 그래픽 영상 그래픽 · 모션 AI · 업무 자동화 ABOUT LIFESKILZ 콘텐츠의 처음부터 마지막까지, 한 팀이 함께 만듭니다.…",
-  "tools": [
-   "Seedance"
-  ],
-  "deadline": "2026-12-09",
-  "salary": "연 2,800~3,401만원",
-  "avg_salary": 4115,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/532767/reviews",
-  "co_size": "중소기업",
-  "revenue": 112952,
-  "revenue_year": "2025",
-  "revenue_growth": 66.3,
-  "revenue_trend": "up",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/380038",
-  "title": "[Vigloo] AI 영상 크리에이터 (1년 계약직)",
-  "company": "스푼랩스",
-  "location": "서울 강남구 테헤란로4길 14, 12~13F",
-  "employment": "",
-  "summary": "===== 글로벌 숏드라마 ​플랫폼, ​Vigloo와 함께 ​하실 AI Content Creator를 지금 ​찾고 ​있어요 최초 계약 ​기간은 1년이며, 종료 ​시점에 내부 ​논의를 ​거쳐 계약 ​기간 ​연장 ​혹은 전환이 결정될 ​수 ​있습니다. ===== [Vigloo AI Studio ​팀을 ​소개합니다] Vigloo AI Studio ​팀은 이런 ​일을 ​해요! • 우리 팀은 ​밀도…",
-  "tools": [
-   "Seedance",
-   "Kling"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 7960,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 3.2,
-  "jp_reviews": 134,
-  "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
-  "co_size": "중소기업",
-  "revenue": 6844482,
-  "revenue_year": "2025",
-  "revenue_growth": 28.1,
-  "revenue_trend": "up",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
- },
- {
-  "source": "wanted",
-  "url": "https://www.wanted.co.kr/wd/386206",
-  "title": "생성형 AI 영상 콘텐츠 기획·제작",
-  "company": "퍼플아카데미",
-  "location": "서울시 양천구 목동동로 233-1 7층 702호",
-  "employment": "",
-  "summary": "퍼플아카데미와 함께 성장하며 발전할 인재를 모집합니다. 퍼플아카데미는 빠르게 변화하는 한국 영어교육 시장에서 진정한 영어교육 환경을 만들기 위해 끊임없이 도전하며, 고객에게 더 나은 학습 경험을 제공하고자 최신 기술과 플랫폼을 활용해 최적의 영어교육 솔루션을 연구·개발하는 기업입니다. 비영어권 학습자들이 영어를 더 빠르고 정확하게 습득할 수 있도록 현지 커리큘럼과 시스템을 재구성하고, 새로…",
-  "tools": [],
-  "deadline": "2026-12-14",
-  "salary": "",
-  "avg_salary": 4233,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "wanted",
   "url": "https://www.wanted.co.kr/wd/351000",
   "title": "AI 모션 크리에이터",
   "company": "퍼스트해빗",
-  "location": "서울 강남구 학동로33길 31, 패스워드 빌딩",
+  "location": "서울",
   "employment": "",
   "summary": "• 퍼스트해빗은 교육 전용 AI 모델인 CHALK를 통해 교육과 학생 커뮤니케이션을 새롭게 정의합니다. • 시각적 상호작용과 멀티모달의 활용에 최적화된 CHALK AI는 학생 개개인에 맞는 맞춤 콘텐츠 제공은 물론, 이해와 기억을 돕는 최고의 학습 경험을 제공하는 것을 목표로 합니다. • Visual Systems Squad는 CHALK AI 모델의 핵심인 시각화를 담당하는 부서이며, 정적…",
   "tools": [
@@ -2816,14 +2865,14 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "wanted",
   "url": "https://www.wanted.co.kr/wd/389331",
   "title": "콘텐츠 크리에이터 / AI 디자이너—헤이 콜드브루",
   "company": "테이블오브컨텐츠",
-  "location": "서울시 성동구 독서당로 187, 504-2호",
+  "location": "서울",
   "employment": "",
   "summary": "저희는 해외 식품 수입/유통 회사이면서도 커피 브랜드를 출시한 커피 회사이기도 합니다. 자사 커피 음료 브랜드인 헤이 콜드브루 커피(1.5L 콜드브루, 블랙 / 리틀스윗)의 콘텐츠를 직접 만들어 줄 디자이너를 찾고 있습니다. 기획하는 사람이 아니라 만드는 사람을 찾습니다. 인스타그램 릴스, 스레드, 쿠팡 상세페이지와 썸네일, 네이버, 자사몰에 올라가는 이미지와 영상을 손으로, 그리고 AI…",
   "tools": [
@@ -2847,7 +2896,36 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-10-30T20:33:15+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50140801",
+  "title": "AI시대 올라운드 그래픽디자이너 모집 (출력/영상/촬영)",
+  "company": "㈜라이프스킬즈",
+  "location": "경기 부천시 원미구 부천로198번길 18 (춘의동, 춘의테크노파크II) 202동 1204호",
+  "employment": "정규직",
+  "summary": "LIFESKILZ · DESIGNER RECRUIT 올라운드 그래픽/영상 디자이너 를 모십니다. 인쇄물과 실사 출력물, 영상 그래픽과 모션까지 직접 디자인하고 제작하며, AI로 작업 효율을 높이는 디자이너 신입 · 경력 지원 가능 · 채용 1명 인쇄 · 실사 그래픽 영상 그래픽 · 모션 AI · 업무 자동화 ABOUT LIFESKILZ 콘텐츠의 처음부터 마지막까지, 한 팀이 함께 만듭니다.…",
+  "tools": [
+   "Seedance"
+  ],
+  "deadline": "2026-12-09",
+  "salary": "연 2,800~3,401만원",
+  "avg_salary": 4115,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "https://www.jobplanet.co.kr/companies/532767/reviews",
+  "co_size": "중소기업",
+  "revenue": 112952,
+  "revenue_year": "2025",
+  "revenue_growth": 66.3,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 4,
+  "first_seen": "2026-10-11T10:12:29+09:00",
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2879,7 +2957,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2909,7 +2987,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -2928,7 +3006,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -2938,7 +3016,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -2969,7 +3047,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3004,7 +3082,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3031,7 +3109,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3060,7 +3138,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3077,7 +3155,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -3122,7 +3200,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3141,7 +3219,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -3151,7 +3229,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3180,7 +3258,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3207,7 +3285,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3239,7 +3317,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3266,7 +3344,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3299,7 +3377,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3317,7 +3395,7 @@
   "employees": null,
   "jp_rating": null,
   "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/538927/reviews",
+  "jp_url": "",
   "co_size": "중소기업",
   "revenue": null,
   "revenue_year": "",
@@ -3326,7 +3404,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3349,8 +3427,8 @@
   "avg_salary": 4267,
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
-  "jp_rating": 2.9,
-  "jp_reviews": 56,
+  "jp_rating": 2.8,
+  "jp_reviews": 58,
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3360,7 +3438,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3376,8 +3454,8 @@
   "avg_salary": 4267,
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
-  "jp_rating": 2.9,
-  "jp_reviews": 56,
+  "jp_rating": 2.8,
+  "jp_reviews": 58,
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3387,7 +3465,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3404,7 +3482,7 @@
   "avg_salary_src": "",
   "employees": null,
   "jp_rating": 3.9,
-  "jp_reviews": 15,
+  "jp_reviews": 17,
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3414,7 +3492,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3431,7 +3509,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 2.2,
-  "jp_reviews": 11,
+  "jp_reviews": 12,
   "jp_url": "https://www.jobplanet.co.kr/companies/374253/reviews",
   "co_size": "중소기업",
   "revenue": 159778,
@@ -3441,7 +3519,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3459,9 +3537,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 2.2,
+  "jp_reviews": 89,
+  "jp_url": "https://www.jobplanet.co.kr/companies/389970/reviews",
   "co_size": "중소기업",
   "revenue": 2993594,
   "revenue_year": "2025",
@@ -3470,7 +3548,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3497,7 +3575,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3514,7 +3592,7 @@
   "avg_salary_src": "",
   "employees": null,
   "jp_rating": 3.9,
-  "jp_reviews": 15,
+  "jp_reviews": 17,
   "jp_url": "https://www.jobplanet.co.kr/companies/375488/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3524,7 +3602,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3551,7 +3629,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3578,7 +3656,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3601,8 +3679,8 @@
   "avg_salary": 4267,
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
-  "jp_rating": 2.9,
-  "jp_reviews": 56,
+  "jp_rating": 2.8,
+  "jp_reviews": 58,
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3612,7 +3690,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3628,8 +3706,8 @@
   "avg_salary": 4267,
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
-  "jp_rating": 2.9,
-  "jp_reviews": 56,
+  "jp_rating": 2.8,
+  "jp_reviews": 58,
   "jp_url": "https://www.jobplanet.co.kr/companies/376383/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3639,7 +3717,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3657,7 +3735,7 @@
   "employees": null,
   "jp_rating": 3.7,
   "jp_reviews": 59,
-  "jp_url": "https://www.jobplanet.co.kr/companies/349272/reviews",
+  "jp_url": "",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -3666,7 +3744,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3698,7 +3776,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3715,7 +3793,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 2.4,
-  "jp_reviews": 138,
+  "jp_reviews": 139,
   "jp_url": "https://www.jobplanet.co.kr/companies/78995/reviews",
   "co_size": "",
   "revenue": null,
@@ -3741,9 +3819,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 3.1,
+  "jp_reviews": 182,
+  "jp_url": "https://www.jobplanet.co.kr/companies/331898/reviews",
   "co_size": "준대기업",
   "revenue": null,
   "revenue_year": "",
@@ -3824,7 +3902,7 @@
   "employees": null,
   "jp_rating": 3.7,
   "jp_reviews": 59,
-  "jp_url": "https://www.jobplanet.co.kr/companies/349272/reviews",
+  "jp_url": "",
   "co_size": "",
   "revenue": null,
   "revenue_year": "",
@@ -3864,7 +3942,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:04:08+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3880,8 +3958,8 @@
   "avg_salary": 4884,
   "avg_salary_src": "사람인 기업정보",
   "employees": 130,
-  "jp_rating": 2.6,
-  "jp_reviews": 11,
+  "jp_rating": 2.8,
+  "jp_reviews": 12,
   "jp_url": "https://www.jobplanet.co.kr/companies/396545/reviews",
   "co_size": "중소기업",
   "revenue": 1080121,
@@ -3907,8 +3985,8 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": 3.1,
-  "jp_reviews": 238,
+  "jp_rating": 3.0,
+  "jp_reviews": 245,
   "jp_url": "https://www.jobplanet.co.kr/companies/339459/reviews",
   "co_size": "중소기업",
   "revenue": null,
@@ -3918,7 +3996,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T13:56:39+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -3950,7 +4028,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T13:40:30+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -3968,9 +4046,9 @@
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
+  "jp_rating": 2.2,
+  "jp_reviews": 89,
+  "jp_url": "https://www.jobplanet.co.kr/companies/389970/reviews",
   "co_size": "중소기업",
   "revenue": 2993594,
   "revenue_year": "2025",
@@ -3979,7 +4057,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobplanet",
@@ -3999,7 +4077,7 @@
   "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": 3.2,
-  "jp_reviews": 134,
+  "jp_reviews": 135,
   "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
   "co_size": "중소기업",
   "revenue": 6844482,
@@ -4036,7 +4114,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -4125,7 +4203,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "saramin",
@@ -4157,7 +4235,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -4190,7 +4268,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -4221,7 +4299,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -4248,7 +4326,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-11-06T11:46:43+09:00"
+  "last_seen": "2026-11-06T22:10:23+09:00"
  },
  {
   "source": "jobkorea",
@@ -4264,8 +4342,8 @@
   "avg_salary": 4884,
   "avg_salary_src": "사람인 기업정보",
   "employees": 130,
-  "jp_rating": 2.6,
-  "jp_reviews": 11,
+  "jp_rating": 2.8,
+  "jp_reviews": 12,
   "jp_url": "https://www.jobplanet.co.kr/companies/396545/reviews",
   "co_size": "중소기업",
   "revenue": 1080121,
