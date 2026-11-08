@@ -1,15 +1,15 @@
 [
  {
-  "source": "editmon",
-  "url": "https://editmon.com/work/employ_detail.html?no=15765",
-  "title": "편집자 모집 상세보기 :: 편집몬",
-  "company": "리브스튜디오",
-  "location": "",
-  "employment": "",
-  "summary": "광고배너 안내 서비스안내 마이페이지 고객센터 편집자 모집 에디터 프로필 커뮤니티 공지사항 스토어 스토어 등록 - 이미지뷰 - (400x300) 최종 수정일: 2026년 10월 29일 스크랩 인쇄 신고하기 리브스튜디오 [재택근무] 유튜브 정보성 콘텐츠 편집자분 모집합니다. 기업 정보보기 모집정보 접수기간 채용시 모집인원 ○○명 나이 세이상 경력 1년 ↑ 접수방법 이메일 근무조건 급여 15,0…",
+  "source": "mediajob",
+  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326468",
+  "title": "[SBS 시사교양국] 외주제작팀 조연출 모집",
+  "company": "cu미디어",
+  "location": "서울 영등포구 양산로 43",
+  "employment": "계약직",
+  "summary": "[SBS 시사교양국] 외주 제작팀 조연출(AD) 모집 ???? 모집 분야 • 모집 분야: 조연출(AD) • 근무 프로그램: SBS 시사교양국 「지적인 잡담」 • 근무 형태: 외주 제작팀 소속 • 근무 장소: SBS 본사 출근 ???? 주요 업무 • 방송 프로그램 제작 전반 보조 • 예고편 및 방송 관련 영상 편집 • 방송 자료 수집 및 정리 • 스튜디오 녹화 관련 업무 • AI 툴을 활용한…",
   "tools": [],
-  "deadline": "상시",
-  "salary": "",
+  "deadline": null,
+  "salary": "연 70만원",
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
@@ -21,37 +21,37 @@
   "revenue_year": "",
   "revenue_growth": null,
   "revenue_trend": "",
-  "kind": "job",
+  "kind": "gig",
   "rv": 9,
-  "first_seen": "2026-11-07T20:53:31+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "first_seen": "2026-11-08T10:46:22+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
-  "source": "editmon",
-  "url": "https://editmon.com/work/employ_detail.html?no=15759",
-  "title": "편집자 모집 상세보기 :: 편집몬",
-  "company": "어반웨이브컴퍼니",
+  "source": "mediajob",
+  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326575",
+  "title": "영상 제작 PD",
+  "company": "㈜엘리스",
   "location": "",
-  "employment": "",
-  "summary": "광고배너 안내 서비스안내 마이페이지 고객센터 편집자 모집 에디터 프로필 커뮤니티 공지사항 스토어 스토어 등록 - 이미지뷰 - (400x300) 최종 수정일: 2026년 10월 28일 스크랩 인쇄 신고하기 어반웨이브컴퍼니 촬영 및 영상 편집자 1명 기업 정보보기 모집정보 접수기간 채용시 모집인원 1명 나이 세이상 경력 1년 ↑ 접수방법 이메일, 온라인접수 근무조건 급여 2,800,000원 근…",
+  "employment": "정규직, 인턴",
+  "summary": "엘리스는 AI 인프라를 설계하고, 문화를 확산시킵니다. 엘리스그룹은 강력한 인프라를 바탕으로 클라우드, 솔루션, 모델, 교육을 통합 제공하는 AI 풀스택 기업입니다. 국내에 없던 모듈형 데이터센터인 AI PMDC를 구축하고, 클라우드 가상화 솔루션 ECI를 개발해 국내 AI 산업을 이끌고 있습니다. 신뢰할 수 있는 AI 인프라와 교육 실습 플랫폼, AI 모델, 솔루션을 통해 국내외 기업·기…",
   "tools": [],
-  "deadline": "상시",
+  "deadline": null,
   "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
+  "avg_salary": 4059,
+  "avg_salary_src": "사람인 기업정보",
   "employees": null,
   "jp_rating": null,
   "jp_reviews": null,
   "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
+  "co_size": "중소기업",
+  "revenue": 63665,
+  "revenue_year": "2025",
+  "revenue_growth": -19.0,
+  "revenue_trend": "down",
   "kind": "job",
   "rv": 9,
-  "first_seen": "2026-11-07T20:53:31+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "first_seen": "2026-11-08T10:46:22+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "remember",
@@ -78,7 +78,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-06T22:10:23+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "wanted",
@@ -164,7 +164,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-06T11:46:43+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
@@ -191,7 +191,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
@@ -218,7 +218,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
@@ -245,7 +245,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "incruit",
@@ -272,7 +272,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-04T11:39:02+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "mediajob",
@@ -330,15 +330,15 @@
  },
  {
   "source": "albamon",
-  "url": "https://www.albamon.com/jobs/detail/120079686",
-  "title": "살림정의 AI영상 제작 가능하신분 프리로 일 가능하신분",
-  "company": "살림정의",
-  "location": "",
+  "url": "https://www.albamon.com/jobs/detail/502068556",
+  "title": "㈜블루초이스 AI 활용 영상 콘텐츠 크리에이터 채용",
+  "company": "㈜블루초이스",
+  "location": "경기 화성시",
   "employment": "아르바이트",
-  "summary": "살림정의에서 채용을 진행합니다. 업직종:그래픽·영상·편집디자인 근무기간:1년이상",
+  "summary": "(주)블루초이스에서 채용을 진행합니다. 업직종:웹·콘텐츠기획,동영상촬영·편집 근무기간:1년이상 복리후생:국민연금,고용보험,산재보험,건강보험,경조휴가제,휴일근로수당,연월차수당,명절 귀향비 지급",
   "tools": [],
-  "deadline": "2026-11-09",
-  "salary": "",
+  "deadline": "2026-12-03",
+  "salary": "연 3,600만원",
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
@@ -353,19 +353,19 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-03T12:40:31+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
-  "url": "https://www.albamon.com/jobs/detail/502068556",
-  "title": "㈜블루초이스 AI 활용 영상 콘텐츠 크리에이터 채용",
-  "company": "㈜블루초이스",
-  "location": "경기 화성시",
+  "url": "https://www.albamon.com/jobs/detail/120079686",
+  "title": "살림정의 AI영상 제작 가능하신분 프리로 일 가능하신분",
+  "company": "살림정의",
+  "location": "",
   "employment": "아르바이트",
-  "summary": "(주)블루초이스에서 채용을 진행합니다. 업직종:웹·콘텐츠기획,동영상촬영·편집 근무기간:1년이상 복리후생:국민연금,고용보험,산재보험,건강보험,경조휴가제,휴일근로수당,연월차수당,명절 귀향비 지급",
+  "summary": "살림정의에서 채용을 진행합니다. 업직종:그래픽·영상·편집디자인 근무기간:1년이상",
   "tools": [],
-  "deadline": "2026-12-03",
-  "salary": "연 3,600만원",
+  "deadline": "2026-11-09",
+  "salary": "",
   "avg_salary": null,
   "avg_salary_src": "",
   "employees": null,
@@ -407,7 +407,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-02T22:46:18+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "remember",
@@ -488,7 +488,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-31T10:46:07+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "wanted",
@@ -596,7 +596,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-29T10:55:36+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "mediajob",
@@ -650,7 +650,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T20:32:08+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "incruit",
@@ -677,7 +677,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T10:38:00+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "incruit",
@@ -704,7 +704,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "incruit",
@@ -731,7 +731,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
@@ -758,7 +758,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-27T10:36:10+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "albamon",
@@ -785,7 +785,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-27T10:36:10+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "mediajob",
@@ -812,7 +812,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-26T20:26:50+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "mediajob",
@@ -848,7 +848,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-26T09:39:51+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -933,7 +933,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-23T19:25:58+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -1068,7 +1068,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "mediajob",
@@ -1102,7 +1102,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -1219,7 +1219,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -1252,7 +1252,34 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
+ },
+ {
+  "source": "albamon",
+  "url": "https://www.albamon.com/jobs/detail/119866624",
+  "title": "웰버스 Ai 동영상제작.유튜브쇼츠 알바",
+  "company": "웰버스",
+  "location": "",
+  "employment": "아르바이트",
+  "summary": "웰버스에서 채용을 진행합니다. 업직종:동영상촬영·편집,그래픽·영상·편집디자인 근무기간:1년이상 우대조건:컴퓨터활용가능,포토샵가능,파워포인트가능,유사업무경험우대",
+  "tools": [],
+  "deadline": "2026-11-10",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": 1.0,
+  "jp_reviews": 1,
+  "jp_url": "https://www.jobplanet.co.kr/companies/335356/reviews",
+  "co_size": "중소기업",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "gig",
+  "rv": 9,
+  "first_seen": "2026-10-21T19:30:16+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -1282,33 +1309,6 @@
   "revenue_trend": "",
   "kind": "job",
   "rv": 4,
-  "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "albamon",
-  "url": "https://www.albamon.com/jobs/detail/119866624",
-  "title": "웰버스 Ai 동영상제작.유튜브쇼츠 알바",
-  "company": "웰버스",
-  "location": "",
-  "employment": "아르바이트",
-  "summary": "웰버스에서 채용을 진행합니다. 업직종:동영상촬영·편집,그래픽·영상·편집디자인 근무기간:1년이상 우대조건:컴퓨터활용가능,포토샵가능,파워포인트가능,유사업무경험우대",
-  "tools": [],
-  "deadline": "2026-11-10",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": 1.0,
-  "jp_reviews": 1,
-  "jp_url": "https://www.jobplanet.co.kr/companies/335356/reviews",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "gig",
-  "rv": 9,
   "first_seen": "2026-10-21T19:30:16+09:00",
   "last_seen": "2026-11-07T20:53:31+09:00"
  },
@@ -1565,7 +1565,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -1592,7 +1592,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -1619,7 +1619,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -1651,7 +1651,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -1773,33 +1773,6 @@
  },
  {
   "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50130083",
-  "title": "[에런비] AI 영상 콘텐츠 제작자 채용",
-  "company": "㈜에런비",
-  "location": "서울 성동구 연무장5길 9-16 (성수동2가, 블루스톤타워) 707,708호",
-  "employment": "정규직",
-  "summary": "전형절차 ㆍ지원서 접수 > 서류 검토 > 실무자 / 임원 면접 > 내부검토 > 처우 협의 및 입사 ㆍ면접일정은 추후 통보됩니다. 유의사항 ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-11-07",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/546928/reviews",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-19T09:26:21+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50189546",
   "title": "[인턴] 여성향 AI 드라마 PD (정규직 전환형)",
   "company": "㈜네티",
@@ -1855,7 +1828,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-16T19:03:42+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -1943,7 +1916,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -1970,33 +1943,6 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49952115",
-  "title": "[니우스엔] AI 영유아 애니메이션 스토리보드/콘티 작가",
-  "company": "㈜니우스엔",
-  "location": "서울 강남구 도산대로57길 18 (청담동) 1층",
-  "employment": "정규직",
-  "summary": "㈜니우스엔 [니우스엔] AI 영유아 애니메이션 스토리보드/콘티 작가 #회사 소개 (주)니우스엔 은 AI 기반 3D 애니메이션 및 영상 제작의 패러다임을 바꾸고자 하는 목표를 가지고 독보적인 기술을 기반으로 스토리 분석부터 캐릭터, 연출, 사운드, 모션까지 제작 전 과정을 시스템화한 자체 AI 워크스테이션을 운영하고 있습니다. 니우스엔은 단순한 콘텐츠 제작사가 아니라 AI가 이야기를 이해하고…",
-  "tools": [],
-  "deadline": "2026-11-07",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": 2.4,
-  "jp_reviews": 9,
-  "jp_url": "https://www.jobplanet.co.kr/companies/508149/reviews",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-15T19:14:11+09:00",
   "last_seen": "2026-11-07T20:53:31+09:00"
  },
  {
@@ -2114,33 +2060,6 @@
  },
  {
   "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55272616",
-  "title": "(주)크림푼과 함께 AI활용 홍보 영상을 제작할 분을 찾고 있어요",
-  "company": "(주)크림푼",
-  "location": "서울 영등포구",
-  "employment": "아르바이트·프리랜서",
-  "summary": "채용공고 상세",
-  "tools": [],
-  "deadline": "2026-11-13",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "gig",
-  "rv": 4,
-  "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55289685",
   "title": "AI 영상 제작 (애니메이션)",
   "company": "(주)코지니",
@@ -2164,7 +2083,34 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55272616",
+  "title": "(주)크림푼과 함께 AI활용 홍보 영상을 제작할 분을 찾고 있어요",
+  "company": "(주)크림푼",
+  "location": "서울 영등포구",
+  "employment": "아르바이트·프리랜서",
+  "summary": "채용공고 상세",
+  "tools": [],
+  "deadline": "2026-11-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "gig",
+  "rv": 4,
+  "first_seen": "2026-10-14T19:30:30+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2446,7 +2392,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -2473,7 +2419,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2611,7 +2557,36 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-13T12:49:38+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
+ },
+ {
+  "source": "jobplanet",
+  "url": "https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1651807",
+  "title": "[Vigloo] AI 숏드라마 제작 PD (1년 계약직)",
+  "company": "(주)스푼랩스",
+  "location": "서울",
+  "employment": "계약직",
+  "summary": "콘텐츠제작 PD 드라마 제작pd 숏드라마",
+  "tools": [
+   "Kling"
+  ],
+  "deadline": "2026-12-15",
+  "salary": "",
+  "avg_salary": 7960,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 3.2,
+  "jp_reviews": 135,
+  "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
+  "co_size": "중소기업",
+  "revenue": 6844482,
+  "revenue_year": "2025",
+  "revenue_growth": 28.1,
+  "revenue_trend": "up",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-13T12:08:45+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2641,35 +2616,6 @@
   "last_seen": "2026-11-07T20:53:31+09:00"
  },
  {
-  "source": "jobplanet",
-  "url": "https://www.jobplanet.co.kr/job/search?posting_ids%5B%5D=1651807",
-  "title": "[Vigloo] AI 숏드라마 제작 PD (1년 계약직)",
-  "company": "(주)스푼랩스",
-  "location": "서울",
-  "employment": "계약직",
-  "summary": "콘텐츠제작 PD 드라마 제작pd 숏드라마",
-  "tools": [
-   "Kling"
-  ],
-  "deadline": "2026-12-15",
-  "salary": "",
-  "avg_salary": 7960,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 3.2,
-  "jp_reviews": 135,
-  "jp_url": "https://www.jobplanet.co.kr/companies/78061/reviews",
-  "co_size": "중소기업",
-  "revenue": 6844482,
-  "revenue_year": "2025",
-  "revenue_growth": 28.1,
-  "revenue_trend": "up",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
   "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55261687",
   "title": "AI 애니메이터 (기간제)",
@@ -2694,7 +2640,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2876,7 +2822,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-10T10:53:43+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2935,7 +2881,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -2958,68 +2904,6 @@
   "jp_rating": null,
   "jp_reviews": null,
   "jp_url": "https://www.jobplanet.co.kr/companies/528969/reviews",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50137452",
-  "title": "[(주)아카엔터테인먼트] AI활용 영상 편집자",
-  "company": "㈜아카엔터테인먼트",
-  "location": "서울 용산구 이촌동 302-62",
-  "employment": "정규직",
-  "summary": "㈜아카엔터테인먼트 채용제목을 입력해주세요 채널 참고 : 탕이와나미상 https://www.youtube.com/@tangnami2995 무무 스튜디오 https://www.youtube.com/@MOOMOOSTUDIO",
-  "tools": [],
-  "deadline": "2026-11-07",
-  "salary": "연 3,000~4,501만원",
-  "avg_salary": 2719,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/536739/reviews",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50134798",
-  "title": "AI 기반 모션 그래픽 디자이너 (신입/경력) 채용공고",
-  "company": "㈜라온스퀘어",
-  "location": "서울 성동구 성수동2가 280-6 생각공장데시앙플렉스 1607호",
-  "employment": "정규직",
-  "summary": "㈜라온스퀘어 AI 기반 모션 그래픽 디자이너 (신입/경력) AI 기반 모션 그래픽 디자이너 (신입/경력) 채용공고 (주)라온스퀘어와 함께 AI를 통해 3D 디자인의 경계를 허물고, 몰입감 넘치는 미디어 경험을 설계할 인재를 찾습니다. 단순히 기존의 툴을 잘 다루는 디자이너를 넘어, Generative AI 기술을 프로세스에 적극 도입하여 효율성을 극대화하고, 독창적인 비주얼을 창조할 준비가…",
-  "tools": [
-   "Kling",
-   "Midjourney",
-   "Runway",
-   "Veo",
-   "Sora",
-   "Stable Diffusion",
-   "Topaz"
-  ],
-  "deadline": "2026-11-07",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
   "co_size": "중소기업",
   "revenue": null,
   "revenue_year": "",
@@ -3085,41 +2969,6 @@
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
   "last_seen": "2026-11-05T11:43:20+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55239837",
-  "title": "AI 기반 모션 그래픽 디자이너 (신입/경력) 채용공고",
-  "company": "(주)라온스퀘어",
-  "location": "서울 성동구",
-  "employment": "정규직",
-  "summary": "채용공고 상세 AI 기반 모션 그래픽 디자이너 (신입/경력) 채용 모집분야 모션 그래픽 디자인 (1명) (주)라온스퀘어와 함께 AI를 통해 모션 그래픽의 경계를 허물고, 몰입감 넘치는 미디어 경험을 설계할 인재를 찾습니다. 단순히 기존의 툴을 잘 다루는 디자이너를 넘어, Generative AI 기술을 프로세스에 적극 도입하여 효율성을 극대화하고, 독창적인 비주얼을 창조할 준비가 된 분을…",
-  "tools": [
-   "Kling",
-   "Midjourney",
-   "Runway",
-   "Veo",
-   "Sora",
-   "Stable Diffusion",
-   "Topaz"
-  ],
-  "deadline": "2026-11-07",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-08T18:24:48+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
  },
  {
   "source": "jobkorea",
@@ -3240,66 +3089,6 @@
  },
  {
   "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55102294",
-  "title": "AI 제작 & 영상 콘텐츠 제작 PD (경력 / 신입)을 모집합니다.",
-  "company": "(주)제로닷",
-  "location": "서울 금천구",
-  "employment": "정규직",
-  "summary": "채용공고 상세 AI 제작 & 영상 콘텐츠 제작 PD (경력 / 신입)를 모집합니다. 모집분야 영상 콘텐츠 기획 / 연출 / 프로젝트 매니징 / 제작 (1명) 📋 주요업무 1) 근무부서 : 영상팀 (경력모집) 2) 담당업무 - 프로젝트 기획 - 영상 연출 - 영상 편집 (평집 2D 등) - AI산출물 제작 (영상, 이미지, 문서 등) - 촬영 현장 운영 - PM (프로젝트 매니징) 3) 지원…",
-  "tools": [],
-  "deadline": "2026-11-21",
-  "salary": "",
-  "avg_salary": 3842,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 3.0,
-  "jp_reviews": 4,
-  "jp_url": "https://www.jobplanet.co.kr/companies/468117/reviews",
-  "co_size": "중소기업",
-  "revenue": 109775,
-  "revenue_year": "2025",
-  "revenue_growth": -4.0,
-  "revenue_trend": "flat",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55174764",
-  "title": "AI 영상 / 미디어아트 콘텐츠 크리에이터",
-  "company": "주식회사 원디에스비",
-  "location": "서울 마포구",
-  "employment": "계약직",
-  "summary": "채용공고 상세 AI 영상 / 미디어아트 콘텐츠 크리에이터 모집분야 AI 애니메이션 & 미디어아트 크리에이터 📋 주요업무 • Higgsfield, Seedance 등 AI 이미지·영상 생성 툴을 활용한 콘텐츠 제작 • AI 기반 이미지·영상 생성, 프롬프트 설계 및 레퍼런스를 활용한 결과물 제작 • 생성된 AI 이미지·영상의 편집, 보정, 합성 등 후반 작업 (Adobe After Effec…",
-  "tools": [
-   "Higgsfield",
-   "Seedance",
-   "Kling",
-   "Midjourney",
-   "Runway"
-  ],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": 5474,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": 76145,
-  "revenue_year": "2025",
-  "revenue_growth": -37.7,
-  "revenue_trend": "down",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
- },
- {
-  "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55151858",
   "title": "AI 영상 제작의 새로운 기준을 함께 만들 크리에이터를 찾습니다",
   "company": "(주)줄라이하우스",
@@ -3323,7 +3112,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -3357,7 +3146,67 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55102294",
+  "title": "AI 제작 & 영상 콘텐츠 제작 PD (경력 / 신입)을 모집합니다.",
+  "company": "(주)제로닷",
+  "location": "서울 금천구",
+  "employment": "정규직",
+  "summary": "채용공고 상세 AI 제작 & 영상 콘텐츠 제작 PD (경력 / 신입)를 모집합니다. 모집분야 영상 콘텐츠 기획 / 연출 / 프로젝트 매니징 / 제작 (1명) 📋 주요업무 1) 근무부서 : 영상팀 (경력모집) 2) 담당업무 - 프로젝트 기획 - 영상 연출 - 영상 편집 (평집 2D 등) - AI산출물 제작 (영상, 이미지, 문서 등) - 촬영 현장 운영 - PM (프로젝트 매니징) 3) 지원…",
+  "tools": [],
+  "deadline": "2026-11-21",
+  "salary": "",
+  "avg_salary": 3842,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 3.0,
+  "jp_reviews": 4,
+  "jp_url": "https://www.jobplanet.co.kr/companies/468117/reviews",
+  "co_size": "중소기업",
+  "revenue": 109775,
+  "revenue_year": "2025",
+  "revenue_growth": -4.0,
+  "revenue_trend": "flat",
+  "kind": "job",
+  "rv": 4,
+  "first_seen": "2026-10-07T15:31:03+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55174764",
+  "title": "AI 영상 / 미디어아트 콘텐츠 크리에이터",
+  "company": "주식회사 원디에스비",
+  "location": "서울 마포구",
+  "employment": "계약직",
+  "summary": "채용공고 상세 AI 영상 / 미디어아트 콘텐츠 크리에이터 모집분야 AI 애니메이션 & 미디어아트 크리에이터 📋 주요업무 • Higgsfield, Seedance 등 AI 이미지·영상 생성 툴을 활용한 콘텐츠 제작 • AI 기반 이미지·영상 생성, 프롬프트 설계 및 레퍼런스를 활용한 결과물 제작 • 생성된 AI 이미지·영상의 편집, 보정, 합성 등 후반 작업 (Adobe After Effec…",
+  "tools": [
+   "Higgsfield",
+   "Seedance",
+   "Kling",
+   "Midjourney",
+   "Runway"
+  ],
+  "deadline": "상시",
+  "salary": "",
+  "avg_salary": 5474,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": 76145,
+  "revenue_year": "2025",
+  "revenue_growth": -37.7,
+  "revenue_trend": "down",
+  "kind": "job",
+  "rv": 4,
+  "first_seen": "2026-10-07T15:31:03+09:00",
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -3384,7 +3233,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -3411,7 +3260,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -3438,7 +3287,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -3467,7 +3316,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
@@ -3972,7 +3821,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "saramin",
@@ -4004,7 +3853,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-07T20:53:31+09:00"
+  "last_seen": "2026-11-08T10:46:22+09:00"
  },
  {
   "source": "jobkorea",
