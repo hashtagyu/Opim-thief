@@ -73,6 +73,16 @@
   "src": "사람인",
   "v": 2
  },
+ "cj올리브네트웍스": {
+  "avg_salary": null,
+  "checked": "2026-11-08T21:07:46+09:00",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜CJ올리브네트웍스",
+  "src": "사람인",
+  "v": 2
+ },
  "cu미디어": {
   "avg_salary": null,
   "checked": "2026-11-03T12:40:31+09:00",
@@ -1314,7 +1324,7 @@
  },
  "데이원컴퍼니": {
   "avg_salary": 5199,
-  "checked": "2026-10-09T11:31:15+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
   "co_checked": "2026-10-15T19:14:11+09:00",
   "co_labels": [
    "중소기업",
@@ -1323,10 +1333,12 @@
   "co_size": "중소기업",
   "co_v": 1,
   "csn": "UkRGb0RjcVJqRUhRUHluVFIwd3lyQT09",
-  "jp_checked": "2026-10-09T11:31:15+09:00",
-  "jp_id": null,
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": 309654,
+  "jp_rating": 2.7,
+  "jp_reviews": 832,
   "jp_v": 1,
-  "name": "㈜데이원컴퍼니",
+  "name": "데이원컴퍼니",
   "revenue": 12208892,
   "revenue_by_year": {
    "2022": 10409453,
@@ -2219,8 +2231,8 @@
  },
  "마제스타지": {
   "avg_salary": null,
-  "checked": "2026-10-29T10:55:36+09:00",
-  "jp_checked": "2026-10-07T16:00:06+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜마제스타지",
@@ -4041,6 +4053,25 @@
   "src": "사람인",
   "v": 2
  },
+ "수퍼비글로벌디자인그룹": {
+  "avg_salary": 3729,
+  "checked": "2026-11-08T21:07:46+09:00",
+  "co_checked": "2026-11-08T21:07:46+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "T0E1K293QzhldW1vR0J1aHV0YTNuZz09",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": 326195,
+  "jp_rating": 2.7,
+  "jp_reviews": 31,
+  "jp_v": 1,
+  "name": "(주)수퍼비글로벌디자인그룹",
+  "src": "사람인",
+  "v": 2
+ },
  "숨빗에이아이": {
   "avg_salary": 9077,
   "checked": "2026-10-14T19:30:30+09:00",
@@ -4380,6 +4411,23 @@
   "src": "사람인",
   "v": 2
  },
+ "스튜디오랠리": {
+  "avg_salary": 3955,
+  "checked": "2026-11-08T21:07:46+09:00",
+  "co_checked": "2026-11-08T21:07:46+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "K0RBdWJqR1JxUDc5cS9aL29sZkQzUT09",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": null,
+  "jp_v": 1,
+  "name": "㈜스튜디오 랠리",
+  "src": "사람인",
+  "v": 2
+ },
  "스튜디오레논": {
   "avg_salary": 6740,
   "checked": "2026-10-14T19:30:30+09:00",
@@ -4406,6 +4454,33 @@
   },
   "revenue_growth": -4.5,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "스튜디오로보": {
+  "avg_salary": null,
+  "checked": "2026-11-08T21:07:46+09:00",
+  "co_checked": "2026-11-08T21:07:46+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "K3gvSERId2duaTZJVDh1R2Y0d1pCZz09",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": 542838,
+  "jp_rating": null,
+  "jp_reviews": 0,
+  "jp_v": 1,
+  "name": "스튜디오 로보",
+  "revenue": 91317,
+  "revenue_by_year": {
+   "2022": 68327,
+   "2023": 119924,
+   "2024": 91317
+  },
+  "revenue_growth": -23.9,
+  "revenue_year": "2024",
   "src": "사람인",
   "v": 2
  },
@@ -4687,13 +4762,13 @@
  },
  "시스원": {
   "avg_salary": 5737,
-  "checked": "2026-10-07T16:00:06+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
   "co_checked": "2026-10-15T19:14:11+09:00",
   "co_labels": [],
   "co_size": null,
   "co_v": 1,
   "csn": "aDlWSjNvV1c1bzVXeHN5b01mMGphdz09",
-  "jp_checked": "2026-10-07T16:00:06+09:00",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜시스원",
@@ -5500,7 +5575,7 @@
  },
  "에스유컴퍼니": {
   "avg_salary": null,
-  "checked": "2026-10-17T18:37:00+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
   "co_checked": "2026-10-15T19:14:11+09:00",
   "co_labels": [
    "중소기업"
@@ -5925,6 +6000,34 @@
   "src": "사람인",
   "v": 2
  },
+ "엘제이컴퍼니": {
+  "avg_salary": 7361,
+  "checked": "2026-11-08T21:07:46+09:00",
+  "co_checked": "2026-11-08T21:07:46+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "WHQ5RUtQNVVHM014VDBYNEkyMTVQZz09",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
+  "jp_id": 440779,
+  "jp_rating": 2.2,
+  "jp_reviews": 11,
+  "jp_v": 1,
+  "name": "엘제이컴퍼니",
+  "revenue": 435874,
+  "revenue_by_year": {
+   "2022": 137706,
+   "2023": 179900,
+   "2024": 292185,
+   "2025": 435874
+  },
+  "revenue_growth": 49.2,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "엠83": {
   "avg_salary": 4884,
   "checked": "2026-11-06T22:10:23+09:00",
@@ -5988,12 +6091,30 @@
  },
  "엠제이플렉스": {
   "avg_salary": 3497,
-  "checked": "2026-10-07T12:54:57+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
+  "co_checked": "2026-11-08T21:07:46+09:00",
+  "co_labels": [
+   "스타트업",
+   "중소기업",
+   "주식회사",
+   "외부감사법인"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
   "csn": "Rjg0SThJcldINm9CQTJVUXVOcjlDUT09",
-  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
   "jp_id": null,
   "jp_v": 1,
   "name": "㈜엠제이플렉스",
+  "revenue": 3931284,
+  "revenue_by_year": {
+   "2022": 3297894,
+   "2023": 3849707,
+   "2024": 4251531,
+   "2025": 3931284
+  },
+  "revenue_growth": -7.5,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
@@ -7942,10 +8063,10 @@
   "co_size": null,
   "co_v": 1,
   "csn": "amhwVm1sbHZkREhqY2JGdHprL0Ewdz09",
-  "jp_checked": "2026-10-07T13:56:39+09:00",
+  "jp_checked": "2026-11-08T21:07:46+09:00",
   "jp_id": 331640,
   "jp_rating": 2.8,
-  "jp_reviews": 251,
+  "jp_reviews": 258,
   "jp_v": 1,
   "name": "키다리스튜디오",
   "src": "사람인",
@@ -8064,7 +8185,7 @@
  },
  "테이블오브컨텐츠": {
   "avg_salary": null,
-  "checked": "2026-11-01T20:58:51+09:00",
+  "checked": "2026-11-08T21:07:46+09:00",
   "jp_checked": "2026-10-11T10:12:29+09:00",
   "jp_id": 404041,
   "jp_rating": null,
