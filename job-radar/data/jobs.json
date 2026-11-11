@@ -1,92 +1,11 @@
 [
  {
-  "source": "mediajob",
-  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326468",
-  "title": "[SBS 시사교양국] 외주제작팀 조연출 모집",
-  "company": "cu미디어",
-  "location": "서울 영등포구 양산로 43",
-  "employment": "계약직",
-  "summary": "[SBS 시사교양국] 외주 제작팀 조연출(AD) 모집 ???? 모집 분야 • 모집 분야: 조연출(AD) • 근무 프로그램: SBS 시사교양국 「지적인 잡담」 • 근무 형태: 외주 제작팀 소속 • 근무 장소: SBS 본사 출근 ???? 주요 업무 • 방송 프로그램 제작 전반 보조 • 예고편 및 방송 관련 영상 편집 • 방송 자료 수집 및 정리 • 스튜디오 녹화 관련 업무 • AI 툴을 활용한…",
-  "tools": [],
-  "deadline": null,
-  "salary": "연 70만원",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "gig",
-  "rv": 9,
-  "first_seen": "2026-11-11T11:12:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "mediajob",
-  "url": "https://www.mediajob.co.kr/recruit/recruit.htm?cmd=view&rec_idx=326575",
-  "title": "영상 제작 PD",
-  "company": "㈜엘리스",
-  "location": "",
-  "employment": "정규직, 인턴",
-  "summary": "엘리스는 AI 인프라를 설계하고, 문화를 확산시킵니다. 엘리스그룹은 강력한 인프라를 바탕으로 클라우드, 솔루션, 모델, 교육을 통합 제공하는 AI 풀스택 기업입니다. 국내에 없던 모듈형 데이터센터인 AI PMDC를 구축하고, 클라우드 가상화 솔루션 ECI를 개발해 국내 AI 산업을 이끌고 있습니다. 신뢰할 수 있는 AI 인프라와 교육 실습 플랫폼, AI 모델, 솔루션을 통해 국내외 기업·기…",
-  "tools": [],
-  "deadline": null,
-  "salary": "",
-  "avg_salary": 4059,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": 63665,
-  "revenue_year": "2025",
-  "revenue_growth": -19.0,
-  "revenue_trend": "down",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-11-11T11:12:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "editmon",
-  "url": "https://editmon.com/work/employ_detail.html?no=15833",
-  "title": "편집자 모집 상세보기 :: 편집몬",
-  "company": "(주)돈엔터테인먼트",
-  "location": "",
-  "employment": "",
-  "summary": "광고배너 안내 서비스안내 마이페이지 고객센터 편집자 모집 에디터 프로필 커뮤니티 공지사항 스토어 스토어 등록 - 이미지뷰 - (400x300) 최종 수정일: 2026년 11월 10일 스크랩 인쇄 신고하기 (주)돈엔터테인먼트 [프리랜서] 87만 식품 리뷰 채널에서 편집자님 모집합니다. 기업 정보보기 모집정보 접수기간 채용시 모집인원 1명 나이 세이상 경력 3년 ↑ 접수방법 이메일 근무조건 급…",
-  "tools": [],
-  "deadline": "상시",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-11-11T11:12:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
   "source": "albamon",
   "url": "https://www.albamon.com/jobs/detail/120244170",
-  "title": "[CJENM계열사/상암] 스튜디오드래곤 AI영상 제작 사원 채용",
+  "title": "㈜인코스파트너스 [CJENM계열사/상암] 스튜디오드래곤 AI영상 제작 사원 채용",
   "company": "㈜인코스파트너스",
   "location": "서울 마포구",
-  "employment": "계약직, 기타",
+  "employment": "아르바이트",
   "summary": "(주)인코스파트너스에서 채용을 진행합니다. 업직종:데이터수집·가공,동영상촬영·편집,그래픽·영상·편집디자인 근무기간:1개월~3개월 복리후생:국민연금,고용보험,산재보험,건강보험,연차 우대조건:업무관련자격증소지,유사업무경험우대,인근거주우대",
   "tools": [],
   "deadline": "2026-12-01",
@@ -102,10 +21,10 @@
   "revenue_year": "2023",
   "revenue_growth": -2.2,
   "revenue_trend": "flat",
-  "kind": "job",
+  "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-11T11:12:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -132,7 +51,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -159,7 +78,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -186,7 +105,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -213,7 +132,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -240,7 +159,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "mediajob",
@@ -267,7 +186,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-10T22:42:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -294,7 +213,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-10T13:17:24+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -321,7 +240,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-09T23:14:44+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "mediajob",
@@ -348,7 +267,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-09T23:14:44+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -375,7 +294,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-09T23:14:44+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "remember",
@@ -432,7 +351,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -459,7 +378,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -494,7 +413,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -524,7 +443,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -551,7 +470,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -578,7 +497,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -605,7 +524,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -632,7 +551,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -659,7 +578,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -686,7 +605,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -713,7 +632,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -742,7 +661,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -769,7 +688,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -796,7 +715,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -825,7 +744,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -852,7 +771,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -879,7 +798,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-08T21:07:46+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "remember",
@@ -992,7 +911,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-06T11:46:43+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -1019,7 +938,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -1046,7 +965,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -1073,7 +992,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-05T22:26:26+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -1100,7 +1019,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-11-04T11:39:02+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "mediajob",
@@ -1181,7 +1100,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-03T12:40:31+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -1208,7 +1127,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-11-02T22:46:18+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "editmon",
@@ -1262,7 +1181,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-29T10:55:36+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -1289,7 +1208,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T20:32:08+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -1316,7 +1235,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-28T10:38:00+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -1343,7 +1262,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "incruit",
@@ -1370,7 +1289,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-27T16:52:18+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "mediajob",
@@ -1433,7 +1352,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-26T09:39:51+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1464,7 +1383,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-25T09:29:54+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1518,7 +1437,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-23T19:25:58+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -1599,7 +1518,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "mediajob",
@@ -1633,7 +1552,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-22T19:30:53+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1663,7 +1582,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1690,7 +1609,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1723,7 +1642,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-22T09:51:28+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -1756,7 +1675,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1787,7 +1706,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-21T19:30:16+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -1868,7 +1787,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -1895,7 +1814,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-20T10:12:56+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "wanted",
@@ -2042,7 +1961,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2069,7 +1988,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2096,7 +2015,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2126,7 +2045,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2153,7 +2072,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2185,7 +2104,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2221,35 +2140,6 @@
  },
  {
   "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50196618",
-  "title": "AI 영상 제작담당자 채용합니다.",
-  "company": "㈜투비픽쳐스",
-  "location": "서울 강서구 마곡중앙로 59-5 (마곡동) 마곡 595빌딩 705호",
-  "employment": "정규직",
-  "summary": "㈜투비픽쳐스 AI 영상 제작 담당자 채용합니다. ㈜투비픽쳐스는 2014년에 설립된 회사로 자본금 1,000만원, 매출액 39억 3천만, 사원수 25명 규모의 중소기업입니다. 서울 강서구 마곡중앙로 59-5 (마곡동)에 위치하고 있으며, 자동차 영상 콘텐츠 제작사업을 하고 있습니다. 포지션 및 자격요건 포지션 ( 1명 ) 담당업무 ? 생성형 AI 기반 영상 콘텐츠 기획 및 제작 ? 실사 촬영…",
-  "tools": [
-   "ComfyUI"
-  ],
-  "deadline": "2026-11-18",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-19T20:08:05+09:00",
-  "last_seen": "2026-11-04T11:39:02+09:00"
- },
- {
-  "source": "jobkorea",
   "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50189546",
   "title": "[인턴] 여성향 AI 드라마 PD (정규직 전환형)",
   "company": "㈜네티",
@@ -2278,7 +2168,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-17T18:37:00+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2305,7 +2195,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-16T19:03:42+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2332,7 +2222,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-16T19:03:42+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2362,7 +2252,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2392,7 +2282,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-16T09:41:04+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2422,7 +2312,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-15T19:14:11+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "albamon",
@@ -2478,7 +2368,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-15T09:47:57+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2505,7 +2395,34 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
+ },
+ {
+  "source": "saramin",
+  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55272616",
+  "title": "(주)크림푼과 함께 AI활용 홍보 영상을 제작할 분을 찾고 있어요",
+  "company": "(주)크림푼",
+  "location": "서울 영등포구",
+  "employment": "아르바이트·프리랜서",
+  "summary": "채용공고 상세",
+  "tools": [],
+  "deadline": "2026-11-13",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "중소기업",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "gig",
+  "rv": 4,
+  "first_seen": "2026-10-14T19:30:30+09:00",
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2532,7 +2449,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2559,7 +2476,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2586,7 +2503,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2618,7 +2535,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2647,7 +2564,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2679,34 +2596,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "saramin",
-  "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55272616",
-  "title": "(주)크림푼과 함께 AI활용 홍보 영상을 제작할 분을 찾고 있어요",
-  "company": "(주)크림푼",
-  "location": "서울 영등포구",
-  "employment": "아르바이트·프리랜서",
-  "summary": "채용공고 상세",
-  "tools": [],
-  "deadline": "2026-11-13",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "gig",
-  "rv": 4,
-  "first_seen": "2026-10-14T19:30:30+09:00",
-  "last_seen": "2026-11-10T22:42:22+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -2787,88 +2677,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-14T10:21:42+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158986",
-  "title": "AI를 활용한 콘텐츠 영상 기획/제작자 편집자 모집",
-  "company": "트렌드림",
-  "location": "경기 동두천시 동두천로 111 (지행동, 송내메가타운) 301호 트렌드림",
-  "employment": "정규직",
-  "summary": "픽셀링 AI 콘텐츠 기획자 채용 PIXELING · RECRUIT AI 콘텐츠 기획/편집 분야 픽셀링과 함께할 동료를 찾습니다 좋은 콘텐츠를 기획하고, AI로 제작하고, 자동화와 수익화로 연결하는 일. 급여 및 복지 연봉 3,600만 원 점심 식비·커피값 일 1만 5천~2만 원 수준 지원 성과급 지급 · 각종 복지 혜택 제공 어떤 일을 하나요? 아스트라, 클로드, 제미나이, 그록 등 다양한…",
-  "tools": [],
-  "deadline": "2026-11-12",
-  "salary": "연 3,600~3,601만원",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/542083/reviews",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158675",
-  "title": "[삼성전자 온라인 공식파트너사] AI 쇼호스트 라이브 영상 제작",
-  "company": "㈜유니씨앤씨",
-  "location": "서울 용산구 한강대로104길 36 (동자동) (주)유니씨앤씨",
-  "employment": "정규직",
-  "summary": "㈜유니씨앤씨에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 용산구 한강대로104길 36 (동자동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-11-30",
-  "salary": "",
-  "avg_salary": 5246,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": 2.5,
-  "jp_reviews": 32,
-  "jp_url": "https://www.jobplanet.co.kr/companies/288002/reviews",
-  "co_size": "중소기업",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50161941",
-  "title": "143엔터테인먼트 AI콘텐츠 크리에이터 채용",
-  "company": "143엔터테인먼트",
-  "location": "서울 강남구 봉은사로51길 17 (논현동, 논현HKS빌딩) 4층",
-  "employment": "정규직",
-  "summary": "143엔터테인먼트 143엔터테인먼트 AI콘텐츠 크리에이터 채용 포지션 및 자격요건 AI콘텐츠 크리에이터 채용 ( 1명 ) 담당업무 ㆍ생성형 AI(이미지·영상)를 활용한 트렌디한 브랜드 콘텐츠 기획 및 구현 ㆍ플랫폼별 기획 의도에 맞춘 맞춤형 비주얼(이미지/동영상) 리소스 제작 ㆍ AI 리소스 생성, 컬러 보정, 후편집 등 영상 제작 프로세스 전반 관리 자격요건 ㆍ학력 : 학력무관 ㆍ생성형…",
-  "tools": [],
-  "deadline": "2026-11-12",
-  "salary": "",
-  "avg_salary": 4042,
-  "avg_salary_src": "사람인 기업정보",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "https://www.jobplanet.co.kr/companies/511431/reviews",
-  "co_size": "중소기업",
-  "revenue": 533977,
-  "revenue_year": "2024",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 9,
-  "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2895,7 +2704,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-10T22:42:22+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -2922,7 +2731,88 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T21:54:08+09:00",
-  "last_seen": "2026-11-10T22:42:22+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158986",
+  "title": "AI를 활용한 콘텐츠 영상 기획/제작자 편집자 모집",
+  "company": "트렌드림",
+  "location": "경기 동두천시 동두천로 111 (지행동, 송내메가타운) 301호 트렌드림",
+  "employment": "정규직",
+  "summary": "픽셀링 AI 콘텐츠 기획자 채용 PIXELING · RECRUIT AI 콘텐츠 기획/편집 분야 픽셀링과 함께할 동료를 찾습니다 좋은 콘텐츠를 기획하고, AI로 제작하고, 자동화와 수익화로 연결하는 일. 급여 및 복지 연봉 3,600만 원 점심 식비·커피값 일 1만 5천~2만 원 수준 지원 성과급 지급 · 각종 복지 혜택 제공 어떤 일을 하나요? 아스트라, 클로드, 제미나이, 그록 등 다양한…",
+  "tools": [],
+  "deadline": "2026-11-12",
+  "salary": "연 3,600~3,601만원",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "https://www.jobplanet.co.kr/companies/542083/reviews",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-13T21:54:08+09:00",
+  "last_seen": "2026-11-11T21:54:26+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50158675",
+  "title": "[삼성전자 온라인 공식파트너사] AI 쇼호스트 라이브 영상 제작",
+  "company": "㈜유니씨앤씨",
+  "location": "서울 용산구 한강대로104길 36 (동자동) (주)유니씨앤씨",
+  "employment": "정규직",
+  "summary": "㈜유니씨앤씨에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 용산구 한강대로104길 36 (동자동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-11-30",
+  "salary": "",
+  "avg_salary": 5246,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": 2.5,
+  "jp_reviews": 32,
+  "jp_url": "https://www.jobplanet.co.kr/companies/288002/reviews",
+  "co_size": "중소기업",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-13T21:54:08+09:00",
+  "last_seen": "2026-11-11T21:54:26+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50161941",
+  "title": "143엔터테인먼트 AI콘텐츠 크리에이터 채용",
+  "company": "143엔터테인먼트",
+  "location": "서울 강남구 봉은사로51길 17 (논현동, 논현HKS빌딩) 4층",
+  "employment": "정규직",
+  "summary": "143엔터테인먼트 143엔터테인먼트 AI콘텐츠 크리에이터 채용 포지션 및 자격요건 AI콘텐츠 크리에이터 채용 ( 1명 ) 담당업무 ㆍ생성형 AI(이미지·영상)를 활용한 트렌디한 브랜드 콘텐츠 기획 및 구현 ㆍ플랫폼별 기획 의도에 맞춘 맞춤형 비주얼(이미지/동영상) 리소스 제작 ㆍ AI 리소스 생성, 컬러 보정, 후편집 등 영상 제작 프로세스 전반 관리 자격요건 ㆍ학력 : 학력무관 ㆍ생성형…",
+  "tools": [],
+  "deadline": "2026-11-12",
+  "salary": "",
+  "avg_salary": 4042,
+  "avg_salary_src": "사람인 기업정보",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "https://www.jobplanet.co.kr/companies/511431/reviews",
+  "co_size": "중소기업",
+  "revenue": 533977,
+  "revenue_year": "2024",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 9,
+  "first_seen": "2026-10-13T21:54:08+09:00",
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3006,7 +2896,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-13T12:08:45+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobplanet",
@@ -3038,33 +2928,6 @@
   "last_seen": "2026-11-10T22:42:22+09:00"
  },
  {
-  "source": "jobkorea",
-  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50144233",
-  "title": "[닥터리본] AI 이미지·영상 콘텐츠 제작자 채용",
-  "company": "㈜닥터리본",
-  "location": "서울 강남구 언주로71길 19 (역삼동) 언주로71길 22",
-  "employment": "정규직",
-  "summary": "㈜닥터리본에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 강남구 언주로71길 19 (역삼동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
-  "tools": [],
-  "deadline": "2026-11-11",
-  "salary": "",
-  "avg_salary": null,
-  "avg_salary_src": "",
-  "employees": null,
-  "jp_rating": null,
-  "jp_reviews": null,
-  "jp_url": "",
-  "co_size": "",
-  "revenue": null,
-  "revenue_year": "",
-  "revenue_growth": null,
-  "revenue_trend": "",
-  "kind": "job",
-  "rv": 4,
-  "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
- },
- {
   "source": "saramin",
   "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55261687",
   "title": "AI 애니메이터 (기간제)",
@@ -3089,7 +2952,34 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-12T19:55:22+09:00",
-  "last_seen": "2026-11-10T22:42:22+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
+ },
+ {
+  "source": "jobkorea",
+  "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50144233",
+  "title": "[닥터리본] AI 이미지·영상 콘텐츠 제작자 채용",
+  "company": "㈜닥터리본",
+  "location": "서울 강남구 언주로71길 19 (역삼동) 언주로71길 22",
+  "employment": "정규직",
+  "summary": "㈜닥터리본에서 정규직 경력무관 채용을 진행합니다. 근무지는 서울 강남구 언주로71길 19 (역삼동)이며, 자세한 조건은 공고를 통해 확인할 수 있습니다.",
+  "tools": [],
+  "deadline": "2026-11-11",
+  "salary": "",
+  "avg_salary": null,
+  "avg_salary_src": "",
+  "employees": null,
+  "jp_rating": null,
+  "jp_reviews": null,
+  "jp_url": "",
+  "co_size": "",
+  "revenue": null,
+  "revenue_year": "",
+  "revenue_growth": null,
+  "revenue_trend": "",
+  "kind": "job",
+  "rv": 4,
+  "first_seen": "2026-10-12T19:55:22+09:00",
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3118,7 +3008,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-11T10:12:29+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "wanted",
@@ -3246,7 +3136,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3277,7 +3167,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3306,7 +3196,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-09T11:31:15+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3362,7 +3252,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3391,7 +3281,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-08T14:00:38+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3418,7 +3308,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3450,7 +3340,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T16:00:06+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -3477,7 +3367,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -3511,7 +3401,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -3538,7 +3428,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3565,7 +3455,7 @@
   "kind": "gig",
   "rv": 9,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3592,7 +3482,7 @@
   "kind": "gig",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3619,7 +3509,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3646,7 +3536,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3680,7 +3570,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3707,7 +3597,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -3739,7 +3629,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T15:31:03+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -3992,7 +3882,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T13:28:02+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobplanet",
@@ -4049,7 +3939,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T11:43:38+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -4105,7 +3995,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "saramin",
@@ -4137,7 +4027,7 @@
   "kind": "job",
   "rv": 4,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -4168,7 +4058,7 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T11:32:04+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  },
  {
   "source": "jobkorea",
@@ -4228,6 +4118,6 @@
   "kind": "job",
   "rv": 9,
   "first_seen": "2026-10-07T10:57:32+09:00",
-  "last_seen": "2026-11-11T11:12:05+09:00"
+  "last_seen": "2026-11-11T21:54:26+09:00"
  }
 ]
