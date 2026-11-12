@@ -268,6 +268,18 @@
   "src": "사람인",
   "v": 2
  },
+ "가온벤처스": {
+  "avg_salary": null,
+  "checked": "2026-11-12T12:18:11+09:00",
+  "co_checked": "2026-11-12T12:18:11+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "cmtpV1krWEo1THdqMW8wZzlVM255Zz09",
+  "name": "가온벤처스",
+  "src": "사람인",
+  "v": 2
+ },
  "간편ㅣ쉬운업무": {
   "avg_salary": null,
   "checked": "2026-10-27T10:36:10+09:00",
@@ -4433,7 +4445,7 @@
  },
  "스튜디오담": {
   "avg_salary": null,
-  "checked": "2026-11-04T22:12:53+09:00",
+  "checked": "2026-11-12T12:18:11+09:00",
   "co_checked": "2026-10-21T19:30:16+09:00",
   "co_labels": [],
   "co_size": null,
@@ -5714,7 +5726,7 @@
  },
  "에이블링크랩": {
   "avg_salary": null,
-  "checked": "2026-11-04T22:12:53+09:00",
+  "checked": "2026-11-12T12:18:11+09:00",
   "co_checked": "2026-10-21T19:30:16+09:00",
   "co_labels": [
    "중소기업"
