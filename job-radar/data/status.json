@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-11-13T11:52:11+09:00",
- "finished_at": "2026-11-13T12:17:23+09:00",
- "total": 136,
+ "updated_at": "2026-11-13T22:22:05+09:00",
+ "finished_at": "2026-11-13T22:47:34+09:00",
+ "total": 132,
  "salary": {
-  "todo": 2,
-  "checked": 2,
-  "found": 0
+  "todo": 5,
+  "checked": 5,
+  "found": 1
  },
  "jobplanet_rating": {
   "todo": 9,
@@ -13,26 +13,26 @@
   "found": 0
  },
  "company_info": {
-  "todo": 0,
-  "checked": 0
+  "todo": 1,
+  "checked": 1
  },
  "sites": {
   "saramin": {
    "label": "사람인",
    "ok": true,
    "count": 23,
-   "found": 14022,
-   "excluded": 13999,
+   "found": 12452,
+   "excluded": 12429,
    "new": 0,
-   "requests": 421,
+   "requests": 439,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "partial": true,
    "warnings": [
     "시간 예산 초과: 상세 일부 생략"
    ],
-   "seconds": 1504.3,
+   "seconds": 1501.5,
    "total": 26
   },
   "wanted": {
@@ -44,63 +44,64 @@
    "new": 0,
    "requests": 4,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
    "blocked": true,
    "last_success": "2026-11-06T22:10:23+09:00",
    "warnings": [
     "프리랜서: blocked (HTTP 403)",
     "외주: blocked (HTTP 403)"
    ],
-   "seconds": 8.7,
+   "seconds": 10.6,
    "total": 8
   },
   "jobkorea": {
    "label": "잡코리아",
    "ok": true,
-   "count": 60,
-   "found": 7625,
-   "excluded": 7565,
+   "count": 58,
+   "found": 6975,
+   "excluded": 6917,
    "new": 0,
-   "requests": 555,
+   "requests": 546,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "partial": true,
    "warnings": [
+    "AI 영상: HTTPError: 502 Server Error: Bad Gateway for url: https://www.jobkorea.co.kr/Search/?stext=AI%20%EC%98%81%EC%83%81&tabType=recruit&Page_No=75",
     "시간 예산 초과: 상세 일부 생략"
    ],
-   "seconds": 1501.3,
-   "total": 67
+   "seconds": 1502.2,
+   "total": 66
   },
   "jumpit": {
    "label": "점핏",
    "ok": true,
    "count": 0,
-   "found": 71,
-   "excluded": 71,
+   "found": 68,
+   "excluded": 68,
    "new": 0,
    "requests": 16,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 41.8,
+   "seconds": 46.6,
    "total": 0
   },
   "incruit": {
    "label": "인크루트",
    "ok": true,
-   "count": 7,
-   "found": 169,
-   "excluded": 162,
-   "new": 0,
-   "requests": 17,
+   "count": 8,
+   "found": 172,
+   "excluded": 164,
+   "new": 1,
+   "requests": 18,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 54.2,
-   "total": 8
+   "seconds": 55.9,
+   "total": 9
   },
   "rocketpunch": {
    "label": "로켓펀치",
@@ -111,7 +112,7 @@
    "new": 0,
    "requests": 3,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
    "blocked": true,
    "last_success": "2026-11-04T11:39:02+09:00",
    "warnings": [
@@ -119,7 +120,7 @@
     "외주: blocked (HTTP 403)",
     "부업: blocked (HTTP 403)"
    ],
-   "seconds": 6.3,
+   "seconds": 6.7,
    "total": 0
   },
   "jobplanet": {
@@ -131,7 +132,7 @@
    "new": 0,
    "requests": 3,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
    "blocked": true,
    "last_success": "2026-11-10T22:42:22+09:00",
    "warnings": [
@@ -139,7 +140,7 @@
     "외주: blocked (HTTP 403)",
     "부업: blocked (HTTP 403)"
    ],
-   "seconds": 7.1,
+   "seconds": 7.4,
    "total": 3
   },
   "remember": {
@@ -151,26 +152,26 @@
    "new": 0,
    "requests": 16,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 39.5,
+   "seconds": 42.1,
    "total": 2
   },
   "mediajob": {
    "label": "미디어잡",
    "ok": true,
-   "count": 7,
-   "found": 33,
+   "count": 4,
+   "found": 30,
    "excluded": 26,
-   "new": 2,
-   "requests": 24,
+   "new": 0,
+   "requests": 18,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 89.4,
-   "total": 9
+   "seconds": 71.2,
+   "total": 6
   },
   "superintern": {
    "label": "슈퍼인턴",
@@ -181,7 +182,7 @@
    "new": 0,
    "requests": 1,
    "error": "RuntimeError: 사이트 보안 인증서(SSL) 오류로 접속 불가",
-   "checked_at": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
    "warnings": [],
    "seconds": 10.8,
    "total": 0
@@ -189,32 +190,32 @@
   "editmon": {
    "label": "편집몬",
    "ok": true,
-   "count": 3,
-   "found": 21,
-   "excluded": 18,
-   "new": 2,
-   "requests": 7,
+   "count": 1,
+   "found": 20,
+   "excluded": 19,
+   "new": 0,
+   "requests": 3,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 22.1,
-   "total": 4
+   "seconds": 9.8,
+   "total": 2
   },
   "albamon": {
    "label": "알바몬",
    "ok": true,
    "count": 9,
-   "found": 83,
-   "excluded": 74,
-   "new": 0,
+   "found": 85,
+   "excluded": 76,
+   "new": 1,
    "requests": 15,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 42.7,
-   "total": 9
+   "seconds": 46.0,
+   "total": 10
   },
   "linkedin": {
    "label": "LinkedIn",
@@ -223,12 +224,12 @@
    "found": 45,
    "excluded": 45,
    "new": 0,
-   "requests": 7,
+   "requests": 8,
    "error": null,
-   "checked_at": "2026-11-13T11:52:11+09:00",
-   "last_success": "2026-11-13T11:52:11+09:00",
+   "checked_at": "2026-11-13T22:22:05+09:00",
+   "last_success": "2026-11-13T22:22:05+09:00",
    "warnings": [],
-   "seconds": 20.7,
+   "seconds": 20.0,
    "total": 0
   }
  }
