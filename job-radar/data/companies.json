@@ -53,6 +53,13 @@
   "src": "사람인",
   "v": 2
  },
+ "altenkorea": {
+  "avg_salary": null,
+  "checked": "2026-11-16T22:56:03+09:00",
+  "name": "ALTEN Korea",
+  "src": "사람인",
+  "v": 2
+ },
  "aurifyllc": {
   "avg_salary": null,
   "checked": "2026-10-15T09:47:57+09:00",
@@ -799,7 +806,7 @@
  "네티": {
   "avg_salary": null,
   "checked": "2026-11-14T21:26:25+09:00",
-  "co_checked": "2026-10-17T18:37:00+09:00",
+  "co_checked": "2026-11-16T22:56:03+09:00",
   "co_labels": [],
   "co_size": null,
   "co_v": 1,
