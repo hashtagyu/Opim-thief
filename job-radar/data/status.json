@@ -1,39 +1,39 @@
 {
- "updated_at": "2026-11-21T22:39:51+09:00",
- "finished_at": "2026-11-21T23:04:55+09:00",
- "total": 105,
+ "updated_at": "2026-11-22T11:36:35+09:00",
+ "finished_at": "2026-11-22T12:01:59+09:00",
+ "total": 101,
  "salary": {
-  "todo": 0,
-  "checked": 0,
+  "todo": 4,
+  "checked": 4,
   "found": 0
  },
  "jobplanet_rating": {
-  "todo": 21,
+  "todo": 23,
   "checked": 0,
   "found": 0
  },
  "company_info": {
-  "todo": 0,
-  "checked": 0
+  "todo": 1,
+  "checked": 1
  },
  "sites": {
   "saramin": {
    "label": "사람인",
    "ok": true,
-   "count": 14,
-   "found": 12134,
-   "excluded": 12120,
+   "count": 12,
+   "found": 12119,
+   "excluded": 12107,
    "new": 0,
-   "requests": 428,
+   "requests": 433,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "partial": true,
    "warnings": [
     "시간 예산 초과: 상세 일부 생략"
    ],
-   "seconds": 1502.0,
-   "total": 16
+   "seconds": 1503.3,
+   "total": 14
   },
   "wanted": {
    "label": "원티드",
@@ -44,34 +44,35 @@
    "new": 0,
    "requests": 4,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
    "blocked": true,
    "last_success": "2026-11-17T13:44:47+09:00",
    "warnings": [
     "프리랜서: blocked (HTTP 403)",
     "외주: blocked (HTTP 403)"
    ],
-   "seconds": 9.1,
+   "seconds": 8.6,
    "total": 12
   },
   "jobkorea": {
    "label": "잡코리아",
    "ok": true,
-   "count": 38,
-   "found": 7474,
-   "excluded": 7436,
+   "count": 35,
+   "found": 5127,
+   "excluded": 5092,
    "new": 0,
-   "requests": 556,
+   "requests": 552,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "partial": true,
    "warnings": [
-    "부업: HTTPError: 502 Server Error: Bad Gateway for url: https://www.jobkorea.co.kr/Search/?stext=%EB%B6%80%EC%97%85&tabType=recruit&Page_No=3",
+    "외주: HTTPError: 502 Server Error: Bad Gateway for url: https://www.jobkorea.co.kr/Search/?stext=%EC%99%B8%EC%A3%BC&tabType=recruit&Page_No=112",
+    "PD: HTTPError: 502 Server Error: Bad Gateway for url: https://www.jobkorea.co.kr/Search/?stext=PD&tabType=recruit&Page_No=1",
     "시간 예산 초과: 상세 일부 생략"
    ],
-   "seconds": 1501.1,
-   "total": 44
+   "seconds": 1502.2,
+   "total": 41
   },
   "jumpit": {
    "label": "점핏",
@@ -82,25 +83,25 @@
    "new": 0,
    "requests": 16,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 42.6,
+   "seconds": 42.4,
    "total": 0
   },
   "incruit": {
    "label": "인크루트",
    "ok": true,
    "count": 6,
-   "found": 178,
-   "excluded": 172,
+   "found": 177,
+   "excluded": 171,
    "new": 0,
-   "requests": 17,
+   "requests": 16,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 61.8,
+   "seconds": 60.7,
    "total": 6
   },
   "rocketpunch": {
@@ -112,7 +113,7 @@
    "new": 0,
    "requests": 3,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
    "blocked": true,
    "last_success": "2026-11-04T11:39:02+09:00",
    "warnings": [
@@ -120,7 +121,7 @@
     "외주: blocked (HTTP 403)",
     "부업: blocked (HTTP 403)"
    ],
-   "seconds": 6.5,
+   "seconds": 7.3,
    "total": 0
   },
   "jobplanet": {
@@ -132,7 +133,7 @@
    "new": 0,
    "requests": 3,
    "error": "차단됨: HTTP 403",
-   "checked_at": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
    "blocked": true,
    "last_success": "2026-11-10T22:42:22+09:00",
    "warnings": [
@@ -140,7 +141,7 @@
     "외주: blocked (HTTP 403)",
     "부업: blocked (HTTP 403)"
    ],
-   "seconds": 6.8,
+   "seconds": 7.5,
    "total": 3
   },
   "remember": {
@@ -152,25 +153,25 @@
    "new": 0,
    "requests": 16,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 44.0,
+   "seconds": 43.4,
    "total": 2
   },
   "mediajob": {
    "label": "미디어잡",
    "ok": true,
    "count": 4,
-   "found": 27,
-   "excluded": 23,
+   "found": 26,
+   "excluded": 22,
    "new": 0,
-   "requests": 16,
+   "requests": 18,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 70.9,
+   "seconds": 78.6,
    "total": 5
   },
   "superintern": {
@@ -182,39 +183,39 @@
    "new": 0,
    "requests": 1,
    "error": "RuntimeError: 사이트 보안 인증서(SSL) 오류로 접속 불가",
-   "checked_at": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 11.3,
+   "seconds": 11.5,
    "total": 0
   },
   "editmon": {
    "label": "편집몬",
    "ok": true,
-   "count": 1,
-   "found": 13,
-   "excluded": 12,
-   "new": 1,
-   "requests": 4,
+   "count": 3,
+   "found": 14,
+   "excluded": 11,
+   "new": 2,
+   "requests": 5,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 13.3,
-   "total": 2
+   "seconds": 16.9,
+   "total": 3
   },
   "albamon": {
    "label": "알바몬",
    "ok": true,
-   "count": 9,
-   "found": 84,
+   "count": 8,
+   "found": 83,
    "excluded": 75,
    "new": 0,
    "requests": 12,
    "error": null,
-   "checked_at": "2026-11-21T22:39:51+09:00",
-   "last_success": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
+   "last_success": "2026-11-22T11:36:35+09:00",
    "warnings": [],
-   "seconds": 35.7,
+   "seconds": 35.8,
    "total": 14
   },
   "linkedin": {
@@ -224,17 +225,16 @@
    "found": 0,
    "excluded": 0,
    "new": 0,
-   "requests": 9,
+   "requests": 8,
    "error": "차단됨: HTTP 429",
-   "checked_at": "2026-11-21T22:39:51+09:00",
+   "checked_at": "2026-11-22T11:36:35+09:00",
    "blocked": true,
    "last_success": "2026-11-20T23:17:30+09:00",
    "warnings": [
-    "freelance: blocked (HTTP 429)",
-    "AI video creator: blocked (HTTP 429)",
+    "generative AI video: blocked (HTTP 429)",
     "ComfyUI: blocked (HTTP 429)"
    ],
-   "seconds": 21.7,
+   "seconds": 18.9,
    "total": 1
   }
  }
