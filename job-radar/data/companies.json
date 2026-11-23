@@ -1431,6 +1431,20 @@
   "src": "사람인",
   "v": 2
  },
+ "데일데일": {
+  "avg_salary": null,
+  "checked": "2026-11-24T01:22:58+09:00",
+  "co_checked": "2026-11-24T01:22:58+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "VGlzZEtJLytNdUN2OTF6dDVqK3RtUT09",
+  "name": "데일데일",
+  "src": "사람인",
+  "v": 2
+ },
  "도눔엑스데오커피": {
   "avg_salary": null,
   "checked": "2026-10-08T14:00:38+09:00",
@@ -7178,6 +7192,13 @@
   },
   "revenue_growth": 605.7,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "이은커먼즈": {
+  "avg_salary": null,
+  "checked": "2026-11-24T01:22:58+09:00",
+  "name": "이은커먼즈",
   "src": "사람인",
   "v": 2
  },
