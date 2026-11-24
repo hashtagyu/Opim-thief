@@ -14,6 +14,29 @@
   "jp_id": null,
   "jp_v": 1
  },
+ "111퍼센트": {
+  "avg_salary": 7183,
+  "checked": "2026-11-24T15:20:15+09:00",
+  "co_checked": "2026-11-24T15:20:15+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "dVBhUnNUdnpWK2JPMnRDUjlRT1lzdz09",
+  "name": "111퍼센트",
+  "revenue": 13756638,
+  "revenue_by_year": {
+   "2022": 4750932,
+   "2023": 3216777,
+   "2024": 10580253,
+   "2025": 13756638
+  },
+  "revenue_growth": 30.0,
+  "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
  "143엔터테인먼트": {
   "avg_salary": 4042,
   "checked": "2026-11-12T22:56:32+09:00",
@@ -55,7 +78,7 @@
  },
  "altenkorea": {
   "avg_salary": null,
-  "checked": "2026-11-16T22:56:03+09:00",
+  "checked": "2026-11-24T15:20:15+09:00",
   "name": "ALTEN Korea",
   "src": "사람인",
   "v": 2
@@ -92,7 +115,7 @@
  },
  "cu미디어": {
   "avg_salary": null,
-  "checked": "2026-11-17T13:44:47+09:00",
+  "checked": "2026-11-24T15:20:15+09:00",
   "jp_checked": "2026-10-26T20:26:50+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -3450,7 +3473,7 @@
  },
  "블루초이스": {
   "avg_salary": null,
-  "checked": "2026-11-17T13:44:47+09:00",
+  "checked": "2026-11-24T15:20:15+09:00",
   "jp_checked": "2026-11-03T12:40:31+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -6015,6 +6038,21 @@
   "src": "사람인",
   "v": 2
  },
+ "에이아이프릭스": {
+  "avg_salary": null,
+  "checked": "2026-11-24T15:20:15+09:00",
+  "co_checked": "2026-11-24T15:20:15+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "UHBqbmNCOWVFMlF1bVdPMk1XTnlZUT09",
+  "name": "에이아이프릭스",
+  "src": "사람인",
+  "v": 2
+ },
  "에이에스엑스컴퍼니": {
   "avg_salary": null,
   "checked": "2026-10-10T10:53:43+09:00",
@@ -7790,6 +7828,29 @@
   "jp_reviews": 0,
   "jp_v": 1,
   "name": "(주)줄라이하우스",
+  "src": "사람인",
+  "v": 2
+ },
+ "지니파이": {
+  "avg_salary": 8731,
+  "checked": "2026-11-24T15:20:15+09:00",
+  "co_checked": "2026-11-24T15:20:15+09:00",
+  "co_labels": [
+   "중소기업",
+   "주식회사"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "S3E5SEc0M1YxaWxxTFNSYy8yT2k2dz09",
+  "name": "지니파이",
+  "revenue": 112173,
+  "revenue_by_year": {
+   "2023": 12065,
+   "2024": 69800,
+   "2025": 112173
+  },
+  "revenue_growth": 60.7,
+  "revenue_year": "2025",
   "src": "사람인",
   "v": 2
  },
