@@ -1169,7 +1169,7 @@
  },
  "대박넘버원": {
   "avg_salary": null,
-  "checked": "2026-11-17T23:48:33+09:00",
+  "checked": "2026-11-25T01:13:26+09:00",
   "jp_checked": "2026-11-10T22:42:22+09:00",
   "jp_id": null,
   "jp_v": 1,
@@ -7593,6 +7593,20 @@
   "jp_id": null,
   "jp_v": 1,
   "name": "임팩트스테이션㈜",
+  "src": "사람인",
+  "v": 2
+ },
+ "자미와": {
+  "avg_salary": null,
+  "checked": "2026-11-25T01:13:26+09:00",
+  "co_checked": "2026-11-25T01:13:26+09:00",
+  "co_labels": [
+   "중소기업"
+  ],
+  "co_size": "중소기업",
+  "co_v": 1,
+  "csn": "SERmaXNNL2hTSTlpMnZ2Qi93K2grQT09",
+  "name": "자미와",
   "src": "사람인",
   "v": 2
  },
