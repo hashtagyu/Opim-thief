@@ -3012,7 +3012,7 @@
  },
  "박사장가계": {
   "avg_salary": null,
-  "checked": "2026-11-20T23:17:30+09:00",
+  "checked": "2026-11-28T00:29:12+09:00",
   "co_checked": "2026-11-15T21:55:25+09:00",
   "co_labels": [
    "중소기업"
@@ -4463,6 +4463,20 @@
   },
   "revenue_growth": -3.8,
   "revenue_year": "2025",
+  "src": "사람인",
+  "v": 2
+ },
+ "스마트투데이": {
+  "avg_salary": 6845,
+  "checked": "2026-11-28T00:29:12+09:00",
+  "co_checked": "2026-11-28T00:29:12+09:00",
+  "co_labels": [
+   "중견기업"
+  ],
+  "co_size": "중견기업",
+  "co_v": 1,
+  "csn": "elNSeTJmSzB6K2VmNGUrVTJ4Nm91Zz09",
+  "name": "스마트투데이",
   "src": "사람인",
   "v": 2
  },
@@ -6690,7 +6704,7 @@
  },
  "온샷": {
   "avg_salary": null,
-  "checked": "2026-11-20T23:17:30+09:00",
+  "checked": "2026-11-28T00:29:12+09:00",
   "co_checked": "2026-11-20T23:17:30+09:00",
   "co_labels": [],
   "co_size": null,
@@ -7755,7 +7769,7 @@
  },
  "제이예스": {
   "avg_salary": null,
-  "checked": "2026-11-20T23:17:30+09:00",
+  "checked": "2026-11-28T00:29:12+09:00",
   "name": "제이예스㈜",
   "src": "사람인",
   "v": 2
@@ -9687,6 +9701,13 @@
   "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=TS9xRzFRRjFycTVZbSt6a1l1SmU5QT09",
   "v": 2
  },
+ "헤루": {
+  "avg_salary": null,
+  "checked": "2026-11-28T00:29:12+09:00",
+  "name": "(주)헤루",
+  "src": "사람인",
+  "v": 2
+ },
  "헬로웍스": {
   "avg_salary": 3514,
   "checked": "2026-10-07T12:54:57+09:00",
@@ -9785,7 +9806,12 @@
  },
  "휘컴퍼니": {
   "avg_salary": null,
-  "checked": "2026-11-18T23:28:25+09:00",
+  "checked": "2026-11-28T00:29:12+09:00",
+  "co_checked": "2026-11-28T00:29:12+09:00",
+  "co_labels": [],
+  "co_size": null,
+  "co_v": 1,
+  "csn": "b3hUcmxmdURVRzhDTnNSL2xzQWlaZz09",
   "name": "휘컴퍼니(whiicompany)",
   "src": "사람인",
   "v": 2
